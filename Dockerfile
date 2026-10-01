@@ -17,7 +17,6 @@ ENV DATASET=mock \
     LLM_MODE=recorded \
     DEMO_NOW=2026-10-12T18:00:00+08:00 \
     E16_INCLUDE_DRAFT_PLAYBOOKS=1 \
-    E16_CHAT_OPTION=gpt-4o-mini \
     E16_V51_LLM_MODEL=gpt-4o-mini \
     PORT=8000
 CMD python -m mockdata.load && cd backend && uvicorn src.api:app --host 0.0.0.0 --port ${PORT}
