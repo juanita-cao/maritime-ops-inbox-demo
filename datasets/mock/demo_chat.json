@@ -2,32 +2,32 @@
  {
   "question": "我还有哪些邮件没有看？",
   "answer": {
-   "text": "待审阅的新邮件共 113 项，以下显示优先级最高的 5 项：\n- E025：VSL-01 LOI (Letter of Indemnity)\n- E028：VSL-01 LOI (Letter of Indemnity)\n- E057：VSL-03 Cash to Master / Supply (CTM, Fresh Water, Provisions)\n- E058：VSL-05 CP Terms / Recap / Addendum\n- E064：VSL-03 Cash to Master / Supply (CTM, Fresh Water, Provisions)\n另有 108 项，可在 Overview 页面查看全部。",
+   "text": "待审阅的新邮件共 50 项，以下显示优先级最高的 5 项：\n- E114：VSL-09 Sanctions / Compliance / KYC\n- E133：VSL-09 Sanctions / Compliance / KYC\n- E152：VSL-09 Sanctions / Compliance / KYC\n- E059：VSL-02 Hire / SOA / Payment\n- E078：VSL-03 Claim\n另有 45 项，可在 Overview 页面查看全部。",
    "sources": [
     {
      "kind": "email",
-     "id": "E025",
-     "label": "LOI (Letter of Indemnity)"
+     "id": "E114",
+     "label": "Sanctions / Compliance / KYC"
     },
     {
      "kind": "email",
-     "id": "E028",
-     "label": "LOI (Letter of Indemnity)"
+     "id": "E133",
+     "label": "Sanctions / Compliance / KYC"
     },
     {
      "kind": "email",
-     "id": "E057",
-     "label": "Cash to Master / Supply (CTM, Fresh Water, Provisions)"
+     "id": "E152",
+     "label": "Sanctions / Compliance / KYC"
     },
     {
      "kind": "email",
-     "id": "E058",
-     "label": "CP Terms / Recap / Addendum"
+     "id": "E059",
+     "label": "Hire / SOA / Payment"
     },
     {
      "kind": "email",
-     "id": "E064",
-     "label": "Cash to Master / Supply (CTM, Fresh Water, Provisions)"
+     "id": "E078",
+     "label": "Claim"
     }
    ],
    "draft": null,
@@ -41,7 +41,7 @@
    "execution_mode": "deterministic",
    "reasoning_trace": [
     "Router: 3/3 samples agree on deterministic/review_queue",
-    "Deterministic filter: review_queue (113 rows)"
+    "Deterministic filter: review_queue (50 rows)"
    ],
    "llm_model": "hybrid",
    "details": null,
@@ -54,7 +54,7 @@
    },
    "model_note": "Hybrid — gpt-4o-mini only (no reasoning model needed for this answer)"
   },
-  "recorded_at": "2026-10-01T12:51:31+08:00",
+  "recorded_at": "2026-10-01T15:18:31+08:00",
   "model": "hybrid"
  },
  {

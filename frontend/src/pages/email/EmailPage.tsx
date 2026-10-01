@@ -74,6 +74,15 @@ export function EmailPage({ state, dispatch, now, options, onDataChanged, dataVe
     else setDetail({ kind: 'none' })
   }, [state.selectedEmailId, loadDetail])
 
+  // opening the page shows an email on the right straight away (visitors do not know they have to click one):
+  // the newest one that needs a review under the current filter, else the newest one
+  useEffect(() => {
+    if (state.phase !== 'READY' || state.selectedEmailId || rows.length === 0) return
+    const inFilter = rows.filter((r) => matchesFilter(r, state.filter))
+    const first = inFilter.find((r) => r.reviewStatus === 'To review') ?? inFilter[0]
+    if (first) dispatch({ type: 'selectEmail', id: first.emailId })
+  }, [state.phase, state.selectedEmailId, state.filter, rows, dispatch])
+
   // any data change (a decision here, an undo in the toast, a change on another page) reloads
   const refresh = onDataChanged
   const firstVersion = useRef(dataVersion)
