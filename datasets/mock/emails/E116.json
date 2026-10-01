@@ -1,8 +1,8 @@
 {
  "email_id": "E116",
- "text": "From: mail01@vsl11.example\nSent: 2026-10-09 12:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@corvane.example\nSubject: VSL-11 NOON REPORT 2026-10-09\n\nGood day,\n\nNoon report, VSL-11, V102.\nDd: 9 Oct 2026\nPosition: 20-10S 112-35E at 1200 LT\nCourse/avg spd/rpm/eng slip: 090 / 11.9 / 72 / 3.0\nDaily GPS speed / Log speed: 12.2 / 12.1\nAverage GPS speed / Log Speed: 12.0 / 11.9\nIFO Consumed/LSMGO consumed fm last report: VLSFO 27.0 mt LSMGO 0.0 mt\nWind direction/force/sea cond/vis: SE / 4 / 1.5 M / Good\nWeather condition: SE / 4 Cloudy\nROB: VLSFO 1241.9 mt, LSMGO 60.0 mt\nETA: 2026-10-22 08:00 LT\nRemarks: Vessel proceeding normally.\n\nBest regards,\nMaster MV Aurelia Bay",
+ "text": "From: mail01@vsl01.example\nSent: 2026-10-09 12:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@corvane.example\nSubject: VSL-01 NOON REPORT 2026-10-09\n\nGood day,\n\nNoon report, VSL-01, V102.\nDd: 9 Oct 2026\nPosition: 20-10S 112-35E at 1200 LT\nCourse/avg spd/rpm/eng slip: 090 / 11.9 / 72 / 3.0\nDaily GPS speed / Log speed: 12.2 / 12.1\nAverage GPS speed / Log Speed: 12.0 / 11.9\nIFO Consumed/LSMGO consumed fm last report: VLSFO 27.0 mt LSMGO 0.0 mt\nWind direction/force/sea cond/vis: SE / 4 / 1.5 M / Good\nWeather condition: SE / 4 Cloudy\nROB: VLSFO 1241.9 mt, LSMGO 60.0 mt\nETA: 2026-10-22 08:00 LT\nRemarks: Vessel proceeding normally.\n\nBest regards,\nMaster MV Aurelia Bay",
  "event_id": "M11019",
- "vessel": "VSL-11",
+ "vessel": "VSL-01",
  "thread": "V102-noon",
  "scenario": null,
  "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"

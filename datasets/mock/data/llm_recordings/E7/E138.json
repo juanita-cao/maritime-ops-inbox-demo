@@ -3,14 +3,14 @@
   {
    "action_type": "Prepare Claim / Record Evidence",
    "for_event": "Off-hire",
-   "description": "Prepare a claim for the off-hire time of 6.0 hours for vessel VSL-11, noting the dispute regarding the speed claim and the net speed loss of 3.5 hours.",
+   "description": "Prepare a claim for the off-hire time of 6.0 hours for vessel VSL-01, noting the dispute regarding the speed claim and the net speed loss of 3.5 hours.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Verify / Reconcile Report Data",
    "for_event": "Weather Routing / Speed & Consumption",
-   "description": "Verify the speed log extract for vessel VSL-11 to confirm the speed of 11.8 kn within 3 hours and the warranty of 12.0 kn.",
+   "description": "Verify the speed log extract for vessel VSL-01 to confirm the speed of 11.8 kn within 3 hours and the warranty of 12.0 kn.",
    "due": null,
    "owner_role": "Operations Officer"
   }

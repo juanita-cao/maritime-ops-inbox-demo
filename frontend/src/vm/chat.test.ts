@@ -6,9 +6,9 @@ describe('Chat VM', () => {
   it('f_render_s14_answer_with_two_sources_and_a_draft', () => {
     const turn = buildAnswerTurn({
       text: 'Draft reply to the redelivery notice:', draft: 'Dear PER-14, ...', review_card: null, review_email_id: null, llm_status: 'ok',
-      sources: [{ kind: 'email', id: 'E010', label: 'REDEL NOTICE' }, { kind: 'vessel', id: 'VSL-12', label: 'VSL-12' }],
+      sources: [{ kind: 'email', id: 'E010', label: 'REDEL NOTICE' }, { kind: 'vessel', id: 'VSL-02', label: 'VSL-02' }],
     })
-    expect(turn.sources.map((s) => s.target)).toEqual([{ screen: 'email', emailId: 'E010' }, { screen: 'vessel', vesselCode: 'VSL-12' }])
+    expect(turn.sources.map((s) => s.target)).toEqual([{ screen: 'email', emailId: 'E010' }, { screen: 'vessel', vesselCode: 'VSL-02' }])
     expect(turn.draft).toBe('Dear PER-14, ...')
   })
 
@@ -26,11 +26,11 @@ describe('Chat VM', () => {
 
 describe('Chat VM v7: clickable sources', () => {
   it('f_vm_chat_links_email_ids_and_vessel_codes_in_the_answer', () => {
-    expect(linkify('ETA 8/4（E053），VSL-12 在 Newcastle。')).toEqual([
+    expect(linkify('ETA 8/4（E053），VSL-02 在 Newcastle。')).toEqual([
       { text: 'ETA 8/4（', link: null },
       { text: 'E053', link: { kind: 'email', id: 'E053' } },
       { text: '），', link: null },
-      { text: 'VSL-12', link: { kind: 'vessel', id: 'VSL-12' } },
+      { text: 'VSL-02', link: { kind: 'vessel', id: 'VSL-02' } },
       { text: ' 在 Newcastle。', link: null },
     ])
     expect(linkify('no ids here')).toEqual([{ text: 'no ids here', link: null }])
@@ -92,17 +92,17 @@ describe('Chat VM: which models answered', () => {
 describe('Chat VM v7.1: numbered citations and one reference list', () => {
   const src = (id: string, kind: 'email' | 'vessel' | 'task' = 'email') => ({ kind, id, label: id, target: { screen: 'email' as const } })
   it('numbers emails by first appearance, a repeated id keeps its number, a vessel stays a link', () => {
-    const { parts, cited } = citeParts('E063 asks for a refund (E054). E063 again, VSL-12.')
+    const { parts, cited } = citeParts('E063 asks for a refund (E054). E063 again, VSL-02.')
     expect(cited).toEqual(['E063', 'E054'])
     expect(parts.filter((p) => p.n).map((p) => p.text)).toEqual(['[1]', '[2]', '[1]'])
-    expect(parts.find((p) => p.link?.kind === 'vessel')?.text).toBe('VSL-12')
+    expect(parts.find((p) => p.link?.kind === 'vessel')?.text).toBe('VSL-02')
   })
   it('turns [E054] into [1], not [[1]]', () => {
     const { parts } = citeParts('Speed 13 kn [E054].')
     expect(parts.map((p) => p.text).join('')).toBe('Speed 13 kn [1].')
   })
   it('lists cited emails first, then uncited ones, tasks unnumbered, a linked vessel left out', () => {
-    const turn = { text: 'See E002 and VSL-12', details: null, sources: [src('E001'), src('E002'), src('VSL-12', 'vessel'), src('T9', 'task')] }
+    const turn = { text: 'See E002 and VSL-02', details: null, sources: [src('E001'), src('E002'), src('VSL-02', 'vessel'), src('T9', 'task')] }
     const refs = buildReferences(turn, citeParts(turn.text).cited)
     expect(refs.map((r) => [r.id, r.n])).toEqual([['E002', 1]]) // E001 and T9 are not cited anywhere
   })

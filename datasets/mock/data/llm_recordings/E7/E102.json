@@ -3,14 +3,14 @@
   {
    "action_type": "Arrange Survey",
    "for_event": "Survey Arrangement / Quotation",
-   "description": "Appoint the surveyor for vessel VSL-13 as requested by the correspondent.",
+   "description": "Appoint the surveyor for vessel VSL-03 as requested by the correspondent.",
    "due": null,
    "owner_role": ""
   },
   {
    "action_type": "Verify / Reconcile Report Data",
    "for_event": "Weather Routing / Speed & Consumption",
-   "description": "Obtain and verify the master's rain and weather log for the voyage of vessel VSL-13 as requested.",
+   "description": "Obtain and verify the master's rain and weather log for the voyage of vessel VSL-03 as requested.",
    "due": null,
    "owner_role": ""
   }

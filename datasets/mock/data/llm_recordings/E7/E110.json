@@ -3,14 +3,14 @@
   {
    "action_type": "Track Contractual Notice / Deadline",
    "for_event": "Notice of Readiness / Laytime / Demurrage",
-   "description": "Track the Notice of Readiness for vessel VSL-20 which arrived at QINGDAO on 2026-10-09 at 07:20 LT.",
+   "description": "Track the Notice of Readiness for vessel VSL-10 which arrived at QINGDAO on 2026-10-09 at 07:20 LT.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Update the vessel schedule for VSL-20 to reflect its arrival at QINGDAO on 2026-10-09 at 07:20 LT.",
+   "description": "Update the vessel schedule for VSL-10 to reflect its arrival at QINGDAO on 2026-10-09 at 07:20 LT.",
    "due": null,
    "owner_role": "Operations Officer"
   }

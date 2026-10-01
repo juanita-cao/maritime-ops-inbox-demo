@@ -9,7 +9,7 @@ from src.schemas import ParsedEmail, ThreadIndex, ThreadIndexEntry
 T0 = datetime(2026, 7, 30, 6, 0, tzinfo=timezone.utc)
 
 
-def email(email_id="E010", subject="RE: VSL-12 V202 redelivery", quoted=()) -> ParsedEmail:
+def email(email_id="E010", subject="RE: VSL-02 V202 redelivery", quoted=()) -> ParsedEmail:
     return ParsedEmail(
         email_id=email_id,
         subject=subject,
@@ -40,7 +40,7 @@ def index(*entries) -> ThreadIndex:
 
 def test_e2_s01_reply_joins_the_thread_of_the_same_subject():
     ref = e.e2_derive_thread_key(
-        email(), index(entry("E001", "T-E001", "VSL-12 V202 redelivery", vessel="VSL-12"))
+        email(), index(entry("E001", "T-E001", "VSL-02 V202 redelivery", vessel="VSL-02"))
     )
     assert ref.thread_id == "T-E001"
     assert ref.is_new_thread is False
@@ -50,8 +50,8 @@ def test_e2_s01_reply_joins_the_thread_of_the_same_subject():
 
 def test_e2_s02_new_subject_starts_a_new_thread():
     ref = e.e2_derive_thread_key(
-        email(subject="VSL-11 bunker survey"),
-        index(entry("E001", "T-E001", "VSL-12 V202 redelivery")),
+        email(subject="VSL-01 bunker survey"),
+        index(entry("E001", "T-E001", "VSL-02 V202 redelivery")),
     )
     assert ref.thread_id == "T-E010"
     assert ref.is_new_thread is True
@@ -66,28 +66,28 @@ def test_e2_s02_empty_index_starts_a_new_thread():
 
 def test_e2_s03_quoted_subject_joins_a_thread_with_another_subject():
     ref = e.e2_derive_thread_key(
-        email(subject="VSL-12 hire statement", quoted=["RE: VSL-12 V202 redelivery"]),
-        index(entry("E001", "T-E001", "VSL-12 V202 redelivery")),
+        email(subject="VSL-02 hire statement", quoted=["RE: VSL-02 V202 redelivery"]),
+        index(entry("E001", "T-E001", "VSL-02 V202 redelivery")),
     )
     assert ref.thread_id == "T-E001" and ref.is_new_thread is False
 
 
 def test_e2_s03_earlier_email_that_quoted_this_subject_is_linked():
     ref = e.e2_derive_thread_key(
-        email(subject="VSL-12 hire statement"),
-        index(entry("E001", "T-E001", "VSL-12 V202 redelivery", quoted=["VSL-12 hire statement"])),
+        email(subject="VSL-02 hire statement"),
+        index(entry("E001", "T-E001", "VSL-02 V202 redelivery", quoted=["VSL-02 hire statement"])),
     )
     assert ref.thread_id == "T-E001"
 
 
 def test_e2_s04_email_joining_two_threads_keeps_the_earliest_and_lists_the_other():
     ref = e.e2_derive_thread_key(
-        email(subject="VSL-12 hire statement", quoted=["VSL-12 V202 redelivery"]),
+        email(subject="VSL-02 hire statement", quoted=["VSL-02 V202 redelivery"]),
         index(
-            entry("E001", "T-E001", "VSL-12 V202 redelivery", hours=0),
-            entry("E003", "T-E001", "RE: VSL-12 V202 redelivery", hours=2),
-            entry("E002", "T-E002", "VSL-12 hire statement", hours=1),
-            entry("E009", "T-E009", "VSL-11 noon report", hours=3),
+            entry("E001", "T-E001", "VSL-02 V202 redelivery", hours=0),
+            entry("E003", "T-E001", "RE: VSL-02 V202 redelivery", hours=2),
+            entry("E002", "T-E002", "VSL-02 hire statement", hours=1),
+            entry("E009", "T-E009", "VSL-01 noon report", hours=3),
         ),
     )
     assert ref.thread_id == "T-E001"
@@ -97,10 +97,10 @@ def test_e2_s04_email_joining_two_threads_keeps_the_earliest_and_lists_the_other
 
 def test_e2_s04_same_first_time_is_broken_by_the_smaller_thread_id():
     ref = e.e2_derive_thread_key(
-        email(subject="VSL-12 hire statement", quoted=["VSL-12 V202 redelivery"]),
+        email(subject="VSL-02 hire statement", quoted=["VSL-02 V202 redelivery"]),
         index(
-            entry("E005", "T-E005", "VSL-12 hire statement", hours=0),
-            entry("E004", "T-E004", "VSL-12 V202 redelivery", hours=0),
+            entry("E005", "T-E005", "VSL-02 hire statement", hours=0),
+            entry("E004", "T-E004", "VSL-02 V202 redelivery", hours=0),
         ),
     )
     assert ref.thread_id == "T-E004" and ref.merged_thread_ids == ["T-E005"]
@@ -110,13 +110,13 @@ def test_e2_s05_hint_comes_from_the_latest_member_with_a_confirmed_vessel():
     ref = e.e2_derive_thread_key(
         email(),
         index(
-            entry("E001", "T-E001", "VSL-12 V202 redelivery", 0, vessel="VSL-11", voyage="V77"),
-            # the officer corrected E002 to VSL-12; the index holds the final value
-            entry("E002", "T-E001", "RE: VSL-12 V202 redelivery", 1, vessel="VSL-12"),
-            entry("E003", "T-E001", "RE: VSL-12 V202 redelivery", 2),
+            entry("E001", "T-E001", "VSL-02 V202 redelivery", 0, vessel="VSL-01", voyage="V77"),
+            # the officer corrected E002 to VSL-02; the index holds the final value
+            entry("E002", "T-E001", "RE: VSL-02 V202 redelivery", 1, vessel="VSL-02"),
+            entry("E003", "T-E001", "RE: VSL-02 V202 redelivery", 2),
         ),
     )
-    assert ref.thread_vessel == "VSL-12"
+    assert ref.thread_vessel == "VSL-02"
     assert ref.thread_voyage is None  # V77 belongs to another vessel, not mixed in
 
 
@@ -124,17 +124,17 @@ def test_e2_s05_voyage_hint_is_taken_from_a_member_with_the_same_vessel():
     ref = e.e2_derive_thread_key(
         email(),
         index(
-            entry("E001", "T-E001", "VSL-12 V202 redelivery", 0, vessel="VSL-12", voyage="V202"),
-            entry("E002", "T-E001", "RE: VSL-12 V202 redelivery", 1, vessel="VSL-12"),
+            entry("E001", "T-E001", "VSL-02 V202 redelivery", 0, vessel="VSL-02", voyage="V202"),
+            entry("E002", "T-E001", "RE: VSL-02 V202 redelivery", 1, vessel="VSL-02"),
         ),
     )
-    assert (ref.thread_vessel, ref.thread_voyage) == ("VSL-12", "V202")
+    assert (ref.thread_vessel, ref.thread_voyage) == ("VSL-02", "V202")
 
 
 def test_e2_s06_chinese_reply_prefix_joins_the_plain_subject():
     ref = e.e2_derive_thread_key(
-        email(subject="回复：转发: VSL-12 V202 Redelivery"),
-        index(entry("E001", "T-E001", "VSL-12 V202 redelivery")),
+        email(subject="回复：转发: VSL-02 V202 Redelivery"),
+        index(entry("E001", "T-E001", "VSL-02 V202 redelivery")),
     )
     assert ref.thread_id == "T-E001"
 
@@ -149,30 +149,30 @@ def test_e2_s07_empty_subject_without_quote_is_a_new_thread():
 
 def test_e2_s07_empty_quoted_subject_is_not_a_key():
     ref = e.e2_derive_thread_key(
-        email(subject="VSL-11 bunker survey", quoted=["", "Fw:"]),
+        email(subject="VSL-01 bunker survey", quoted=["", "Fw:"]),
         index(entry("E001", "T-E001", "", quoted=[""])),
     )
     assert ref.is_new_thread is True
 
 
 def test_e2_s01_spaces_around_punctuation_do_not_split_a_thread():
-    assert e.normalise_subject("M/V VSL-12// NOON REPORT 20260723") == e.normalise_subject(
-        "M/V VSL-12//noon report 20260723"
+    assert e.normalise_subject("M/V VSL-02// NOON REPORT 20260723") == e.normalise_subject(
+        "M/V VSL-02//noon report 20260723"
     )
     ref = e.e2_derive_thread_key(
-        email(subject="M/V VSL-12// NOON REPORT 20260723"),
-        index(entry("E001", "T-E001", "M/V VSL-12//noon report 20260723")),
+        email(subject="M/V VSL-02// NOON REPORT 20260723"),
+        index(entry("E001", "T-E001", "M/V VSL-02//noon report 20260723")),
     )
     assert ref.thread_id == "T-E001"
 
 
 def test_e2_s02_different_words_are_still_different_subjects():
-    assert e.normalise_subject("VSL-12 noon report") != e.normalise_subject("VSL-02noon report")
+    assert e.normalise_subject("VSL-02 noon report") != e.normalise_subject("VSL-02noon report")
 
 
 # --- review 2026-09-26: chronology with the current email, undated entries -------------
 
-SUBJ = "VSL-12 V202 redelivery"
+SUBJ = "VSL-02 V202 redelivery"
 
 
 def undated(email_id, thread_id, vessel=None, voyage=None):
@@ -218,30 +218,30 @@ def test_e2_s05_undated_conflicting_vessel_does_not_outrank_a_dated_one():
     ref = e.e2_derive_thread_key(
         email(),
         index(
-            entry("E001", "T-E001", SUBJ, 0, vessel="VSL-12"),
-            undated("E002", "T-E001", vessel="VSL-11"),
+            entry("E001", "T-E001", SUBJ, 0, vessel="VSL-02"),
+            undated("E002", "T-E001", vessel="VSL-01"),
         ),
     )
-    assert ref.thread_vessel == "VSL-12"
+    assert ref.thread_vessel == "VSL-02"
 
 
 def test_e2_s05_voyage_comes_from_an_older_dated_member_of_the_same_vessel():
     ref = e.e2_derive_thread_key(
         email(),
         index(
-            entry("E001", "T-E001", SUBJ, 0, vessel="VSL-12", voyage="V202"),
-            entry("E002", "T-E001", SUBJ, 5, vessel="VSL-12"),
-            undated("E003", "T-E001", vessel="VSL-11", voyage="V301"),
+            entry("E001", "T-E001", SUBJ, 0, vessel="VSL-02", voyage="V202"),
+            entry("E002", "T-E001", SUBJ, 5, vessel="VSL-02"),
+            undated("E003", "T-E001", vessel="VSL-01", voyage="V301"),
         ),
     )
-    assert (ref.thread_vessel, ref.thread_voyage) == ("VSL-12", "V202")
+    assert (ref.thread_vessel, ref.thread_voyage) == ("VSL-02", "V202")
 
 
 def test_e2_s05_only_undated_members_give_the_hint_as_a_fallback():
     ref = e.e2_derive_thread_key(
-        email(), index(undated("E002", "T-E001", vessel="VSL-11", voyage="V301"))
+        email(), index(undated("E002", "T-E001", vessel="VSL-01", voyage="V301"))
     )
-    assert (ref.thread_vessel, ref.thread_voyage) == ("VSL-11", "V301")
+    assert (ref.thread_vessel, ref.thread_voyage) == ("VSL-01", "V301")
 
 
 def test_e2_s04_characterization_same_generic_subject_joins_unrelated_threads():
@@ -250,12 +250,12 @@ def test_e2_s04_characterization_same_generic_subject_joins_unrelated_threads():
     ref = e.e2_derive_thread_key(
         email("E010", subject="Noon Report"),
         index(
-            entry("E001", "T-E001", "Noon Report", 0, vessel="VSL-11"),
-            entry("E002", "T-E002", "RE: noon report", 1, vessel="VSL-12"),
+            entry("E001", "T-E001", "Noon Report", 0, vessel="VSL-01"),
+            entry("E002", "T-E002", "RE: noon report", 1, vessel="VSL-02"),
         ),  # fmt: skip
     )
     assert ref.thread_id == "T-E001" and ref.merged_thread_ids == ["T-E002"]
-    assert ref.thread_vessel == "VSL-12"  # the hint then crosses the merged threads
+    assert ref.thread_vessel == "VSL-02"  # the hint then crosses the merged threads
 
 
 def test_e2_email_already_in_the_index_is_listed_once():

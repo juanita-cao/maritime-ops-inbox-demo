@@ -10,7 +10,7 @@
   {
    "action_type": "Reply / Confirm to Counterparty",
    "for_event": "Voyage Instructions / Port Nomination",
-   "description": "Confirm the laycan of 2026-10-20 to 2026-10-30 for the vessel VSL-15 at the ports of LINCOLN and KAOHSIUNG.",
+   "description": "Confirm the laycan of 2026-10-20 to 2026-10-30 for the vessel VSL-05 at the ports of LINCOLN and KAOHSIUNG.",
    "due": null,
    "owner_role": "Operations Officer"
   }

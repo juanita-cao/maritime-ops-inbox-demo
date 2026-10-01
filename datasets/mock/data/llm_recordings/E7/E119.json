@@ -3,21 +3,21 @@
   {
    "action_type": "Prepare Claim / Record Evidence",
    "for_event": "Claim",
-   "description": "Prepare a claim regarding the discrepancy of 280 mt between the weighbridge figure and the discharge draft survey for vessel VSL-13.",
+   "description": "Prepare a claim regarding the discrepancy of 280 mt between the weighbridge figure and the discharge draft survey for vessel VSL-03.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Verify / Reconcile Report Data",
    "for_event": "Discharging",
-   "description": "Verify and reconcile the load draft survey and discharge draft survey data for vessel VSL-13, noting the figures of 61,170 mt and 61,070 mt respectively.",
+   "description": "Verify and reconcile the load draft survey and discharge draft survey data for vessel VSL-03, noting the figures of 61,170 mt and 61,070 mt respectively.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Arrange Survey",
    "for_event": "Survey Arrangement / Quotation",
-   "description": "Arrange for a survey to assess the weighbridge calibration certificate requested from the receiver in relation to the discharge draft survey for vessel VSL-13.",
+   "description": "Arrange for a survey to assess the weighbridge calibration certificate requested from the receiver in relation to the discharge draft survey for vessel VSL-03.",
    "due": null,
    "owner_role": "Operations Officer"
   }

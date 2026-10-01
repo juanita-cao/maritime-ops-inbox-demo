@@ -1,6 +1,6 @@
 [
  {
-  "vessel": "VSL-11",
+  "vessel": "VSL-01",
   "scenario": "S02",
   "question": "Do the B/L, mate's receipt and LOI quantities for the Kamsar bauxite agree?",
   "answer": "No. The B/L and the mate's receipt both state 78,420 mt (14 Aug 2026), but the LOI covers 78,050 mt, which is the receiver's survey figure, a difference of 370 mt. The LOI is signed by the charterer only. The Qingdao outturn was 78,052 mt, in line with the receiver's survey.",
@@ -11,7 +11,7 @@
   ]
  },
  {
-  "vessel": "VSL-11",
+  "vessel": "VSL-01",
   "scenario": "S11",
   "question": "What off-hire is claimed for the V102 engine stoppage, and what has the operator accepted?",
   "answer": "The charterer claimed off-hire for the 6.0 h stoppage (10 Oct 02:10 to 08:10 LT, clause 17) plus a speed shortfall afterwards. The operator accepted the 6.0 h but disputes the speed part (warranty 12.0 kn, vessel regained 11.8 kn within 3 h, net loss at most 3.5 h) and asked for the speed log extract; the charterer agreed the 6.0 h and awaits the extract.",
@@ -22,9 +22,9 @@
   ]
  },
  {
-  "vessel": "VSL-11",
+  "vessel": "VSL-01",
   "scenario": "S01",
-  "question": "Can an underwater inspection or cleaning for VSL-11 be arranged during V102?",
+  "question": "Can an underwater inspection or cleaning for VSL-01 be arranged during V102?",
   "answer": "Not during V102 itself: the vessel is at sea from Port Hedland (sailed 8 Oct) to Rizhao (ETA 22 Oct, moved from 08:00 to 20:00 after the engine stoppage). The first realistic window is Rizhao anchorage after discharge: inspection only (in-water cleaning is not permitted in port limits), 3 working days' permit, quote USD 3,800. The alternative is an inspection at Newcastle anchorage by an approved diver booked by the P&I correspondent (USD 5,200). The charterer needs a report within 30 days before Newcastle arrival (laycan 20–30 Nov).",
   "evidence": [
    "E082",
@@ -33,7 +33,7 @@
   ]
  },
  {
-  "vessel": "VSL-11",
+  "vessel": "VSL-01",
   "scenario": "S17",
   "question": "What are the agreed terms for the V103 Newcastle coal fixture?",
   "answer": "Recap of 9 Oct 2026: freight USD 18.6 per mt (the counter offer was 19.2 and the enquiry 17.8), 79,500 mt thermal coal, Newcastle to Krishnapatnam, laycan 20–30 Nov 2026, demurrage USD 19,500 per day; the charterer asks for 10 days' notice of arrival.",
@@ -44,7 +44,7 @@
   ]
  },
  {
-  "vessel": "VSL-12",
+  "vessel": "VSL-02",
   "scenario": "S03",
   "question": "Who should bear the LSMGO consumed in the North Sea SECA on V201?",
   "answer": "Proposal for review: charterers. The 38.6 mt LSMGO (USD 31,266 at USD 810 per mt) was burned entering Rotterdam on the charterer's voyage orders; CP clause 12 puts all bunkers on charterers, clause 32 (the one the charterer cites) is silent on ECA fuel, and the recap does not shift it to owners. The charterer has not withdrawn the claim and will hold the amount from the next hire.",
@@ -55,7 +55,7 @@
   ]
  },
  {
-  "vessel": "VSL-12",
+  "vessel": "VSL-02",
   "scenario": "S13",
   "question": "Is the Rotterdam bunker delivery non-compliant on sulphur?",
   "answer": "Not on the evidence so far. The delivery note says 0.49%, the independent lab found 0.54% against the 0.50% limit with a stated test tolerance of 0.05, so 0.54 is within tolerance (0.55). The charterer calls it non-compliant and asks owners to de-bunker; the operator disagrees (bunkers were the charterers' supply, clause 12) and proposes a retest and a letter of protest to the supplier.",
@@ -65,9 +65,9 @@
   ]
  },
  {
-  "vessel": "VSL-12",
+  "vessel": "VSL-02",
   "scenario": "S04",
-  "question": "What hire deduction is disputed and when is the next hire due for VSL-12?",
+  "question": "What hire deduction is disputed and when is the next hire due for VSL-02?",
   "answer": "The charterer deducted 11.5 hours (USD 7,379.17 at USD 15,400 per day) for the Rotterdam berthing delay. The operator rejected it (valid certificate, berth occupied). On 11 Oct the charterer agreed to reinstate 7.5 hours (USD 4,812.50) but keeps 4.0 hours (USD 2,566.67). The next hire (statement no. 12, 16–31 Oct) is due 16 Oct; the separate SECA claim of USD 31,266 is still held and disputed.",
   "evidence": [
    "E069",
@@ -76,9 +76,9 @@
   ]
  },
  {
-  "vessel": "VSL-12",
+  "vessel": "VSL-02",
   "scenario": "S05",
-  "question": "What is the VSL-12 redelivery plan and what bunker figures apply?",
+  "question": "What is the VSL-02 redelivery plan and what bunker figures apply?",
   "answer": "Redelivery is on dropping outward pilot at Casablanca around 17 Oct 2026 (5 days' notice given 10 Oct). Bunkers on delivery were 905 mt VLSFO at USD 585; the charterer will buy the bunkers on redelivery at USD 598 per mt, estimated 318 mt VLSFO, after a joint on/off survey by Vanguard. The operator has asked for the 3-day and 2-day notices.",
   "evidence": [
    "E130",
@@ -87,7 +87,7 @@
   ]
  },
  {
-  "vessel": "VSL-13",
+  "vessel": "VSL-03",
   "scenario": "S18",
   "question": "What is the V301 cargo shortage claim and its position?",
   "answer": "The receiver claims a 410 mt shortage (0.67%, USD 100 per mt = USD 41,000) based on B/L 61,200 mt against the shore weighbridge outturn 60,790 mt, which is above the 0.5% CP tolerance. The 12-month time bar (clause 45) is running. The load draft survey was 61,170 mt and the discharge draft survey 61,070 mt, so the weighbridge is 280 mt below the discharge draft survey; the operator has asked the correspondent to request the weighbridge calibration certificate. No admission has been made.",
@@ -98,7 +98,7 @@
   ]
  },
  {
-  "vessel": "VSL-13",
+  "vessel": "VSL-03",
   "scenario": "S07",
   "question": "What is the position on the V301 hold no.4 wetting allegation?",
   "answer": "The receiver alleges seawater ingress in hold no.4 (moisture 11.2% at discharge against 9.0% at load, rights reserved, no amount claimed). The P&I correspondent advised not to comment to the receiver and to appoint Gulf of Kutch Marine Surveyors for a hatch cover hose test and coaming inspection (USD 2,950, planned 14 Oct); the master's rain and weather log is still needed.",
@@ -108,7 +108,7 @@
   ]
  },
  {
-  "vessel": "VSL-13",
+  "vessel": "VSL-03",
   "scenario": "S06",
   "question": "How much is the Richards Bay final DA and which lines are disputed?",
   "answer": "Invoice ZC-2291 was first issued at USD 31,870 and the reminder says USD 31,780; on 10 Oct the agent confirmed USD 31,780 (typing error in the first total). It includes a pre-loading survey (USD 1,800) and tallying (USD 2,150) ordered by the charterers' side, which the operator has asked to be allocated per the CP. The Aqaba CTM of USD 15,000 was delivered on 3 Oct with a USD 450 handling fee invoiced to owners.",
@@ -120,9 +120,9 @@
   ]
  },
  {
-  "vessel": "VSL-13",
+  "vessel": "VSL-03",
   "scenario": "S01",
-  "question": "Can an underwater inspection or cleaning be arranged for VSL-13 on V302?",
+  "question": "Can an underwater inspection or cleaning be arranged for VSL-03 on V302?",
   "answer": "Yes, but only at Paradip anchorage while waiting for a berth (expected wait about 3 days from the ETA of 21 Oct). The agent allows UWI and UWC at anchorage with 5 working days' notice, not during cargo operations: USD 7,400 for inspection and cleaning or USD 2,600 for inspection only. The charterer has no objection provided berthing is not delayed. Today is 12 Oct, so the permit request should go in now. The reason is a speed loss of about 1 kn at the same rpm.",
   "evidence": [
    "E146",
@@ -130,7 +130,7 @@
   ]
  },
  {
-  "vessel": "VSL-14",
+  "vessel": "VSL-04",
   "scenario": "S08",
   "question": "Is the charterer's V401 speed and consumption claim valid?",
   "answer": "Not on the figures so far. The charterer claims USD 21,500 using the whole-voyage averages (12.04 kn, 28.39 mt per day) against the warranty of 12.5 kn on 28.0 mt per day. The warranty applies in good weather only (wind up to force 4, sea up to 2 m): on the 6 good-weather noon reports the vessel averaged 12.45 kn and 27.6 mt per day, within the warranty. The two force-6 days drag the whole-voyage average down. The charterer will send an independent weather routing report; the claim stays open.",
@@ -140,7 +140,7 @@
   ]
  },
  {
-  "vessel": "VSL-15",
+  "vessel": "VSL-05",
   "scenario": "S09",
   "question": "What demurrage is claimed on V501 and why do the figures differ?",
   "answer": "Laytime allowed 124.8 hours (52,000 mt at 10,000 mt per day), used 160.0 hours from 14 Sep 14:00 to 21 Sep 06:00; demurrage USD 14,000 per day. The charterer excepts 18.0 hours of rain plus 2.0 hours shifting and gets 15.2 hours, USD 8,866.67. The SOF records only 11.0 hours of rain, so the operator's figure is 22.2 hours, USD 12,950.00. The charterer will check weather records; the CP time bar is 90 days from discharge.",
@@ -151,7 +151,7 @@
   ]
  },
  {
-  "vessel": "VSL-16",
+  "vessel": "VSL-06",
   "scenario": "S10",
   "question": "Who bears the time lost on the V602 hold re-cleaning?",
   "answer": "Holds 2 and 5 were rejected on 8 Oct (14:00) and passed on 10 Oct (02:00), 33.5 hours later (30 hours was the estimate). The charterer asks for the 33.5 hours as off-hire and the chemicals (USD 2,300) for owners. The operator's position: cleaning is at owners' expense under CP clause 28 but the time stays on hire, so owners pay the chemicals only. Not agreed yet; it needs OP and chartering review of clause 28.",
@@ -162,18 +162,18 @@
   ]
  },
  {
-  "vessel": "VSL-17",
+  "vessel": "VSL-07",
   "scenario": "S14",
-  "question": "How long will VSL-17 wait at Chittagong and whose time is it?",
+  "question": "How long will VSL-07 wait at Chittagong and whose time is it?",
   "answer": "NOR was tendered on 7 Oct 09:00 at the outer anchorage. The agent first expected a berth about 16 Oct and on 11 Oct moved it to 19 Oct (19 vessels waiting, a crane breakdown at the terminal). Under the CP the waiting for a berth is for charterers' account, as the operator reminded the charterer on 8 Oct; no alternative berth has been offered.",
   "evidence": [
    "E095"
   ]
  },
  {
-  "vessel": "VSL-18",
+  "vessel": "VSL-08",
   "scenario": "S15",
-  "question": "What happened on VSL-18 V801 with the medical case and who pays?",
+  "question": "What happened on VSL-08 V801 with the medical case and who pays?",
   "answer": "On 8 Oct an able seaman was landed at Benoa after medical advice (within 12 hours); deviation 6.5 hours (launch 15:30, resumed 17:40). The P&I correspondent states the hospital and repatriation costs are for the club. The operator told the charterer the time is not off-hire (saving life); the charterer keeps the right to claim and asked for the hospital certificate. A replacement is planned at Zhanjiang.",
   "evidence": [
    "E098",
@@ -182,7 +182,7 @@
   ]
  },
  {
-  "vessel": "VSL-19",
+  "vessel": "VSL-09",
   "scenario": "S16",
   "question": "Can owners consent to Altai Trade FZE as sub-charterer for V901?",
   "answer": "Not yet. The charterer asked for consent on 8 Oct (laycan 20–25 Oct) and wants an answer by 13 Oct, but sent only the incorporation certificate; the ownership chart is promised for 14 Oct. Screening found an 84% name match to a listed person that cannot be cleared without the ownership chart, so the recommendation is no consent until cleared (needs compliance sign-off).",
@@ -192,9 +192,9 @@
   ]
  },
  {
-  "vessel": "VSL-20",
+  "vessel": "VSL-10",
   "scenario": "S12",
-  "question": "What happened on the VSL-20 port state control inspection at Qingdao?",
+  "question": "What happened on the VSL-10 port state control inspection at Qingdao?",
   "answer": "The PSC inspection on 10 Oct found 3 deficiencies (oily water separator alarm, a seized fire damper, one emergency generator start failure) and detained the vessel from 15:30. Class attended and the detention was released at 08:20 on 12 Oct, after 40.8 hours. The charterer gave off-hire notice for the 40.8 hours on 12 Oct and asked for the inspection report and the class certificate.",
   "evidence": [
    "E135",

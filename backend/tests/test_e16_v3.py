@@ -42,7 +42,7 @@ def row(tid, priority, email, statuses=("Action Required",), awaiting_reply=Fals
     action = TaskAction(action_id=f"{tid}-A", task_id=tid, action_type="Check CP Terms", description=f"do {tid}",
                         priority=priority, due_type="Redelivery", due_date=date(2026, 8, 6), set_by="ai",
                         source_email_id=email, awaiting_reply=awaiting_reply)  # fmt: skip
-    return TaskRow(task_id=tid, vessel="VSL-12", voyage="V202", action=f"do {tid}", priority=priority,
+    return TaskRow(task_id=tid, vessel="VSL-02", voyage="V202", action=f"do {tid}", priority=priority,
                    statuses=list(statuses), source_email_id=email, actions=[action])  # fmt: skip
 
 
@@ -52,7 +52,7 @@ def context(extra_groups=()):
     return ChatContext(
         tasks=RankedTaskList(groups=groups),
         dues=DueList(store_status="ok"),
-        vessels=[VesselView(vessel_code="VSL-12")],
+        vessels=[VesselView(vessel_code="VSL-02")],
         review_queue=ReviewQueue(items=[], store_status="ok"),
         emails=[ChatEmail(email_id="E010", subject="REDEL NOTICE", sender="Charterer CPY-10", excerpt="x")],
     )  # fmt: skip
@@ -125,9 +125,9 @@ def test_vessel_fact_query_context_has_no_review_queue_or_emails_to_pad_with():
     emails — nothing irrelevant is available to cite, unlike legacy which always sent everything."""
     llm = FakeRouterAndGenerate(
         router_answer={"query_type": "VESSEL_FACT_QUERY", "reason": ""},
-        generate_answer={"text": "No current facts for VSL-12.", "sources": []},
+        generate_answer={"text": "No current facts for VSL-02.", "sources": []},
     )  # fmt: skip
-    ask("VSL-12现在什么情况", llm)
+    ask("VSL-02现在什么情况", llm)
     sent_context = llm.calls[1][2]["context"]
     assert set(sent_context.keys()) == {"vessels"}
 

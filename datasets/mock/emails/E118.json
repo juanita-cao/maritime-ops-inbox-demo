@@ -1,8 +1,8 @@
 {
  "email_id": "E118",
- "text": "From: mail01@cailanshippingagency.example\nSent: 2026-10-09 15:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@cavendishcementtrading.example\nSubject: VSL-19 CAI LAN - ETA NOTICE AND LOADING PLAN\n\nDear Colleagues,\n\nAgent: ETA 19 Oct, loading 20-22 Oct.\n\nBest regards,\nCai Lan Shipping Agency",
+ "text": "From: mail01@cailanshippingagency.example\nSent: 2026-10-09 15:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@cavendishcementtrading.example\nSubject: VSL-09 CAI LAN - ETA NOTICE AND LOADING PLAN\n\nDear Colleagues,\n\nAgent: ETA 19 Oct, loading 20-22 Oct.\n\nBest regards,\nCai Lan Shipping Agency",
  "event_id": "M19004",
- "vessel": "VSL-19",
+ "vessel": "VSL-09",
  "thread": "V901-cai",
  "scenario": null,
  "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"

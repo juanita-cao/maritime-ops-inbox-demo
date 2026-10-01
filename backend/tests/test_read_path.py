@@ -13,7 +13,7 @@ CST = timezone(timedelta(hours=8))
 NOW = datetime(2026, 8, 1, 0, 0, tzinfo=CST)
 
 
-def task(tid, statuses=("Action Required",), priority=3, due=None, status="open", vessel="VSL-12"):
+def task(tid, statuses=("Action Required",), priority=3, due=None, status="open", vessel="VSL-02"):
     actions = [TaskAction(action_id=f"{tid}-A", task_id=tid, action_type="Check CP Terms", description=f"do {tid}",
                           priority=priority, due_type="Redelivery", due_date=due, set_by="ai", source_email_id="E1")]  # fmt: skip
     return Task(task_id=tid, task_key=f"{vessel}|V202|{tid}", vessel_code=vessel, voyage_no="V202", action_type="Check CP Terms",
@@ -72,7 +72,7 @@ def test_d7_s06_s10_a_task_is_listed_in_each_of_its_groups():
 
 def test_d7_rows_carry_version_and_actions_for_the_update():
     row = r.d7_rank_open_tasks([task("T1")], NOW).groups[0].items[0]
-    assert (row.version, row.task_key, [a.action_id for a in row.actions]) == (1, "VSL-12|V202|T1", ["T1-A"])
+    assert (row.version, row.task_key, [a.action_id for a in row.actions]) == (1, "VSL-02|V202|T1", ["T1-A"])
 
 
 def test_d7_s08_same_deadline_higher_priority_first():
@@ -105,7 +105,7 @@ def test_e15_s05_store_unavailable_is_not_an_empty_list():
 
 def proposal(pid, statuses, email="E1", lane="needs_confirm", facts=()):
     return Proposal(proposal_id=pid, email_id=email, lane=Lane(lane=lane),
-                    vessel=VesselMatch(vessel_code="VSL-12", status="matched", tier="High", score=1.0),
+                    vessel=VesselMatch(vessel_code="VSL-02", status="matched", tier="High", score=1.0),
                     voyage=VoyageMatch(voyage_no="V202", basis="stated"),
                     event=EventDecision(event_type="Redelivery Notice", tier="High", unsure=False, is_report=False, sources_agree=True),
                     statuses=statuses, priority=3, task=TaskDisposition(kind="none"), actions=RankedActions(),
@@ -134,7 +134,7 @@ def test_e14_s03_store_unavailable():
 
 
 def fact(fid, key, value, hours, email):
-    return FactRecord(fact_id=fid, vessel_code="VSL-12", fact_key=key, value=value, event_time=NOW + timedelta(hours=hours),
+    return FactRecord(fact_id=fid, vessel_code="VSL-02", fact_key=key, value=value, event_time=NOW + timedelta(hours=hours),
                       event_time_basis="stated", sent_time=NOW + timedelta(hours=hours), source_email_id=email, version=1)  # fmt: skip
 
 
@@ -143,13 +143,13 @@ def test_e13_s01_s03_latest_is_current_older_kept_timeline_by_event_time():
         fact("F2", "eta:newcastle", "4 Aug", 5, "E2"),
         fact("F1", "eta:newcastle", "5 Aug", 0, "E1"),
     ]
-    view = r.e13_build_vessel_view("VSL-12", facts, [], [], NOW)
+    view = r.e13_build_vessel_view("VSL-02", facts, [], [], NOW)
     assert [(f.value, f.superseded) for f in view.facts] == [("5 Aug", True), ("4 Aug", False)]
     assert [t.email_id for t in view.timeline] == ["E1", "E2"]
 
 
 def test_e13_s02_vessel_with_no_facts_is_an_empty_view():
-    view = r.e13_build_vessel_view("VSL-11", [], [], [], NOW)
+    view = r.e13_build_vessel_view("VSL-01", [], [], [], NOW)
     assert (view.facts, view.timeline, view.open_tasks) == ([], [], [])
 
 
@@ -158,7 +158,7 @@ def test_e13_s04_list_fact_with_two_records_shows_both():
         fact("F1", "nor:dampier:1", "25 Jul 13:50", 0, "E1"),
         fact("F2", "nor:dampier:2", "26 Jul 08:00", 5, "E2"),
     ]
-    view = r.e13_build_vessel_view("VSL-12", facts, [], [], NOW)
+    view = r.e13_build_vessel_view("VSL-02", facts, [], [], NOW)
     assert [(f.fact_key, f.superseded) for f in view.facts] == [
         ("nor:dampier:1", False),
         ("nor:dampier:2", False),
@@ -171,7 +171,7 @@ def test_e13_open_tasks_and_auto_applied_rows_of_the_vessel():
     applied = [{"email_id": "E1", "proposal": proposal("P1", ["FYI - No Action"], lane="auto_apply", facts=[change]),
                 "sent_time": NOW, "status": "applied"}]  # fmt: skip
     view = r.e13_build_vessel_view(
-        "VSL-12", [], [task("T1"), task("T9", vessel="VSL-11")], applied, NOW
+        "VSL-02", [], [task("T1"), task("T9", vessel="VSL-01")], applied, NOW
     )
     assert [t.task_id for t in view.open_tasks] == ["T1"]
     assert [(a.email_id, a.fact_keys) for a in view.auto_applied] == [("E1", ["eta:newcastle"])]

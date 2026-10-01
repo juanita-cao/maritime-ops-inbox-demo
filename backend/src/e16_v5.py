@@ -49,7 +49,7 @@ _AUTHORITY = {
 }  # fmt: skip
 
 _CJK = re.compile(r"[一-鿿]")
-# Lookarounds, not \b: in Python a Chinese character is a word character, so "VSL-12船" has no \b.
+# Lookarounds, not \b: in Python a Chinese character is a word character, so "VSL-02船" has no \b.
 _VESSEL = re.compile(r"(?<![A-Za-z0-9])VSL-\d+(?!\d)", re.I)
 _EMAIL_ID = re.compile(r"(?<![A-Za-z0-9])E\d{3}(?!\d)")
 _REVIEW_LINE = re.compile(r"复核|审核|人工确认|review", re.I)
@@ -97,7 +97,7 @@ def tool_specs(event_types: list[str]) -> list[dict]:
                            "name, 'invoice', 'crane', 'anchorage', 'LOI'. Returns short views; call get_email to "
                            "read one in full.",
             "parameters": {"type": "object", "properties": {
-                "vessel": {"type": "string", "description": "e.g. VSL-12"},
+                "vessel": {"type": "string", "description": "e.g. VSL-02"},
                 "event_type": {"type": "string", "enum": event_types},
                 "status": {"type": "string", "enum": statuses},
                 "text": {"type": "string", "description": "keywords, all must appear"},
@@ -583,7 +583,7 @@ def _email_vessels(context: ChatContext, seen: list[dict]) -> dict[str, set[str]
 
 
 def _relevance_gate(sources: list[SourceRef], question: str, email_vessels: dict[str, set[str]]):
-    """§26 in code: an email cited for a question about VSL-12 that is itself only about VSL-11
+    """§26 in code: an email cited for a question about VSL-02 that is itself only about VSL-01
     does not support the claim. It is dropped from the sources and the answer is flagged."""
     asked = _question_vessels(question)
     if not asked:
@@ -759,7 +759,7 @@ _SHIPPING_SIGNAL = re.compile(
 
 def _router_guard(question: str) -> bool:
     """§36 target "deterministic SaaS query routed OUT_OF_SCOPE = 0%", enforced in code: the
-    router called "VSL-12装/卸货作业用船吊还是岸吊" out_of_scope on both frozen v5 runs."""
+    router called "VSL-02装/卸货作业用船吊还是岸吊" out_of_scope on both frozen v5 runs."""
     return bool(_SHIPPING_SIGNAL.search(question))
 
 

@@ -3,21 +3,21 @@
   {
    "action_type": "Arrange Survey",
    "for_event": "Survey Arrangement / Quotation",
-   "description": "Arrange for the surveyor to conduct the hatch cover hose test and inspection of hold no.4 coamings for VSL-13 at the next port on 2026-10-14.",
+   "description": "Arrange for the surveyor to conduct the hatch cover hose test and inspection of hold no.4 coamings for VSL-03 at the next port on 2026-10-14.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Review Quotation / Plan / Proposal",
    "for_event": "Survey Arrangement / Quotation",
-   "description": "Review the survey quote of USD 2,950 for the hatch cover hose test and inspection for VSL-13.",
+   "description": "Review the survey quote of USD 2,950 for the hatch cover hose test and inspection for VSL-03.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Seek Internal Approval",
    "for_event": "Survey Arrangement / Quotation",
-   "description": "Seek internal approval for the survey quote of USD 2,950 for VSL-13's hatch cover hose test and inspection.",
+   "description": "Seek internal approval for the survey quote of USD 2,950 for VSL-03's hatch cover hose test and inspection.",
    "due": null,
    "owner_role": "Operations Officer"
   }

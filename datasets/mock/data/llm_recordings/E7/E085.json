@@ -3,7 +3,7 @@
   {
    "action_type": "Check Hire / Invoice / Payment",
    "for_event": "Hire / SOA / Payment",
-   "description": "Verify the hire payment for vessel VSL-19 at the rate of 14,900 USD per day, with the next payment due on 2026-10-16.",
+   "description": "Verify the hire payment for vessel VSL-09 at the rate of 14,900 USD per day, with the next payment due on 2026-10-16.",
    "due": "2026-10-16",
    "owner_role": "Operations Officer"
   }

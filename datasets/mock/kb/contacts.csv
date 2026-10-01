@@ -5,7 +5,7 @@ mail01@bokecoast.example,CPY-04,port agent
 mail01@yellowgulf.example,CPY-05,port agent
 mail01@lanterncorr.example,CPY-06,P&I correspondent
 mail01@seacrestsurvey.example,CPY-07,surveyor
-mail01@vsl11.example,CPY-08,vessel mailbox
+mail01@vsl01.example,CPY-08,vessel mailbox
 mail01@pilbaramarine.example,CPY-09,port agent
 mail01@easternshore.example,CPY-10,port agent
 mail01@pinewoodstarshipping.example,CPY-101,owner
@@ -32,7 +32,7 @@ mail01@maasmond.example,CPY-24,port agent
 mail01@seinemaritime.example,CPY-25,port agent
 mail01@atlasport.example,CPY-26,port agent
 mail01@rhinebunker.example,CPY-27,service supplier
-mail01@vsl12.example,CPY-28,vessel mailbox
+mail01@vsl02.example,CPY-28,vessel mailbox
 mail01@vanguardsurvey.example,CPY-29,surveyor
 mail01@solanograin.example,CPY-31,charterer (head)
 mail01@kestrelharbor.example,CPY-41,owner
@@ -42,7 +42,7 @@ mail01@kutchgulf.example,CPY-44,port agent
 mail01@redseamaritime.example,CPY-45,port agent
 mail01@mahanadiagency.example,CPY-46,port agent
 mail01@anchorpoint.example,CPY-47,P&I correspondent
-mail01@vsl13.example,CPY-48,vessel mailbox
+mail01@vsl03.example,CPY-48,vessel mailbox
 mail01@kutchsurvey.example,CPY-49,surveyor
 mail01@mundrapower.example,CPY-50,receiver
 mail01@calderbulk.example,CPY-51,charterer (head)

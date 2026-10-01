@@ -10,7 +10,7 @@
   {
    "action_type": "Reply / Confirm to Counterparty",
    "for_event": "Voyage Instructions / Port Nomination",
-   "description": "Confirm the laycan of 2026-10-22 to 2026-10-28 for the vessel VSL-14 at the ports of KANDLA and MOMBASA.",
+   "description": "Confirm the laycan of 2026-10-22 to 2026-10-28 for the vessel VSL-04 at the ports of KANDLA and MOMBASA.",
    "due": null,
    "owner_role": "Operations Officer"
   },

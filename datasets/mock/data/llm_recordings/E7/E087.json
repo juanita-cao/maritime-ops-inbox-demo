@@ -10,7 +10,7 @@
   {
    "action_type": "Reply / Confirm to Counterparty",
    "for_event": "Voyage Instructions / Port Nomination",
-   "description": "Confirm the voyage details for vessel VSL-13, loading at Visakhapatnam and discharging at Chittagong, with a freight rate of USD 14.2 per mt.",
+   "description": "Confirm the voyage details for vessel VSL-03, loading at Visakhapatnam and discharging at Chittagong, with a freight rate of USD 14.2 per mt.",
    "due": null,
    "owner_role": "Operations Officer"
   }

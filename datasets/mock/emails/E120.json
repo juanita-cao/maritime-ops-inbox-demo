@@ -1,8 +1,8 @@
 {
  "email_id": "E120",
- "text": "From: mail01@hooghlyportagency.example\nSent: 2026-10-09 18:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@harlowfertilizertrading.example\nSubject: VSL-14 HALDIA DISCHARGE COMPLETED\n\nDear Colleagues,\n\nDischarge completed.\n\n- Outturn qty: 36,791 mt\n\nBest regards,\nHooghly Port Agency\n\n-----Original Message-----\nFrom: mail01@hooghlyportagency.example\nSent: 2026-10-05 08:40:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@harlowfertilizertrading.example\nSubject: VSL-14 HALDIA ARRIVAL REPORT\n\nDear Colleagues,\n\nArrival at Haldia pilot station.\n\n- Arrival haldia: 2026-10-05 08:30\n\nBest regards,\nHooghly Port Agency",
+ "text": "From: mail01@hooghlyportagency.example\nSent: 2026-10-09 18:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@harlowfertilizertrading.example\nSubject: VSL-04 HALDIA DISCHARGE COMPLETED\n\nDear Colleagues,\n\nDischarge completed.\n\n- Outturn qty: 36,791 mt\n\nBest regards,\nHooghly Port Agency\n\n-----Original Message-----\nFrom: mail01@hooghlyportagency.example\nSent: 2026-10-05 08:40:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@harlowfertilizertrading.example\nSubject: VSL-04 HALDIA ARRIVAL REPORT\n\nDear Colleagues,\n\nArrival at Haldia pilot station.\n\n- Arrival haldia: 2026-10-05 08:30\n\nBest regards,\nHooghly Port Agency",
  "event_id": "M14014",
- "vessel": "VSL-14",
+ "vessel": "VSL-04",
  "thread": "V401-hal",
  "scenario": null,
  "event_type": "Discharging"

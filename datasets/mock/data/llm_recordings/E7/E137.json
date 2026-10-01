@@ -3,14 +3,14 @@
   {
    "action_type": "Collect / Chase Documents",
    "for_event": "Inspection / Vetting / PSC",
-   "description": "Chase the necessary documents for class attendance for vessel VSL-20 related to voyage V1001 by tomorrow.",
+   "description": "Chase the necessary documents for class attendance for vessel VSL-10 related to voyage V1001 by tomorrow.",
    "due": "2026-10-11",
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Notify Party (Agent / P&I / Manager)",
    "for_event": "P&I / Insurance",
-   "description": "Notify the P&I correspondent about the class attendance request for vessel VSL-20.",
+   "description": "Notify the P&I correspondent about the class attendance request for vessel VSL-10.",
    "due": null,
    "owner_role": "Operations Officer"
   }

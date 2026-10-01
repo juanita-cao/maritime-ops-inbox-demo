@@ -3,14 +3,14 @@
   {
    "action_type": "Collect / Chase Documents",
    "for_event": "Inspection / Vetting / PSC",
-   "description": "Collect the in-water inspection report for VSL-11 from the last 30 days or arrange for an inspection at Newcastle anchorage by an approved diver as mentioned by the Newcastle correspondent.",
+   "description": "Collect the in-water inspection report for VSL-01 from the last 30 days or arrange for an inspection at Newcastle anchorage by an approved diver as mentioned by the Newcastle correspondent.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Notify Party (Agent / P&I / Manager)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Notify the relevant parties about the alternative inspection options available for VSL-11 at Newcastle anchorage, including the quote of 5200 USD for the diver.",
+   "description": "Notify the relevant parties about the alternative inspection options available for VSL-01 at Newcastle anchorage, including the quote of 5200 USD for the diver.",
    "due": null,
    "owner_role": "Operations Officer"
   }

@@ -8,7 +8,7 @@
   {
    "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)",
    "confidence": 0.8,
-   "quote": "Arrival report, VSL-20, V1001"
+   "quote": "Arrival report, VSL-10, V1001"
   },
   {
    "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",

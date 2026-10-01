@@ -45,7 +45,7 @@ def row(tid, priority, email):
     action = TaskAction(action_id=f"{tid}-A", task_id=tid, action_type="Check CP Terms", description=f"do {tid}",
                         priority=priority, due_type="Redelivery", due_date=date(2026, 8, 6), set_by="ai",
                         source_email_id=email)  # fmt: skip
-    return TaskRow(task_id=tid, vessel="VSL-12", voyage="V202", action=f"do {tid}", priority=priority,
+    return TaskRow(task_id=tid, vessel="VSL-02", voyage="V202", action=f"do {tid}", priority=priority,
                    statuses=["Action Required"], source_email_id=email, actions=[action])  # fmt: skip
 
 
@@ -53,7 +53,7 @@ def context():
     return ChatContext(
         tasks=RankedTaskList(groups=[TaskGroup(name="Action Required", items=[row("T1", 5, "E010")])]),
         dues=DueList(store_status="ok"),
-        vessels=[VesselView(vessel_code="VSL-12")],
+        vessels=[VesselView(vessel_code="VSL-02")],
         review_queue=ReviewQueue(items=[], store_status="ok"),
         emails=[ChatEmail(email_id="E010", subject="REDEL NOTICE", sender="Charterer CPY-10", excerpt="x")],
     )  # fmt: skip

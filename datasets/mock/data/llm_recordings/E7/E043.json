@@ -3,14 +3,14 @@
   {
    "action_type": "Track Contractual Notice / Deadline",
    "for_event": "Notice of Readiness / Laytime / Demurrage",
-   "description": "Track the demurrage calculation for VSL-15, noting the excess of 15.2 hours and the total demurrage amount of USD 8,866.67.",
+   "description": "Track the demurrage calculation for VSL-05, noting the excess of 15.2 hours and the total demurrage amount of USD 8,866.67.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Check Hire / Invoice / Payment",
    "for_event": "Hire / SOA / Payment",
-   "description": "Check the invoice related to the demurrage charge of USD 8,866.67 for VSL-15 to ensure it aligns with the charterer's calculations.",
+   "description": "Check the invoice related to the demurrage charge of USD 8,866.67 for VSL-05 to ensure it aligns with the charterer's calculations.",
    "due": null,
    "owner_role": "Finance Officer"
   }

@@ -1,8 +1,8 @@
 {
  "email_id": "E072",
- "text": "From: mail01@vsl13.example\nSent: 2026-10-04 12:10:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@redseamaritime.example\nSubject: VSL-13 / V302 SAILING REPORT AQABA\n\nGood day,\n\nSailing report, VSL-13, V302.\nDd: 4 Oct 2026\nSailed at 12:10 LT.\nCargo on board: 55300 mt\nSailing Draft: F 12.55 m / A 12.95 m\nROB: VLSFO 1102.8 mt, LSMGO 60.0 mt\nETA: 2026-10-21 14:00 LT\n\nBest regards,\nMaster MV Kestrel Harbor",
+ "text": "From: mail01@vsl03.example\nSent: 2026-10-04 12:10:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@redseamaritime.example\nSubject: VSL-03 / V302 SAILING REPORT AQABA\n\nGood day,\n\nSailing report, VSL-03, V302.\nDd: 4 Oct 2026\nSailed at 12:10 LT.\nCargo on board: 55300 mt\nSailing Draft: F 12.55 m / A 12.95 m\nROB: VLSFO 1102.8 mt, LSMGO 60.0 mt\nETA: 2026-10-21 14:00 LT\n\nBest regards,\nMaster MV Kestrel Harbor",
  "event_id": "M13017",
- "vessel": "VSL-13",
+ "vessel": "VSL-03",
  "thread": "V302-sail",
  "scenario": null,
  "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"

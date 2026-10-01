@@ -11,7 +11,7 @@ from src.schemas import (
 
 CST = timezone(timedelta(hours=8))
 SENT = datetime(2026, 7, 30, 10, 0, tzinfo=CST)
-VESSEL = VesselMatch(vessel_code="VSL-12", status="matched", tier="High", score=1.0)
+VESSEL = VesselMatch(vessel_code="VSL-02", status="matched", tier="High", score=1.0)
 VOYAGE = VoyageMatch(voyage_no="V202", basis="stated")
 EVENT = EventDecision(event_type="Vessel Schedule Update (ETA/ETB/ETD)", tier="High", unsure=False,
                       is_report=False, sources_agree=True)  # fmt: skip
@@ -23,7 +23,7 @@ def ev(quote):
 
 
 def mail():
-    return ParsedEmail(email_id="E010", subject="VSL-12 ETA", subject_norm="vsl-12 eta", sent_time=SENT,
+    return ParsedEmail(email_id="E010", subject="VSL-02 ETA", subject_norm="vsl-02 eta", sent_time=SENT,
                        direction="Inbound", sender="x@CPY-05.example", new_text="text")  # fmt: skip
 
 
@@ -33,7 +33,7 @@ def ents(dates=(), quantities=(), ports=(), references=()):
 
 
 def fact(key, value, hours=0, version=1):
-    return FactRecord(fact_id=f"F{version}", vessel_code="VSL-12", fact_key=key, value=value,
+    return FactRecord(fact_id=f"F{version}", vessel_code="VSL-02", fact_key=key, value=value,
                       event_time=SENT + timedelta(hours=hours), event_time_basis="email_sent_time",
                       sent_time=SENT + timedelta(hours=hours), source_email_id="E001", version=version)  # fmt: skip
 

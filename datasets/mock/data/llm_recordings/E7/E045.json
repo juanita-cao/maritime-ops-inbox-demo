@@ -3,7 +3,7 @@
   {
    "action_type": "Prepare Claim / Record Evidence",
    "for_event": "Claim",
-   "description": "Prepare a claim regarding the moisture issue for coal from hold no. 4 on VSL-13, documenting the discharge moisture of 11.2% against the load moisture of 9.0%.",
+   "description": "Prepare a claim regarding the moisture issue for coal from hold no. 4 on VSL-03, documenting the discharge moisture of 11.2% against the load moisture of 9.0%.",
    "due": null,
    "owner_role": "Operations Officer"
   },

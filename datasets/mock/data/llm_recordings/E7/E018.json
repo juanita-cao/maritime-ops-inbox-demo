@@ -3,14 +3,14 @@
   {
    "action_type": "Track Contractual Notice / Deadline",
    "for_event": "Notice of Readiness / Laytime / Demurrage",
-   "description": "Track the NOR tendered for VSL-15 at KAOHSIUNG on 2026-09-14 at 08:00 and ensure laytime commences as per the contract.",
+   "description": "Track the NOR tendered for VSL-05 at KAOHSIUNG on 2026-09-14 at 08:00 and ensure laytime commences as per the contract.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Update the vessel schedule for VSL-15 to reflect the NOR tendered at KAOHSIUNG on 2026-09-14 and the laytime commencement at 14:00.",
+   "description": "Update the vessel schedule for VSL-05 to reflect the NOR tendered at KAOHSIUNG on 2026-09-14 and the laytime commencement at 14:00.",
    "due": null,
    "owner_role": "Operations Officer"
   }

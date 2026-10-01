@@ -3,7 +3,7 @@
  "cases": [
   {
    "id": "S01",
-   "question": "VSL-11 能不能在这个航次内安排水下检查或清洗？",
+   "question": "VSL-01 能不能在这个航次内安排水下检查或清洗？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "playbook": "uwi-uwc-arrangement",
@@ -26,7 +26,7 @@
   },
   {
    "id": "S02",
-   "question": "核对 VSL-11 在 Kamsar 装的铝矾土的 B/L、大副收据和 LOI，数量一致吗？",
+   "question": "核对 VSL-01 在 Kamsar 装的铝矾土的 B/L、大副收据和 LOI，数量一致吗？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "playbook": "document-crosscheck",
@@ -50,7 +50,7 @@
   },
   {
    "id": "S03",
-   "question": "VSL-12 在北海 ECA 烧的低硫油费用应该谁承担？",
+   "question": "VSL-02 在北海 ECA 烧的低硫油费用应该谁承担？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "contains_any": [
@@ -73,7 +73,7 @@
   },
   {
    "id": "S04",
-   "question": "VSL-12 的租金下一次什么时候到期？有没有被扣？",
+   "question": "VSL-02 的租金下一次什么时候到期？有没有被扣？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "playbook": "hire-next-due",
@@ -95,7 +95,7 @@
   },
   {
    "id": "S05",
-   "question": "VSL-12 的还船通知和还船油量怎么安排？",
+   "question": "VSL-02 的还船通知和还船油量怎么安排？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "contains_any": [
@@ -114,7 +114,7 @@
   },
   {
    "id": "S06",
-   "question": "VSL-13 在 Richards Bay 的最终 DA 是多少？哪些费用有争议？",
+   "question": "VSL-03 在 Richards Bay 的最终 DA 是多少？哪些费用有争议？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "contains_any": [
@@ -136,7 +136,7 @@
   },
   {
    "id": "S07",
-   "question": "VSL-13 货舱进水的索赔现在什么情况？",
+   "question": "VSL-03 货舱进水的索赔现在什么情况？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "contains_any": [
@@ -160,7 +160,7 @@
   },
   {
    "id": "S08",
-   "question": "VSL-14 租家的航速油耗索赔成立吗？",
+   "question": "VSL-04 租家的航速油耗索赔成立吗？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "contains_any": [
@@ -180,7 +180,7 @@
   },
   {
    "id": "S09",
-   "question": "VSL-15 的滞期费双方各自怎么算？",
+   "question": "VSL-05 的滞期费双方各自怎么算？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "contains_any": [
@@ -198,7 +198,7 @@
   },
   {
    "id": "S10",
-   "question": "VSL-16 清舱重验耽误的时间谁承担？",
+   "question": "VSL-06 清舱重验耽误的时间谁承担？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "contains_any": [
@@ -217,7 +217,7 @@
   },
   {
    "id": "S11",
-   "question": "VSL-11 主机停车的停租怎么算？",
+   "question": "VSL-01 主机停车的停租怎么算？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "contains_any": [
@@ -237,7 +237,7 @@
   },
   {
    "id": "S12",
-   "question": "VSL-20 在青岛 PSC 滞留是怎么回事？",
+   "question": "VSL-10 在青岛 PSC 滞留是怎么回事？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "contains_any": [
@@ -257,7 +257,7 @@
   },
   {
    "id": "S13",
-   "question": "VSL-12 在鹿特丹加的油硫含量超标吗？",
+   "question": "VSL-02 在鹿特丹加的油硫含量超标吗？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "contains_any": [
@@ -275,7 +275,7 @@
   },
   {
    "id": "S14",
-   "question": "VSL-17 在 Chittagong 要等多久，谁的时间？",
+   "question": "VSL-07 在 Chittagong 要等多久，谁的时间？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "contains_any": [
@@ -295,7 +295,7 @@
   },
   {
    "id": "S15",
-   "question": "VSL-18 的医疗送医情况和费用谁出？",
+   "question": "VSL-08 的医疗送医情况和费用谁出？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "contains_any": [
@@ -311,7 +311,7 @@
   },
   {
    "id": "S16",
-   "question": "VSL-19 能不能同意转租给 Altai Trade FZE？",
+   "question": "VSL-09 能不能同意转租给 Altai Trade FZE？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "contains_any": [
@@ -335,7 +335,7 @@
   },
   {
    "id": "S17",
-   "question": "VSL-11 下一个航次 Newcastle 煤炭的成交条件是什么？",
+   "question": "VSL-01 下一个航次 Newcastle 煤炭的成交条件是什么？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "contains_any": [
@@ -352,7 +352,7 @@
   },
   {
    "id": "S18",
-   "question": "VSL-13 在 Mundra 的货差索赔是什么情况？",
+   "question": "VSL-03 在 Mundra 的货差索赔是什么情况？",
    "note": "ground truth in datasets/mock/truths.json",
    "checks": {
     "contains_any": [
@@ -370,7 +370,7 @@
   },
   {
    "id": "W1-weather",
-   "question": "VSL-12 这几天的风浪",
+   "question": "VSL-02 这几天的风浪",
    "note": "",
    "checks": {
     "mode": [
@@ -384,7 +384,7 @@
   },
   {
    "id": "D1-draft",
-   "question": "VSL-13 现在吃水多少",
+   "question": "VSL-03 现在吃水多少",
    "note": "",
    "checks": {
     "mode": [
@@ -432,7 +432,7 @@
   },
   {
    "id": "N1-no-data",
-   "question": "VSL-14 的船员名单是什么",
+   "question": "VSL-04 的船员名单是什么",
    "note": "",
    "checks": {
     "contains_any": [

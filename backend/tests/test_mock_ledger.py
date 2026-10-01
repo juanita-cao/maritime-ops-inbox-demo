@@ -14,7 +14,7 @@ RPT = TYPES and "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
 
 
 def ledger(events, **over):
-    base = dict(vessel="VSL-11", parties=[Party(code="OPR-01", name="Op", role="operator", domain="op.example"),
+    base = dict(vessel="VSL-01", parties=[Party(code="OPR-01", name="Op", role="operator", domain="op.example"),
                                           Party(code="CPY-01", name="Ch", role="charterer", domain="ch.example")],
                 voyages=[Voyage(no="V101", status="in_progress", cp_ref="CP1", load_port="A", disch_port="B", cargo="x", qty_mt=1,
                                 sailed="2026-10-01T10:00:00+08:00", eta="2026-10-09T10:00:00+08:00")], events=events)
@@ -74,10 +74,10 @@ def _types():
 
 
 def _deep():
-    from mockdata import vsl11, vsl12, vsl13
+    from mockdata import vsl01, vsl02, vsl03
 
-    return {"VSL-11": (vsl11.build(), {"S01", "S02", "S11", "S17"}), "VSL-12": (vsl12.build(), {"S03", "S04", "S05", "S13"}),
-            "VSL-13": (vsl13.build(), {"S01", "S06", "S07", "S18"})}
+    return {"VSL-01": (vsl01.build(), {"S01", "S02", "S11", "S17"}), "VSL-02": (vsl02.build(), {"S03", "S04", "S05", "S13"}),
+            "VSL-03": (vsl03.build(), {"S01", "S06", "S07", "S18"})}
 
 
 def test_the_deep_vessels_expand_to_consistent_ledgers_with_their_planned_scenarios_and_no_future_email():
@@ -108,7 +108,7 @@ def test_across_the_fleet_ids_are_unique_and_a_party_code_always_means_the_same_
 def test_the_medium_and_light_vessels_are_consistent_and_each_carries_its_one_scenario():
     from mockdata import minor
 
-    plan = {"VSL-14": ("S08", 12, 20), "VSL-15": ("S09", 12, 20), "VSL-16": ("S10", 12, 20), "VSL-17": ("S14", 6, 11), "VSL-18": ("S15", 6, 11), "VSL-19": ("S16", 6, 11), "VSL-20": ("S12", 6, 11)}
+    plan = {"VSL-04": ("S08", 12, 20), "VSL-05": ("S09", 12, 20), "VSL-06": ("S10", 12, 20), "VSL-07": ("S14", 6, 11), "VSL-08": ("S15", 6, 11), "VSL-09": ("S16", 6, 11), "VSL-10": ("S12", 6, 11)}
     for code, build in minor.ALL.items():
         lg = build()
         scenario, low, high = plan[code]

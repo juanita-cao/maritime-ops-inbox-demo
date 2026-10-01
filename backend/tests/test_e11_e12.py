@@ -15,7 +15,7 @@ from src.schemas import (
 
 CST = timezone(timedelta(hours=8))
 AT = datetime(2026, 7, 30, 12, 0, tzinfo=CST)
-KEY = "VSL-12|V202|redelivery"
+KEY = "VSL-02|V202|redelivery"
 
 
 def ranked(*types, priority=3):
@@ -41,7 +41,7 @@ def proposal(
     actions = actions if actions is not None else ranked("Check CP Terms")
     return Proposal(
         proposal_id=pid, email_id=email_id, lane=Lane(lane=lane),
-        vessel=VesselMatch(vessel_code="VSL-12", status="matched", tier="High", score=1.0),
+        vessel=VesselMatch(vessel_code="VSL-02", status="matched", tier="High", score=1.0),
         voyage=VoyageMatch(voyage_no="V202", basis="stated"),
         event=EventDecision(event_type="Redelivery Notice", tier="High", unsure=False, is_report=False, sources_agree=True),
         statuses=["Close"] if task.kind == "close_proposal" else ["Action Required"],
@@ -138,7 +138,7 @@ def test_e11_s04_s05_s16_auto_facts_in_either_order_give_the_same_current_value(
                 ).status
                 == "applied"
             )
-        values.append(store.current_facts("VSL-12")["eta:newcastle"].value)
+        values.append(store.current_facts("VSL-02")["eta:newcastle"].value)
         store.close()
     assert values == ["4 Aug", "4 Aug"]
 
@@ -192,7 +192,7 @@ def test_e11_s07_failure_in_the_middle_rolls_back_and_keeps_the_proposal_open(db
     monkeypatch.setattr(st.Tx, "add_task_history", broken)
     result = a.e11_apply_changes("P1", approve(), db)
     assert result.status == "rolled_back"
-    assert db.get_proposal("P1").status == "open" and db.open_tasks("VSL-12", "V202") == []
+    assert db.get_proposal("P1").status == "open" and db.open_tasks("VSL-02", "V202") == []
 
 
 def test_e11_s08_undo_restores_the_previous_version_in_history(db):
@@ -257,7 +257,7 @@ def test_e11_s17_undo_of_an_automatic_fact_retracts_it(db):
     a.e11_apply_changes("P1", Decision(kind="auto", actor="system", decided_at=AT), db)
     second = a.e11_apply_changes("P2", Decision(kind="auto", actor="system", decided_at=AT), db)
     assert a.e11_undo(second.undo_token, db, "officer", AT).status == "applied"
-    assert db.current_facts("VSL-12")["eta:newcastle"].value == "5 Aug"
+    assert db.current_facts("VSL-02")["eta:newcastle"].value == "5 Aug"
 
 
 def test_e11_s18_s25_manual_change_of_an_action_priority(db):

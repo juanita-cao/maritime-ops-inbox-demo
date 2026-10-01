@@ -1,8 +1,8 @@
 {
  "email_id": "E142",
- "text": "From: mail01@paranariveragency.example\nSent: 2026-10-11 12:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@rioplatagrainexports.example\nSubject: VSL-16 ROSARIO - LOADING COMMENCED\n\nDear Colleagues,\n\nBerthed 10 Oct 08:00, loading started 10 Oct 12:00, 68,000 mt wheat, completion about 14 Oct.\n\n- Cargo qty: 68,000 mt\n\nBest regards,\nParana River Agency",
+ "text": "From: mail01@paranariveragency.example\nSent: 2026-10-11 12:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@rioplatagrainexports.example\nSubject: VSL-06 ROSARIO - LOADING COMMENCED\n\nDear Colleagues,\n\nBerthed 10 Oct 08:00, loading started 10 Oct 12:00, 68,000 mt wheat, completion about 14 Oct.\n\n- Cargo qty: 68,000 mt\n\nBest regards,\nParana River Agency",
  "event_id": "M16012",
- "vessel": "VSL-16",
+ "vessel": "VSL-06",
  "thread": "V602-load",
  "scenario": null,
  "event_type": "Loading / Cargo Operations"

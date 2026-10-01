@@ -1,8 +1,8 @@
 {
  "email_id": "E097",
- "text": "From: mail01@vsl11.example\nSent: 2026-10-08 05:10:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@pilbaramarine.example\nSubject: VSL-11 / V102 SAILING REPORT PORT HEDLAND\n\nGood day,\n\nSailing report, VSL-11, V102.\nDd: 8 Oct 2026\nSailed at 05:10 LT.\nCargo on board: 81000 mt\nSailing Draft: F 14.02 m / A 14.35 m\nROB: VLSFO 1368.4 mt, LSMGO 60.0 mt\nETA: 2026-10-22 08:00 LT\n\nBest regards,\nMaster MV Aurelia Bay",
+ "text": "From: mail01@vsl01.example\nSent: 2026-10-08 05:10:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@pilbaramarine.example\nSubject: VSL-01 / V102 SAILING REPORT PORT HEDLAND\n\nGood day,\n\nSailing report, VSL-01, V102.\nDd: 8 Oct 2026\nSailed at 05:10 LT.\nCargo on board: 81000 mt\nSailing Draft: F 14.02 m / A 14.35 m\nROB: VLSFO 1368.4 mt, LSMGO 60.0 mt\nETA: 2026-10-22 08:00 LT\n\nBest regards,\nMaster MV Aurelia Bay",
  "event_id": "M11016",
- "vessel": "VSL-11",
+ "vessel": "VSL-01",
  "thread": "V102-sail",
  "scenario": null,
  "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"

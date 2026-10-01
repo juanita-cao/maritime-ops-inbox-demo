@@ -1,8 +1,8 @@
 {
  "email_id": "E130",
- "text": "From: mail01@brannock.example\nSent: 2026-10-10 13:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@lindenmaritime.example\nSubject: VSL-12 - REDELIVERY NOTICE (5 DAYS APPROX)\n\nDear Colleagues,\n\n5 days approximate notice: redelivery on dropping outward pilot Casablanca about 17 Oct 2026, bunkers on redelivery per CP.\n\n- Redelivery place: Casablanca\n- Redelivery date est: 2026-10-17\n- Notice: 5 days\n\nBest regards,\nBrannock Agri Trading",
+ "text": "From: mail01@brannock.example\nSent: 2026-10-10 13:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@lindenmaritime.example\nSubject: VSL-02 - REDELIVERY NOTICE (5 DAYS APPROX)\n\nDear Colleagues,\n\n5 days approximate notice: redelivery on dropping outward pilot Casablanca about 17 Oct 2026, bunkers on redelivery per CP.\n\n- Redelivery place: Casablanca\n- Redelivery date est: 2026-10-17\n- Notice: 5 days\n\nBest regards,\nBrannock Agri Trading",
  "event_id": "M12025",
- "vessel": "VSL-12",
+ "vessel": "VSL-02",
  "thread": "V202-redel",
  "scenario": "S05",
  "event_type": "Redelivery Notice"

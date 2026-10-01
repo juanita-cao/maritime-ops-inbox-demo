@@ -1,8 +1,8 @@
 {
  "email_id": "E007",
- "text": "From: mail01@vsl12.example\nSent: 2026-09-01 18:50:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@atlanticsul.example\nSubject: VSL-12 / V201 SAILING REPORT PARANAGUA\n\nGood day,\n\nSailing report, VSL-12, V201.\nDd: 1 Sep 2026\nSailed at 18:50 LT.\nCargo on board: 52300 mt\nSailing Draft: F 12.20 m / A 12.65 m\nROB: VLSFO 902.4 mt, LSMGO 161.8 mt\n\nBest regards,\nMaster MV Northern Linden",
+ "text": "From: mail01@vsl02.example\nSent: 2026-09-01 18:50:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@atlanticsul.example\nSubject: VSL-02 / V201 SAILING REPORT PARANAGUA\n\nGood day,\n\nSailing report, VSL-02, V201.\nDd: 1 Sep 2026\nSailed at 18:50 LT.\nCargo on board: 52300 mt\nSailing Draft: F 12.20 m / A 12.65 m\nROB: VLSFO 902.4 mt, LSMGO 161.8 mt\n\nBest regards,\nMaster MV Northern Linden",
  "event_id": "M12002",
- "vessel": "VSL-12",
+ "vessel": "VSL-02",
  "thread": "V201-sail",
  "scenario": null,
  "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"

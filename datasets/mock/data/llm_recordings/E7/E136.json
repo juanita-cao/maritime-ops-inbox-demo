@@ -3,7 +3,7 @@
   {
    "action_type": "Prepare Claim / Record Evidence",
    "for_event": "Off-hire",
-   "description": "Prepare a claim for the off-hire of VSL-11 for 6.0 hours as per clause 17, documenting the details of the stoppage and speed shortfall.",
+   "description": "Prepare a claim for the off-hire of VSL-01 for 6.0 hours as per clause 17, documenting the details of the stoppage and speed shortfall.",
    "due": null,
    "owner_role": "Operations Officer"
   },

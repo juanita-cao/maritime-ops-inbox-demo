@@ -45,14 +45,14 @@ class FakeLlm:
 def context():
     action = TaskAction(action_id="T1-A", task_id="T1", action_type="Check CP Terms", description="do T1", priority=3,
                         due_type="Hire", due_date=date(2026, 8, 6), set_by="ai", source_email_id="E054")  # fmt: skip
-    row = TaskRow(task_id="T1", vessel="VSL-12", voyage="V203", action="Get survey quotation", priority=3,
+    row = TaskRow(task_id="T1", vessel="VSL-02", voyage="V203", action="Get survey quotation", priority=3,
                   statuses=["Approval Required"], source_email_id="E054", actions=[action])  # fmt: skip
     fact = FactRow(fact_key="rob_vlsfo", value="451.024 MT", event_time=NOW, source_email_id="E053", superseded=False)
     return ChatContext(
         tasks=RankedTaskList(groups=[TaskGroup(name="Approval Required", items=[row])]),
-        dues=DueList(store_status="ok"), vessels=[VesselView(vessel_code="VSL-12", facts=[fact])],
+        dues=DueList(store_status="ok"), vessels=[VesselView(vessel_code="VSL-02", facts=[fact])],
         review_queue=ReviewQueue(items=[], store_status="ok"),
-        emails=[ChatEmail(email_id="E046", subject="M/V VSL-12//ROB", sender="Master",
+        emails=[ChatEmail(email_id="E046", subject="M/V VSL-02//ROB", sender="Master",
                           excerpt="Arrival Discharge Port Distance 1400nm including 80nm ECA")],
     )  # fmt: skip
 
@@ -120,7 +120,7 @@ def test_proposal_conclusion_in_answer_full_contract_in_details():
 def test_grounding_check_flags_numbers_not_in_anything_read():
     llm = FakeLlm(routes=route("evidence_reasoning"),
                   answer={"answer": "到港 ROB VLSFO 451.024 MT，LSMGO 99.9 MT（E046）。", "sources": []})
-    answer = ask("VSL-12 到港存油", llm)
+    answer = ask("VSL-02 到港存油", llm)
     assert "99.9" in answer.details and "451.024" not in answer.details
     assert any("Grounding check (code): 1 item" in t for t in answer.reasoning_trace)
 
@@ -171,11 +171,11 @@ def test_follow_up_without_history_asks_for_a_question():
 
 
 def test_standalone_question_is_used_for_the_answer():
-    llm = FakeLlm(routes=route("deterministic", deterministic_intent="vessel_facts", standalone_question="VSL-12 的燃油还有多少"),
-                  answer={"summary": "VSL-12：", "items": [{"label": "ROB VLSFO", "value": "451.024 MT", "source": "E053"}]})
+    llm = FakeLlm(routes=route("deterministic", deterministic_intent="vessel_facts", standalone_question="VSL-02 的燃油还有多少"),
+                  answer={"summary": "VSL-02：", "items": [{"label": "ROB VLSFO", "value": "451.024 MT", "source": "E053"}]})
     answer = ask("那燃油呢", llm, history=PREV)
     assert "451.024 MT" in answer.text
-    assert any(t.startswith("Standalone question: VSL-12") for t in answer.reasoning_trace)
+    assert any(t.startswith("Standalone question: VSL-02") for t in answer.reasoning_trace)
 
 
 def test_the_previous_answer_is_part_of_the_recording_key():
@@ -213,16 +213,16 @@ def test_simple_steps_use_the_fast_model_and_reasoning_uses_the_main_one():
 
     fast = FakeLlm(routes=route("evidence_reasoning"))
     main = FakeLlm(answer={"answer": "CPY-14（E046）。", "sources": [{"kind": "email", "id": "E046"}]})
-    v6.e16v6_answer_chat(ChatRequest(question="VSL-12在Newcastle港代理是哪家"), context(), main, NOW, fast_llm=fast)
+    v6.e16v6_answer_chat(ChatRequest(question="VSL-02在Newcastle港代理是哪家"), context(), main, NOW, fast_llm=fast)
     assert [c[0] for c in main.calls] == ["E16_V6"]
 
 
 def test_reasoning_context_is_slimmed_to_the_named_vessel():
     ctx = context().model_copy(update={"emails": [
-        ChatEmail(email_id="E001", subject="MV VSL-11 report", sender="Master", excerpt="x" * 500),
-        ChatEmail(email_id="E002", subject="MV VSL-12 report", sender="Master", excerpt="y" * 500)]})
+        ChatEmail(email_id="E001", subject="MV VSL-01 report", sender="Master", excerpt="x" * 500),
+        ChatEmail(email_id="E002", subject="MV VSL-02 report", sender="Master", excerpt="y" * 500)]})
     llm = FakeLlm(routes=route("evidence_reasoning"), answer={"answer": "ok", "sources": []})
-    v6.e16v6_answer_chat(ChatRequest(question="VSL-12 的报告"), ctx, llm, NOW)
+    v6.e16v6_answer_chat(ChatRequest(question="VSL-02 的报告"), ctx, llm, NOW)
     sent = next(c[2] for c in llm.calls if c[0] == "E16_V6")["context"]
     assert [e["email_id"] for e in sent["emails"]] == ["E002"] and len(sent["emails"][0]["excerpt"]) == 160
 
@@ -230,7 +230,7 @@ def test_reasoning_context_is_slimmed_to_the_named_vessel():
 def test_payment_status_question_is_not_sent_to_the_due_list():
     llm = FakeLlm(routes=route("deterministic", deterministic_intent="dues"),
                   answer={"answer": "没有待付发票：E060 为租家已付第 30 期租金（E060）。", "sources": []})
-    answer = ask("VSL-11还有哪些待付发票", llm)
+    answer = ask("VSL-01还有哪些待付发票", llm)
     assert answer.execution_mode == "evidence_reasoning"
     assert any("payment-status" in t for t in answer.reasoning_trace)
 

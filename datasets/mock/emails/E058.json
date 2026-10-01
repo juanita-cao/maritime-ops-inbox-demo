@@ -1,8 +1,8 @@
 {
  "email_id": "E058",
- "text": "From: mail01@pelhambrokers.example\nSent: 2026-10-02 10:15:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@formosasaltandminerals.example\nSubject: VSL-15 - RECAP SALT PORT LINCOLN / KAOHSIUNG\n\nDear Colleagues,\n\nRecap, 50,000 mt salt, freight USD 15.9 per mt, laycan 20-30 Oct.\n\n- Cargo qty: 50,000 mt\n- Freight: 15.9 USD per mt\n- Laycan: 2026-10-20 to 2026-10-30\n- Cp date: 2026-10-02\n\nBest regards,\nPelham Shipbrokers",
+ "text": "From: mail01@pelhambrokers.example\nSent: 2026-10-02 10:15:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@formosasaltandminerals.example\nSubject: VSL-05 - RECAP SALT PORT LINCOLN / KAOHSIUNG\n\nDear Colleagues,\n\nRecap, 50,000 mt salt, freight USD 15.9 per mt, laycan 20-30 Oct.\n\n- Cargo qty: 50,000 mt\n- Freight: 15.9 USD per mt\n- Laycan: 2026-10-20 to 2026-10-30\n- Cp date: 2026-10-02\n\nBest regards,\nPelham Shipbrokers",
  "event_id": "M15009",
- "vessel": "VSL-15",
+ "vessel": "VSL-05",
  "thread": "V502-fix",
  "scenario": null,
  "event_type": "Voyage Instructions / Port Nomination"

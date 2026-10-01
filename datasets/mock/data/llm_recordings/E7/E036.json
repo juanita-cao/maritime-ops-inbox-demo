@@ -3,7 +3,7 @@
   {
    "action_type": "Verify / Reconcile Report Data",
    "for_event": "Discharging",
-   "description": "Verify the discharge report data for VSL-13, ensuring the outturn of 60,790 mt aligns with the B/L quantity of 61,200 mt.",
+   "description": "Verify the discharge report data for VSL-03, ensuring the outturn of 60,790 mt aligns with the B/L quantity of 61,200 mt.",
    "due": null,
    "owner_role": "Operations Officer"
   }

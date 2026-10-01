@@ -16,7 +16,7 @@ CST = timezone(timedelta(hours=8))
 SENT = datetime(2026, 7, 30, 10, 0, tzinfo=CST)
 REPORT = "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
 HIGH = VesselMatch(
-    vessel_code="VSL-12",
+    vessel_code="VSL-02",
     status="matched",
     tier="High",
     score=1.0,
@@ -33,7 +33,7 @@ def event(event_type=REPORT, is_report=True, unsure=False):
 
 
 def email(attachment_dependent=False):
-    return ParsedEmail(email_id="E010", subject="VSL-12 noon", subject_norm="vsl-12 noon", sent_time=SENT,
+    return ParsedEmail(email_id="E010", subject="VSL-02 noon", subject_norm="vsl-02 noon", sent_time=SENT,
                        direction="Inbound", sender="x@CPY-05.example", new_text="Noon.",
                        attachment_dependent=attachment_dependent)  # fmt: skip
 

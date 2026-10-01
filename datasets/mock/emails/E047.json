@@ -1,8 +1,8 @@
 {
  "email_id": "E047",
- "text": "From: mail01@meridianfleet.example\nSent: 2026-10-01 10:00:00 UTC+08:00\nTo: mail01@corvane.example\nSubject: VSL-11 HIRE STATEMENT NO. 14 (16 OCT - 31 OCT 2026)\n\nDear Charterers,\n\nHire statement for the next period; payment due 16 Oct.\n\n- Hire rate: 17,250 USD per day\n- Hire next due: 2026-10-16\n- Hire amount: 258,750 USD\n\nBest regards,\nMeridian Fleet Management",
+ "text": "From: mail01@meridianfleet.example\nSent: 2026-10-01 10:00:00 UTC+08:00\nTo: mail01@corvane.example\nSubject: VSL-01 HIRE STATEMENT NO. 14 (16 OCT - 31 OCT 2026)\n\nDear Charterers,\n\nHire statement for the next period; payment due 16 Oct.\n\n- Hire rate: 17,250 USD per day\n- Hire next due: 2026-10-16\n- Hire amount: 258,750 USD\n\nBest regards,\nMeridian Fleet Management",
  "event_id": "M11010",
- "vessel": "VSL-11",
+ "vessel": "VSL-01",
  "thread": "V102-hire",
  "scenario": null,
  "event_type": "Hire / SOA / Payment"

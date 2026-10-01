@@ -3,7 +3,7 @@
   {
    "action_type": "Verify / Reconcile Report Data",
    "for_event": "Discharging",
-   "description": "Verify the discharge report data for vessel VSL-14 at HALDIA, ensuring the outturn quantity of 36,791 mt is accurately recorded.",
+   "description": "Verify the discharge report data for vessel VSL-04 at HALDIA, ensuring the outturn quantity of 36,791 mt is accurately recorded.",
    "due": null,
    "owner_role": "Operations Officer"
   }

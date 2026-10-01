@@ -3,21 +3,21 @@
   {
    "action_type": "Verify / Reconcile Report Data",
    "for_event": "Loading / Cargo Operations",
-   "description": "Verify the loading report data for VSL-11 at PORT HEDLAND, ensuring the loading rate of 3,200 mt/h is accurately recorded.",
+   "description": "Verify the loading report data for VSL-01 at PORT HEDLAND, ensuring the loading rate of 3,200 mt/h is accurately recorded.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Update the vessel schedule to reflect that VSL-11 has berthed at PORT HEDLAND on 2026-10-06 at 13:40.",
+   "description": "Update the vessel schedule to reflect that VSL-01 has berthed at PORT HEDLAND on 2026-10-06 at 13:40.",
    "due": null,
    "owner_role": "Scheduler"
   },
   {
    "action_type": "Notify Party (Agent / P&I / Manager)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Notify the relevant parties about the berthing of VSL-11 at PORT HEDLAND on 2026-10-06 at 13:40.",
+   "description": "Notify the relevant parties about the berthing of VSL-01 at PORT HEDLAND on 2026-10-06 at 13:40.",
    "due": null,
    "owner_role": "Operations Officer"
   }

@@ -18,12 +18,12 @@ def ev(quote: str = "ETA 04 AUG 1500") -> s.Evidence:
 
 def vessel_match() -> s.VesselMatch:
     return s.VesselMatch(
-        vessel_code="VSL-12",
+        vessel_code="VSL-02",
         status="matched",
         tier="High",
         score=0.95,
-        evidence=[ev("VSL-12")],
-        candidates=[s.Candidate(vessel_code="VSL-12", score=0.95)],
+        evidence=[ev("VSL-02")],
+        candidates=[s.Candidate(vessel_code="VSL-02", score=0.95)],
     )
 
 
@@ -85,8 +85,8 @@ def task_action(priority: int = 4) -> s.TaskAction:
 def task() -> s.Task:
     return s.Task(
         task_id="T1",
-        task_key="VSL-12|V202|redelivery",
-        vessel_code="VSL-12",
+        task_key="VSL-02|V202|redelivery",
+        vessel_code="VSL-02",
         voyage_no="V202",
         action_type="Check CP Terms",
         description="Check the redelivery notice period",
@@ -103,7 +103,7 @@ def task() -> s.Task:
 def fact_record() -> s.FactRecord:
     return s.FactRecord(
         fact_id="F1",
-        vessel_code="VSL-12",
+        vessel_code="VSL-02",
         fact_key="eta:Newcastle",
         value="2026-08-04T15:00+08:00",
         event_time=NOW,
@@ -117,7 +117,7 @@ def fact_record() -> s.FactRecord:
 def task_row() -> s.TaskRow:
     return s.TaskRow(
         task_id="T1",
-        vessel="VSL-12",
+        vessel="VSL-02",
         voyage="V202",
         action="Check CP Terms",
         priority=4,
@@ -164,8 +164,8 @@ EXAMPLES: dict[str, callable] = {
     "Evidence": ev,
     "ParsedEmail": lambda: s.ParsedEmail(
         email_id="E001",
-        subject="RE: VSL-12 / V202 ETA",
-        subject_norm="vsl-12 / v202 eta",
+        subject="RE: VSL-02 / V202 ETA",
+        subject_norm="vsl-02 / v202 eta",
         sent_time=NOW,
         direction="Inbound",
         sender="mail01@example.com",
@@ -190,7 +190,7 @@ EXAMPLES: dict[str, callable] = {
     ),
     "SanitizationCheck": lambda: s.SanitizationCheck(status="clean"),
     "ExtractedEntities": lambda: s.ExtractedEntities(
-        vessel_mentions=[s.Mention(text="VSL-12", evidence=ev("VSL-12"))],
+        vessel_mentions=[s.Mention(text="VSL-02", evidence=ev("VSL-02"))],
         dates=[s.DateFact(kind="eta", value="2026-08-04T15:00+08:00", evidence=ev())],
         quantities=[
             s.QuantityFact(kind="amount", value=4500, unit="USD", currency="USD", evidence=ev())
@@ -238,7 +238,7 @@ EXAMPLES: dict[str, callable] = {
             s.DueRow(
                 task_id="T1",
                 action_id="A1",
-                vessel="VSL-12",
+                vessel="VSL-02",
                 voyage="V202",
                 action="Check the redelivery clause",
                 due_type="Others",
@@ -252,13 +252,13 @@ EXAMPLES: dict[str, callable] = {
     ),
     "ApplyResult": lambda: s.ApplyResult(status="applied", undo_token="U1"),
     "CorrectionRecord": lambda: s.CorrectionRecord(
-        proposal_id="P1", field="vessel", suggested="VSL-11", final="VSL-12"
+        proposal_id="P1", field="vessel", suggested="VSL-01", final="VSL-02"
     ),
     "RankedTaskList": lambda: s.RankedTaskList(
         groups=[s.TaskGroup(name="Action Required", items=[task_row()])]
     ),
     "VesselView": lambda: s.VesselView(
-        vessel_code="VSL-12",
+        vessel_code="VSL-02",
         facts=[
             s.FactRow(
                 fact_key="eta:Newcastle",
@@ -295,13 +295,13 @@ EXAMPLES: dict[str, callable] = {
         email_id="E009", reason="blocked_unsanitized", detail="phone number"
     ),
     "SavedProposal": lambda: s.SavedProposal(proposal_id="P1", status="open"),
-    "Overrides": lambda: s.Overrides(vessel_code="VSL-11"),
+    "Overrides": lambda: s.Overrides(vessel_code="VSL-01"),
     "ReviewQueue": lambda: s.ReviewQueue(
         items=[
             s.ReviewRow(
                 proposal_id="P1",
                 email_id="E001",
-                vessel="VSL-12",
+                vessel="VSL-02",
                 event_type="Redelivery Notice",
                 statuses=["Action Required"],
                 status="open",
@@ -357,7 +357,7 @@ def test_schemas_amount_quantity_needs_currency_and_value_not_negative():
 
 def test_schemas_vessel_not_matched_means_low_tier_and_no_code():
     with pytest.raises(ValidationError):
-        s.VesselMatch(vessel_code="VSL-11", status="ambiguous", tier="Low", score=0.5)
+        s.VesselMatch(vessel_code="VSL-01", status="ambiguous", tier="Low", score=0.5)
     with pytest.raises(ValidationError):
         s.VesselMatch(vessel_code=None, status="none", tier="High", score=0.0)
     assert s.VesselMatch(vessel_code=None, status="none", tier="Low", score=0.0).set_by == "rule"

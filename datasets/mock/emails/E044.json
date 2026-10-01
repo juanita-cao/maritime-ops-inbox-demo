@@ -1,8 +1,8 @@
 {
  "email_id": "E044",
- "text": "From: mail01@vslsilveranemone.example\nSent: 2026-09-28 12:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@harlowfertilizertrading.example\nSubject: VSL-14 NOON REPORT 2026-09-28\n\nGood day,\n\nNoon report, VSL-14, V401.\nDd: 28 Sep 2026\nPosition: 10-45N 070-30E at 1200 LT\nCourse/avg spd/rpm/eng slip: 090 / 10.5 / 72 / 3.0\nDaily GPS speed / Log speed: 10.7 / 10.6\nAverage GPS speed / Log Speed: 10.6 / 10.5\nIFO Consumed/LSMGO consumed fm last report: VLSFO 30.5 mt LSMGO 0.0 mt\nWind direction/force/sea cond/vis: NE / 6 / 3.5 M / Good\nWeather condition: NE / 6 Overcast\nROB: VLSFO 346.2 mt, LSMGO 60.0 mt\nETA: 2026-10-05 09:00 LT\nRemarks: Vessel proceeding normally.\n\nBest regards,\nMaster MV Silver Anemone",
+ "text": "From: mail01@vslsilveranemone.example\nSent: 2026-09-28 12:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@harlowfertilizertrading.example\nSubject: VSL-04 NOON REPORT 2026-09-28\n\nGood day,\n\nNoon report, VSL-04, V401.\nDd: 28 Sep 2026\nPosition: 10-45N 070-30E at 1200 LT\nCourse/avg spd/rpm/eng slip: 090 / 10.5 / 72 / 3.0\nDaily GPS speed / Log speed: 10.7 / 10.6\nAverage GPS speed / Log Speed: 10.6 / 10.5\nIFO Consumed/LSMGO consumed fm last report: VLSFO 30.5 mt LSMGO 0.0 mt\nWind direction/force/sea cond/vis: NE / 6 / 3.5 M / Good\nWeather condition: NE / 6 Overcast\nROB: VLSFO 346.2 mt, LSMGO 60.0 mt\nETA: 2026-10-05 09:00 LT\nRemarks: Vessel proceeding normally.\n\nBest regards,\nMaster MV Silver Anemone",
  "event_id": "M14005",
- "vessel": "VSL-14",
+ "vessel": "VSL-04",
  "thread": "V401-noon",
  "scenario": null,
  "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"

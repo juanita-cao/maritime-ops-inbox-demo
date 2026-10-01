@@ -50,7 +50,7 @@ NOON_TEXT = "Position 12-30N 125-10E. Speed 12.5 kn. ROB VLSFO 450.5 MT. ETA New
 
 def test_e6_s01_inbound_report_is_settled_by_the_rule_without_a_call():
     llm = FakeLlm()
-    out = run(email("M/V VSL-12// NOON REPORT 20260730", NOON_TEXT), llm)
+    out = run(email("M/V VSL-02// NOON REPORT 20260730", NOON_TEXT), llm)
     assert out.is_report is True and out.llm_status == "skipped" and llm.calls == []
     item = out.items[0]
     assert (item.event_type, item.source) == (REPORT, "rule")
@@ -59,8 +59,8 @@ def test_e6_s01_inbound_report_is_settled_by_the_rule_without_a_call():
 
 @pytest.mark.parametrize(
     "subject",
-    ["VSL-12//Daily Report 20260726", "VSL-11 - ARRIVAL REPORT", "VSL-12// COSP REPORT/BUNBURY",
-     "VSL-11 - EOSP REPORT", "VSL-12//DAILY ETA NOTICE/2026.07.23", "VSL-11 -CPY-02 - BERTHING REPORT"],
+    ["VSL-02//Daily Report 20260726", "VSL-01 - ARRIVAL REPORT", "VSL-02// COSP REPORT/BUNBURY",
+     "VSL-01 - EOSP REPORT", "VSL-02//DAILY ETA NOTICE/2026.07.23", "VSL-01 -CPY-02 - BERTHING REPORT"],
 )  # fmt: skip
 def test_e6_s01_report_keywords_from_the_titles(subject):
     assert run(email(subject, NOON_TEXT), FakeLlm()).is_report is True
@@ -70,20 +70,20 @@ def test_e6_s02_report_keyword_without_report_fields_goes_to_the_llm():
     llm = FakeLlm(
         {"items": [{"event_type": "Claim", "confidence": 0.8, "quote": "cargo damage claim"}]}
     )
-    out = run(email("VSL-12 - Noon report", "Please see the cargo damage claim attached."), llm)
+    out = run(email("VSL-02 - Noon report", "Please see the cargo damage claim attached."), llm)
     assert out.is_report is False and out.llm_status == "ok" and len(llm.calls) == 1
     assert [(i.event_type, i.source) for i in out.items] == [("Claim", "llm")]
 
 
 def test_e6_s02_report_word_that_is_not_a_report_title_goes_to_the_llm():
     llm = FakeLlm({"items": []})
-    out = run(email("VSL-12 - PSC INSPECTION REPORT", NOON_TEXT), llm)
+    out = run(email("VSL-02 - PSC INSPECTION REPORT", NOON_TEXT), llm)
     assert out.is_report is False and len(llm.calls) == 1
 
 
 def test_e6_s03_outbound_email_with_a_report_keyword_is_not_a_report():
     llm = FakeLlm({"items": []})
-    out = run(email("RE: VSL-12 NOON REPORT", NOON_TEXT, direction="Outbound"), llm)
+    out = run(email("RE: VSL-02 NOON REPORT", NOON_TEXT, direction="Outbound"), llm)
     assert out.is_report is False and len(llm.calls) == 1
 
 
@@ -92,13 +92,13 @@ def test_e6_s04_type_outside_the_taxonomy_is_rejected_and_the_rest_kept():
         {"event_type": "Weather Chat", "confidence": 0.9, "quote": "redelivery"},
         {"event_type": "Redelivery Notice", "confidence": 0.7, "quote": "redelivery"},
     ]})  # fmt: skip
-    out = run(email("VSL-12 notice", "Charterers give notice of redelivery."), llm)
+    out = run(email("VSL-02 notice", "Charterers give notice of redelivery."), llm)
     assert [i.event_type for i in out.items] == ["Redelivery Notice"]
 
 
 def test_e6_s04_nothing_valid_left_gives_general_fyi():
     llm = FakeLlm({"items": [{"event_type": "Weather Chat", "confidence": 0.9, "quote": "x"}]})
-    out = run(email("VSL-12 notice", "Thanks, noted."), llm)
+    out = run(email("VSL-02 notice", "Thanks, noted."), llm)
     assert [(i.event_type, i.confidence) for i in out.items] == [(FYI, 0.0)]
     assert out.llm_status == "ok"
 
@@ -110,14 +110,14 @@ def test_e6_s04_nothing_valid_left_gives_general_fyi():
      {"event_type": "Claim", "quote": "claim"}],
 )  # fmt: skip
 def test_e6_s04_item_with_a_bad_quote_or_confidence_is_dropped(item):
-    out = run(email("VSL-12", "A claim is filed."), FakeLlm({"items": [item]}))
+    out = run(email("VSL-02", "A claim is filed."), FakeLlm({"items": [item]}))
     assert [i.event_type for i in out.items] == [FYI]
 
 
 def test_e6_s04_at_most_three_items_most_confident_first():
     items = [{"event_type": t, "confidence": c, "quote": "survey"} for t, c in
              [("Claim", 0.2), ("Survey Arrangement / Quotation", 0.9), ("Redelivery Notice", 0.5), (FYI, 0.4)]]  # fmt: skip
-    out = run(email("VSL-12", "Please arrange the survey."), FakeLlm({"items": items}))
+    out = run(email("VSL-02", "Please arrange the survey."), FakeLlm({"items": items}))
     assert [i.event_type for i in out.items] == [
         "Survey Arrangement / Quotation",
         "Redelivery Notice",
@@ -127,7 +127,7 @@ def test_e6_s04_at_most_three_items_most_confident_first():
 
 def test_e6_s05_llm_fails_twice_gives_general_fyi_and_failed():
     llm = FakeLlm(LlmError("timeout"), LlmError("timeout"))
-    out = run(email("VSL-12 notice", "Charterers give notice of redelivery."), llm)
+    out = run(email("VSL-02 notice", "Charterers give notice of redelivery."), llm)
     assert len(llm.calls) == 2
     assert [(i.event_type, i.confidence) for i in out.items] == [
         (FYI, 0.0)
@@ -135,12 +135,12 @@ def test_e6_s05_llm_fails_twice_gives_general_fyi_and_failed():
 
 
 def test_e6_s05_answer_that_is_not_an_object_counts_as_failed():
-    out = run(email("VSL-12", "Noted."), FakeLlm("text", None))
+    out = run(email("VSL-02", "Noted."), FakeLlm("text", None))
     assert out.llm_status == "failed"
 
 
 @pytest.mark.parametrize(
-    "subject", ["M/V VSL-12 午报 20260730", "VSL-11 抵港报", "VSL-12 离港报/DAMPIER"]
+    "subject", ["M/V VSL-02 午报 20260730", "VSL-01 抵港报", "VSL-02 离港报/DAMPIER"]
 )
 def test_e6_s06_report_with_a_chinese_subject_is_accepted_by_the_chinese_keyword(subject):
     out = run(email(subject, NOON_TEXT), FakeLlm())
@@ -149,7 +149,7 @@ def test_e6_s06_report_with_a_chinese_subject_is_accepted_by_the_chinese_keyword
 
 def test_e6_prompt_carries_the_taxonomy_and_not_the_signature():
     llm = FakeLlm({"items": []})
-    mail = email("VSL-12 notice", "Notice of redelivery.").model_copy(
+    mail = email("VSL-02 notice", "Notice of redelivery.").model_copy(
         update={"signature_text": "PER-03 office"}
     )
     run(mail, llm)
@@ -163,5 +163,5 @@ def test_e6_s04_quote_matches_across_case_spaces_and_curly_quotes_but_not_ellips
         {"event_type": "Claim", "confidence": 0.9, "quote": "KINDLY CONFIRM owner’s safe   receipt"},
         {"event_type": "Redelivery Notice", "confidence": 0.8, "quote": "hire statement ... funds"},
     ]})  # fmt: skip
-    out = run(email("VSL-11 hire", text), llm)
+    out = run(email("VSL-01 hire", text), llm)
     assert [i.event_type for i in out.items] == ["Claim"]

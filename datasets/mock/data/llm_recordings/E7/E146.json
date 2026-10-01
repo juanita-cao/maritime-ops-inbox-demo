@@ -3,14 +3,14 @@
   {
    "action_type": "Verify / Reconcile Report Data",
    "for_event": "Weather Routing / Speed & Consumption",
-   "description": "Confirm the speed loss of VSL-13 at 10.4 knots at the same RPM and weather conditions where 11.4 knots was normal, considering the suspected fouling after the long stay at Mundra.",
+   "description": "Confirm the speed loss of VSL-03 at 10.4 knots at the same RPM and weather conditions where 11.4 knots was normal, considering the suspected fouling after the long stay at Mundra.",
    "due": null,
    "owner_role": "Captain"
   },
   {
    "action_type": "Notify Party (Agent / P&I / Manager)",
    "for_event": "Vessel Defect / Repair / Breakdown",
-   "description": "Inform the relevant parties about the suspected fouling of VSL-13 after the long stay at Mundra, which may have caused the speed loss.",
+   "description": "Inform the relevant parties about the suspected fouling of VSL-03 after the long stay at Mundra, which may have caused the speed loss.",
    "due": null,
    "owner_role": "Captain"
   }

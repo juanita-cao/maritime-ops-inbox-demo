@@ -33,7 +33,7 @@ const MENU: { key: Screen; name: string; icon: React.ReactNode }[] = [
 
 const SCREENS: Screen[] = ['chat', 'email', 'overview', 'vessel', 'action']
 
-/** Deep link: #/email/E054 opens that email; #/vessel/VSL-12 that vessel. */
+/** Deep link: #/email/E054 opens that email; #/vessel/VSL-02 that vessel. */
 function fromHash(hash: string): UiState {
   const [screen, id] = hash.replace(/^#\/?/, '').split('/')
   if (!SCREENS.includes(screen as Screen)) return initialState

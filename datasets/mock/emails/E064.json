@@ -1,8 +1,8 @@
 {
  "email_id": "E064",
- "text": "From: mail01@redseamaritime.example\nSent: 2026-10-02 15:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@vsl13.example\nSubject: RE: VSL-13 CTM REQUEST AQABA - FEE INVOICE\n\nDear Colleagues,\n\nAgent will deliver the cash on board on 3 Oct; the cash handling fee is USD 450 and is invoiced to the owners.\n\n- Ctm: 15,000 USD\n- Ctm fee: 450 USD\n\nBest regards,\nRed Sea Maritime Agency\n\n-----Original Message-----\nFrom: mail01@vsl13.example\nSent: 2026-10-02 09:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nSubject: VSL-13 CTM REQUEST AQABA\n\nDear Colleagues,\n\nMaster asks for cash to master USD 15,000 for wages, victualling and the Aqaba port cash items.\n\n- Ctm: 15,000 USD\n\nBest regards,\nMaster MV Kestrel Harbor",
+ "text": "From: mail01@redseamaritime.example\nSent: 2026-10-02 15:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@vsl03.example\nSubject: RE: VSL-03 CTM REQUEST AQABA - FEE INVOICE\n\nDear Colleagues,\n\nAgent will deliver the cash on board on 3 Oct; the cash handling fee is USD 450 and is invoiced to the owners.\n\n- Ctm: 15,000 USD\n- Ctm fee: 450 USD\n\nBest regards,\nRed Sea Maritime Agency\n\n-----Original Message-----\nFrom: mail01@vsl03.example\nSent: 2026-10-02 09:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nSubject: VSL-03 CTM REQUEST AQABA\n\nDear Colleagues,\n\nMaster asks for cash to master USD 15,000 for wages, victualling and the Aqaba port cash items.\n\n- Ctm: 15,000 USD\n\nBest regards,\nMaster MV Kestrel Harbor",
  "event_id": "M13014",
- "vessel": "VSL-13",
+ "vessel": "VSL-03",
  "thread": "V302-ctm",
  "scenario": "S06",
  "event_type": "Cash to Master / Supply (CTM, Fresh Water, Provisions)"

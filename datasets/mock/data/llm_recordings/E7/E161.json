@@ -3,21 +3,21 @@
   {
    "action_type": "Track Contractual Notice / Deadline",
    "for_event": "Redelivery Notice",
-   "description": "Track the contractual notice for the redelivery of VSL-12 at Casablanca, ensuring all details regarding the joint on/off survey by Vanguard are noted.",
+   "description": "Track the contractual notice for the redelivery of VSL-02 at Casablanca, ensuring all details regarding the joint on/off survey by Vanguard are noted.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Confirm Bunker ROB / Stem",
    "for_event": "Bunker (Stem / Quote / ROB / Quality",
-   "description": "Confirm the bunker ROB of 318 mt VLSFO at the redelivery price of USD 598 per mt for VSL-12.",
+   "description": "Confirm the bunker ROB of 318 mt VLSFO at the redelivery price of USD 598 per mt for VSL-02.",
    "due": null,
    "owner_role": "Bunker Coordinator"
   },
   {
    "action_type": "Arrange Survey",
    "for_event": "Survey Arrangement / Quotation",
-   "description": "Arrange the joint on/off survey for VSL-12 at Casablanca with Vanguard as specified in the email.",
+   "description": "Arrange the joint on/off survey for VSL-02 at Casablanca with Vanguard as specified in the email.",
    "due": null,
    "owner_role": "Survey Coordinator"
   }

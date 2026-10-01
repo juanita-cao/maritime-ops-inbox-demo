@@ -3,7 +3,7 @@
   {
    "action_type": "Arrange Survey",
    "for_event": "Survey Arrangement / Quotation",
-   "description": "Arrange for a survey for VSL-11 as requested by the operator after discharge.",
+   "description": "Arrange for a survey for VSL-01 as requested by the operator after discharge.",
    "due": null,
    "owner_role": "Operations Officer"
   },

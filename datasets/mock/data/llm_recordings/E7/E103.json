@@ -3,14 +3,14 @@
   {
    "action_type": "Review Quotation / Plan / Proposal",
    "for_event": "Fixture Enquiry / Offer / Counter",
-   "description": "Review the quotation for the voyage V203 for the vessel VSL-12 with laycan from 2026-11-05 to 2026-11-15 at the port of SANTOS.",
+   "description": "Review the quotation for the voyage V203 for the vessel VSL-02 with laycan from 2026-11-05 to 2026-11-15 at the port of SANTOS.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Track Contractual Notice / Deadline",
    "for_event": "Redelivery Notice",
-   "description": "Track the contractual notice for the redelivery of the vessel VSL-12 in Casablanca by late October.",
+   "description": "Track the contractual notice for the redelivery of the vessel VSL-02 in Casablanca by late October.",
    "due": null,
    "owner_role": "Operations Officer"
   }

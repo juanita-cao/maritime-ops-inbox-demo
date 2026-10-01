@@ -3,7 +3,7 @@
   {
    "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Update the vessel schedule for VSL-16 to reflect its arrival at Rosario on 2026-10-06 at 07:00.",
+   "description": "Update the vessel schedule for VSL-06 to reflect its arrival at Rosario on 2026-10-06 at 07:00.",
    "due": null,
    "owner_role": "Operations Officer"
   },

@@ -3,14 +3,14 @@
   {
    "action_type": "Track Contractual Notice / Deadline",
    "for_event": "Redelivery Notice",
-   "description": "Track the contractual notice for the redelivery of VSL-12 at Casablanca, scheduled for 2026-10-17.",
+   "description": "Track the contractual notice for the redelivery of VSL-02 at Casablanca, scheduled for 2026-10-17.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Notify Party (Agent / P&I / Manager)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Notify the relevant parties about the redelivery of VSL-12 at Casablanca on 2026-10-17.",
+   "description": "Notify the relevant parties about the redelivery of VSL-02 at Casablanca on 2026-10-17.",
    "due": null,
    "owner_role": "Operations Officer"
   }

@@ -61,7 +61,7 @@ class Truth(BaseModel):
 
 class Ledger(BaseModel):
     model_config = ConfigDict(extra="forbid")
-    vessel: str  # VSL-11
+    vessel: str  # VSL-01
     parties: list[Party]
     voyages: list[Voyage]
     events: list[Event]

@@ -41,7 +41,7 @@ def row(tid, priority, email, statuses, awaiting=False):
     action = TaskAction(action_id=f"{tid}-A", task_id=tid, action_type="Check CP Terms", description=f"do {tid}",
                         priority=priority, due_type="Hire", due_date=date(2026, 8, 6), set_by="ai",
                         source_email_id=email, awaiting_reply=awaiting)  # fmt: skip
-    return TaskRow(task_id=tid, vessel="VSL-12", voyage="V202", action=f"do {tid}", priority=priority,
+    return TaskRow(task_id=tid, vessel="VSL-02", voyage="V202", action=f"do {tid}", priority=priority,
                    statuses=statuses, source_email_id=email, actions=[action])  # fmt: skip
 
 
@@ -54,9 +54,9 @@ def context(rows=None):
     fact = FactRow(fact_key="rob_vlsfo", value="420 MT", event_time=NOW, source_email_id="E070", superseded=False)
     return ChatContext(
         tasks=RankedTaskList(groups=[TaskGroup(name=k, items=v) for k, v in groups.items()]),
-        dues=DueList(items=[DueRow(task_id="T1", action_id="T1-A", vessel="VSL-12", action="pay hire",
+        dues=DueList(items=[DueRow(task_id="T1", action_id="T1-A", vessel="VSL-02", action="pay hire",
                                    due_type="Hire", due_date=date(2026, 8, 6), priority=4)], store_status="ok"),
-        vessels=[VesselView(vessel_code="VSL-12", facts=[fact])],
+        vessels=[VesselView(vessel_code="VSL-02", facts=[fact])],
         review_queue=ReviewQueue(items=[], store_status="ok"),
         emails=[ChatEmail(email_id="E010", subject="REDEL NOTICE", sender="Charterer CPY-10", excerpt="x")],
     )  # fmt: skip
@@ -115,7 +115,7 @@ def test_vessel_facts_model_only_sees_the_named_vessel_slice():
                 "sources": [{"kind": "email", "id": "E070"}, {"kind": "email", "id": "E999"}],
                 "evidence_status": "partial"},
     )  # fmt: skip
-    answer = ask("VSL-12 油耗和天气", llm)
+    answer = ask("VSL-02 油耗和天气", llm)
     present = llm.calls[1][1]
     assert set(present["context"]) == {"vessels"}  # no tasks, reviews or emails to pad with
     assert [s.id for s in answer.sources] == ["E070"]  # E999 was never in the slice
@@ -130,23 +130,23 @@ def test_unknown_vessel_is_no_matching_data_without_asking_the_model():
 
 
 def test_vessel_code_directly_followed_by_chinese_is_still_found():
-    """Live run 1: "VSL-12船..." missed with \\b, because 船 is a word character."""
+    """Live run 1: "VSL-02船..." missed with \\b, because 船 is a word character."""
     llm = FakeLlm(route={"execution_mode": "deterministic", "deterministic_intent": "vessel_facts"},
                   answer={"text": "- ROB VLSFO: 420 MT", "sources": [], "evidence_status": "sufficient"})
-    assert ask("VSL-12船存燃油还有多少", llm).evidence_status == "sufficient"
+    assert ask("VSL-02船存燃油还有多少", llm).evidence_status == "sufficient"
 
 
 def test_dues_slice_is_filtered_to_the_named_vessel():
     llm = FakeLlm(route={"execution_mode": "deterministic", "deterministic_intent": "dues"},
                   answer={"text": "下一笔租金 due 是 2026-08-06。", "sources": [{"kind": "task", "id": "T1"}],
                           "evidence_status": "sufficient"})  # fmt: skip
-    assert ask("VSL-12租金下一个due是哪天", llm).sources[0].id == "T1"
+    assert ask("VSL-02租金下一个due是哪天", llm).sources[0].id == "T1"
     assert llm.calls[1][1]["context"]["dues_total"] == 1
 
 
 def test_no_dues_for_the_vessel_is_rendered_in_code_as_none_not_unavailable():
     llm = FakeLlm(route={"execution_mode": "deterministic", "deterministic_intent": "dues"})
-    answer = ask("VSL-11租金下一个due是哪天", llm)
+    answer = ask("VSL-01租金下一个due是哪天", llm)
     assert "没有任何 due" in answer.text and len(llm.calls) == 1
     assert answer.retrieval_outcome == "no_data"
 
@@ -194,26 +194,26 @@ def test_trace_starts_with_the_code_verified_tool_calls():
     found = ChatEmail(email_id="E051", subject="CTM - NEWCASTLE", sender="Port Agent CPY-14", excerpt="x")
     llm = FakeLlm(
         route={"execution_mode": "evidence_reasoning"},
-        turns=[{"tool_calls": [{"name": "search_emails", "arguments": {"vessel": "VSL-12"}}]},
+        turns=[{"tool_calls": [{"name": "search_emails", "arguments": {"vessel": "VSL-02"}}]},
                {"final": {"text": "租家代理是 CPY-14。", "sources": [{"kind": "email", "id": "E051"}],
                           "evidence_status": "sufficient", "reasoning_trace": ["Extracted agent from E051"]}}],
     )  # fmt: skip
-    answer = ask("VSL-12在Newcastle港租家代理是哪家", llm, run_tool=lambda n, a: [found])
+    answer = ask("VSL-02在Newcastle港租家代理是哪家", llm, run_tool=lambda n, a: [found])
     assert answer.reasoning_trace[0].startswith("Tool search_emails")
     assert answer.reasoning_trace[1] == "Extracted agent from E051"
     assert [s.id for s in answer.sources] == ["E051"]
 
 
 def test_relevance_gate_drops_an_email_about_another_vessel_and_flags_the_answer():
-    """Live run 1, R14: E055 (VSL-11 at Rizhao) was cited as proof of VSL-12's cranes."""
-    other = {"email_id": "E055", "subject": "RE: MV VSL-11 DISCHG", "vessel": "VSL-11"}
+    """Live run 1, R14: E055 (VSL-01 at Rizhao) was cited as proof of VSL-02's cranes."""
+    other = {"email_id": "E055", "subject": "RE: MV VSL-01 DISCHG", "vessel": "VSL-01"}
     llm = FakeLlm(
         route={"execution_mode": "evidence_reasoning"},
         turns=[{"tool_calls": [{"name": "get_email", "arguments": {"email_id": "E055"}}]},
-               {"final": {"text": "VSL-12 用岸吊。", "sources": [{"kind": "email", "id": "E055"}],
+               {"final": {"text": "VSL-02 用岸吊。", "sources": [{"kind": "email", "id": "E055"}],
                           "evidence_status": "sufficient"}}],
     )  # fmt: skip
-    answer = ask("VSL-12装/卸货作业用船吊还是岸吊", llm, run_tool=lambda n, a: other)
+    answer = ask("VSL-02装/卸货作业用船吊还是岸吊", llm, run_tool=lambda n, a: other)
     assert answer.sources == []
     assert "相关性检查" in answer.text and answer.evidence_status == "partial"
     assert any("Relevance gate" in step for step in answer.reasoning_trace)
@@ -267,15 +267,15 @@ def test_a_proposal_without_a_retrieved_source_is_marked_weak_and_downgraded():
 
 def test_vessel_facts_heading_without_values_gets_the_locked_rows_from_code():
     llm = FakeLlm(route={"execution_mode": "deterministic", "deterministic_intent": "vessel_facts"},
-                  answer={"text": "VSL-12 当前存量如下：", "sources": [{"kind": "email", "id": "E070"}]})
-    answer = ask("VSL-12船存燃油还有多少", llm)
+                  answer={"text": "VSL-02 当前存量如下：", "sources": [{"kind": "email", "id": "E070"}]})
+    answer = ask("VSL-02船存燃油还有多少", llm)
     assert "rob_vlsfo: 420 MT" in answer.text and "[E070]" in answer.text
 
 
 def test_named_port_is_searched_in_company_records_by_code_before_the_model_answers():
-    hit = {"email_id": "E051", "subject": "M/V VSL-12//CTM - NEWCASTLE", "vessel": "VSL-12"}
+    hit = {"email_id": "E051", "subject": "M/V VSL-02//CTM - NEWCASTLE", "vessel": "VSL-02"}
     asked: list[dict] = []
-    llm = FakeLlm(route={"execution_mode": "domain_knowledge", "search_terms": ["Newcastle", "VSL-12"]},
+    llm = FakeLlm(route={"execution_mode": "domain_knowledge", "search_terms": ["Newcastle", "VSL-02"]},
                   turns=[{"final": {"text": "根据你们自己的记录：E051……", "sources": [{"kind": "email", "id": "E051"}]}}])
     answer = ask("Newcastle港要注意什么问题", llm, run_tool=lambda n, a: asked.append(a) or [hit])
     assert asked == [{"text": "Newcastle", "limit": 5}]  # vessel codes are not text-searched
@@ -293,8 +293,8 @@ def ask51(question, llm, ctx=None, run_tool=None):
 
 def test_v51_router_guard_overrides_out_of_scope_for_a_shipping_question():
     llm = FakeLlm(route={"execution_mode": "out_of_scope", "reason": "不涉及航运操作"},
-                  answer={"text": "记录里没有找到 VSL-12 的吊机信息。", "sources": [], "evidence_status": "no_matching_data"})
-    answer = ask51("VSL-12装/卸货作业用船吊还是岸吊", llm)
+                  answer={"text": "记录里没有找到 VSL-02 的吊机信息。", "sources": [], "evidence_status": "no_matching_data"})
+    answer = ask51("VSL-02装/卸货作业用船吊还是岸吊", llm)
     assert answer.execution_mode == "evidence_reasoning"
     assert answer.reasoning_trace[0].startswith("Router guard (code)")
 
@@ -306,16 +306,16 @@ def test_v51_router_guard_leaves_small_talk_out_of_scope():
 
 def test_frozen_v50_keeps_its_behaviour():
     llm = FakeLlm(route={"execution_mode": "out_of_scope", "reason": "不涉及航运操作"})
-    assert ask("VSL-12装/卸货作业用船吊还是岸吊", llm).execution_mode == "out_of_scope"
+    assert ask("VSL-02装/卸货作业用船吊还是岸吊", llm).execution_mode == "out_of_scope"
 
 
 def test_v51_vessel_facts_renders_verified_items_and_missing_parts():
     llm = FakeLlm(route={"execution_mode": "deterministic", "deterministic_intent": "vessel_facts"},
-                  answer={"summary": "VSL-12 油耗如下：",
+                  answer={"summary": "VSL-02 油耗如下：",
                           "items": [{"label": "ROB VLSFO", "value": "420 MT", "time": "7/30", "source": "E070"},
                                     {"label": "ROB LSMGO", "value": "999 MT", "time": "7/30", "source": "E070"}],
                           "missing": ["天气"]})  # fmt: skip
-    answer = ask51("VSL-12这几天的油耗和天气", llm)
+    answer = ask51("VSL-02这几天的油耗和天气", llm)
     assert "- ROB VLSFO：420 MT（7/30） [E070]" in answer.text
     assert "999" not in answer.text  # not in the cited source: dropped by code
     assert "- 天气：当前记录中没有找到" in answer.text
@@ -326,7 +326,7 @@ def test_v51_vessel_facts_renders_verified_items_and_missing_parts():
 def test_v51_vessel_facts_falls_back_to_code_list_when_model_gives_nothing():
     llm = FakeLlm(route={"execution_mode": "deterministic", "deterministic_intent": "vessel_facts"},
                   answer={"summary": "如下：", "items": []})
-    assert "rob_vlsfo: 420 MT" in ask51("VSL-12 船存燃油", llm).text
+    assert "rob_vlsfo: 420 MT" in ask51("VSL-02 船存燃油", llm).text
 
 
 def test_an_invalid_evidence_status_is_dropped():

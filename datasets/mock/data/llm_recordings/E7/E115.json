@@ -3,7 +3,7 @@
   {
    "action_type": "Track Contractual Notice / Deadline",
    "for_event": "Notice of Readiness / Laytime / Demurrage",
-   "description": "Track the laycan period from 2026-11-20 to 2026-11-30 for vessel VSL-11 loading in Newcastle and discharging in Krishnapatnam.",
+   "description": "Track the laycan period from 2026-11-20 to 2026-11-30 for vessel VSL-01 loading in Newcastle and discharging in Krishnapatnam.",
    "due": null,
    "owner_role": "Operations Officer"
   },
@@ -17,7 +17,7 @@
   {
    "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Update the vessel schedule for VSL-11 with the laycan from 2026-11-20 to 2026-11-30 for loading in Newcastle.",
+   "description": "Update the vessel schedule for VSL-01 with the laycan from 2026-11-20 to 2026-11-30 for loading in Newcastle.",
    "due": null,
    "owner_role": "Scheduling Officer"
   }

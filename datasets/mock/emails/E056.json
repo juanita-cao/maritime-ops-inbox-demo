@@ -1,8 +1,8 @@
 {
  "email_id": "E056",
- "text": "From: mail01@mundrapower.example\nSent: 2026-10-01 11:40:00 UTC+08:00\nTo: mail01@anchorpoint.example\nCc: mail01@meridianfleet.example\nSubject: VSL-13 / MUNDRA - CARGO SHORTAGE CLAIM\n\nDear Sirs,\n\nReceiver claims for 410 mt shortage (0.67%) at USD 100 per mt = USD 41,000; mentions the CP 0.5% tolerance and the 12-month time bar.\n\n- Shortage: 410 mt\n- Shortage: 0.67 %\n- Claim amount: 41000.0 USD\n- Tolerance: 0.5 %\n- Time bar months: 12\n- Claim clause: clause 45\n\nBest regards,\nMundra Power Fuels Ltd\n\n-----Original Message-----\nFrom: mail01@kutchgulf.example\nSent: 2026-09-23 06:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@ravenscar.example\nSubject: VSL-13 MUNDRA DISCHARGE COMPLETED - OUTTURN\n\nDear Colleagues,\n\nDischarge completed; outturn per shore weighbridge 60,790 mt against B/L 61,200 mt.\n\n- Outturn qty: 60,790 mt\n- Bl qty: 61,200 mt\n\nBest regards,\nKutch Gulf Port Services",
+ "text": "From: mail01@mundrapower.example\nSent: 2026-10-01 11:40:00 UTC+08:00\nTo: mail01@anchorpoint.example\nCc: mail01@meridianfleet.example\nSubject: VSL-03 / MUNDRA - CARGO SHORTAGE CLAIM\n\nDear Sirs,\n\nReceiver claims for 410 mt shortage (0.67%) at USD 100 per mt = USD 41,000; mentions the CP 0.5% tolerance and the 12-month time bar.\n\n- Shortage: 410 mt\n- Shortage: 0.67 %\n- Claim amount: 41000.0 USD\n- Tolerance: 0.5 %\n- Time bar months: 12\n- Claim clause: clause 45\n\nBest regards,\nMundra Power Fuels Ltd\n\n-----Original Message-----\nFrom: mail01@kutchgulf.example\nSent: 2026-09-23 06:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@ravenscar.example\nSubject: VSL-03 MUNDRA DISCHARGE COMPLETED - OUTTURN\n\nDear Colleagues,\n\nDischarge completed; outturn per shore weighbridge 60,790 mt against B/L 61,200 mt.\n\n- Outturn qty: 60,790 mt\n- Bl qty: 61,200 mt\n\nBest regards,\nKutch Gulf Port Services",
  "event_id": "M13012",
- "vessel": "VSL-13",
+ "vessel": "VSL-03",
  "thread": "V301-short",
  "scenario": "S18",
  "event_type": "Claim"

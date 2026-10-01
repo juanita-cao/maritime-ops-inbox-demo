@@ -1,8 +1,8 @@
 {
  "email_id": "E022",
- "text": "From: mail01@vsltidewaterorchid.example\nSent: 2026-09-14 12:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@formosasaltandminerals.example\nSubject: VSL-15 NOON REPORT 2026-09-14\n\nGood day,\n\nNoon report, VSL-15, V501.\nDd: 14 Sep 2026\nPosition: 05-20N 115-30E at 1200 LT\nCourse/avg spd/rpm/eng slip: 090 / 12.0 / 72 / 3.0\nDaily GPS speed / Log speed: 12.2 / 12.1\nAverage GPS speed / Log Speed: 12.1 / 12.0\nIFO Consumed/LSMGO consumed fm last report: VLSFO 24.9 mt LSMGO 0.0 mt\nWind direction/force/sea cond/vis: NE / 4 / 1.5 M / Good\nWeather condition: NE / 4 Cloudy\nROB: VLSFO 480.2 mt, LSMGO 60.0 mt\nETA: 2026-09-14 08:00 LT\nRemarks: Vessel proceeding normally.\n\nBest regards,\nMaster MV Tidewater Orchid",
+ "text": "From: mail01@vsltidewaterorchid.example\nSent: 2026-09-14 12:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@formosasaltandminerals.example\nSubject: VSL-05 NOON REPORT 2026-09-14\n\nGood day,\n\nNoon report, VSL-05, V501.\nDd: 14 Sep 2026\nPosition: 05-20N 115-30E at 1200 LT\nCourse/avg spd/rpm/eng slip: 090 / 12.0 / 72 / 3.0\nDaily GPS speed / Log speed: 12.2 / 12.1\nAverage GPS speed / Log Speed: 12.1 / 12.0\nIFO Consumed/LSMGO consumed fm last report: VLSFO 24.9 mt LSMGO 0.0 mt\nWind direction/force/sea cond/vis: NE / 4 / 1.5 M / Good\nWeather condition: NE / 4 Cloudy\nROB: VLSFO 480.2 mt, LSMGO 60.0 mt\nETA: 2026-09-14 08:00 LT\nRemarks: Vessel proceeding normally.\n\nBest regards,\nMaster MV Tidewater Orchid",
  "event_id": "M15005",
- "vessel": "VSL-15",
+ "vessel": "VSL-05",
  "thread": "V501-noon",
  "scenario": null,
  "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"

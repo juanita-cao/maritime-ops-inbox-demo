@@ -1,8 +1,8 @@
 {
  "email_id": "E045",
- "text": "From: mail01@anchorpoint.example\nSent: 2026-09-29 09:10:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@kestrelharbor.example\nSubject: VSL-13 MUNDRA - RECEIVER'S LETTER ALLEGING SEAWATER IN HOLD NO.4\n\nDear Colleagues,\n\nThe correspondent forwards the receiver's letter: coal from hold no.4 arrived with moisture 11.2% against 9.0% at load; receiver alleges seawater ingress and reserves rights; no amount claimed yet.\n\n- Hold no: 4\n- Discharge moisture: 11.2 %\n- Load moisture: 9.0 %\n\nBest regards,\nAnchor Point Club Correspondents",
+ "text": "From: mail01@anchorpoint.example\nSent: 2026-09-29 09:10:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@kestrelharbor.example\nSubject: VSL-03 MUNDRA - RECEIVER'S LETTER ALLEGING SEAWATER IN HOLD NO.4\n\nDear Colleagues,\n\nThe correspondent forwards the receiver's letter: coal from hold no.4 arrived with moisture 11.2% against 9.0% at load; receiver alleges seawater ingress and reserves rights; no amount claimed yet.\n\n- Hold no: 4\n- Discharge moisture: 11.2 %\n- Load moisture: 9.0 %\n\nBest regards,\nAnchor Point Club Correspondents",
  "event_id": "M13010",
- "vessel": "VSL-13",
+ "vessel": "VSL-03",
  "thread": "V301-wet",
  "scenario": "S07",
  "event_type": "P&I / Insurance"

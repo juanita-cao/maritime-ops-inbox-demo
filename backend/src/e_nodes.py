@@ -196,7 +196,7 @@ def _addresses(value: str) -> list[str]:
 
 def normalise_subject(subject: str) -> str:
     """Subject without Re:/Fw: prefixes (English and Chinese), case and spacing differences,
-    including spaces next to punctuation ("VSL-12// NOON" equals "VSL-12//noon") (E1 and E2)."""
+    including spaces next to punctuation ("VSL-02// NOON" equals "VSL-02//noon") (E1 and E2)."""
     previous = None
     while previous != subject:
         previous, subject = subject, _SUBJECT_PREFIX.sub("", subject, count=1)

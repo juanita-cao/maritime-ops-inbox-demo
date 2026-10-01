@@ -3,14 +3,14 @@
   {
    "action_type": "Prepare Claim / Record Evidence",
    "for_event": "Off-hire",
-   "description": "Prepare a claim for the off-hire amount of 2566.67 USD related to VSL-12 at ROTTERDAM due to the 4.0 hours off-hire caused by the pilot boarding delay.",
+   "description": "Prepare a claim for the off-hire amount of 2566.67 USD related to VSL-02 at ROTTERDAM due to the 4.0 hours off-hire caused by the pilot boarding delay.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Check Hire / Invoice / Payment",
    "for_event": "Hire / SOA / Payment",
-   "description": "Check the next statement for the reinstated 7.5 hours (USD 4,812.50) for VSL-12 at ROTTERDAM.",
+   "description": "Check the next statement for the reinstated 7.5 hours (USD 4,812.50) for VSL-02 at ROTTERDAM.",
    "due": null,
    "owner_role": "Finance Officer"
   }

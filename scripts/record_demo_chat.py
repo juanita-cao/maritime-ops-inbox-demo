@@ -25,10 +25,10 @@ from src.settings import DATASET, DATASET_ROOT  # noqa: E402
 QUESTIONS = {
     "mock": [
         "我还有哪些邮件没有看？",
-        "VSL-11 能不能在这个航次内安排水下检查或清洗？",
-        "VSL-12 在北海 ECA 烧的低硫油费用应该谁承担？",
-        "VSL-15 的滞期费双方各自怎么算？",
-        "VSL-19 能不能同意转租给 Altai Trade FZE？",
+        "VSL-01 能不能在这个航次内安排水下检查或清洗？",
+        "VSL-02 在北海 ECA 烧的低硫油费用应该谁承担？",
+        "VSL-05 的滞期费双方各自怎么算？",
+        "VSL-09 能不能同意转租给 Altai Trade FZE？",
         "从天津到新加坡，航速 12 节要几天？",
     ],
 }

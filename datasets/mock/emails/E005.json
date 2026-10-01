@@ -1,8 +1,8 @@
 {
  "email_id": "E005",
- "text": "From: mail01@atlanticsul.example\nSent: 2026-08-30 09:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@brannock.example\nSubject: VSL-12 PARANAGUA - LOADING COMMENCED\n\nDear Colleagues,\n\nAgent: berthed 29 Aug, loading started, rate 1,900 mt/h.\n\n- Loading rate: 1900 mt/h\n\nBest regards,\nAtlantic Sul Agency",
+ "text": "From: mail01@atlanticsul.example\nSent: 2026-08-30 09:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@brannock.example\nSubject: VSL-02 PARANAGUA - LOADING COMMENCED\n\nDear Colleagues,\n\nAgent: berthed 29 Aug, loading started, rate 1,900 mt/h.\n\n- Loading rate: 1900 mt/h\n\nBest regards,\nAtlantic Sul Agency",
  "event_id": "M12001",
- "vessel": "VSL-12",
+ "vessel": "VSL-02",
  "thread": "V201-load",
  "scenario": null,
  "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"

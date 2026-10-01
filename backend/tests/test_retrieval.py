@@ -17,10 +17,10 @@ def fake_embed(texts: list[str]) -> list[list[float]]:
 
 
 EMAILS = [
-    ("E046", "M/V VSL-12//ROB", "ROB calculation. Arrival Discharge Port Distance 1400nm including 80nm ECA. Stay in berth 2 days.", ""),
-    ("E051", "M/V VSL-12//CTM - NEWCASTLE", "Thanks for your kind support, handling fee USD400 base on CTM USD80000.", ""),
-    ("E060", "MV VSL-11 / CPY-02 30TH HIRE", "Please find attached the hire statement with bank confirmation.", ""),
-    ("E049", "M/V VSL-12 DAILY REPORT", "Daily running hours of ship crane numbers: NO.1(7H) NO.2(3H). Weather Cloudy.", "earlier mail"),
+    ("E046", "M/V VSL-02//ROB", "ROB calculation. Arrival Discharge Port Distance 1400nm including 80nm ECA. Stay in berth 2 days.", ""),
+    ("E051", "M/V VSL-02//CTM - NEWCASTLE", "Thanks for your kind support, handling fee USD400 base on CTM USD80000.", ""),
+    ("E060", "MV VSL-01 / CPY-02 30TH HIRE", "Please find attached the hire statement with bank confirmation.", ""),
+    ("E049", "M/V VSL-02 DAILY REPORT", "Daily running hours of ship crane numbers: NO.1(7H) NO.2(3H). Weather Cloudy.", "earlier mail"),
 ]
 
 

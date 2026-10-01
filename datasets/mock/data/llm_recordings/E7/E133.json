@@ -3,14 +3,14 @@
   {
    "action_type": "Collect / Chase Documents",
    "for_event": "Sanctions / Compliance / KYC",
-   "description": "Collect the ownership chart for VSL-19 to clear the partial match found during internal screening.",
+   "description": "Collect the ownership chart for VSL-09 to clear the partial match found during internal screening.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Seek Internal Approval",
    "for_event": "Sanctions / Compliance / KYC",
-   "description": "Seek internal approval to not consent to the transaction involving VSL-19 until the screening match is cleared.",
+   "description": "Seek internal approval to not consent to the transaction involving VSL-09 until the screening match is cleared.",
    "due": null,
    "owner_role": "Compliance Officer"
   }

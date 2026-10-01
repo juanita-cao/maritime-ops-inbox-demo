@@ -1,8 +1,8 @@
 {
  "email_id": "E063",
- "text": "From: mail01@vslpinewoodstar.example\nSent: 2026-10-02 13:40:00 UTC+08:00\nTo: mail01@meridianfleet.example\nSubject: VSL-18 / V801 SAILING REPORT BUNBURY\n\nGood day,\n\nSailing report, VSL-18, V801.\nDd: 2 Oct 2026\nSailed at 13:40 LT.\nCargo on board: 54200 mt\nROB: VLSFO 870.2 mt, LSMGO 60.0 mt\n\nBest regards,\nMaster MV Pinewood Star",
+ "text": "From: mail01@vslpinewoodstar.example\nSent: 2026-10-02 13:40:00 UTC+08:00\nTo: mail01@meridianfleet.example\nSubject: VSL-08 / V801 SAILING REPORT BUNBURY\n\nGood day,\n\nSailing report, VSL-08, V801.\nDd: 2 Oct 2026\nSailed at 13:40 LT.\nCargo on board: 54200 mt\nROB: VLSFO 870.2 mt, LSMGO 60.0 mt\n\nBest regards,\nMaster MV Pinewood Star",
  "event_id": "M18002",
- "vessel": "VSL-18",
+ "vessel": "VSL-08",
  "thread": "V801-sail",
  "scenario": null,
  "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"

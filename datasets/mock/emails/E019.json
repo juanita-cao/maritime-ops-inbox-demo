@@ -1,8 +1,8 @@
 {
  "email_id": "E019",
- "text": "From: mail01@yellowgulf.example\nSent: 2026-09-14 08:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@corvane.example\nSubject: VSL-11 QINGDAO ETA NOTICE AND BERTHING PLAN\n\nDear Colleagues,\n\nAgent gives ETA and the berth plan; berthing expected after a 2 day wait.\n\n- Expected wait: 2 days\n\nBest regards,\nYellow Gulf Shipping Agency",
+ "text": "From: mail01@yellowgulf.example\nSent: 2026-09-14 08:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@corvane.example\nSubject: VSL-01 QINGDAO ETA NOTICE AND BERTHING PLAN\n\nDear Colleagues,\n\nAgent gives ETA and the berth plan; berthing expected after a 2 day wait.\n\n- Expected wait: 2 days\n\nBest regards,\nYellow Gulf Shipping Agency",
  "event_id": "M11003",
- "vessel": "VSL-11",
+ "vessel": "VSL-01",
  "thread": "V101-qd",
  "scenario": null,
  "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"

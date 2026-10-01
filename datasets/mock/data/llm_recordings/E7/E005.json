@@ -3,21 +3,21 @@
   {
    "action_type": "Verify / Reconcile Report Data",
    "for_event": "Loading / Cargo Operations",
-   "description": "Verify the loading report data for vessel VSL-12, which berthed on 29 Aug and has a loading rate of 1,900 mt/h.",
+   "description": "Verify the loading report data for vessel VSL-02, which berthed on 29 Aug and has a loading rate of 1,900 mt/h.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Update the vessel schedule to reflect that VSL-12 berthed on 29 Aug.",
+   "description": "Update the vessel schedule to reflect that VSL-02 berthed on 29 Aug.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Notify Party (Agent / P&I / Manager)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Notify the relevant parties about the berthing of VSL-12 on 29 Aug.",
+   "description": "Notify the relevant parties about the berthing of VSL-02 on 29 Aug.",
    "due": null,
    "owner_role": "Operations Officer"
   }

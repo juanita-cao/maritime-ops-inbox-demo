@@ -1,8 +1,8 @@
 {
  "email_id": "E034",
- "text": "From: mail01@maasmond.example\nSent: 2026-09-22 10:05:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@brannock.example\nSubject: VSL-12 ROTTERDAM ARRIVAL AND BERTHING PLAN\n\nDear Colleagues,\n\nAgent: pilot on board 10:00, berthing 14:30 at the grain terminal.\n\n- Arrival rotterdam: 2026-09-22 10:00\n\nBest regards,\nMaasmond Agency",
+ "text": "From: mail01@maasmond.example\nSent: 2026-09-22 10:05:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@brannock.example\nSubject: VSL-02 ROTTERDAM ARRIVAL AND BERTHING PLAN\n\nDear Colleagues,\n\nAgent: pilot on board 10:00, berthing 14:30 at the grain terminal.\n\n- Arrival rotterdam: 2026-09-22 10:00\n\nBest regards,\nMaasmond Agency",
  "event_id": "M12009",
- "vessel": "VSL-12",
+ "vessel": "VSL-02",
  "thread": "V201-rtm",
  "scenario": null,
  "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"

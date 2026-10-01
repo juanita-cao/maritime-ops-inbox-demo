@@ -3,7 +3,7 @@
   {
    "action_type": "Verify / Reconcile Report Data",
    "for_event": "Discharging",
-   "description": "Verify the discharge report data for VSL-12 to ensure the outturn of 52,284 mt is accurately recorded.",
+   "description": "Verify the discharge report data for VSL-02 to ensure the outturn of 52,284 mt is accurately recorded.",
    "due": null,
    "owner_role": "Operations Officer"
   }

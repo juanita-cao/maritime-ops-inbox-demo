@@ -32,7 +32,7 @@ def row(tid, priority, email):
     action = TaskAction(action_id=f"{tid}-A", task_id=tid, action_type="Check CP Terms", description=f"do {tid}",
                         priority=priority, due_type="Redelivery", due_date=date(2026, 8, 6), set_by="ai",
                         source_email_id=email)  # fmt: skip
-    return TaskRow(task_id=tid, vessel="VSL-12", voyage="V202", action=f"do {tid}", priority=priority,
+    return TaskRow(task_id=tid, vessel="VSL-02", voyage="V202", action=f"do {tid}", priority=priority,
                    statuses=["Action Required"], source_email_id=email, actions=[action])  # fmt: skip
 
 
@@ -40,7 +40,7 @@ def context(queue=()):
     return ChatContext(
         tasks=RankedTaskList(groups=[TaskGroup(name="Action Required", items=[row("T1", 5, "E010"), row("T2", 4, "E011")])]),
         dues=DueList(store_status="ok"),
-        vessels=[VesselView(vessel_code="VSL-12")],
+        vessels=[VesselView(vessel_code="VSL-02")],
         review_queue=ReviewQueue(items=list(queue), store_status="ok"),
         emails=[ChatEmail(email_id="E010", subject="REDEL NOTICE", sender="Charterer CPY-10", excerpt="Charterers give notice.")],
     )  # fmt: skip
@@ -81,10 +81,10 @@ def test_e16_s01_attention_answer_cites_tasks_and_emails():
 
 def test_e16_s02_source_not_in_context_is_dropped():
     llm = FakeLlm({"text": "See these.", "sources": [{"kind": "email", "id": "E999", "label": "x"},
-                                                      {"kind": "vessel", "id": "VSL-12", "label": "VSL-12"},
+                                                      {"kind": "vessel", "id": "VSL-02", "label": "VSL-02"},
                                                       {"kind": "page", "id": "action", "label": "Action page"}]})  # fmt: skip
-    answer = ask("What is open on VSL-12?", llm)
-    assert [(x.kind, x.id) for x in answer.sources] == [("vessel", "VSL-12"), ("page", "action")]
+    answer = ask("What is open on VSL-02?", llm)
+    assert [(x.kind, x.id) for x in answer.sources] == [("vessel", "VSL-02"), ("page", "action")]
 
 
 def test_e16_s03_question_with_a_phone_number_is_not_sent():
@@ -94,14 +94,14 @@ def test_e16_s03_question_with_a_phone_number_is_not_sent():
 
 
 def test_e16_s04_review_card_is_the_first_queue_item_without_the_model():
-    queue = [ReviewRow(proposal_id="P2", email_id="E010", vessel="VSL-12", event_type="Redelivery Notice",
+    queue = [ReviewRow(proposal_id="P2", email_id="E010", vessel="VSL-02", event_type="Redelivery Notice",
                        statuses=["Action Required"], status="open"),
              ReviewRow(proposal_id="P1", email_id="E011", status="open")]  # fmt: skip
     llm = FakeLlm({"text": "x"})
     answer = ask("Any new email to review?", llm, context(queue))
     assert (answer.review_card, answer.review_email_id, llm.calls) == ("P2", "E010", [])
     assert answer.text.startswith("New email to review: REDEL NOTICE") and "1 more" in answer.text
-    assert [(x.kind, x.id) for x in answer.sources] == [("email", "E010"), ("vessel", "VSL-12")]
+    assert [(x.kind, x.id) for x in answer.sources] == [("email", "E010"), ("vessel", "VSL-02")]
 
 
 def test_e16_s05_empty_queue_has_no_card():

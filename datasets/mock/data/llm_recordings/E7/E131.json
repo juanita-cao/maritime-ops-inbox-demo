@@ -3,7 +3,7 @@
   {
    "action_type": "Check Hire / Invoice / Payment",
    "for_event": "Hire / SOA / Payment",
-   "description": "Verify the dues invoice no ZC-2291 for vessel VSL-13 at RICHARDS BAY, ensuring the amount of USD 31,780 is accurate due to the correction of a typing error.",
+   "description": "Verify the dues invoice no ZC-2291 for vessel VSL-03 at RICHARDS BAY, ensuring the amount of USD 31,780 is accurate due to the correction of a typing error.",
    "due": null,
    "owner_role": "Operations Officer"
   }

@@ -3,7 +3,7 @@
   {
    "action_type": "Verify / Reconcile Report Data",
    "for_event": "Loading / Cargo Operations",
-   "description": "Verify the loading report data for VSL-13 at RICHARDS BAY, completed on 29 Aug at 17:30, ensuring the cargo quantity of 61,200 mt matches the bill of lading quantity of 61,200 mt.",
+   "description": "Verify the loading report data for VSL-03 at RICHARDS BAY, completed on 29 Aug at 17:30, ensuring the cargo quantity of 61,200 mt matches the bill of lading quantity of 61,200 mt.",
    "due": null,
    "owner_role": "Operations Officer"
   }

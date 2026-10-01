@@ -168,8 +168,8 @@ def _inbox_row(email: s.ParsedEmail, latest: dict | None) -> InboxRow:
 
 @app.get("/api/emails")
 def list_emails(store: Store = Depends(get_store)) -> list[InboxRow]:
-    # the proposals are read once, not once per email: 168 emails took 9 s on the small Render instance because
-    # each email re-read and re-parsed every proposal
+    # [AMENDMENT 2026-10-01] the proposals are read once, not once per email: 168 emails took 9 s on the small
+    # Render instance because each email re-read and re-parsed every proposal
     latest = {r["email_id"]: r for r in store.proposal_rows(_LATEST_STATUSES)}  # the last row of an email wins
     rows = []
     for email_id in store.email_ids():

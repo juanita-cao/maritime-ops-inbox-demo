@@ -3,7 +3,7 @@
   {
    "action_type": "Check Hire / Invoice / Payment",
    "for_event": "Hire / SOA / Payment",
-   "description": "Verify the correct total amount for invoice no: ZC-2291, ensuring it aligns with either 31,870 or 31,780, and clarify the responsibility for the pre-loading survey and tally lines under the CP for vessel VSL-13.",
+   "description": "Verify the correct total amount for invoice no: ZC-2291, ensuring it aligns with either 31,870 or 31,780, and clarify the responsibility for the pre-loading survey and tally lines under the CP for vessel VSL-03.",
    "due": null,
    "owner_role": "Operations Officer"
   }

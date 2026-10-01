@@ -3,14 +3,14 @@
   {
    "action_type": "Verify / Reconcile Report Data",
    "for_event": "Discharging",
-   "description": "Verify the discharge report data for VSL-16, ensuring the outturn quantity of 71,488 mt is accurately recorded.",
+   "description": "Verify the discharge report data for VSL-06, ensuring the outturn quantity of 71,488 mt is accurately recorded.",
    "due": null,
    "owner_role": ""
   },
   {
    "action_type": "Reply / Confirm to Counterparty",
    "for_event": "Hold Cleaning / Cargo Hold Condition",
-   "description": "Confirm to the counterparty that the holds of VSL-16 have been swept and washed for the next cargo.",
+   "description": "Confirm to the counterparty that the holds of VSL-06 have been swept and washed for the next cargo.",
    "due": null,
    "owner_role": ""
   }

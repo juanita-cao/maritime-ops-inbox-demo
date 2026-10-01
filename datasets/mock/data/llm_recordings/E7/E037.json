@@ -3,7 +3,7 @@
   {
    "action_type": "Verify / Reconcile Report Data",
    "for_event": "Discharging",
-   "description": "Verify the discharge report data for vessel VSL-11 at QINGDAO, ensuring the outturn quantity of 78,052 mt is accurately recorded.",
+   "description": "Verify the discharge report data for vessel VSL-01 at QINGDAO, ensuring the outturn quantity of 78,052 mt is accurately recorded.",
    "due": null,
    "owner_role": "Operations Officer"
   }

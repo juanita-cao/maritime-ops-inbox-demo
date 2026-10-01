@@ -7,7 +7,7 @@ from pathlib import Path
 
 import yaml
 
-from mockdata import minor, vsl11, vsl12, vsl13
+from mockdata import minor, vsl01, vsl02, vsl03
 from mockdata.kbgen import build_kb
 from mockdata.ledger import Ledger
 from mockdata.render import assign_ids, render_all
@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 def all_ledgers() -> list[Ledger]:
-    return [vsl11.build(), vsl12.build(), vsl13.build(), *[f() for f in minor.ALL.values()]]
+    return [vsl01.build(), vsl02.build(), vsl03.build(), *[f() for f in minor.ALL.values()]]
 
 
 def fleet_names() -> dict[str, str]:

@@ -3,14 +3,14 @@
   {
    "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Update the vessel schedule for VSL-14 with the arrival time at Haldia on 2026-10-05 at 08:30.",
+   "description": "Update the vessel schedule for VSL-04 with the arrival time at Haldia on 2026-10-05 at 08:30.",
    "due": "2026-10-05",
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Notify Party (Agent / P&I / Manager)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Notify the relevant parties about the arrival of VSL-14 at Haldia on 2026-10-05 at 08:30.",
+   "description": "Notify the relevant parties about the arrival of VSL-04 at Haldia on 2026-10-05 at 08:30.",
    "due": "2026-10-05",
    "owner_role": "Operations Officer"
   }

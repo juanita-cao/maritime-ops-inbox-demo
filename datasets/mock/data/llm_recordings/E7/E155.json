@@ -3,14 +3,14 @@
   {
    "action_type": "Check Hire / Invoice / Payment",
    "for_event": "Hire / SOA / Payment",
-   "description": "Verify the payment confirmation for VSL-11 scheduled for 15 Oct and ensure the deduction of 6.0 h off-hire is reflected in the next statement due on 2026-10-16.",
+   "description": "Verify the payment confirmation for VSL-01 scheduled for 15 Oct and ensure the deduction of 6.0 h off-hire is reflected in the next statement due on 2026-10-16.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Prepare Claim / Record Evidence",
    "for_event": "Off-hire",
-   "description": "Document the 6.0 h off-hire for VSL-11 as requested by the charterer to support the deduction in the upcoming statement.",
+   "description": "Document the 6.0 h off-hire for VSL-01 as requested by the charterer to support the deduction in the upcoming statement.",
    "due": null,
    "owner_role": "Operations Officer"
   }

@@ -3,21 +3,21 @@
   {
    "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Update the vessel schedule for VSL-12 with ETA on 14 Oct and ETB at 20:30 on 14 Oct.",
+   "description": "Update the vessel schedule for VSL-02 with ETA on 14 Oct and ETB at 20:30 on 14 Oct.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Notify Party (Agent / P&I / Manager)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Notify the agent about the updated schedule for VSL-12, including the pilot at 18:00 on 14 Oct and berth at 20:30.",
+   "description": "Notify the agent about the updated schedule for VSL-02, including the pilot at 18:00 on 14 Oct and berth at 20:30.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Verify / Reconcile Report Data",
    "for_event": "Discharging",
-   "description": "Verify the discharge report data for VSL-12 for the dates 15-16 Oct.",
+   "description": "Verify the discharge report data for VSL-02 for the dates 15-16 Oct.",
    "due": null,
    "owner_role": "Operations Officer"
   }

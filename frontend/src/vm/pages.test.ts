@@ -4,9 +4,9 @@ import type { TaskRow, VesselView } from '../api/types'
 import { buildActionCenter, buildOverview, buildTask, buildVessel, buildVoyageView, dueLabel } from './pages'
 
 const taskRow = (over: Partial<TaskRow> = {}): TaskRow => ({
-  task_id: 'T1', vessel: 'VSL-12', voyage: 'V203', action: 'Get the survey quote', priority: 4, due_type: 'Others',
+  task_id: 'T1', vessel: 'VSL-02', voyage: 'V203', action: 'Get the survey quote', priority: 4, due_type: 'Others',
   deadline: '2026-08-02T00:00:00+08:00', overdue: false, statuses: ['Action Required', 'Waiting for Reply'],
-  source_email_id: 'E054', task_key: 'VSL-12|V203|survey:-', version: 2,
+  source_email_id: 'E054', task_key: 'VSL-02|V203|survey:-', version: 2,
   actions: [
     { action_id: 'A1', task_id: 'T1', action_type: 'Arrange Survey', description: 'Get the quote', priority: 4, due_type: 'Others',
       due_other: 'survey quote', due_date: '2026-08-02', set_by: 'officer', source_email_id: 'E054', needs_approval: false, awaiting_reply: true },
@@ -35,7 +35,7 @@ describe('F-VM pages', () => {
 
   it('f_vm_s07_timeline_by_event_time_not_arrival', () => {
     const view: VesselView = {
-      vessel_code: 'VSL-12',
+      vessel_code: 'VSL-02',
       facts: [
         { fact_key: 'eta:newcastle', value: '4 Aug', event_time: '2026-07-30T08:00:00+08:00', source_email_id: 'E2', superseded: false },
         { fact_key: 'eta:newcastle', value: '5 Aug', event_time: '2026-07-28T08:00:00+08:00', source_email_id: 'E1', superseded: true },
@@ -57,8 +57,8 @@ describe('F-VM pages', () => {
   it('f_vm_overview_counts_an_item_in_each_status', () => {
     const vm = buildOverview(
       [
-        { vessel_code: 'VSL-12', voyages: [], current_voyage: 'V203', counts: { 'Action Required': 2, 'Waiting for Reply': 1 }, high_priority: 1, voyage_details: [] },
-        { vessel_code: 'VSL-11', voyages: [], current_voyage: null, counts: { 'Action Required': 1 }, high_priority: 0, voyage_details: [] },
+        { vessel_code: 'VSL-02', voyages: [], current_voyage: 'V203', counts: { 'Action Required': 2, 'Waiting for Reply': 1 }, high_priority: 1, voyage_details: [] },
+        { vessel_code: 'VSL-01', voyages: [], current_voyage: null, counts: { 'Action Required': 1 }, high_priority: 0, voyage_details: [] },
       ],
       [],
       { items: [{ proposal_id: 'P', email_id: 'E', status: 'open' }], store_status: 'ok' },
@@ -88,7 +88,7 @@ describe('Vessel voyage strip (U5)', () => {
     const fact = (key: string, value: string, time: string, email: string, superseded = false) =>
       ({ fact_key: key, value, event_time: time, source_email_id: email, superseded })
     const view: VesselView = {
-      vessel_code: 'VSL-12', timeline: [], open_tasks: [], auto_applied: [],
+      vessel_code: 'VSL-02', timeline: [], open_tasks: [], auto_applied: [],
       facts: [
         fact('sailed:dampier', '1448LT 30 Jul 2026', '2026-07-30T06:48:00+00:00', 'E053'),
         fact('sailed:dampier_p_s', '1606lt 22 Jul 2026', '2026-07-22T08:06:00+00:00', 'E012'),

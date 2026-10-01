@@ -3,14 +3,14 @@
   {
    "action_type": "Reserve Rights / Reply Without Prejudice",
    "for_event": "Claim",
-   "description": "Prepare a response to the charterers regarding the claim, referencing clause 12 about bunkers and clause 32 about cleaning, and ask them to withdraw the claim related to VSL-12.",
+   "description": "Prepare a response to the charterers regarding the claim, referencing clause 12 about bunkers and clause 32 about cleaning, and ask them to withdraw the claim related to VSL-02.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Confirm Bunker ROB / Stem",
    "for_event": "Bunker (Stem / Quote / ROB / Quality)",
-   "description": "Confirm the remaining on board (ROB) bunkers for VSL-12 at Rotterdam as per the charterers' order.",
+   "description": "Confirm the remaining on board (ROB) bunkers for VSL-02 at Rotterdam as per the charterers' order.",
    "due": null,
    "owner_role": "Bunker Coordinator"
   }

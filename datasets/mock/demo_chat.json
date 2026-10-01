@@ -2,7 +2,7 @@
  {
   "question": "我还有哪些邮件没有看？",
   "answer": {
-   "text": "待审阅的新邮件共 113 项，以下显示优先级最高的 5 项：\n- E025：VSL-11 LOI (Letter of Indemnity)\n- E028：VSL-11 LOI (Letter of Indemnity)\n- E057：VSL-13 Cash to Master / Supply (CTM, Fresh Water, Provisions)\n- E058：VSL-15 CP Terms / Recap / Addendum\n- E064：VSL-13 Cash to Master / Supply (CTM, Fresh Water, Provisions)\n另有 108 项，可在 Overview 页面查看全部。",
+   "text": "待审阅的新邮件共 113 项，以下显示优先级最高的 5 项：\n- E025：VSL-01 LOI (Letter of Indemnity)\n- E028：VSL-01 LOI (Letter of Indemnity)\n- E057：VSL-03 Cash to Master / Supply (CTM, Fresh Water, Provisions)\n- E058：VSL-05 CP Terms / Recap / Addendum\n- E064：VSL-03 Cash to Master / Supply (CTM, Fresh Water, Provisions)\n另有 108 项，可在 Overview 页面查看全部。",
    "sources": [
     {
      "kind": "email",
@@ -58,7 +58,7 @@
   "model": "hybrid"
  },
  {
-  "question": "VSL-11 能不能在这个航次内安排水下检查或清洗？",
+  "question": "VSL-01 能不能在这个航次内安排水下检查或清洗？",
   "answer": {
    "text": "**初步建议：**建议先锁定 Rizhao 卸后锚地做 UWI；UWC 暂不安排，待UWI报告确认有 fouling 且港口允许后再推进。若Rizhao许可或卸后窗口不足，再转 Newcastle 锚地询价/许可。（建议，需复核）\n可以在本航次安排水下检查：优先放 Rizhao 卸后锚地，需 3 个工作日许可；水下清洗在 Rizhao 港界内不允许。若 Rizhao 来不及，备选 Newcastle 锚地；清洗仅在检查显示 fouling 后再定。",
    "sources": [
@@ -70,7 +70,7 @@
     {
      "kind": "email",
      "id": "E153",
-     "label": "VSL-11 hull inspection plan"
+     "label": "VSL-01 hull inspection plan"
     },
     {
      "kind": "email",
@@ -80,15 +80,15 @@
     {
      "kind": "email",
      "id": "E162",
-     "label": "VSL-11 noon report 2026-10-12"
+     "label": "VSL-01 noon report 2026-10-12"
     },
     {
      "kind": "email",
      "id": "E047",
-     "label": "VSL-11 hire statement no.14"
+     "label": "VSL-01 hire statement no.14"
     }
    ],
-   "draft": "Subject: M/V VSL-11 - UWI/UWC enquiry at Rizhao, ETA [date]\n\nDear Sirs,\n\nPlease advise whether you can attend M/V VSL-11 at Rizhao.\n- ETA / ETD: [date] / [date]\n- LOA / Breadth moulded: [m] / [m]\n- Estimated arrival draft: [m]\n- Last dry-docking: [date]\n- Service: UWI / UWC\n\nPlease confirm: whether the work can be done, the time required, whether at anchorage or berth, whether night work is allowed, and the class approval you hold for inspection reports [class society]. Please also advise any port permit needed and your quotation.\n\nBest regards,\n[name]",
+   "draft": "Subject: M/V VSL-01 - UWI/UWC enquiry at Rizhao, ETA [date]\n\nDear Sirs,\n\nPlease advise whether you can attend M/V VSL-01 at Rizhao.\n- ETA / ETD: [date] / [date]\n- LOA / Breadth moulded: [m] / [m]\n- Estimated arrival draft: [m]\n- Last dry-docking: [date]\n- Service: UWI / UWC\n\nPlease confirm: whether the work can be done, the time required, whether at anchorage or berth, whether night work is allowed, and the class approval you hold for inspection reports [class society]. Please also advise any port permit needed and your quotation.\n\nBest regards,\n[name]",
    "review_card": null,
    "review_email_id": null,
    "llm_status": "ok",
@@ -142,7 +142,7 @@
     {
      "name": "search_emails",
      "arguments": {
-      "vessel": "VSL-11",
+      "vessel": "VSL-01",
       "event_type": "Hire / SOA / Payment",
       "limit": 5
      },
@@ -163,8 +163,8 @@
     "Tool get_email({\"email_id\": \"E153\"}) → E153",
     "Tool get_email({\"email_id\": \"E082\"}) → E082",
     "Tool get_email({\"email_id\": \"E162\"}) → E162",
-    "Tool search_emails({\"vessel\": \"VSL-11\", \"event_type\": \"Hire / SOA / Payment\", \"limit\": 5}) → E155, E047",
-    "读取了VSL-11关于Rizhao水下检查/清洗的代理回复、内部计划、Newcastle要求和最新noon report。",
+    "Tool search_emails({\"vessel\": \"VSL-01\", \"event_type\": \"Hire / SOA / Payment\", \"limit\": 5}) → E155, E047",
+    "读取了VSL-01关于Rizhao水下检查/清洗的代理回复、内部计划、Newcastle要求和最新noon report。",
     "核对了目的：Newcastle biofouling要求抵达前30天内检查报告。",
     "核对了港口可行性：Rizhao允许卸后锚地UWI，不允许港界内UWC。",
     "查到最新hire statement列表中hire rate，可用于off-hire风险粗估基础，但未读取CP off-hire条款全文。",
@@ -174,7 +174,7 @@
     "Evidence check (code): 5 of 5 quote(s) verified"
    ],
    "llm_model": "hybrid",
-   "details": "建议\n- 结论为L2建议，需人工确认后执行。\n- 目的已明确：Newcastle charterer 因 biofouling 要求抵达前 30 天内的 underwater hull inspection report。\n- 当前航次 V102：10月12日 noon report 显示 VSL-11 正常航行，ETA 2026-10-22 20:00 LT；上下文 vessel facts 指向 Port Hedland 已开航、下一港 ETA 与此一致，但邮件 E162 未写港名。\n- 已有代理反馈：Rizhao 可做 UWI，地点为卸后锚地，许可 3 个工作日，报价 USD 3,800；UWC 不允许在港界内做。\n- 已有内部计划：V102 在海上或 Hedland 没有 diving 时间；计划为 Rizhao 卸后锚地检查，或 Newcastle 锚地；清洗只在报告显示 fouling 后做。\n- 行业通用做法：UWC 常受港口环保/许可限制，UWI 通常更容易；询价应确认可否锚地/泊位作业、夜间作业、许可、class approval 与报告出具时间。\n- 缺：VSL-11 船舶尺度、上次坞修日期、抵 Rizhao/卸货窗口、Rizhao/Newcastle 实际靠泊/锚地等待时间、CP off-hire 条款全文；hire rate 可用 E047 的 USD 17,250/day 作粗估基础。\n\n依据：\n- Newcastle charterer要求抵达前30天内的水下船壳检查报告，目的与时间要求明确。 [E082]\n- Rizhao代理确认可在卸后锚地做UWI，许可3个工作日，报价USD 3,800；但港界内不允许UWC。 [E134]\n- 已有计划认为V102海上/Hedland无时间，Rizhao卸后锚地或Newcastle锚地是可行方向，清洗只在报告显示fouling后做。 [E153]\n- 最新报告显示船舶仍在航，ETA 2026-10-22 20:00 LT，可继续核Rizhao到港/卸货窗口。 [E162]\n- 最新hire statement列明hire rate USD 17,250/day，可作为评估潜在off-hire成本的基础。 [E047]\n反向可能 / 不确定性：\n- Rizhao in-water cleaning is not permitted inside port limits；因此不能把Rizhao作为UWC已可执行港。\n- 未读到Rizhao实际卸货时间/锚地等待时间，3个工作日许可可能与窗口冲突。\n缺失信息：\n- VSL-11 LOA、Breadth moulded、arrival draft、last dry-docking、class society。\n- Rizhao ETA/ETB/ETD、卸货完成时间、锚地等待/作业窗口。\n- Newcastle锚地是否允许UWI/UWC及许可周期/报价。\n- CP off-hire clause全文；仅有hire rate，不能判断time lost是否off-hire。\n这是基于现有材料形成的 proposal，建议 OP / chartering / legal 在实际处理前复核。\n\n一般航运知识部分不是公司记录；未接入实时外部数据（天气、最新港口限制、routing distance），需另行确认。",
+   "details": "建议\n- 结论为L2建议，需人工确认后执行。\n- 目的已明确：Newcastle charterer 因 biofouling 要求抵达前 30 天内的 underwater hull inspection report。\n- 当前航次 V102：10月12日 noon report 显示 VSL-01 正常航行，ETA 2026-10-22 20:00 LT；上下文 vessel facts 指向 Port Hedland 已开航、下一港 ETA 与此一致，但邮件 E162 未写港名。\n- 已有代理反馈：Rizhao 可做 UWI，地点为卸后锚地，许可 3 个工作日，报价 USD 3,800；UWC 不允许在港界内做。\n- 已有内部计划：V102 在海上或 Hedland 没有 diving 时间；计划为 Rizhao 卸后锚地检查，或 Newcastle 锚地；清洗只在报告显示 fouling 后做。\n- 行业通用做法：UWC 常受港口环保/许可限制，UWI 通常更容易；询价应确认可否锚地/泊位作业、夜间作业、许可、class approval 与报告出具时间。\n- 缺：VSL-01 船舶尺度、上次坞修日期、抵 Rizhao/卸货窗口、Rizhao/Newcastle 实际靠泊/锚地等待时间、CP off-hire 条款全文；hire rate 可用 E047 的 USD 17,250/day 作粗估基础。\n\n依据：\n- Newcastle charterer要求抵达前30天内的水下船壳检查报告，目的与时间要求明确。 [E082]\n- Rizhao代理确认可在卸后锚地做UWI，许可3个工作日，报价USD 3,800；但港界内不允许UWC。 [E134]\n- 已有计划认为V102海上/Hedland无时间，Rizhao卸后锚地或Newcastle锚地是可行方向，清洗只在报告显示fouling后做。 [E153]\n- 最新报告显示船舶仍在航，ETA 2026-10-22 20:00 LT，可继续核Rizhao到港/卸货窗口。 [E162]\n- 最新hire statement列明hire rate USD 17,250/day，可作为评估潜在off-hire成本的基础。 [E047]\n反向可能 / 不确定性：\n- Rizhao in-water cleaning is not permitted inside port limits；因此不能把Rizhao作为UWC已可执行港。\n- 未读到Rizhao实际卸货时间/锚地等待时间，3个工作日许可可能与窗口冲突。\n缺失信息：\n- VSL-01 LOA、Breadth moulded、arrival draft、last dry-docking、class society。\n- Rizhao ETA/ETB/ETD、卸货完成时间、锚地等待/作业窗口。\n- Newcastle锚地是否允许UWI/UWC及许可周期/报价。\n- CP off-hire clause全文；仅有hire rate，不能判断time lost是否off-hire。\n这是基于现有材料形成的 proposal，建议 OP / chartering / legal 在实际处理前复核。\n\n一般航运知识部分不是公司记录；未接入实时外部数据（天气、最新港口限制、routing distance），需另行确认。",
    "evidence": [
     {
      "claim": "Newcastle 要求30天内水下检查报告",
@@ -198,7 +198,7 @@
      "support": "supports"
     },
     {
-     "claim": "VSL-11当前正常航行且ETA 2026-10-22 20:00 LT",
+     "claim": "VSL-01当前正常航行且ETA 2026-10-22 20:00 LT",
      "source_id": "E162",
      "quote": "ETA: 2026-10-22 20:00 LT\nRemarks: Vessel proceeding normally.",
      "status": "verified",
@@ -298,24 +298,24 @@
   "model": "hybrid"
  },
  {
-  "question": "VSL-12 在北海 ECA 烧的低硫油费用应该谁承担？",
+  "question": "VSL-02 在北海 ECA 烧的低硫油费用应该谁承担？",
   "answer": {
    "text": "**初步建议：**建议按 Charterers 承担该北海 SECA LSMGO 费用提交复核；不要接受其作为 Owners' cost 从 hire 扣除。（建议，需复核）\n建议提交复核：北海 SECA LSMGO 38.6 mt / USD 31,266 暂按 Charterers 承担，依据是 clause 12 由 Charterers 提供并支付所有 bunkers；clause 32 未给出 ECA 例外（E077）。",
    "sources": [
     {
      "kind": "email",
      "id": "E059",
-     "label": "VSL-12 - LSMGO CONSUMED IN SECA - CHARGE TO OWNERS"
+     "label": "VSL-02 - LSMGO CONSUMED IN SECA - CHARGE TO OWNERS"
     },
     {
      "kind": "email",
      "id": "E077",
-     "label": "RE: VSL-12 - LSMGO CONSUMED IN SECA - CHARGE TO OWNERS"
+     "label": "RE: VSL-02 - LSMGO CONSUMED IN SECA - CHARGE TO OWNERS"
     },
     {
      "kind": "email",
      "id": "E106",
-     "label": "RE: VSL-12 - LSMGO CONSUMED IN SECA - CHARGE TO OWNERS"
+     "label": "RE: VSL-02 - LSMGO CONSUMED IN SECA - CHARGE TO OWNERS"
     }
    ],
    "draft": null,
@@ -351,7 +351,7 @@
     {
      "name": "search_emails",
      "arguments": {
-      "vessel": "VSL-12",
+      "vessel": "VSL-02",
       "event_type": "CP Terms / Recap / Addendum",
       "limit": 10
      },
@@ -360,7 +360,7 @@
     {
      "name": "search_emails",
      "arguments": {
-      "vessel": "VSL-12",
+      "vessel": "VSL-02",
       "text": "clause 32 ECA",
       "limit": 10
      },
@@ -398,13 +398,13 @@
     "Tool search_emails({\"text\": \"北海\", \"limit\": 5, \"by\": \"code, S1 first\"}) → E092, E095, E140, E101, E112",
     "Tool search_emails({\"text\": \"低硫油\", \"limit\": 5, \"by\": \"code, S1 first\"}) → E093, E113, E088, E041, E137",
     "Tool get_email({\"email_id\": \"E059\"}) → E059",
-    "Tool search_emails({\"vessel\": \"VSL-12\", \"event_type\": \"CP Terms / Recap / Addendum\", \"limit\": 10}) → no matches",
-    "Tool search_emails({\"vessel\": \"VSL-12\", \"text\": \"clause 32 ECA\", \"limit\": 10}) → E077, E059, E106, E113, E168, E093, E157, E086, E161, E150",
+    "Tool search_emails({\"vessel\": \"VSL-02\", \"event_type\": \"CP Terms / Recap / Addendum\", \"limit\": 10}) → no matches",
+    "Tool search_emails({\"vessel\": \"VSL-02\", \"text\": \"clause 32 ECA\", \"limit\": 10}) → E077, E059, E106, E113, E168, E093, E157, E086, E161, E150",
     "Tool get_email({\"email_id\": \"E077\"}) → E077",
     "Tool get_email({\"email_id\": \"E106\"}) → E106",
     "Tool get_email({\"email_id\": \"E157\"}) → cap reached",
     "读取 E059，确认费用项目、数量、单价、金额及 Charterers 的扣款理由。",
-    "检索 VSL-12 的 CP/recap 相关邮件，未找到独立 CP Terms/Recap 结果。",
+    "检索 VSL-02 的 CP/recap 相关邮件，未找到独立 CP Terms/Recap 结果。",
     "读取 E077，提取我方关于 clause 12、clause 32 和航线指令的依据。",
     "读取 E106，确认 Charterers 后续仍保留 claim 并拟 hold 金额。",
     "Verifier: 4 of 4 claim(s) checked, 0 not supported",
@@ -450,7 +450,7 @@
      "primitive": "Detect",
      "text": "Identify the cost: item, amount, voyage or event, parties, dates. If the question does not make it clear which cost, that is missing and no conclusion is given.",
      "status": "done",
-     "note": "费用已识别：VSL-12 北海/Channel SECA 至 Rotterdam LSMGO 38.6 mt，USD 31,266。",
+     "note": "费用已识别：VSL-02 北海/Channel SECA 至 Rotterdam LSMGO 38.6 mt，USD 31,266。",
      "evidence_ids": [
       "E059",
       "E077"
@@ -529,29 +529,29 @@
   "model": "hybrid"
  },
  {
-  "question": "VSL-15 的滞期费双方各自怎么算？",
+  "question": "VSL-05 的滞期费双方各自怎么算？",
   "answer": {
-   "text": "**初步建议：**现有材料不足以形成建议，缺 完整 CP laytime/demurrage/weather exception 条款。（建议，需复核）\nVSL-15 高雄滞期费口径：\n- Charterer：扣 18.0h 雨停 + 2.0h 移泊，超时 15.2h，滞期费 USD 8,866.67（E043）。\n- Owners/Operator：按 SOF 只扣 11.0h 雨停 + 2.0h 移泊，超时 22.2h，滞期费 USD 12,950.00（E132）。\n- 分歧点：雨停扣时 18.0h vs 11.0h；charterer 已表示会向 receivers 核天气记录后回复（E132）。",
+   "text": "**初步建议：**现有材料不足以形成建议，缺 完整 CP laytime/demurrage/weather exception 条款。（建议，需复核）\nVSL-05 高雄滞期费口径：\n- Charterer：扣 18.0h 雨停 + 2.0h 移泊，超时 15.2h，滞期费 USD 8,866.67（E043）。\n- Owners/Operator：按 SOF 只扣 11.0h 雨停 + 2.0h 移泊，超时 22.2h，滞期费 USD 12,950.00（E132）。\n- 分歧点：雨停扣时 18.0h vs 11.0h；charterer 已表示会向 receivers 核天气记录后回复（E132）。",
    "sources": [
     {
      "kind": "email",
      "id": "E043",
-     "label": "VSL-15 DEMURRAGE STATEMENT / LAYTIME CALCULATION"
+     "label": "VSL-05 DEMURRAGE STATEMENT / LAYTIME CALCULATION"
     },
     {
      "kind": "email",
      "id": "E132",
-     "label": "RE: VSL-15 DEMURRAGE STATEMENT / LAYTIME CALCULATION"
+     "label": "RE: VSL-05 DEMURRAGE STATEMENT / LAYTIME CALCULATION"
     },
     {
      "kind": "email",
      "id": "E033",
-     "label": "VSL-15 KAOHSIUNG - STATEMENT OF FACTS"
+     "label": "VSL-05 KAOHSIUNG - STATEMENT OF FACTS"
     },
     {
      "kind": "email",
      "id": "E058",
-     "label": "VSL-15 - RECAP SALT PORT LINCOLN / KAOHSIUNG"
+     "label": "VSL-05 - RECAP SALT PORT LINCOLN / KAOHSIUNG"
     }
    ],
    "draft": null,
@@ -619,7 +619,7 @@
     "Tool get_email({\"email_id\": \"E132\"}) → E132",
     "Tool get_email({\"email_id\": \"E033\"}) → E033",
     "Tool get_email({\"email_id\": \"E058\"}) → E058",
-    "读取了 VSL-15 滞期费计算邮件 E043、后续回复 E132、SOF E033。",
+    "读取了 VSL-05 滞期费计算邮件 E043、后续回复 E132、SOF E033。",
     "核对 charterer 与 operator 两套计算的扣时、超时、费率和金额。",
     "读取 E058 后确认其为 10月新 recap，不能作为 9月高雄争议完整 CP 条款依据。",
     "提取当前分歧点为雨停小时数，且 charterer 尚在核 receivers/weather records。",
@@ -740,24 +740,24 @@
   "model": "hybrid"
  },
  {
-  "question": "VSL-19 能不能同意转租给 Altai Trade FZE？",
+  "question": "VSL-09 能不能同意转租给 Altai Trade FZE？",
   "answer": {
    "text": "不能同意。内部筛查未清，Altai Trade FZE 有 84% partial match，且 ownership chart 缺失；合规建议在 cleared 前不要 consent（E133）。",
    "sources": [
     {
      "kind": "email",
      "id": "E133",
-     "label": "VSL-19 - SCREENING RESULT ALTAI TRADE FZE"
+     "label": "VSL-09 - SCREENING RESULT ALTAI TRADE FZE"
     },
     {
      "kind": "email",
      "id": "E114",
-     "label": "RE: VSL-19 V901 - KYC DOCUMENTS FOR PROPOSED SUB-CHARTERER"
+     "label": "RE: VSL-09 V901 - KYC DOCUMENTS FOR PROPOSED SUB-CHARTERER"
     },
     {
      "kind": "email",
      "id": "E152",
-     "label": "RE: VSL-19 V901 - KYC DOCUMENTS FOR PROPOSED SUB-CHARTERER"
+     "label": "RE: VSL-09 V901 - KYC DOCUMENTS FOR PROPOSED SUB-CHARTERER"
     }
    ],
    "draft": null,
@@ -797,7 +797,7 @@
     "Tool get_email({\"email_id\": \"E114\"}) → E114",
     "Tool get_email({\"email_id\": \"E133\"}) → E133",
     "Tool get_email({\"email_id\": \"E152\"}) → E152",
-    "读取了 VSL-19 关于 Altai Trade FZE 的三封KYC/筛查邮件。",
+    "读取了 VSL-09 关于 Altai Trade FZE 的三封KYC/筛查邮件。",
     "核对 E114 要求的文件清单与 E152 已提交文件，确认仍缺 ownership chart 等材料。",
     "核对 E133 的筛查结论，确认 partial match 未 cleared 且明确建议 cleared 前不要 consent。",
     "Evidence check (code): 3 of 3 quote(s) verified"

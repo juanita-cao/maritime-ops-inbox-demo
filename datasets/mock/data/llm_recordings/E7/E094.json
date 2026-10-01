@@ -3,7 +3,7 @@
   {
    "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Update the vessel schedule for VSL-12 with the ETA of 2026-10-07 at ROUEN.",
+   "description": "Update the vessel schedule for VSL-02 with the ETA of 2026-10-07 at ROUEN.",
    "due": null,
    "owner_role": "Operations Officer"
   },
@@ -17,7 +17,7 @@
   {
    "action_type": "Reply / Confirm to Counterparty",
    "for_event": "Voyage Instructions / Port Nomination",
-   "description": "Confirm the berth and loading schedule for VSL-12 with the agent.",
+   "description": "Confirm the berth and loading schedule for VSL-02 with the agent.",
    "due": null,
    "owner_role": "Operations Officer"
   }

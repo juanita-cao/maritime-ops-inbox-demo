@@ -144,7 +144,7 @@ describe('Reducer v7: a chat quote travels with goTo', () => {
     const from = { ...initialState, phase: 'READY' as const }
     const opened = reduce(from, { type: 'goTo', screen: 'email', emailId: 'E046', quote: 'Distance 1400nm' })
     expect(opened.highlightedQuote).toBe('Distance 1400nm')
-    expect(reduce(opened, { type: 'goTo', screen: 'vessel', vesselCode: 'VSL-12' }).highlightedQuote).toBeNull()
+    expect(reduce(opened, { type: 'goTo', screen: 'vessel', vesselCode: 'VSL-02' }).highlightedQuote).toBeNull()
   })
 })
 
@@ -154,6 +154,6 @@ describe('Reducer v7.1: back to chat', () => {
     const opened = reduce(from, { type: 'goTo', screen: 'email', emailId: 'E046', fromChat: true })
     expect(opened.cameFromChat).toBe(true)
     expect(reduce(opened, { type: 'goTo', screen: 'chat' }).cameFromChat).toBe(false)
-    expect(reduce(opened, { type: 'goTo', screen: 'vessel', vesselCode: 'VSL-12' }).cameFromChat).toBe(false)
+    expect(reduce(opened, { type: 'goTo', screen: 'vessel', vesselCode: 'VSL-02' }).cameFromChat).toBe(false)
   })
 })

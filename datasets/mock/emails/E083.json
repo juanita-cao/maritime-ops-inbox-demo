@@ -1,8 +1,8 @@
 {
  "email_id": "E083",
- "text": "From: mail01@paranariveragency.example\nSent: 2026-10-06 09:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@rioplatagrainexports.example\nSubject: VSL-16 ROSARIO ANCHORAGE - ARRIVAL AND INSPECTION PLAN\n\nDear Colleagues,\n\nArrived at the anchorage; hold inspection by the cargo inspector on 8 Oct.\n\n- Arrival rosario: 2026-10-06 07:00\n\nBest regards,\nParana River Agency",
+ "text": "From: mail01@paranariveragency.example\nSent: 2026-10-06 09:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@rioplatagrainexports.example\nSubject: VSL-06 ROSARIO ANCHORAGE - ARRIVAL AND INSPECTION PLAN\n\nDear Colleagues,\n\nArrived at the anchorage; hold inspection by the cargo inspector on 8 Oct.\n\n- Arrival rosario: 2026-10-06 07:00\n\nBest regards,\nParana River Agency",
  "event_id": "M16007",
- "vessel": "VSL-16",
+ "vessel": "VSL-06",
  "thread": "V602-ros",
  "scenario": null,
  "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"

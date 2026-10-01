@@ -18,13 +18,13 @@ const proposal = (over: Partial<Proposal> = {}): Proposal => ({
   status: 'open',
   supersedes_proposal_id: null,
   lane: { lane: 'needs_confirm', reasons: ['task_change'] },
-  vessel: { vessel_code: 'VSL-12', status: 'matched', tier: 'High', score: 1, evidence: [{ quote: 'VSL-12', source: 'subject' }], candidates: [], set_by: 'rule', reason: 'subject' },
+  vessel: { vessel_code: 'VSL-02', status: 'matched', tier: 'High', score: 1, evidence: [{ quote: 'VSL-02', source: 'subject' }], candidates: [], set_by: 'rule', reason: 'subject' },
   voyage: { voyage_no: 'V202', basis: 'inferred', contract_level: 'Owner–Head', evidence: [], candidates: [], set_by: 'rule', flags: [], reason: 'date window' },
   event: { event_type: 'Redelivery Notice', tier: 'High', unsure: false, is_report: false, sources_agree: true, secondary_event_types: [], set_by: 'rule', reason: 'accepted' },
   statuses: ['Action Required'],
   priority: 4,
   fact_changes: [],
-  task: { kind: 'create', task_key: 'VSL-12|V202|redelivery', target_task_id: null, target_task_version: null, changed_fields: {}, flags: [], close_warning: false, new_statuses: null, reason: '' },
+  task: { kind: 'create', task_key: 'VSL-02|V202|redelivery', target_task_id: null, target_task_version: null, changed_fields: {}, flags: [], close_warning: false, new_statuses: null, reason: '' },
   actions: {
     items: [
       { action_type: 'Check CP Terms', description: 'Check the clause', due: '2026-08-06', due_type: 'Redelivery', due_other: null, owner_role: 'Operator', decision_basis: 'CP', templated: false, for_event: 'Redelivery Notice', rank: 1, priority: 4, needs_approval: false, awaiting_reply: false },
@@ -39,7 +39,7 @@ const proposal = (over: Partial<Proposal> = {}): Proposal => ({
 
 const row = (over: Partial<InboxRow> = {}): InboxRow => ({
   email_id: 'E1', proposal_id: 'P1', subject: 'S', sent_time: '2026-07-30T17:54:11+08:00', sender: 'a@CPY-10.example',
-  sender_role: 'Charterer', sender_party: 'CPY-10', direction: 'Inbound', vessel: 'VSL-12', voyage: 'V202',
+  sender_role: 'Charterer', sender_party: 'CPY-10', direction: 'Inbound', vessel: 'VSL-02', voyage: 'V202',
   event_type: 'Redelivery Notice', statuses: ['Action Required'], priority: 4, review_status: 'To review',
   held_reason: null, is_report: false, ...over,
 })
@@ -54,9 +54,9 @@ describe('F-VM', () => {
   it('f_vm_s02_ambiguous_vessel_lists_candidates_with_tier_low', () => {
     const p = buildProposal(proposal({
       vessel: { ...proposal().vessel, vessel_code: null, status: 'ambiguous', tier: 'Medium',
-                candidates: [{ vessel_code: 'VSL-11', score: 0.5 }, { vessel_code: 'VSL-12', score: 0.4 }] },
+                candidates: [{ vessel_code: 'VSL-01', score: 0.5 }, { vessel_code: 'VSL-02', score: 0.4 }] },
     }))
-    expect(p.candidates.map((c) => c.value)).toEqual(['VSL-11', 'VSL-12'])
+    expect(p.candidates.map((c) => c.value)).toEqual(['VSL-01', 'VSL-02'])
     expect(p.fields[0].tier).toBe('Low')
   })
 

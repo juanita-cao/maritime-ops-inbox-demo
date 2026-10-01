@@ -3,14 +3,14 @@
   {
    "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Update the vessel schedule for VSL-13 to reflect the ETA of 2026-09-17 at 12:00 for Mundra.",
+   "description": "Update the vessel schedule for VSL-03 to reflect the ETA of 2026-09-17 at 12:00 for Mundra.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Notify Party (Agent / P&I / Manager)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Notify the agent and relevant parties about the arrival of VSL-13 at Mundra on 2026-09-17 at 12:00.",
+   "description": "Notify the agent and relevant parties about the arrival of VSL-03 at Mundra on 2026-09-17 at 12:00.",
    "due": null,
    "owner_role": "Operations Officer"
   },

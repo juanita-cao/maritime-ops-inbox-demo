@@ -1,8 +1,8 @@
 {
  "email_id": "E079",
- "text": "From: mail01@kathiawarfertilizerexports.example\nSent: 2026-10-05 10:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@pelhambrokers.example\nSubject: VSL-14 V402 - FIXTURE RECAP UREA KANDLA / MOMBASA\n\nDear Colleagues,\n\nClean recap, 33,000 mt urea, laycan 22-28 Oct, freight USD 21.5 per mt.\n\n- Cargo qty: 33,000 mt\n- Freight: 21.5 USD per mt\n- Laycan: 2026-10-22 to 2026-10-28\n- Cp date: 2026-10-05\n\nBest regards,\nKathiawar Fertilizer Exports",
+ "text": "From: mail01@kathiawarfertilizerexports.example\nSent: 2026-10-05 10:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@pelhambrokers.example\nSubject: VSL-04 V402 - FIXTURE RECAP UREA KANDLA / MOMBASA\n\nDear Colleagues,\n\nClean recap, 33,000 mt urea, laycan 22-28 Oct, freight USD 21.5 per mt.\n\n- Cargo qty: 33,000 mt\n- Freight: 21.5 USD per mt\n- Laycan: 2026-10-22 to 2026-10-28\n- Cp date: 2026-10-05\n\nBest regards,\nKathiawar Fertilizer Exports",
  "event_id": "M14012",
- "vessel": "VSL-14",
+ "vessel": "VSL-04",
  "thread": "V402-fix",
  "scenario": null,
  "event_type": "Voyage Instructions / Port Nomination"

@@ -3,7 +3,7 @@
   {
    "action_type": "Confirm Bunker ROB / Stem",
    "for_event": "Bunker (Stem / Quote / ROB / Quality",
-   "description": "Confirm the Bunker ROB for VSL-12 based on the independent lab result indicating sulphur at 0.54%, which is above the 0.50% limit with a tolerance of 0.05%.",
+   "description": "Confirm the Bunker ROB for VSL-02 based on the independent lab result indicating sulphur at 0.54%, which is above the 0.50% limit with a tolerance of 0.05%.",
    "due": null,
    "owner_role": "Operations Officer"
   }

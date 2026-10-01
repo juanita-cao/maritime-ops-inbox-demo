@@ -58,7 +58,7 @@ EXECUTION MODES
 - out_of_scope: not about shipping operations at all and not about the previous answer.
 
 A request to draft or write an email/reply is evidence_reasoning (answer_size short), whatever it is about.
-A message that needs new facts about something else ("那 VSL-11 呢", "and the draft?") is not follow_up: pick the mode for the full question and write it out in standalone_question using the history.
+A message that needs new facts about something else ("那 VSL-01 呢", "and the draft?") is not follow_up: pick the mode for the full question and write it out in standalone_question using the history.
 Any question about the officer's vessels, voyages, ports, cargo, documents, contracts or emails is never out_of_scope.
 
 ANSWER SIZE

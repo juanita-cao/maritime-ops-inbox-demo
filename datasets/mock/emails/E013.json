@@ -1,8 +1,8 @@
 {
  "email_id": "E013",
- "text": "From: mail01@zulucoast.example\nSent: 2026-09-08 11:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@ravenscar.example\nSubject: VSL-13 RICHARDS BAY - FINAL DISBURSEMENT ACCOUNT INV. ZC-2291\n\nDear Colleagues,\n\nFinal DA for Richards Bay, invoice ZC-2291, total USD 31,870; includes the pre-loading survey and tallying lines.\n\n- Dues invoice no: ZC-2291\n- Dues invoice: 31870.0 USD\n- Includes: pre-loading survey USD 1,800; tally USD 2,150; port dues; pilotage; tugs\n\nBest regards,\nZulu Coast Agencies",
+ "text": "From: mail01@zulucoast.example\nSent: 2026-09-08 11:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@ravenscar.example\nSubject: VSL-03 RICHARDS BAY - FINAL DISBURSEMENT ACCOUNT INV. ZC-2291\n\nDear Colleagues,\n\nFinal DA for Richards Bay, invoice ZC-2291, total USD 31,870; includes the pre-loading survey and tallying lines.\n\n- Dues invoice no: ZC-2291\n- Dues invoice: 31870.0 USD\n- Includes: pre-loading survey USD 1,800; tally USD 2,150; port dues; pilotage; tugs\n\nBest regards,\nZulu Coast Agencies",
  "event_id": "M13005",
- "vessel": "VSL-13",
+ "vessel": "VSL-03",
  "thread": "V301-da",
  "scenario": "S06",
  "event_type": "Port Agency / Port Costs (DA)"

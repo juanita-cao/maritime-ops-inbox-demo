@@ -1,8 +1,8 @@
 {
  "email_id": "E041",
- "text": "From: mail01@rhinebunker.example\nSent: 2026-09-26 16:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@vsl12.example\nSubject: VSL-12 BUNKER DELIVERY NOTE ROTTERDAM 26 SEP\n\nDear Colleagues,\n\nBunker delivery note for 600 mt VLSFO, sulphur 0.49% per supplier's analysis; MARPOL sample sealed.\n\n- Bdn qty: 600 mt\n- Bdn sulphur: 0.49 %\n- Marpol sample no: RBS-26-0917\n\nBest regards,\nRhine Bunker Supply",
+ "text": "From: mail01@rhinebunker.example\nSent: 2026-09-26 16:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@vsl02.example\nSubject: VSL-02 BUNKER DELIVERY NOTE ROTTERDAM 26 SEP\n\nDear Colleagues,\n\nBunker delivery note for 600 mt VLSFO, sulphur 0.49% per supplier's analysis; MARPOL sample sealed.\n\n- Bdn qty: 600 mt\n- Bdn sulphur: 0.49 %\n- Marpol sample no: RBS-26-0917\n\nBest regards,\nRhine Bunker Supply",
  "event_id": "M12010",
- "vessel": "VSL-12",
+ "vessel": "VSL-02",
  "thread": "V201-bunker",
  "scenario": "S13",
  "event_type": "Bunker (Stem / Quote / ROB / Quality)"

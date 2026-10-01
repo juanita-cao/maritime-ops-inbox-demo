@@ -1,8 +1,8 @@
 {
  "email_id": "E065",
- "text": "From: mail01@vslmistralquay.example\nSent: 2026-10-03 07:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@coromandelportagency.example\nSubject: VSL-17 / V701 SAILING REPORT VISAKHAPATNAM\n\nGood day,\n\nSailing report, VSL-17, V701.\nDd: 3 Oct 2026\nSailed at 07:00 LT.\nCargo on board: 33800 mt\nROB: VLSFO 318.5 mt, LSMGO 60.0 mt\n\nBest regards,\nMaster MV Mistral Quay",
+ "text": "From: mail01@vslmistralquay.example\nSent: 2026-10-03 07:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@coromandelportagency.example\nSubject: VSL-07 / V701 SAILING REPORT VISAKHAPATNAM\n\nGood day,\n\nSailing report, VSL-07, V701.\nDd: 3 Oct 2026\nSailed at 07:00 LT.\nCargo on board: 33800 mt\nROB: VLSFO 318.5 mt, LSMGO 60.0 mt\n\nBest regards,\nMaster MV Mistral Quay",
  "event_id": "M17002",
- "vessel": "VSL-17",
+ "vessel": "VSL-07",
  "thread": "V701-sail",
  "scenario": null,
  "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"

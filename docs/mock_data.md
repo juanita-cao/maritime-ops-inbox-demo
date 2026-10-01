@@ -1,6 +1,6 @@
 # The demo fleet
 
-Everything in `datasets/mock/` is generated and fictional: ten dry-bulk vessels (VSL-11 … VSL-20) run by one operator,
+Everything in `datasets/mock/` is generated and fictional: ten dry-bulk vessels (VSL-01 … VSL-10) run by one operator,
 with invented owners, charterers, agents, surveyors, correspondents, ports of call and cargoes (bauxite, iron ore, coal,
 grain, fertiliser, salt, limestone, wood chips, clinker). About 170 emails, dated up to 12 Oct 2026 (the app's clock for this dataset).
 
@@ -21,7 +21,7 @@ sub-charterer screening · fixture enquiry to recap · cargo shortage claim and 
 
 ## How it is made (`mockdata/`)
 
-1. **Fact ledger** (`vsl11.py` … `minor.py`): one Python module per vessel writes parties, voyages and a timeline of events.
+1. **Fact ledger** (`vsl01.py` … `minor.py`): one Python module per vessel writes parties, voyages and a timeline of events.
    Every number appears once; each scenario also states its *ground truth* (the correct answer and the events that prove it).
 2. **Validator** (`ledger.py`): refuses a ledger with a number that changes without a scenario saying so, a reply that
    is earlier than its parent, an ETA before sailing, an unknown party, or a mailbox outside the reserved `.example` domain.

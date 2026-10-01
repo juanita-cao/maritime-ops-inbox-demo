@@ -3,7 +3,7 @@
   {
    "action_type": "Reply / Confirm to Counterparty",
    "for_event": "Hold Cleaning / Cargo Hold Condition",
-   "description": "Confirm receipt of the club circular regarding grain hold cleanliness standards for VSL-16 and acknowledge the guidance on rejection causes.",
+   "description": "Confirm receipt of the club circular regarding grain hold cleanliness standards for VSL-06 and acknowledge the guidance on rejection causes.",
    "due": null,
    "owner_role": "Operations Officer"
   }

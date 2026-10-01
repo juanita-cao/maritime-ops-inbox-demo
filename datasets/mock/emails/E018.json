@@ -1,8 +1,8 @@
 {
  "email_id": "E018",
- "text": "From: mail01@vsltidewaterorchid.example\nSent: 2026-09-14 08:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@kaohsiungharbouragency.example; mail01@formosasaltandminerals.example\nSubject: VSL-15 NOTICE OF READINESS - KAOHSIUNG\n\nDear Colleagues,\n\nNOR tendered at the pilot station; laytime commences 6 hours after NOR per CP.\n\n- Nor tendered: 2026-09-14 08:00\n- Laytime commences: 2026-09-14 14:00\n\nBest regards,\nMaster MV Tidewater Orchid",
+ "text": "From: mail01@vsltidewaterorchid.example\nSent: 2026-09-14 08:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@kaohsiungharbouragency.example; mail01@formosasaltandminerals.example\nSubject: VSL-05 NOTICE OF READINESS - KAOHSIUNG\n\nDear Colleagues,\n\nNOR tendered at the pilot station; laytime commences 6 hours after NOR per CP.\n\n- Nor tendered: 2026-09-14 08:00\n- Laytime commences: 2026-09-14 14:00\n\nBest regards,\nMaster MV Tidewater Orchid",
  "event_id": "M15004",
- "vessel": "VSL-15",
+ "vessel": "VSL-05",
  "thread": "V501-laytime",
  "scenario": "S09",
  "event_type": "Notice of Readiness / Laytime / Demurrage"

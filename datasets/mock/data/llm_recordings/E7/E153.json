@@ -3,7 +3,7 @@
   {
    "action_type": "Collect / Chase Documents",
    "for_event": "Inspection / Vetting / PSC",
-   "description": "Collect the inspection report for VSL-11 after discharge at Rizhao anchorage or Newcastle anchorage to determine if cleaning is necessary.",
+   "description": "Collect the inspection report for VSL-01 after discharge at Rizhao anchorage or Newcastle anchorage to determine if cleaning is necessary.",
    "due": null,
    "owner_role": "Operations Officer"
   },

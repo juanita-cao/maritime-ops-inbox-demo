@@ -1,8 +1,8 @@
 {
  "email_id": "E068",
- "text": "From: mail01@vsllumenridge.example\nSent: 2026-10-03 12:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@yuxingironoreimporters.example\nSubject: VSL-20 NOON REPORT 2026-10-03\n\nGood day,\n\nNoon report, VSL-20, V1001.\nDd: 3 Oct 2026\nPosition: 21-30N 125-10E at 1200 LT\nCourse/avg spd/rpm/eng slip: 090 / 12.1 / 72 / 3.0\nDaily GPS speed / Log speed: 12.3 / 12.2\nAverage GPS speed / Log Speed: 12.2 / 12.1\nIFO Consumed/LSMGO consumed fm last report: VLSFO 31.0 mt LSMGO 0.0 mt\nWind direction/force/sea cond/vis: NE / 4 / 1.5 M / Good\nWeather condition: NE / 4 Cloudy\nROB: VLSFO 410.2 mt, LSMGO 60.0 mt\nETA: 2026-10-09 06:00 LT\nRemarks: Vessel proceeding normally.\n\nBest regards,\nMaster MV Lumen Ridge",
+ "text": "From: mail01@vsllumenridge.example\nSent: 2026-10-03 12:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@yuxingironoreimporters.example\nSubject: VSL-10 NOON REPORT 2026-10-03\n\nGood day,\n\nNoon report, VSL-10, V1001.\nDd: 3 Oct 2026\nPosition: 21-30N 125-10E at 1200 LT\nCourse/avg spd/rpm/eng slip: 090 / 12.1 / 72 / 3.0\nDaily GPS speed / Log speed: 12.3 / 12.2\nAverage GPS speed / Log Speed: 12.2 / 12.1\nIFO Consumed/LSMGO consumed fm last report: VLSFO 31.0 mt LSMGO 0.0 mt\nWind direction/force/sea cond/vis: NE / 4 / 1.5 M / Good\nWeather condition: NE / 4 Cloudy\nROB: VLSFO 410.2 mt, LSMGO 60.0 mt\nETA: 2026-10-09 06:00 LT\nRemarks: Vessel proceeding normally.\n\nBest regards,\nMaster MV Lumen Ridge",
  "event_id": "M20002",
- "vessel": "VSL-20",
+ "vessel": "VSL-10",
  "thread": "V1001-noon",
  "scenario": null,
  "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"

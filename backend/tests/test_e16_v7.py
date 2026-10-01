@@ -72,14 +72,14 @@ def route(mode, **kw):
 def context():
     action = TaskAction(action_id="T1-A", task_id="T1", action_type="Check CP Terms", description="do T1", priority=3,
                         due_type="Hire", due_date=date(2026, 8, 6), set_by="ai", source_email_id="E054")  # fmt: skip
-    row = TaskRow(task_id="T1", vessel="VSL-12", voyage="V203", action="Get survey quotation", priority=3,
+    row = TaskRow(task_id="T1", vessel="VSL-02", voyage="V203", action="Get survey quotation", priority=3,
                   statuses=["Approval Required"], source_email_id="E054", actions=[action])  # fmt: skip
     fact = FactRow(fact_key="rob_vlsfo", value="451.024 MT", event_time=NOW, source_email_id="E053", superseded=False)
     return ChatContext(
         tasks=RankedTaskList(groups=[TaskGroup(name="Approval Required", items=[row])]),
-        dues=DueList(store_status="ok"), vessels=[VesselView(vessel_code="VSL-12", facts=[fact])],
+        dues=DueList(store_status="ok"), vessels=[VesselView(vessel_code="VSL-02", facts=[fact])],
         review_queue=ReviewQueue(items=[], store_status="ok"),
-        emails=[ChatEmail(email_id="E046", subject="M/V VSL-12//ROB", sender="Master", excerpt=E046_TEXT)],
+        emails=[ChatEmail(email_id="E046", subject="M/V VSL-02//ROB", sender="Master", excerpt=E046_TEXT)],
     )  # fmt: skip
 
 
@@ -137,10 +137,10 @@ def test_an_invalid_answer_gets_one_repair_then_fails_closed():
     bad = full(evidence_status="mostly fine")
     good = full(answer="CPY-14（E046）。")
     llm = FakeLlm(routes=route("evidence_reasoning"), answers=[bad, good])
-    assert ask("VSL-12在Newcastle港代理", llm).text.startswith("CPY-14")
+    assert ask("VSL-02在Newcastle港代理", llm).text.startswith("CPY-14")
     assert llm.calls[-1][1].endswith("-r")  # the repair call has its own recording key
     twice = FakeLlm(routes=route("evidence_reasoning"), answers=[bad, bad])
-    assert ask("VSL-12在Newcastle港代理", twice).llm_status == "failed"
+    assert ask("VSL-02在Newcastle港代理", twice).llm_status == "failed"
 
 
 def test_a_draft_object_is_still_accepted_and_rendered_as_text():
@@ -169,7 +169,7 @@ def test_a_verbatim_quote_is_verified_and_a_wrong_or_unread_one_is_flagged():
                   evidence=[evidence("E046", "Distance 1400nm including 80nm ECA"),
                             evidence("E046", "Distance 1500nm including 80nm ECA", "other distance"),
                             evidence("E099", "Vessel sailed at 14:48 LT on 30 July", "sailed")])  # fmt: skip
-    result = ask("VSL-12 到 Newcastle 距离", FakeLlm(routes=route("evidence_reasoning"), answers=[answer]))
+    result = ask("VSL-02 到 Newcastle 距离", FakeLlm(routes=route("evidence_reasoning"), answers=[answer]))
     assert [e.status for e in result.evidence] == ["verified", "quote_not_found", "source_not_read"]
     assert "other distance [E046]" in result.details and "sailed [E099]" in result.details
     assert "distance [E046]" not in result.details.replace("other distance [E046]", "")
@@ -180,25 +180,25 @@ def test_a_verbatim_quote_is_verified_and_a_wrong_or_unread_one_is_flagged():
 def test_all_quotes_verified_keeps_the_status():
     answer = full(answer="航程约 1,400 nm（E046）。", sources=[{"kind": "email", "id": "E046", "label": ""}],
                   evidence=[evidence("E046", "Distance 1400nm including 80nm ECA")])  # fmt: skip
-    result = ask("VSL-12 到 Newcastle 距离", FakeLlm(routes=route("evidence_reasoning"), answers=[answer]))
+    result = ask("VSL-02 到 Newcastle 距离", FakeLlm(routes=route("evidence_reasoning"), answers=[answer]))
     assert result.evidence[0].status == "verified" and result.evidence_status == "sufficient"
     assert any("1 of 1 quote(s) verified" in t for t in result.reasoning_trace)
 
 
 def test_a_quote_from_a_full_email_read_through_the_tool_counts():
-    full_email = {"email_id": "E063", "subject": "VSL-11 RELEASE CARGO", "vessel": "VSL-11",
+    full_email = {"email_id": "E063", "subject": "VSL-01 RELEASE CARGO", "vessel": "VSL-01",
                   "text": "Please be advised that the Charterer CPY-02 have sent their LOI", "quoted_thread": ""}  # fmt: skip
     answer = full(answer="CPY-02 提交了 LOI（E063）。", sources=[{"kind": "email", "id": "E063", "label": ""}],
                   evidence=[evidence("E063", "the Charterer CPY-02 have sent their LOI", "LOI sent")])  # fmt: skip
     llm = FakeLlm(routes=route("evidence_reasoning"),
                   turns=[{"tool_calls": [{"name": "get_email", "arguments": {"email_id": "E063"}}]}, {"final": answer}])  # fmt: skip
-    result = ask("VSL-11 的 LOI", llm, run_tool=lambda name, args: full_email)
+    result = ask("VSL-01 的 LOI", llm, run_tool=lambda name, args: full_email)
     assert result.evidence[0].status == "verified"
 
 
 def test_citing_company_records_without_any_quote_is_flagged():
     answer = full(answer="CPY-14（E046）。", sources=[{"kind": "email", "id": "E046", "label": ""}])
-    result = ask("VSL-12 在 Newcastle 的代理", FakeLlm(routes=route("evidence_reasoning"), answers=[answer]))
+    result = ask("VSL-02 在 Newcastle 的代理", FakeLlm(routes=route("evidence_reasoning"), answers=[answer]))
     assert "没有给出原文摘录" in result.details and result.evidence_status == "partial"
 
 
@@ -210,7 +210,7 @@ def test_domain_knowledge_without_company_sources_needs_no_quote():
 
 def test_a_vessel_code_nobody_gave_the_model_is_flagged():
     answer = full(answer="VSL-77 的 ROB 是 451.024 MT。")
-    result = ask("VSL-12 的 ROB", FakeLlm(routes=route("evidence_reasoning"), answers=[answer]))
+    result = ask("VSL-02 的 ROB", FakeLlm(routes=route("evidence_reasoning"), answers=[answer]))
     assert "VSL-77" in result.details and "451.024" not in result.details
 
 
@@ -231,7 +231,7 @@ def test_every_shown_part_of_an_answer_goes_through_the_scan():
     answer = full(answer="持证人 张三 11010519900307123X 将登轮（E046）。", details="号码 110105900307123",
                   draft="Subject: x\n\nID E12345678", sources=[{"kind": "email", "id": "E046", "label": ""}],
                   evidence=[evidence("E046", "Distance 1400nm including 80nm ECA")])  # fmt: skip
-    result = ask("VSL-12 谁登轮", FakeLlm(routes=route("evidence_reasoning"), answers=[answer]))
+    result = ask("VSL-02 谁登轮", FakeLlm(routes=route("evidence_reasoning"), answers=[answer]))
     shown = " ".join([result.text, result.details or "", result.draft or ""])
     assert "11010519900307123X" not in shown and "110105900307123" not in shown and "E12345678" not in shown
     assert any(t.startswith("Output scan (code): 3 value(s) hidden") for t in result.reasoning_trace)
@@ -240,7 +240,7 @@ def test_every_shown_part_of_an_answer_goes_through_the_scan():
 def test_deterministic_answers_also_leave_through_the_scan():
     llm = FakeLlm(routes=route("deterministic", deterministic_intent="vessel_facts"),
                   present={"summary": "ROB，联系 +86 138 0013 8000", "items": [{"label": "ROB", "value": "451.024 MT", "source": "E053"}]})  # fmt: skip
-    result = ask("VSL-12 船存燃油", llm)
+    result = ask("VSL-02 船存燃油", llm)
     assert "138 0013 8000" not in result.text and v7.HIDDEN in result.text
 
 
@@ -313,10 +313,10 @@ def concept_embed(texts):
 
 def backend_with(embedder, monkeypatch):
     monkeypatch.setattr(e_nodes, "chat_email_view", lambda email, kb: SimpleNamespace(sender="Master"))
-    store = FakeStore([parsed("E046", "M/V VSL-12//ROB", "Stay in berth 2 days. Distance 1400nm."),
-                       parsed("E049", "M/V VSL-12 DAILY", "Daily running hours of ship crane numbers: NO.1"),
-                       parsed("E060", "MV VSL-11 30TH HIRE", "hire statement with bank confirmation")],
-                      {"E046": "VSL-12", "E049": "VSL-12", "E060": "VSL-11"})  # fmt: skip
+    store = FakeStore([parsed("E046", "M/V VSL-02//ROB", "Stay in berth 2 days. Distance 1400nm."),
+                       parsed("E049", "M/V VSL-02 DAILY", "Daily running hours of ship crane numbers: NO.1"),
+                       parsed("E060", "MV VSL-01 30TH HIRE", "hire statement with bank confirmation")],
+                      {"E046": "VSL-02", "E049": "VSL-02", "E060": "VSL-01"})  # fmt: skip
     return v7.RetrievalBackend(None, embedder), store
 
 
@@ -339,14 +339,14 @@ def test_search_filters_still_apply_and_an_embedding_failure_means_keywords_only
 
     backend, store = backend_with(boom, monkeypatch)
     assert [h["email_id"] for h in backend.search({"text": "hire statement"}, store, None)] == ["E060"]
-    assert backend.search({"text": "hire statement", "vessel": "VSL-12"}, store, None) == []
-    assert [h["email_id"] for h in backend.search({"text": "crane", "vessel": "VSL-12"}, store, None)] == ["E049"]
+    assert backend.search({"text": "hire statement", "vessel": "VSL-02"}, store, None) == []
+    assert [h["email_id"] for h in backend.search({"text": "crane", "vessel": "VSL-02"}, store, None)] == ["E049"]
 
 
 def test_search_without_text_is_v5s_filter_and_the_index_is_rebuilt_when_emails_change(monkeypatch):
     backend, store = backend_with(None, monkeypatch)
     monkeypatch.setattr(v7.v5, "v5_search_emails", lambda args, st, kb: [{"email_id": "VIA-V5"}])
-    assert backend.search({"vessel": "VSL-12"}, store, None) == [{"email_id": "VIA-V5"}]
+    assert backend.search({"vessel": "VSL-02"}, store, None) == [{"email_id": "VIA-V5"}]
     first = backend.index(store, None)
     assert backend.index(store, None) is first
     store.emails["E070"] = parsed("E070", "new", "anchorage notice")
@@ -395,7 +395,7 @@ def test_all_supported_claims_change_nothing_and_a_failed_verifier_never_blocks(
 def test_the_verifier_runs_only_for_l2_detailed_or_high_stakes_questions():
     assert verifier.needs_verification("proposal_reasoning", "short", "x") and verifier.needs_verification("hybrid", "short", "x")
     assert verifier.needs_verification("evidence_reasoning", "detailed", "x")
-    assert verifier.needs_verification("evidence_reasoning", "short", "VSL-11还有哪些待付发票")
+    assert verifier.needs_verification("evidence_reasoning", "short", "VSL-01还有哪些待付发票")
     assert verifier.needs_verification("evidence_reasoning", "short", "核对B/L、MR和LOI")
     assert not verifier.needs_verification("evidence_reasoning", "short", "CPY-14 是谁")
     simple = FakeLlm(routes=route("evidence_reasoning", answer_size="short"),
@@ -436,7 +436,7 @@ def test_a_selected_playbook_is_in_the_prompt_and_its_steps_are_reported_and_che
                       {"step_id": "s2", "status": "done", "note": "guessed", "evidence_ids": ["E999"]}],
                evidence=[evidence("E046", "Distance 1400nm including 80nm ECA")])  # fmt: skip
     llm = FakeLlm(routes=route("evidence_reasoning", playbook="hire-next-due"), answers=[ans])
-    req = ChatRequest(question="VSL-12 租金下一个due是哪天")
+    req = ChatRequest(question="VSL-02 租金下一个due是哪天")
     result = v7.e16v7_answer_chat(req, context(), llm, NOW, playbooks={"hire-next-due": PB})
     assert "PLAYBOOK hire-next-due" in llm.systems["E16_V7"] and "Never assume an interval." in llm.systems["E16_V7"]
     assert "- hire-next-due: When the next hire payment is due." in llm.systems["E16_V7_ROUTER"]
@@ -460,29 +460,29 @@ steps:
 ---
 """)
     llm = FakeLlm(routes=route("evidence_reasoning", playbook="draft-one"), answers=[full(answer="ok。")])
-    result = v7.e16v7_answer_chat(ChatRequest(question="VSL-12 的 UWI"), context(), llm, NOW, playbooks={"draft-one": draft})
+    result = v7.e16v7_answer_chat(ChatRequest(question="VSL-02 的 UWI"), context(), llm, NOW, playbooks={"draft-one": draft})
     assert result.playbook is None and result.steps == [] and "PLAYBOOKS" not in llm.systems["E16_V7_ROUTER"]
     monkeypatch.setenv("E16_INCLUDE_DRAFT_PLAYBOOKS", "1")
     llm2 = FakeLlm(routes=route("evidence_reasoning", playbook="draft-one"), answers=[full(answer="ok。")])
-    r2 = v7.e16v7_answer_chat(ChatRequest(question="VSL-12 的 UWI"), context(), llm2, NOW, playbooks={"draft-one": draft})
+    r2 = v7.e16v7_answer_chat(ChatRequest(question="VSL-02 的 UWI"), context(), llm2, NOW, playbooks={"draft-one": draft})
     assert r2.playbook.status == "draft" and "(draft)" in llm2.systems["E16_V7"]
     bogus = FakeLlm(routes=route("evidence_reasoning", playbook="nope"), answers=[full(answer="ok。")])
-    assert v7.e16v7_answer_chat(ChatRequest(question="x VSL-12"), context(), bogus, NOW, playbooks={"draft-one": draft}).playbook is None
+    assert v7.e16v7_answer_chat(ChatRequest(question="x VSL-02"), context(), bogus, NOW, playbooks={"draft-one": draft}).playbook is None
 
 
 def test_the_router_playbook_vote_is_a_majority_among_agreeing_samples():
     routes = [route("evidence_reasoning", playbook="hire-next-due"), route("evidence_reasoning", playbook="hire-next-due"),
               route("evidence_reasoning", playbook=None)]  # fmt: skip
     llm = FakeLlm(routes=routes, answers=[full(answer="ok。")])
-    result = v7.e16v7_answer_chat(ChatRequest(question="VSL-12 租金下一个due"), context(), llm, NOW, playbooks={"hire-next-due": PB})
+    result = v7.e16v7_answer_chat(ChatRequest(question="VSL-02 租金下一个due"), context(), llm, NOW, playbooks={"hire-next-due": PB})
     assert result.playbook.id == "hire-next-due"
 
 
 # --- M3: vessel facts from the reports --------------------------------------------------------------
 
 REPORTS = {
-    "E021": ("M/V VSL-12//Noon Report 20260724", "Dd: 24 Jul 2026\n(3) Daily GPS speed/Log speed:  14.2/13.0\n(8) Weather condition:SE/5  CLOUDY\n(9) Sea/Swell condition: 2M\n(11) Draft F/A:4.50/6.50"),
-    "E024": ("M/V VSL-12// ARRIVAL REPORT 20260725", "Dd: 25 Jul 2026\n3.AVG SPD: 13.2KTS\n8. Remarks:Vessel encounter adverse strong current about 2.5 kn"),
+    "E021": ("M/V VSL-02//Noon Report 20260724", "Dd: 24 Jul 2026\n(3) Daily GPS speed/Log speed:  14.2/13.0\n(8) Weather condition:SE/5  CLOUDY\n(9) Sea/Swell condition: 2M\n(11) Draft F/A:4.50/6.50"),
+    "E024": ("M/V VSL-02// ARRIVAL REPORT 20260725", "Dd: 25 Jul 2026\n3.AVG SPD: 13.2KTS\n8. Remarks:Vessel encounter adverse strong current about 2.5 kn"),
 }
 
 
@@ -500,7 +500,7 @@ def report_tool(name, args):
 
 def test_a_weather_and_speed_question_is_answered_from_the_reports_in_code_without_a_model():
     llm = FakeLlm(routes=route("deterministic", deterministic_intent="vessel_facts"))
-    req = ChatRequest(question="VSL-12这几天的速度和天气，有没有逆流")
+    req = ChatRequest(question="VSL-02这几天的速度和天气，有没有逆流")
     result = v7.e16v7_answer_chat(req, report_context(), llm, NOW, run_tool=report_tool)
     assert [c[0] for c in llm.calls] == ["E16_V7_ROUTER"] * 3  # no PRESENT call
     assert "- 7/24 午报（E021）：航速 GPS 14.2 / Log 13.0 kn；风 SE 5 级；海浪/涌 2 m；天气 Cloudy" in result.text
@@ -510,17 +510,17 @@ def test_a_weather_and_speed_question_is_answered_from_the_reports_in_code_witho
 
 def test_a_draft_not_in_the_facts_comes_from_the_nearest_report_with_its_date_and_missing_is_said():
     llm = FakeLlm(routes=route("deterministic", deterministic_intent="vessel_facts"))
-    result = v7.e16v7_answer_chat(ChatRequest(question="VSL-12 的吃水和油耗"), report_context(), llm, NOW, run_tool=report_tool)
+    result = v7.e16v7_answer_chat(ChatRequest(question="VSL-02 的吃水和油耗"), report_context(), llm, NOW, run_tool=report_tool)
     assert "- 7/24 午报（E021）：吃水 F 4.50 / A 6.50 m" in result.text
     assert "- 油耗：当前记录中没有找到" in result.text and result.evidence_status == "partial"
 
 
 def test_a_question_that_also_asks_eta_or_rob_goes_to_the_model_with_the_digests():
     llm = FakeLlm(routes=route("deterministic", deterministic_intent="vessel_facts"),
-                  present={"summary": "VSL-12：", "items": [{"label": "吃水（7/24 午报）", "value": "F 4.50 / A 6.50 m", "time": "7/24", "source": "E021"},
+                  present={"summary": "VSL-02：", "items": [{"label": "吃水（7/24 午报）", "value": "F 4.50 / A 6.50 m", "time": "7/24", "source": "E021"},
                                                           {"label": "ROB VLSFO", "value": "451.024 MT", "time": "7/30", "source": "E053"}],
                            "missing": []})  # fmt: skip
-    result = v7.e16v7_answer_chat(ChatRequest(question="VSL-12 什么时候到港，存油多少，吃水多少"), report_context(), llm, NOW, run_tool=report_tool)
+    result = v7.e16v7_answer_chat(ChatRequest(question="VSL-02 什么时候到港，存油多少，吃水多少"), report_context(), llm, NOW, run_tool=report_tool)
     digests = llm.users["E16_V7_PRESENT"]["context"]["report_digests"]
     assert digests[0]["email_id"] == "E021" and digests[0]["draft"] == "F 4.50 / A 6.50 m"
     assert "- 吃水（7/24 午报）：F 4.50 / A 6.50 m（7/24） [E021]" in result.text
@@ -530,7 +530,7 @@ def test_a_question_that_also_asks_eta_or_rob_goes_to_the_model_with_the_digests
 def test_a_playbook_turns_a_deterministic_route_into_reasoning():
     llm = FakeLlm(routes=route("deterministic", deterministic_intent="dues", playbook="hire-next-due"),
                   answers=[full(answer="缺 CP 付款条款。")])
-    result = v7.e16v7_answer_chat(ChatRequest(question="VSL-11 租金下一期什么时候到期"), context(), llm, NOW, playbooks={"hire-next-due": PB})
+    result = v7.e16v7_answer_chat(ChatRequest(question="VSL-01 租金下一期什么时候到期"), context(), llm, NOW, playbooks={"hire-next-due": PB})
     assert result.execution_mode == "evidence_reasoning" and result.playbook.id == "hire-next-due"
     assert any("Playbook mode (code): deterministic -> evidence_reasoning" in t for t in result.reasoning_trace)
 
@@ -556,7 +556,7 @@ steps:
 """)
     ans = full(answer="缺具体费用。", proposal={"conclusion": "", "basis": [], "counter_evidence": [], "missing_information": ["费用名称"]})
     llm = FakeLlm(routes=route("evidence_reasoning", playbook="cost-allocation"), answers=[ans])
-    result = v7.e16v7_answer_chat(ChatRequest(question="这笔费用 Owners 还是 Charterers 承担 VSL-12"), context(), llm, NOW,
+    result = v7.e16v7_answer_chat(ChatRequest(question="这笔费用 Owners 还是 Charterers 承担 VSL-02"), context(), llm, NOW,
                                   playbooks={"cost-allocation": cost})  # fmt: skip
     assert result.execution_mode == "proposal_reasoning" and result.capability_authority == "supported_l2"
     assert "（建议，需复核）" in result.text and any("Playbook mode (code): evidence_reasoning -> proposal_reasoning" in t for t in result.reasoning_trace)
@@ -572,11 +572,11 @@ def test_open_tasks_needs_task_wording_and_a_port_question_is_not_a_task_list():
 
 def test_a_report_field_question_the_router_called_out_of_scope_is_answered_from_the_reports():
     llm = FakeLlm(routes=route("out_of_scope", reason="不涉及航运"))
-    result = v7.e16v7_answer_chat(ChatRequest(question="VSL-12这几天的风浪和海流"), report_context(), llm, NOW, run_tool=report_tool)
+    result = v7.e16v7_answer_chat(ChatRequest(question="VSL-02这几天的风浪和海流"), report_context(), llm, NOW, run_tool=report_tool)
     assert result.execution_mode == "deterministic" and "午报（E021）" in result.text
     assert [c[0] for c in llm.calls] == ["E16_V7_ROUTER"] * 3
     analysing = FakeLlm(routes=route("evidence_reasoning"), turns=[{"final": full(answer="需要看索赔文件。")}])  # with a run_tool the answer comes through the tool loop
-    r2 = v7.e16v7_answer_chat(ChatRequest(question="分析VSL-12这份油耗索赔是否合理"), report_context(), analysing, NOW, run_tool=report_tool)
+    r2 = v7.e16v7_answer_chat(ChatRequest(question="分析VSL-02这份油耗索赔是否合理"), report_context(), analysing, NOW, run_tool=report_tool)
     assert r2.execution_mode == "evidence_reasoning"  # an analysis is not a field lookup
 
 

@@ -1,8 +1,8 @@
 {
  "email_id": "E003",
- "text": "From: mail01@vslgannetcrest.example\nSent: 2026-08-28 20:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nSubject: VSL-16 GWANGYANG DISCHARGE COMPLETED - HOLDS SWEPT\n\nDear Colleagues,\n\nDischarge completed; holds swept and washed for the next cargo.\n\n- Outturn qty: 71,488 mt\n\nBest regards,\nMaster MV Gannet Crest",
+ "text": "From: mail01@vslgannetcrest.example\nSent: 2026-08-28 20:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nSubject: VSL-06 GWANGYANG DISCHARGE COMPLETED - HOLDS SWEPT\n\nDear Colleagues,\n\nDischarge completed; holds swept and washed for the next cargo.\n\n- Outturn qty: 71,488 mt\n\nBest regards,\nMaster MV Gannet Crest",
  "event_id": "M16001",
- "vessel": "VSL-16",
+ "vessel": "VSL-06",
  "thread": "V601-disch",
  "scenario": null,
  "event_type": "Discharging"

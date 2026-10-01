@@ -3,7 +3,7 @@
   {
    "action_type": "Verify / Reconcile Report Data",
    "for_event": "Weather Routing / Speed & Consumption",
-   "description": "Verify the weather routing data for VSL-14 during the 6 good-weather days, ensuring the average speed of 12.45 knots and consumption of 27.6 mt per day are accurately reported.",
+   "description": "Verify the weather routing data for VSL-04 during the 6 good-weather days, ensuring the average speed of 12.45 knots and consumption of 27.6 mt per day are accurately reported.",
    "due": null,
    "owner_role": "Operations Officer"
   },

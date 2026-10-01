@@ -1,8 +1,8 @@
 {
  "email_id": "E124",
- "text": "From: mail01@zhanjiangpulpandpaperco.example\nSent: 2026-10-10 11:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nSubject: RE: VSL-18 - DEVIATION FOR MEDEVAC 6.5 HOURS\n\nDear Colleagues,\n\nCharterer notes the information, keeps the right to claim time under the off-hire clause, and asks for the hospital certificate.\n\n- Asks: hospital certificate\n\nBest regards,\nZhanjiang Pulp and Paper Co",
+ "text": "From: mail01@zhanjiangpulpandpaperco.example\nSent: 2026-10-10 11:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nSubject: RE: VSL-08 - DEVIATION FOR MEDEVAC 6.5 HOURS\n\nDear Colleagues,\n\nCharterer notes the information, keeps the right to claim time under the off-hire clause, and asks for the hospital certificate.\n\n- Asks: hospital certificate\n\nBest regards,\nZhanjiang Pulp and Paper Co",
  "event_id": "M18008",
- "vessel": "VSL-18",
+ "vessel": "VSL-08",
  "thread": "V801-medical",
  "scenario": "S15",
  "event_type": "Crew (Change / Medical)"

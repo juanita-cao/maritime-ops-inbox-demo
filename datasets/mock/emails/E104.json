@@ -1,8 +1,8 @@
 {
  "email_id": "E104",
- "text": "From: mail01@harlowfertilizertrading.example\nSent: 2026-10-08 11:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@silveranemoneshippingco.example\nSubject: VSL-14 V401 - SPEED AND CONSUMPTION PERFORMANCE CLAIM\n\nDear Colleagues,\n\nCharterer claims USD 21,500 for underperformance over the whole voyage: average 12.04 kn and 28.39 mt per day against the CP warranty of 12.5 kn on 28.0 mt per day.\n\n- Claim amount: 21500.0 USD\n- Avg speed all days: 12.04 kn\n- Avg cons all days: 28.39 mt\n- Warranty speed: 12.5 kn\n- Warranty cons: 28.0 mt\n\nBest regards,\nHarlow Fertilizer Trading",
+ "text": "From: mail01@harlowfertilizertrading.example\nSent: 2026-10-08 11:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@silveranemoneshippingco.example\nSubject: VSL-04 V401 - SPEED AND CONSUMPTION PERFORMANCE CLAIM\n\nDear Colleagues,\n\nCharterer claims USD 21,500 for underperformance over the whole voyage: average 12.04 kn and 28.39 mt per day against the CP warranty of 12.5 kn on 28.0 mt per day.\n\n- Claim amount: 21500.0 USD\n- Avg speed all days: 12.04 kn\n- Avg cons all days: 28.39 mt\n- Warranty speed: 12.5 kn\n- Warranty cons: 28.0 mt\n\nBest regards,\nHarlow Fertilizer Trading",
  "event_id": "M14013",
- "vessel": "VSL-14",
+ "vessel": "VSL-04",
  "thread": "V401-perf",
  "scenario": "S08",
  "event_type": "Weather Routing / Speed & Consumption"

@@ -3,14 +3,14 @@
   {
    "action_type": "Track Contractual Notice / Deadline",
    "for_event": "Delivery Notice",
-   "description": "Track the contractual notice for the final cargo discharge of VSL-12, which is due by 16 Oct.",
+   "description": "Track the contractual notice for the final cargo discharge of VSL-02, which is due by 16 Oct.",
    "due": "2026-10-16",
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Confirm Bunker ROB / Stem",
    "for_event": "Bunker (Stem / Quote / ROB / Quality)",
-   "description": "Confirm the bunker ROB of 905.0 mt of vlsfo for VSL-12 on delivery.",
+   "description": "Confirm the bunker ROB of 905.0 mt of vlsfo for VSL-02 on delivery.",
    "due": null,
    "owner_role": "Bunker Coordinator"
   }

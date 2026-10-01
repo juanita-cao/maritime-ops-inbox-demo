@@ -1,8 +1,8 @@
 {
  "email_id": "E032",
- "text": "From: mail01@vsl12.example\nSent: 2026-09-20 11:40:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@brannock.example\nSubject: VSL-12 ENTERING NORTH SEA SECA - CHANGEOVER TO LSMGO\n\nDear Colleagues,\n\nMaster reports the changeover to LSMGO at the Channel SECA entry; LSMGO burned in the SECA until Rotterdam was 38.6 mt.\n\n- Lsmgo consumed seca: 38.6 mt\n- Changeover time: 2026-09-20 09:30\n\nBest regards,\nMaster MV Northern Linden",
+ "text": "From: mail01@vsl02.example\nSent: 2026-09-20 11:40:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@brannock.example\nSubject: VSL-02 ENTERING NORTH SEA SECA - CHANGEOVER TO LSMGO\n\nDear Colleagues,\n\nMaster reports the changeover to LSMGO at the Channel SECA entry; LSMGO burned in the SECA until Rotterdam was 38.6 mt.\n\n- Lsmgo consumed seca: 38.6 mt\n- Changeover time: 2026-09-20 09:30\n\nBest regards,\nMaster MV Northern Linden",
  "event_id": "M12008",
- "vessel": "VSL-12",
+ "vessel": "VSL-02",
  "thread": "V201-eca",
  "scenario": "S03",
  "event_type": "Bunker (Stem / Quote / ROB / Quality)"

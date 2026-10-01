@@ -3,7 +3,7 @@
   {
    "action_type": "Confirm Bunker ROB / Stem",
    "for_event": "Bunker (Stem / Quote / ROB / Quality)",
-   "description": "Confirm the Bunker ROB for VSL-12 at Rotterdam based on the reported consumption of 38.6 mt of LSMGO as of 2026-09-20 09:30.",
+   "description": "Confirm the Bunker ROB for VSL-02 at Rotterdam based on the reported consumption of 38.6 mt of LSMGO as of 2026-09-20 09:30.",
    "due": "2026-09-20",
    "owner_role": "Operations Officer"
   }

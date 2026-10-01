@@ -3,14 +3,14 @@
   {
    "action_type": "Verify / Reconcile Report Data",
    "for_event": "Loading / Cargo Operations",
-   "description": "Verify the loading report data for VSL-16, ensuring the cargo quantity of 68,000 mt of wheat is accurately recorded, with loading commenced on 10 Oct at 12:00 and expected completion by 14 Oct.",
+   "description": "Verify the loading report data for VSL-06, ensuring the cargo quantity of 68,000 mt of wheat is accurately recorded, with loading commenced on 10 Oct at 12:00 and expected completion by 14 Oct.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Update the vessel schedule for VSL-16 to reflect that it berthed on 10 Oct at 08:00 and commenced loading on 10 Oct at 12:00, with completion expected around 14 Oct.",
+   "description": "Update the vessel schedule for VSL-06 to reflect that it berthed on 10 Oct at 08:00 and commenced loading on 10 Oct at 12:00, with completion expected around 14 Oct.",
    "due": null,
    "owner_role": "Scheduler"
   }

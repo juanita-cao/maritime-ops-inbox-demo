@@ -42,7 +42,7 @@ def row(tid, priority, email):
     action = TaskAction(action_id=f"{tid}-A", task_id=tid, action_type="Check CP Terms", description=f"do {tid}",
                         priority=priority, due_type="Redelivery", due_date=date(2026, 8, 6), set_by="ai",
                         source_email_id=email)  # fmt: skip
-    return TaskRow(task_id=tid, vessel="VSL-12", voyage="V202", action=f"do {tid}", priority=priority,
+    return TaskRow(task_id=tid, vessel="VSL-02", voyage="V202", action=f"do {tid}", priority=priority,
                    statuses=["Action Required"], source_email_id=email, actions=[action])  # fmt: skip
 
 
@@ -50,7 +50,7 @@ def context():
     return ChatContext(
         tasks=RankedTaskList(groups=[TaskGroup(name="Action Required", items=[row("T1", 5, "E010")])]),
         dues=DueList(store_status="ok"),
-        vessels=[VesselView(vessel_code="VSL-12")],
+        vessels=[VesselView(vessel_code="VSL-02")],
         review_queue=ReviewQueue(items=[], store_status="ok"),
         emails=[ChatEmail(email_id="E010", subject="REDEL NOTICE", sender="Charterer CPY-10", excerpt="x")],
     )  # fmt: skip
@@ -89,7 +89,7 @@ def test_port_agent_from_email_text_is_l1_not_blocked_by_a_registry():
     llm = FakeRouterAndGenerate(
         router_answer={"authority": "supported_l1", "reason": ""},
         generate_turns=[
-            {"tool_calls": [{"name": "search_emails", "arguments": {"vessel": "VSL-12", "event_type": "Port Agency / Port Costs (DA)"}}]},
+            {"tool_calls": [{"name": "search_emails", "arguments": {"vessel": "VSL-02", "event_type": "Port Agency / Port Costs (DA)"}}]},
             {"final": {"text": "Email E051 names CPY-14 as the port agent at Newcastle.",
                       "sources": [{"kind": "email", "id": "E051", "label": "CTM - NEWCASTLE"}],
                       "evidence_status": "sufficient"}},
@@ -99,7 +99,7 @@ def test_port_agent_from_email_text_is_l1_not_blocked_by_a_registry():
     def run_tool(name, args):
         return [found]
 
-    answer = ask("VSL-12在Newcastle港租家代理是哪家", llm, run_tool)
+    answer = ask("VSL-02在Newcastle港租家代理是哪家", llm, run_tool)
     assert answer.capability_authority == "supported_l1"
     assert answer.evidence_status == "sufficient"
     assert answer.retrieval_outcome is None  # sufficient is a real answer, not a refusal

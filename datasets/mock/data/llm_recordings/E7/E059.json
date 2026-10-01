@@ -3,7 +3,7 @@
   {
    "action_type": "Check Hire / Invoice / Payment",
    "for_event": "Hire / SOA / Payment",
-   "description": "Verify the deduction of 38.6 mt LSMGO cost from the hire for vessel VSL-12, as per CP clause 32, and ensure the invoice reflects this adjustment.",
+   "description": "Verify the deduction of 38.6 mt LSMGO cost from the hire for vessel VSL-02, as per CP clause 32, and ensure the invoice reflects this adjustment.",
    "due": null,
    "owner_role": "Operations Officer"
   }

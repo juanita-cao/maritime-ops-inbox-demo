@@ -1,9 +1,0 @@
-{
- "execution_mode": "out_of_scope",
- "deterministic_intent": null,
- "answer_size": "short",
- "standalone_question": "",
- "search_terms": [],
- "playbook": null,
- "reason": "这是关于租赁的商业决策，不涉及航运操作。"
-}

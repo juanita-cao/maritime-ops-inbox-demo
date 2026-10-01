@@ -3,14 +3,14 @@
   {
    "action_type": "Collect / Chase Documents",
    "for_event": "Inspection / Vetting / PSC",
-   "description": "Collect the necessary documents for the inspection of VSL-11 at anchorage after discharge, ensuring the permit is obtained within 3 working days.",
+   "description": "Collect the necessary documents for the inspection of VSL-01 at anchorage after discharge, ensuring the permit is obtained within 3 working days.",
    "due": "2026-10-13",
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Reply / Confirm to Counterparty",
    "for_event": "Inspection / Vetting / PSC",
-   "description": "Confirm with the counterparty regarding the inspection details and the quote of USD 3,800 for VSL-11.",
+   "description": "Confirm with the counterparty regarding the inspection details and the quote of USD 3,800 for VSL-01.",
    "due": null,
    "owner_role": "Operations Officer"
   }

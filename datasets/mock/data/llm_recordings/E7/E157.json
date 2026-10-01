@@ -10,7 +10,7 @@
   {
    "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Update the vessel schedule for VSL-12 to reflect the hire period from 16 Oct to 31 Oct 2026.",
+   "description": "Update the vessel schedule for VSL-02 to reflect the hire period from 16 Oct to 31 Oct 2026.",
    "due": null,
    "owner_role": "Operations Officer"
   }

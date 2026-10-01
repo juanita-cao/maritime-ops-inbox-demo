@@ -3,7 +3,7 @@
   {
    "action_type": "Prepare Claim / Record Evidence",
    "for_event": "Off-hire",
-   "description": "Prepare a claim for the off-hire period of 11.5 hours for vessel VSL-12 due to the terminal berth being occupied at ROTTERDAM.",
+   "description": "Prepare a claim for the off-hire period of 11.5 hours for vessel VSL-02 due to the terminal berth being occupied at ROTTERDAM.",
    "due": null,
    "owner_role": "Operations Officer"
   },

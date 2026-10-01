@@ -28,7 +28,7 @@ class FakeLlm:
         return answer
 
 
-def email(new_text, subject="VSL-12 V202 sailing report", **kw) -> ParsedEmail:
+def email(new_text, subject="VSL-02 V202 sailing report", **kw) -> ParsedEmail:
     return ParsedEmail(
         email_id="E001",
         subject=subject,
@@ -68,10 +68,10 @@ def test_e5_s01_voyage_number_by_rule_and_date_by_llm_both_with_valid_quotes():
 
 
 def test_e5_s01_rule_prepass_finds_vessel_code_cp_date_and_tonnage():
-    out = run(email("MV VSL-12 CPDD 03APR2025, loaded 55,180 MT."), FakeLlm({}))
+    out = run(email("MV VSL-02 CPDD 03APR2025, loaded 55,180 MT."), FakeLlm({}))
     assert [(m.text, m.evidence.source) for m in out.vessel_mentions] == [
-        ("VSL-12", "new_text"),
-        ("VSL-12", "subject"),
+        ("VSL-02", "new_text"),
+        ("VSL-02", "subject"),
     ]
     assert [m.text for m in out.cp_references] == ["CPDD 03APR2025"]
     assert [(q.value, q.unit) for q in out.quantities] == [(55180.0, "MT")]
@@ -121,17 +121,17 @@ def test_e5_s04_blocked_email_makes_no_call():
 
 
 def test_e5_s05_two_vessels_are_both_listed():
-    out = run(email("VSL-11 and VSL-12 share the berth."), FakeLlm({}))
+    out = run(email("VSL-01 and VSL-02 share the berth."), FakeLlm({}))
     assert [(m.text, m.evidence.source) for m in out.vessel_mentions] == [
-        ("VSL-11", "new_text"),
-        ("VSL-12", "new_text"),
-        ("VSL-12", "subject"),  # the subject is its own evidence for D1 (T2.6 labels check)
+        ("VSL-01", "new_text"),
+        ("VSL-02", "new_text"),
+        ("VSL-02", "subject"),  # the subject is its own evidence for D1 (T2.6 labels check)
     ]
 
 
 def test_e5_d1_s01_code_in_text_and_subject_keeps_both_sources():
-    llm = FakeLlm({"vessel_mentions": [{"text": "VSL-12", "quote": "VSL-12"}]})
-    out = run(email("MV VSL-12 sailed."), llm)
+    llm = FakeLlm({"vessel_mentions": [{"text": "VSL-02", "quote": "VSL-02"}]})
+    out = run(email("MV VSL-02 sailed."), llm)
     assert sorted(m.evidence.source for m in out.vessel_mentions) == ["new_text", "subject"]
 
 
@@ -210,7 +210,7 @@ def test_e5_s12_second_nor_has_ordinal_2():
 def test_e5_s13_subject_and_text_disagree_text_value_used():
     llm = FakeLlm({"quantities": [{"kind": "bunker_rob", "value": 50, "unit": "MT", "quote": "50MT"},
                                   {"kind": "bunker_rob", "value": 100, "unit": "MT", "quote": "100MT"}]})  # fmt: skip
-    out = run(email("Bunker ROB 100MT.", subject="VSL-12 bunker 50MT"), llm)
+    out = run(email("Bunker ROB 100MT.", subject="VSL-02 bunker 50MT"), llm)
     rob = [q for q in out.quantities if q.kind == "bunker_rob"]
     assert [q.value for q in rob] == [100.0] and out.subject_text_conflict is True
 
@@ -253,7 +253,7 @@ def test_e5_s02_items_missing_required_keys_are_dropped_and_valid_ones_kept():
     ],
 )
 def test_e5_s01_tonnage_kind_comes_from_the_nearest_whole_word_cue(text, expected):
-    out = run(email(text, subject="VSL-12 report"), FakeLlm({}))
+    out = run(email(text, subject="VSL-02 report"), FakeLlm({}))
     assert [(q.value, q.kind) for q in out.quantities] == expected
 
 
@@ -297,7 +297,7 @@ def test_e5_s03_answer_that_is_not_a_json_object_is_failed_after_a_retry(bad):
 def test_e5_characterization_same_tonnage_in_subject_and_text_is_kept_twice():
     """Quantities are evidence observations: the same value in subject and text stays twice,
     one per source (E6b turns them into one fact)."""
-    out = run(email("Loaded 100 MT.", subject="VSL-12 loaded 100 MT"), FakeLlm({}))
+    out = run(email("Loaded 100 MT.", subject="VSL-02 loaded 100 MT"), FakeLlm({}))
     assert [(q.value, q.evidence.source) for q in out.quantities] == [
         (100.0, "new_text"),
         (100.0, "subject"),

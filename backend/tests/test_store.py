@@ -19,11 +19,11 @@ def db(tmp_path: Path) -> st.Store:
     store.close()
 
 
-def make_task(task_id="T1", key="VSL-12|V202|redelivery", priority=4) -> s.Task:
+def make_task(task_id="T1", key="VSL-02|V202|redelivery", priority=4) -> s.Task:
     return s.Task(
         task_id=task_id,
         task_key=key,
-        vessel_code="VSL-12",
+        vessel_code="VSL-02",
         voyage_no="V202",
         action_type="Check CP Terms",
         description="Check the redelivery clause",
@@ -51,7 +51,7 @@ def make_task(task_id="T1", key="VSL-12|V202|redelivery", priority=4) -> s.Task:
 def make_fact(fact_id, value, event_time, sent_time=None, email_id="E001") -> s.FactRecord:
     return s.FactRecord(
         fact_id=fact_id,
-        vessel_code="VSL-12",
+        vessel_code="VSL-02",
         fact_key="eta:newcastle",
         value=value,
         event_time=event_time,
@@ -68,7 +68,7 @@ def make_proposal(proposal_id="P1", email_id="E001", supersedes=None) -> s.Propo
         email_id=email_id,
         supersedes_proposal_id=supersedes,
         lane=s.Lane(lane="needs_confirm"),
-        vessel=s.VesselMatch(vessel_code="VSL-12", status="matched", tier="High", score=0.9),
+        vessel=s.VesselMatch(vessel_code="VSL-02", status="matched", tier="High", score=0.9),
         voyage=s.VoyageMatch(voyage_no="V202", basis="stated"),
         event=s.EventDecision(
             event_type="Redelivery Notice",
@@ -136,7 +136,7 @@ def test_store_closed_task_frees_its_key_and_is_never_reopened(db):
         tx.update_task("T1", expected_version=1, changes={"status": "closed"})
     with db.transaction() as tx:
         tx.insert_task(make_task("T2"))  # same key, allowed once T1 is closed
-    assert [t.task_id for t in db.open_tasks("VSL-12", "V202")] == ["T2"]
+    assert [t.task_id for t in db.open_tasks("VSL-02", "V202")] == ["T2"]
     with pytest.raises(st.InvalidChange):
         with db.transaction() as tx:
             tx.update_task("T1", expected_version=2, changes={"status": "open"})
@@ -208,7 +208,7 @@ def test_store_e11_s16_current_fact_does_not_depend_on_write_order(tmp_path):
         with store.transaction() as tx:
             for fact in order:
                 tx.insert_fact(fact)
-        results.append(store.current_facts("VSL-12")["eta:newcastle"].value)
+        results.append(store.current_facts("VSL-02")["eta:newcastle"].value)
         store.close()
     assert results == ["4 Aug", "4 Aug"]
 
@@ -217,7 +217,7 @@ def test_store_fact_tie_is_broken_by_sent_time_then_email_id(db):
     with db.transaction() as tx:
         tx.insert_fact(make_fact("F1", "A", T0, sent_time=T0, email_id="E002"))
         tx.insert_fact(make_fact("F2", "B", T0, sent_time=T0, email_id="E001"))
-    assert db.current_facts("VSL-12")["eta:newcastle"].value == "A"
+    assert db.current_facts("VSL-02")["eta:newcastle"].value == "A"
 
 
 def test_store_facts_are_insert_only(db):
@@ -235,8 +235,8 @@ def test_store_e11_s17_retracted_fact_falls_back_to_the_previous_one(db):
         tx.insert_fact(make_fact("F2", "4 Aug", T0 + timedelta(hours=1)))
     with db.transaction() as tx:
         tx.retract_fact("F2")
-    assert db.current_facts("VSL-12")["eta:newcastle"].value == "5 Aug"
-    lookup = db.fact_lookup("VSL-12")
+    assert db.current_facts("VSL-02")["eta:newcastle"].value == "5 Aug"
+    lookup = db.fact_lookup("VSL-02")
     assert lookup.status == "ok" and [f.fact_id for f in lookup.facts] == ["F1"]
 
 
@@ -256,8 +256,8 @@ def test_store_e11_s07_failure_in_the_middle_rolls_everything_back(db):
 def test_store_unavailable_is_reported_as_unavailable_not_as_empty(tmp_path):
     store = st.Store.open(tmp_path / "app.sqlite")
     store.close()  # a closed connection stands in for a broken store
-    assert store.task_lookup("VSL-12", "V202").status == "unavailable"
-    assert store.fact_lookup("VSL-12").status == "unavailable"
+    assert store.task_lookup("VSL-02", "V202").status == "unavailable"
+    assert store.fact_lookup("VSL-02").status == "unavailable"
     with pytest.raises(st.StoreUnavailable):
         store.get_task("T1")
 
@@ -265,16 +265,16 @@ def test_store_unavailable_is_reported_as_unavailable_not_as_empty(tmp_path):
 def test_store_task_lookup_lists_open_tasks_and_pending_proposal_keys(db):
     proposal = make_proposal()
     proposal = proposal.model_copy(
-        update={"task": s.TaskDisposition(kind="create", task_key="VSL-12|V202|delivery")}
+        update={"task": s.TaskDisposition(kind="create", task_key="VSL-02|V202|delivery")}
     )
     with db.transaction() as tx:
         tx.insert_task(make_task())
         tx.save_proposal(proposal)
-    lookup = db.task_lookup("VSL-12", "V202")
+    lookup = db.task_lookup("VSL-02", "V202")
     assert lookup.status == "ok"
     assert [t.task_id for t in lookup.tasks] == ["T1"]
     assert lookup.pending_proposals == [
-        s.PendingRef(proposal_id="P1", task_key="VSL-12|V202|delivery", kind="create")
+        s.PendingRef(proposal_id="P1", task_key="VSL-02|V202|delivery", kind="create")
     ]
 
 
@@ -341,7 +341,7 @@ def test_store_e11_s15_two_overlapping_creates_with_one_key(tmp_path):
 
     assert _race(path, create) == ["DuplicateOpenKey", "ok"]
     check = st.Store.open(path)
-    assert len(check.open_tasks("VSL-12", "V202")) == 1
+    assert len(check.open_tasks("VSL-02", "V202")) == 1
     check.close()
 
 

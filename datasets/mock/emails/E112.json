@@ -1,8 +1,8 @@
 {
  "email_id": "E112",
- "text": "From: mail01@meridianfleet.example\nSent: 2026-10-09 10:30:00 UTC+08:00\nTo: mail01@easternshore.example\nCc: mail01@seacrestsurvey.example\nSubject: VSL-11 RIZHAO - UNDERWATER INSPECTION AND CLEANING WINDOW\n\nDear Sirs,\n\nOperator asks the Rizhao agent for a diver permit and quote for UWI and UWC after discharge.\n\nBest regards,\nMeridian Fleet Management\n\n-----Original Message-----\nFrom: mail01@ostrander.example\nSent: 2026-10-05 14:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@pelhambrokers.example\nSubject: VSL-11 / NEWCASTLE - BIOFOULING AND HULL CLEANLINESS REQUIREMENT\n\nDear Colleagues,\n\nThe Newcastle charterer requires a recent underwater hull inspection report before arrival for biofouling reasons; inspection within 30 days before arrival.\n\n- Inspect within: 30 days\n- Required before: Newcastle arrival\n- Laycan: 2026-11-20 to 2026-11-30\n\nBest regards,\nOstrander Coal Logistics",
+ "text": "From: mail01@meridianfleet.example\nSent: 2026-10-09 10:30:00 UTC+08:00\nTo: mail01@easternshore.example\nCc: mail01@seacrestsurvey.example\nSubject: VSL-01 RIZHAO - UNDERWATER INSPECTION AND CLEANING WINDOW\n\nDear Sirs,\n\nOperator asks the Rizhao agent for a diver permit and quote for UWI and UWC after discharge.\n\nBest regards,\nMeridian Fleet Management\n\n-----Original Message-----\nFrom: mail01@ostrander.example\nSent: 2026-10-05 14:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@pelhambrokers.example\nSubject: VSL-01 / NEWCASTLE - BIOFOULING AND HULL CLEANLINESS REQUIREMENT\n\nDear Colleagues,\n\nThe Newcastle charterer requires a recent underwater hull inspection report before arrival for biofouling reasons; inspection within 30 days before arrival.\n\n- Inspect within: 30 days\n- Required before: Newcastle arrival\n- Laycan: 2026-11-20 to 2026-11-30\n\nBest regards,\nOstrander Coal Logistics",
  "event_id": "M11017",
- "vessel": "VSL-11",
+ "vessel": "VSL-01",
  "thread": "V103-hull",
  "scenario": "S01",
  "event_type": "Survey Arrangement / Quotation"

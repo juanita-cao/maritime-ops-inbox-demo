@@ -3,7 +3,7 @@
   {
    "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)",
    "confidence": 0.9,
-   "quote": "Arrival report, VSL-11, V101."
+   "quote": "Arrival report, VSL-01, V101."
   },
   {
    "event_type": "Notice of Readiness / Laytime / Demurrage",

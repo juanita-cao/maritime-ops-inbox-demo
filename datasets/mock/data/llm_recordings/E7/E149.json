@@ -3,14 +3,14 @@
   {
    "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
    "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
-   "description": "Update the vessel schedule for VSL-17 to reflect the new expected berth date of 2026-10-19 at CHITTAGONG.",
+   "description": "Update the vessel schedule for VSL-07 to reflect the new expected berth date of 2026-10-19 at CHITTAGONG.",
    "due": null,
    "owner_role": "Operations Officer"
   },
   {
    "action_type": "Notify Party (Agent / P&I / Manager)",
    "for_event": "Port Delay / Congestion / Strike",
-   "description": "Notify the relevant parties about the port delay and the new expected berth date of 2026-10-19 for VSL-17 at CHITTAGONG.",
+   "description": "Notify the relevant parties about the port delay and the new expected berth date of 2026-10-19 for VSL-07 at CHITTAGONG.",
    "due": null,
    "owner_role": "Operations Officer"
   }
