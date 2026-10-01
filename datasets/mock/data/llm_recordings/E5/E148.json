@@ -1,0 +1,28 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "Kandla",
+   "quote": "Kandla"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "sailed",
+   "value": "10 Oct",
+   "ordinal": null,
+   "quote": "sailed in ballast 10 Oct"
+  },
+  {
+   "kind": "eta",
+   "value": "21 Oct",
+   "ordinal": null,
+   "quote": "ETA Kandla 21 Oct"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

@@ -1,0 +1,22 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "RICHARDS BAY",
+   "quote": "RICHARDS BAY"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "completed",
+   "value": "29 Aug 17:30",
+   "ordinal": null,
+   "quote": "29 Aug 17:30"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Agent"
+}

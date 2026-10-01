@@ -1,0 +1,23 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "Aqaba",
+   "quote": "Aqaba"
+  }
+ ],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "amount",
+   "value": 15000,
+   "unit": "USD",
+   "currency": null,
+   "quote": "15,000 USD"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Master / Vessel"
+}

@@ -1,0 +1,9 @@
+{
+ "email_id": "E046",
+ "text": "From: mail01@vslsilveranemone.example\nSent: 2026-09-30 12:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@harlowfertilizertrading.example\nSubject: VSL-14 NOON REPORT 2026-09-30\n\nGood day,\n\nNoon report, VSL-14, V401.\nDd: 30 Sep 2026\nPosition: 09-10N 078-20E at 1200 LT\nCourse/avg spd/rpm/eng slip: 090 / 12.4 / 72 / 3.0\nDaily GPS speed / Log speed: 12.6 / 12.5\nAverage GPS speed / Log Speed: 12.5 / 12.4\nIFO Consumed/LSMGO consumed fm last report: VLSFO 27.2 mt LSMGO 0.0 mt\nWind direction/force/sea cond/vis: NE / 4 / 1.5 M / Good\nWeather condition: NE / 4 Cloudy\nROB: VLSFO 292.5 mt, LSMGO 60.0 mt\nETA: 2026-10-05 09:00 LT\nRemarks: Vessel proceeding normally.\n\nBest regards,\nMaster MV Silver Anemone",
+ "event_id": "M14006",
+ "vessel": "VSL-14",
+ "thread": "V401-noon",
+ "scenario": null,
+ "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
+}

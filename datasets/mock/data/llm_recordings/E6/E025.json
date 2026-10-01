@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "LOI (Letter of Indemnity)",
+   "confidence": 0.9,
+   "quote": "Charterer asks owners to accept an LOI for a short-landing difference"
+  },
+  {
+   "event_type": "Survey Arrangement / Quotation",
+   "confidence": 0.7,
+   "quote": "receiver's draft survey"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

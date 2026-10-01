@@ -1,0 +1,25 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "detained",
+   "value": "2026-10-10 15:30",
+   "ordinal": null,
+   "quote": "Detained from: 2026-10-10 15:30"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 3,
+   "unit": "deficiencies",
+   "currency": null,
+   "quote": "Deficiencies: 3"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

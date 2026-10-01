@@ -1,0 +1,121 @@
+list_name,order,value
+event_types,1,Vessel Schedule Update (ETA/ETB/ETD)
+event_types,2,Voyage Instructions / Port Nomination
+event_types,3,Delivery Notice
+event_types,4,Redelivery Notice
+event_types,5,Hire / SOA / Payment
+event_types,6,Bunker (Stem / Quote / ROB / Quality)
+event_types,7,Loading / Cargo Operations
+event_types,8,Discharging
+event_types,9,Notice of Readiness / Laytime / Demurrage
+event_types,10,Hold Cleaning / Cargo Hold Condition
+event_types,11,Survey Arrangement / Quotation
+event_types,12,Off-hire
+event_types,13,Claim
+event_types,14,LOI (Letter of Indemnity)
+event_types,15,P&I / Insurance
+event_types,16,Weather Routing / Speed & Consumption
+event_types,17,Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)
+event_types,18,Stowage Plan / Cargo Clauses
+event_types,19,"Cash to Master / Supply (CTM, Fresh Water, Provisions)"
+event_types,20,Port Agency / Port Costs (DA)
+event_types,21,Port Delay / Congestion / Strike
+event_types,22,Crew (Change / Medical)
+event_types,23,Vessel Defect / Repair / Breakdown
+event_types,24,Inspection / Vetting / PSC
+event_types,25,CP Terms / Recap / Addendum
+event_types,26,Sanctions / Compliance / KYC
+event_types,27,Fixture Enquiry / Offer / Counter
+event_types,28,General / FYI
+needs_action,1,Action Required
+needs_action,2,Approval Required
+needs_action,3,Waiting for Reply
+needs_action,4,FYI - No Action
+needs_action,5,Close
+roles,1,Charterer
+roles,2,Owner / Manager
+roles,3,Operator (internal)
+roles,4,Finance / Accounts
+roles,5,Master / Vessel
+roles,6,Port Agent
+roles,7,Surveyor / Survey Company
+roles,8,P&I Club / Correspondent
+roles,9,Broker
+roles,10,Bunker Supplier / Trader
+roles,11,Shipper / Receiver
+roles,12,Terminal / Port Authority
+roles,13,Crew Manager
+roles,14,Class / Flag
+roles,15,Other
+Y/N,1,Y
+Y/N,2,N
+priority,1,1
+priority,2,2
+priority,3,3
+priority,4,4
+priority,5,5
+due_type,1,Delivery
+due_type,2,Redelivery
+due_type,3,Hire
+due_type,4,Invoice
+due_type,5,Others
+vessel_basis,1,body
+vessel_basis,2,subject
+vessel_basis,3,thread
+vessel_basis,4,sender
+vessel_basis,5,cannot tell
+action_type,1,Check CP Terms
+action_type,2,Confirm Bunker ROB / Stem
+action_type,3,Arrange Survey
+action_type,4,Review Quotation / Plan / Proposal
+action_type,5,Seek Internal Approval
+action_type,6,Update Vessel Schedule (ETA/ETB/ETD)
+action_type,7,Reply / Confirm to Counterparty
+action_type,8,Notify Party (Agent / P&I / Manager)
+action_type,9,"Prepare / Issue Document (LOI, Notice, Statement)"
+action_type,10,Check Hire / Invoice / Payment
+action_type,11,Prepare Claim / Record Evidence
+action_type,12,Follow Up (chase reply)
+action_type,13,Verify / Reconcile Report Data
+action_type,14,Collect / Chase Documents
+action_type,15,Arrange Cash / Supply
+action_type,16,Track Contractual Notice / Deadline
+action_type,17,Reserve Rights / Reply Without Prejudice
+action_type,18,No Action
+action_type,19,File / Archive Documents
+action_type,20,Notify Master / Vessel
+action_type,21,Coordinate Internal Review
+decision_basis,1,Voyage Instructions / Charterers' Orders
+decision_basis,2,Company SOP / Operations Manual / Checklist
+decision_basis,3,SMS (ISM Safety Management System) Procedure
+decision_basis,4,Delegation of Authority / Approval Matrix
+decision_basis,5,Approved Vendor / Supplier List
+decision_basis,6,Bunker Policy / Bunker Procurement Procedure
+decision_basis,7,LOI Policy / Standard LOI Wording
+decision_basis,8,Claims Handling Procedure / Time Bar
+decision_basis,9,P&I Club Rules / Circulars / Correspondent Advice
+decision_basis,10,BIMCO Standard Clauses / Industry Standard Forms
+decision_basis,11,Class / Flag State Requirements
+decision_basis,12,Port / Terminal Regulations
+decision_basis,13,Sanctions / Compliance Policy
+decision_basis,14,Credit / Payment Policy
+decision_basis,15,Vessel Particulars / Technical Data (Speed & Consumption)
+decision_basis,16,Past Practice / Previous Voyage with This Counterparty
+decision_basis,17,Manager / Superintendent Instruction (verbal or email)
+direction,1,Inbound
+direction,2,Outbound
+contract_level,1,Owner – Head charterer
+contract_level,2,Head charterer – Sub-charterer
+contract_level,3,Sub-charterer – next sub-charterer
+contract_level,4,Not applicable
+facts_updated,1,ETA / ETB / ETD / Port
+facts_updated,2,Loaded / Discharged quantity
+facts_updated,3,ROB / Bunker
+facts_updated,4,Speed & Consumption
+facts_updated,5,Draft
+facts_updated,6,Position / Weather
+facts_updated,7,Hire / Invoice amount
+facts_updated,8,Claim / Dispute status
+facts_updated,9,Documents / Certificates
+facts_updated,10,Charter status
+facts_updated,11,None

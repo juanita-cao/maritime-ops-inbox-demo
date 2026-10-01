@@ -1,0 +1,28 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "ROUEN",
+   "quote": "ROUEN"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "etd",
+   "value": "2026-10-09",
+   "ordinal": null,
+   "quote": "Dd: 9 Oct 2026"
+  },
+  {
+   "kind": "eta",
+   "value": "2026-10-14 18:00",
+   "ordinal": null,
+   "quote": "ETA: 2026-10-14 18:00 LT"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Master / Vessel"
+}

@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Hold Cleaning / Cargo Hold Condition",
+   "confidence": 0.9,
+   "quote": "grain hold cleanliness standards before loading"
+  },
+  {
+   "event_type": "Loading / Cargo Operations",
+   "confidence": 0.5,
+   "quote": "cleanliness standards before loading"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.2,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

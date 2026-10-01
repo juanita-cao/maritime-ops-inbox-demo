@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Inspection / Vetting / PSC",
+   "confidence": 0.9,
+   "quote": "Inspector rejects holds no.2 and no.5"
+  },
+  {
+   "event_type": "Hold Cleaning / Cargo Hold Condition",
+   "confidence": 0.8,
+   "quote": "coal dust and rust scale in the corners"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

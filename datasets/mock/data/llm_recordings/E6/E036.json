@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Discharging",
+   "confidence": 0.9,
+   "quote": "Discharge completed; outturn per shore weighbridge 60,790 mt"
+  },
+  {
+   "event_type": "Delivery Notice",
+   "confidence": 0.7,
+   "quote": "Discharge completed; outturn per shore weighbridge 60,790 mt against B/L 61,200 mt"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

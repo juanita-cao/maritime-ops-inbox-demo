@@ -1,0 +1,20 @@
+{
+ "vessel_mentions": [
+  {
+   "text": "PARADIP",
+   "quote": "VSL-13 PARADIP"
+  }
+ ],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "Paradip",
+   "quote": "Paradip"
+  }
+ ],
+ "dates": [],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Operator (internal)"
+}

@@ -1,0 +1,14 @@
+{
+ "items": [
+  {
+   "event_type": "Vessel Defect / Repair / Breakdown",
+   "confidence": 0.9,
+   "quote": "stoppage to change the no.4 exhaust valve"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.5,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "items": [
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Claim",
+   "description": "Prepare a claim regarding the moisture issue for coal from hold no. 4 on VSL-13, documenting the discharge moisture of 11.2% against the load moisture of 9.0%.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Reserve Rights / Reply Without Prejudice",
+   "for_event": "Claim",
+   "description": "Reply to the receiver's letter, acknowledging their claim of seawater ingress and reserving rights regarding the moisture issue.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Reply / Confirm to Counterparty",
+   "for_event": "Hold Cleaning / Cargo Hold Condition",
+   "description": "Confirm receipt of the letter regarding the moisture issue in hold no. 4 and inform the counterparty of the steps being taken.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

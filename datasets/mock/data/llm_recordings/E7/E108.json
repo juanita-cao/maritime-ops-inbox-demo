@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Reply / Confirm to Counterparty",
+   "for_event": "Hold Cleaning / Cargo Hold Condition",
+   "description": "Confirm to the charterer that the delay for re-cleaning holds 2 and 5 at anchorage is for the account of CP clause 28, as instructed by the operator.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Collect / Chase Documents",
+   "for_event": "Hold Cleaning / Cargo Hold Condition",
+   "description": "Collect any necessary documentation related to the re-cleaning of holds 2 and 5 to ensure compliance with the inspector's satisfaction.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

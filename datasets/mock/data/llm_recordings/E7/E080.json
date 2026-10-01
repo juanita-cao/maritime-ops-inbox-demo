@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Track Contractual Notice / Deadline",
+   "for_event": "Notice of Readiness / Laytime / Demurrage",
+   "description": "Track the deadline for the charterer to correct the statement and pay the demurrage of USD 12,950.00 within 30 days from the date of the email, which is due by 2026-11-04.",
+   "due": "2026-11-04",
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Check Hire / Invoice / Payment",
+   "for_event": "Hire / SOA / Payment",
+   "description": "Check the payment status of the demurrage amount of USD 12,950.00 to ensure it is processed within the specified 30-day period.",
+   "due": "2026-11-04",
+   "owner_role": "Finance Officer"
+  }
+ ]
+}

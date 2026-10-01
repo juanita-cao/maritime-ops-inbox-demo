@@ -1,0 +1,23 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "Newcastle",
+   "quote": "Newcastle"
+  }
+ ],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "amount",
+   "value": 5200,
+   "unit": "USD",
+   "currency": null,
+   "quote": "5200 USD"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Newcastle correspondent"
+}

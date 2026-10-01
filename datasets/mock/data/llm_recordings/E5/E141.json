@@ -1,0 +1,22 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "PORT LINCOLN",
+   "quote": "PORT LINCOLN"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "eta",
+   "value": "2026-10-19 08:00",
+   "ordinal": null,
+   "quote": "ETA: 2026-10-19 08:00 LT"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Master / Vessel"
+}

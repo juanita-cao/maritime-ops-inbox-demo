@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Redelivery Notice",
+   "confidence": 0.9,
+   "quote": "redelivery on dropping outward pilot Casablanca about 17 Oct 2026"
+  },
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.6,
+   "quote": "5 days approximate notice"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

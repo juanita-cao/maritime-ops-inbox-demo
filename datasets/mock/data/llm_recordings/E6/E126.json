@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Off-hire",
+   "confidence": 0.9,
+   "quote": "treat the 33.5 hours from the failed inspection as off-hire"
+  },
+  {
+   "event_type": "Hold Cleaning / Cargo Hold Condition",
+   "confidence": 0.8,
+   "quote": "cost of the hold washing chemicals"
+  },
+  {
+   "event_type": "Claim",
+   "confidence": 0.7,
+   "quote": "Claim offhire: 33.5 hours"
+  }
+ ]
+}

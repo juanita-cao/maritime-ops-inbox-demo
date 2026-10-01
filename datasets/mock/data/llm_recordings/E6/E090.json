@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Loading / Cargo Operations",
+   "confidence": 0.9,
+   "quote": "loading commenced, rate 3,200 mt/h"
+  },
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.7,
+   "quote": "Berthed: 2026-10-06 13:40"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "eta",
+   "value": "2026-10-07 10:00",
+   "ordinal": null,
+   "quote": "ETA: 2026-10-07 10:00 LT"
+  },
+  {
+   "kind": "dd",
+   "value": "5 Oct 2026",
+   "ordinal": null,
+   "quote": "Dd: 5 Oct 2026"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Master / Vessel"
+}

@@ -1,0 +1,30 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "anchorage",
+   "quote": "anchorage"
+  }
+ ],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 7400,
+   "unit": "USD",
+   "currency": null,
+   "quote": "USD 7,400 for inspection and cleaning"
+  },
+  {
+   "kind": "other",
+   "value": 2600,
+   "unit": "USD",
+   "currency": null,
+   "quote": "USD 2,600 for inspection only"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

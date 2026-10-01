@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Off-hire",
+   "confidence": 0.9,
+   "quote": "Charterer notifies off-hire for the whole stoppage"
+  },
+  {
+   "event_type": "Hire / SOA / Payment",
+   "confidence": 0.5,
+   "quote": "Offhire claimed: 6.0 hours"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

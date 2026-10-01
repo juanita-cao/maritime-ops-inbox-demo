@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Claim",
+   "confidence": 0.8,
+   "quote": "asks the charterer to withdraw the claim"
+  },
+  {
+   "event_type": "Bunker (Stem / Quote / ROB / Quality)",
+   "confidence": 0.7,
+   "quote": "clause 12 makes charterers provide and pay for all bunkers used"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Charterers"
+  }
+ ]
+}

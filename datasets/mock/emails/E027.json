@@ -1,0 +1,9 @@
+{
+ "email_id": "E027",
+ "text": "From: mail01@meridianfleet.example\nSent: 2026-09-17 15:40:00 UTC+08:00\nTo: mail01@corvane.example\nCc: mail01@aureliabay.example\nSubject: RE: VSL-11 BAUXITE KAMSAR - BLS AND MATES RECEIPT\n\nDear Charterers,\n\nOperator notes the quantities differ and asks for the LOI wording and the receiver's survey report.\n\n- Bl qty: 78,420 mt\n- Loi qty: 78,050 mt\n\nBest regards,\nMeridian Fleet Management\n\n-----Original Message-----\nFrom: mail01@corvane.example\nSent: 2026-09-17 10:12:00 UTC+08:00\nTo: mail01@meridianfleet.example\nSubject: RE: VSL-11 BAUXITE KAMSAR - BLS AND MATES RECEIPT\n\nDear Colleagues,\n\nCharterer asks owners to accept an LOI for a short-landing difference (receiver's draft survey).\n\n- Loi qty: 78,050 mt\n- Receiver survey qty: 78,050 mt\n- Difference: 370 mt\n\nBest regards,\nCorvane Bulk Trading\n\n-----Original Message-----\nFrom: mail01@bokecoast.example\nSent: 2026-08-14 18:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@corvane.example\nSubject: VSL-11 BAUXITE KAMSAR - BLS AND MATES RECEIPT\n\nDear Colleagues,\n\nAgent sends B/L and mate's receipt copies.\n\n- Bl qty: 78,420 mt\n- Mr qty: 78,420 mt\n- Bl date: 2026-08-14\n- Bl numbers: KAM-01, KAM-02\n\nBest regards,\nBoke Coast Agency",
+ "event_id": "M11006",
+ "vessel": "VSL-11",
+ "thread": "V101-docs",
+ "scenario": "S02",
+ "event_type": "LOI (Letter of Indemnity)"
+}

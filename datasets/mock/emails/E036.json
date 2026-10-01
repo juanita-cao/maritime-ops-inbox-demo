@@ -1,0 +1,9 @@
+{
+ "email_id": "E036",
+ "text": "From: mail01@kutchgulf.example\nSent: 2026-09-23 06:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@ravenscar.example\nSubject: VSL-13 MUNDRA DISCHARGE COMPLETED - OUTTURN\n\nDear Colleagues,\n\nDischarge completed; outturn per shore weighbridge 60,790 mt against B/L 61,200 mt.\n\n- Outturn qty: 60,790 mt\n- Bl qty: 61,200 mt\n\nBest regards,\nKutch Gulf Port Services",
+ "event_id": "M13009",
+ "vessel": "VSL-13",
+ "thread": "V301-disch",
+ "scenario": "S18",
+ "event_type": "Discharging"
+}

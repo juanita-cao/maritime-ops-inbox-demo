@@ -1,0 +1,9 @@
+{
+ "email_id": "E054",
+ "text": "From: mail01@meridianfleet.example\nSent: 2026-10-01 10:00:00 UTC+08:00\nTo: mail01@yuxingironoreimporters.example\nSubject: VSL-20 HIRE STATEMENT NO. 10 (1 OCT - 15 OCT 2026)\n\nDear Charterers,\n\nHire statement.\n\n- Hire rate: 18,600 USD per day\n- Hire next due: 2026-10-16\n\nBest regards,\nMeridian Fleet Management",
+ "event_id": "M20001",
+ "vessel": "VSL-20",
+ "thread": "V1001-hire",
+ "scenario": null,
+ "event_type": "Hire / SOA / Payment"
+}

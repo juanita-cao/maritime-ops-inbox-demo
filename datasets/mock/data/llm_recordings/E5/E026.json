@@ -1,0 +1,28 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "Mundra",
+   "quote": "Mundra"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "eta",
+   "value": "2026-09-17 12:00",
+   "ordinal": null,
+   "quote": "2026-09-17 12:00"
+  },
+  {
+   "kind": "arrival",
+   "value": "17 Sep",
+   "ordinal": null,
+   "quote": "arrival 17 Sep"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

@@ -1,0 +1,11 @@
+{
+ "items": [
+  {
+   "action_type": "Reply / Confirm to Counterparty",
+   "for_event": "Inspection / Vetting / PSC",
+   "description": "Confirm to the counterparty that the detention of vessel VSL-20 was released at 08:20 on 12 Oct after rectification of the deficiencies.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

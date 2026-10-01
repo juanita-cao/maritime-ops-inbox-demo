@@ -1,0 +1,34 @@
+{
+ "vessel_mentions": [
+  {
+   "text": "VSL-16",
+   "quote": "VSL-16 ROSARIO"
+  }
+ ],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "berthed",
+   "value": "10 Oct 08:00",
+   "ordinal": null,
+   "quote": "Berthed 10 Oct 08:00"
+  },
+  {
+   "kind": "commenced",
+   "value": "10 Oct 12:00",
+   "ordinal": null,
+   "quote": "loading started 10 Oct 12:00"
+  },
+  {
+   "kind": "completed",
+   "value": "14 Oct",
+   "ordinal": null,
+   "quote": "completion about 14 Oct"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

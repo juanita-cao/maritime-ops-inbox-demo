@@ -1,0 +1,23 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "Rotterdam",
+   "quote": "the route to Rotterdam"
+  }
+ ],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "bunker_rob",
+   "value": 0,
+   "unit": "LSMGO",
+   "currency": null,
+   "quote": "LSMGO CONSUMED"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Operator"
+}

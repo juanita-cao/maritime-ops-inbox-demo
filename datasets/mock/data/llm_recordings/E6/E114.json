@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Sanctions / Compliance / KYC",
+   "confidence": 0.9,
+   "quote": "Operator's compliance team asks for the certificate of incorporation, the beneficial owner chart, a 12-month trading record and the cargo origin documents."
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Charterers,"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.2,
+   "quote": "Asks: incorporation, ownership chart, trading record, origin"
+  }
+ ]
+}

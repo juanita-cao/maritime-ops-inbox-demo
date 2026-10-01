@@ -1,0 +1,17 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "berthed",
+   "value": "29 Aug",
+   "ordinal": null,
+   "quote": "berthed 29 Aug"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

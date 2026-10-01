@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Off-hire",
+   "confidence": 0.9,
+   "quote": "Operator accepts the 6.0 h stoppage as off-hire time"
+  },
+  {
+   "event_type": "Weather Routing / Speed & Consumption",
+   "confidence": 0.8,
+   "quote": "disputes the speed claim: the vessel regained 11.8 kn"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Charterers"
+  }
+ ]
+}

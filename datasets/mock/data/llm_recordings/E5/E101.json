@@ -1,0 +1,20 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "discharge port",
+   "quote": "discharge port's alternative berth"
+  }
+ ],
+ "dates": [],
+ "quantities": [],
+ "cp_references": [
+  {
+   "text": "CP",
+   "quote": "CP"
+  }
+ ],
+ "references": [],
+ "author_hint": "Operator"
+}

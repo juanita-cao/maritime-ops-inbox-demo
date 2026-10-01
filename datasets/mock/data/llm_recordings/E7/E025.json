@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Prepare / Issue Document (LOI, Notice, Statement)",
+   "for_event": "LOI (Letter of Indemnity)",
+   "description": "Prepare the Letter of Indemnity for the short-landing difference of 370 mt for vessel VSL-11 as requested by the charterer.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Seek Internal Approval",
+   "for_event": "LOI (Letter of Indemnity)",
+   "description": "Seek internal approval for the Letter of Indemnity related to the short-landing difference for vessel VSL-11.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

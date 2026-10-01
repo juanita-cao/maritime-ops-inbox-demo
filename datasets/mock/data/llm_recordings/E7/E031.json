@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
+   "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "description": "Update the vessel schedule for VSL-11 with the arrival time of 21:40 LT on 18 Sep 2026 at QINGDAO.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Track Contractual Notice / Deadline",
+   "for_event": "Notice of Readiness / Laytime / Demurrage",
+   "description": "Track the Notice of Readiness for VSL-11, which was tendered at 21:30 LT on 18 Sep 2026.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

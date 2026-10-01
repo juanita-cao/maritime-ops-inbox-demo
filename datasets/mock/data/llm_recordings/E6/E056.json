@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Claim",
+   "confidence": 0.9,
+   "quote": "Receiver claims for 410 mt shortage (0.67%) at USD 100 per mt = USD 41,000"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Sirs,"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.2,
+   "quote": "mentions the CP 0.5% tolerance and the 12-month time bar."
+  }
+ ]
+}

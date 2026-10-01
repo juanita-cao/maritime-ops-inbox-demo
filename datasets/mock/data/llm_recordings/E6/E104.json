@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Claim",
+   "confidence": 0.9,
+   "quote": "Charterer claims USD 21,500 for underperformance over the whole voyage"
+  },
+  {
+   "event_type": "Weather Routing / Speed & Consumption",
+   "confidence": 0.8,
+   "quote": "average 12.04 kn and 28.39 mt per day against the CP warranty of 12.5 kn on 28.0 mt per day"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Notify Party (Agent / P&I / Manager)",
+   "for_event": "Vessel Defect / Repair / Breakdown",
+   "description": "Notify the relevant parties about the stoppage of VSL-11 due to the exhaust valve no.4 spindle seat leak, which occurred from 02:10 to 08:10 on 2026-10-10.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Vessel Defect / Repair / Breakdown",
+   "description": "Prepare a claim and record evidence regarding the stoppage of VSL-11 for the exhaust valve no.4 repair, noting the duration of 6.0 hours on 2026-10-10.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

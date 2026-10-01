@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Crew (Change / Medical)",
+   "confidence": 0.9,
+   "quote": "crew member abdominal pain, request advice"
+  },
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.6,
+   "quote": "asks for medical advice and a nearby port"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

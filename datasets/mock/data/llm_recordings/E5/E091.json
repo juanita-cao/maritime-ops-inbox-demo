@@ -1,0 +1,16 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [],
+ "quantities": [],
+ "cp_references": [],
+ "references": [
+  {
+   "kind": "invoice",
+   "value": "ZC-2291",
+   "quote": "Dues invoice no: ZC-2291"
+  }
+ ],
+ "author_hint": "Operator"
+}

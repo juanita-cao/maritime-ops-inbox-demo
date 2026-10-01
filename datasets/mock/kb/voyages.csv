@@ -1,0 +1,20 @@
+vessel_code,voyage_no,status,route,start,end,facts,source
+VSL-11,V101,completed,Kamsar -> Qingdao,2026-08-14,,"bauxite, 78,420 mt, sailed 2026-08-14 16:20 LT",mock ledger
+VSL-11,V102,in progress,Port Hedland -> Rizhao,2026-10-08,,"iron ore fines, 81,000 mt, sailed 2026-10-08 04:30 LT, ETA 2026-10-22 08:00 LT",mock ledger
+VSL-11,V103,planned,Newcastle -> Krishnapatnam,,,"thermal coal, 79,500 mt",mock ledger
+VSL-12,V201,completed,Paranagua -> Rotterdam,2026-09-01,,"soybean meal, 52,300 mt, sailed 2026-09-01 18:10 LT",mock ledger
+VSL-12,V202,in progress,Rouen -> Casablanca,2026-10-09,,"wheat, 49,800 mt, sailed 2026-10-09 06:20 LT, ETA 2026-10-14 18:00 LT",mock ledger
+VSL-12,V203,planned,Santos -> Antwerp,,,"soybean meal, 51,000 mt",mock ledger
+VSL-13,V301,completed,Richards Bay -> Mundra,2026-08-30,,"thermal coal, 61,200 mt, sailed 2026-08-30 20:40 LT",mock ledger
+VSL-13,V302,in progress,Aqaba -> Paradip,2026-10-04,,"urea, 55,300 mt, sailed 2026-10-04 11:30 LT, ETA 2026-10-21 14:00 LT",mock ledger
+VSL-13,V303,planned,Visakhapatnam -> Chittagong,,,"limestone, 58,000 mt",mock ledger
+VSL-14,V401,completed,Aqaba -> Haldia,2026-09-18,,"phosphate rock, 36,800 mt, sailed 2026-09-18 10:30 LT",mock ledger
+VSL-14,V402,planned,Kandla -> Mombasa,,,"urea, 33,000 mt",mock ledger
+VSL-15,V501,completed,Esperance -> Kaohsiung,2026-09-02,,"salt, 52,000 mt, sailed 2026-09-02 14:00 LT",mock ledger
+VSL-15,V502,planned,Port Lincoln -> Kaohsiung,,,"salt, 50,000 mt",mock ledger
+VSL-16,V601,completed,Hay Point -> Gwangyang,2026-08-02,,"coking coal, 71,500 mt, sailed 2026-08-02 09:00 LT",mock ledger
+VSL-16,V602,in progress,Rosario -> Chittagong,,,"wheat, 68,000 mt, ETA 2026-12-02 12:00 LT",mock ledger
+VSL-17,V701,in progress,Visakhapatnam -> Chittagong,2026-10-03,,"limestone, 33,800 mt, sailed 2026-10-03 06:15 LT, ETA 2026-10-07 10:00 LT",mock ledger
+VSL-18,V801,in progress,Bunbury -> Zhanjiang,2026-10-02,,"wood chips, 54,200 mt, sailed 2026-10-02 13:00 LT, ETA 2026-10-19 08:00 LT",mock ledger
+VSL-19,V901,planned,Cai Lan -> Mormugao,,,"clinker, 60,000 mt",mock ledger
+VSL-20,V1001,in progress,Tubarao -> Qingdao,2026-08-22,,"iron ore, 80,200 mt, sailed 2026-08-22 19:00 LT, ETA 2026-10-09 06:00 LT",mock ledger

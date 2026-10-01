@@ -1,0 +1,23 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "eta",
+   "value": "19 Oct",
+   "ordinal": null,
+   "quote": "ETA 19 Oct"
+  },
+  {
+   "kind": "laycan",
+   "value": "20-22 Oct",
+   "ordinal": null,
+   "quote": "loading 20-22 Oct"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

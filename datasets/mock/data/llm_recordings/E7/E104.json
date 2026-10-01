@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Claim",
+   "description": "Prepare the claim documentation for the charterer's claim of USD 21,500 regarding the underperformance of VSL-14 during voyage V401, noting the average speed of 12.04 kn and average consumption of 28.39 mt per day.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Verify / Reconcile Report Data",
+   "for_event": "Weather Routing / Speed & Consumption",
+   "description": "Verify the report data for VSL-14 to confirm the average speed of 12.04 kn and average consumption of 28.39 mt per day against the charter party warranty.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

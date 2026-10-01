@@ -1,0 +1,31 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "delivery",
+   "value": "2026-10-16",
+   "ordinal": null,
+   "quote": "2026-10-16"
+  },
+  {
+   "kind": "laycan",
+   "value": "16 Oct - 31 Oct 2026",
+   "ordinal": null,
+   "quote": "16 Oct - 31 Oct 2026"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 7.5,
+   "unit": "hours",
+   "currency": null,
+   "quote": "7.5 hours"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

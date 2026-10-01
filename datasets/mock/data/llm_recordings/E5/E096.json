@@ -1,0 +1,25 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 19.2,
+   "unit": "USD per mt",
+   "currency": "USD",
+   "quote": "Freight: 19.2 USD per mt"
+  },
+  {
+   "kind": "other",
+   "value": 19500,
+   "unit": "USD per day",
+   "currency": "USD",
+   "quote": "Demurrage: 19,500 USD per day"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

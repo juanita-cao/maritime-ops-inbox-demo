@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Notice of Readiness / Laytime / Demurrage",
+   "confidence": 0.9,
+   "quote": "demurrage USD 19,500 per day"
+  },
+  {
+   "event_type": "CP Terms / Recap / Addendum",
+   "confidence": 0.8,
+   "quote": "Clean recap"
+  },
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.6,
+   "quote": "laycan 20-30 Nov"
+  }
+ ]
+}

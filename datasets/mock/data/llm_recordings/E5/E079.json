@@ -1,0 +1,40 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "KANDLA",
+   "quote": "KANDLA"
+  },
+  {
+   "text": "MOMBASA",
+   "quote": "MOMBASA"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "laycan",
+   "value": "2026-10-22 to 2026-10-28",
+   "ordinal": null,
+   "quote": "laycan 22-28 Oct"
+  },
+  {
+   "kind": "cp",
+   "value": "2026-10-05",
+   "ordinal": null,
+   "quote": "Cp date: 2026-10-05"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "loaded",
+   "value": 33000,
+   "unit": "mt",
+   "currency": null,
+   "quote": "33,000 mt"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

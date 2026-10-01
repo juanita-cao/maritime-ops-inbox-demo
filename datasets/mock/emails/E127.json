@@ -1,0 +1,9 @@
+{
+ "email_id": "E127",
+ "text": "From: mail01@vsl11.example\nSent: 2026-10-10 12:15:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@corvane.example\nSubject: VSL-11 NOON REPORT 2026-10-10\n\nGood day,\n\nNoon report, VSL-11, V102.\nDd: 10 Oct 2026\nPosition: 16-05S 111-50E at 1200 LT\nCourse/avg spd/rpm/eng slip: 090 / 10.6 / 72 / 3.0\nDaily GPS speed / Log speed: 10.9 / 10.8\nAverage GPS speed / Log Speed: 10.7 / 10.6\nIFO Consumed/LSMGO consumed fm last report: VLSFO 27.0 mt LSMGO 0.0 mt\nWind direction/force/sea cond/vis: E / 5 / 2.0 M / Good\nWeather condition: E / 5 Cloudy\nROB: VLSFO 1180.2 mt, LSMGO 60.0 mt\nETA: 2026-10-22 20:00 LT\nRemarks: Vessel proceeding normally.\n\nBest regards,\nMaster MV Aurelia Bay",
+ "event_id": "M11022",
+ "vessel": "VSL-11",
+ "thread": "V102-noon",
+ "scenario": null,
+ "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
+}

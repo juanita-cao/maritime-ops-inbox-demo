@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "CP Terms / Recap / Addendum",
+   "confidence": 0.9,
+   "quote": "FIXTURE RECAP UREA KANDLA / MOMBASA"
+  },
+  {
+   "event_type": "Voyage Instructions / Port Nomination",
+   "confidence": 0.7,
+   "quote": "laycan 22-28 Oct"
+  },
+  {
+   "event_type": "Loading / Cargo Operations",
+   "confidence": 0.6,
+   "quote": "Clean recap, 33,000 mt urea"
+  }
+ ]
+}

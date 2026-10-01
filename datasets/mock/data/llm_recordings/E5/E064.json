@@ -1,0 +1,32 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "other",
+   "value": "3 Oct",
+   "ordinal": null,
+   "quote": "3 Oct"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 15000,
+   "unit": "USD",
+   "currency": null,
+   "quote": "Ctm: 15,000 USD"
+  },
+  {
+   "kind": "other",
+   "value": 450,
+   "unit": "USD",
+   "currency": null,
+   "quote": "Ctm fee: 450 USD"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

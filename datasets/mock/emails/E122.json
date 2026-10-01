@@ -1,0 +1,9 @@
+{
+ "email_id": "E122",
+ "text": "From: mail01@vsl11.example\nSent: 2026-10-10 08:40:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@norvikservice.example\nSubject: VSL-11 M/E NO.4 CYL EXHAUST VALVE - REDUCED SPEED\n\nDear Colleagues,\n\nMaster reports a stoppage to change the no.4 exhaust valve; engine stopped 02:10 to 08:10.\n\n- Stop from: 2026-10-10 02:10\n- Stop to: 2026-10-10 08:10\n- Stop: 6.0 hours\n- Cause: exhaust valve no.4 spindle seat leak\n\nBest regards,\nMaster MV Aurelia Bay",
+ "event_id": "M11020",
+ "vessel": "VSL-11",
+ "thread": "V102-engine",
+ "scenario": "S11",
+ "event_type": "Vessel Defect / Repair / Breakdown"
+}

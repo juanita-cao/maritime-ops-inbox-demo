@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Survey Arrangement / Quotation",
+   "confidence": 0.9,
+   "quote": "Surveyor quotes USD 2,950 for a hatch cover hose test"
+  },
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.5,
+   "quote": "proposes attendance on 14 Oct"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Sirs"
+  }
+ ]
+}

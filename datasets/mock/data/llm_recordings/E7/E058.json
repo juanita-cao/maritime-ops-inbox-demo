@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Check CP Terms",
+   "for_event": "CP Terms / Recap / Addendum",
+   "description": "Verify the CP terms for the cargo of 50,000 mt salt with a freight rate of USD 15.9 per mt, as per the recap provided.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Reply / Confirm to Counterparty",
+   "for_event": "Voyage Instructions / Port Nomination",
+   "description": "Confirm the laycan of 2026-10-20 to 2026-10-30 for the vessel VSL-15 at the ports of LINCOLN and KAOHSIUNG.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

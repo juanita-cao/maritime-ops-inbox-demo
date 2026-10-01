@@ -1,0 +1,30 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "Rotterdam",
+   "quote": "Rotterdam"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "other",
+   "value": "2026-09-20 09:30",
+   "ordinal": null,
+   "quote": "2026-09-20 09:30"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "consumption",
+   "value": 0,
+   "unit": "mt",
+   "currency": null,
+   "quote": "38.6 mt"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Master / Vessel"
+}

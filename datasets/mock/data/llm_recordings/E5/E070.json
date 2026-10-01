@@ -1,0 +1,30 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "next port",
+   "quote": "next port"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "other",
+   "value": "2026-10-14",
+   "ordinal": null,
+   "quote": "14 Oct."
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 2950,
+   "unit": "USD",
+   "currency": null,
+   "quote": "2950 USD"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Surveyor / Survey Company"
+}

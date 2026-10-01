@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.8,
+   "quote": "Agent sends B/L and mate's receipt copies."
+  },
+  {
+   "event_type": "Delivery Notice",
+   "confidence": 0.6,
+   "quote": "B/L and mate's receipt copies."
+  },
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.5,
+   "quote": "Bl date: 2026-08-14"
+  }
+ ]
+}

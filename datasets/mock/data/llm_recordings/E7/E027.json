@@ -1,0 +1,11 @@
+{
+ "items": [
+  {
+   "action_type": "Prepare / Issue Document (LOI, Notice, Statement)",
+   "for_event": "LOI (Letter of Indemnity)",
+   "description": "Prepare the Letter of Indemnity (LOI) with the specified quantities of 78,420 mt for the bill of lading and 78,050 mt for the LOI.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

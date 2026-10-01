@@ -1,0 +1,9 @@
+{
+ "email_id": "E020",
+ "text": "From: mail01@vslgannetcrest.example\nSent: 2026-09-14 12:10:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@rioplatagrainexports.example\nSubject: VSL-16 NOON REPORT 2026-09-14 (BALLAST)\n\nGood day,\n\nNoon report, VSL-16, V602.\nDd: 14 Sep 2026\nPosition: 22-40S 040-10E at 1200 LT\nCourse/avg spd/rpm/eng slip: 090 / 12.0 / 72 / 3.0\nDaily GPS speed / Log speed: 12.2 / 12.1\nAverage GPS speed / Log Speed: 12.1 / 12.0\nIFO Consumed/LSMGO consumed fm last report: VLSFO 27.0 mt LSMGO 0.0 mt\nWind direction/force/sea cond/vis: NE / 4 / 1.5 M / Good\nWeather condition: NE / 4 Cloudy\nROB: VLSFO 902.4 mt, LSMGO 60.0 mt\nRemarks: Vessel proceeding normally.\n\nBest regards,\nMaster MV Gannet Crest",
+ "event_id": "M16002",
+ "vessel": "VSL-16",
+ "thread": "V602-noon",
+ "scenario": null,
+ "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
+}

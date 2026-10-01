@@ -1,0 +1,27 @@
+link_id,vessel_code,voyage_no,level,from_party,to_party,cp_reference,start,end,confidence,evidence
+L01,VSL-11,V101;V102,Owner-Head,CPY-01,CPY-02,CPDD 14JUN2026,,,stated,charter recap
+L02,VSL-11,V103,Owner-Head,CPY-01,CPY-13,CPDD 09OCT2026,,,stated,charter recap
+L03,VSL-12,V201;V202,Owner-Head,CPY-21,CPY-22,CPDD 20JUN2026,,,stated,charter recap
+L04,VSL-12,V203,Owner-Head,CPY-21,CPY-31,pending,,,stated,charter recap
+L05,VSL-13,V301;V302,Owner-Head,CPY-41,CPY-42,CPDD 02MAY2026,,,stated,charter recap
+L06,VSL-13,V303,Owner-Head,CPY-41,CPY-51,CPDD 06OCT2026,,,stated,charter recap
+L07,VSL-14,V401,Owner-Head,CPY-61,CPY-62,CPDD 11MAR2026,,,stated,charter recap
+L08,VSL-14,V402,Owner-Head,CPY-61,CPY-65,CPDD 05OCT2026,,,stated,charter recap
+L09,VSL-15,V501,Owner-Head,CPY-71,CPY-72,CPDD 08APR2026,,,stated,charter recap
+L10,VSL-15,V502,Owner-Head,CPY-71,CPY-72,CPDD 02OCT2026,,,stated,charter recap
+L11,VSL-16,V601,Owner-Head,CPY-81,CPY-86,CPDD 17FEB2026,,,stated,charter recap
+L12,VSL-16,V602,Owner-Head,CPY-81,CPY-82,CPDD 17FEB2026,,,stated,charter recap
+L13,VSL-17,V701,Owner-Head,CPY-91,CPY-92,CPDD 22JUL2026,,,stated,charter recap
+L14,VSL-18,V801,Owner-Head,CPY-101,CPY-102,CPDD 30JUN2026,,,stated,charter recap
+L15,VSL-19,V901,Owner-Head,CPY-111,CPY-112,CPDD 12MAY2026,,,stated,charter recap
+L16,VSL-20,V1001,Owner-Head,CPY-121,CPY-122,CPDD 19JAN2026,,,stated,charter recap
+M17,VSL-11,V101;V102;V103,Management,CPY-01,OPR-01,,,,stated,management agreement
+M18,VSL-12,V201;V202;V203,Management,CPY-21,OPR-01,,,,stated,management agreement
+M19,VSL-13,V301;V302;V303,Management,CPY-41,OPR-01,,,,stated,management agreement
+M20,VSL-14,V401;V402,Management,CPY-61,OPR-01,,,,stated,management agreement
+M21,VSL-15,V501;V502,Management,CPY-71,OPR-01,,,,stated,management agreement
+M22,VSL-16,V601;V602,Management,CPY-81,OPR-01,,,,stated,management agreement
+M23,VSL-17,V701,Management,CPY-91,OPR-01,,,,stated,management agreement
+M24,VSL-18,V801,Management,CPY-101,OPR-01,,,,stated,management agreement
+M25,VSL-19,V901,Management,CPY-111,OPR-01,,,,stated,management agreement
+M26,VSL-20,V1001,Management,CPY-121,OPR-01,,,,stated,management agreement

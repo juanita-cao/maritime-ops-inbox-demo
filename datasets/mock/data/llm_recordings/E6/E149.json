@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.9,
+   "quote": "berth now expected 19 Oct"
+  },
+  {
+   "event_type": "Port Delay / Congestion / Strike",
+   "confidence": 0.7,
+   "quote": "the terminal crane is still out"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

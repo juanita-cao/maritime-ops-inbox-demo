@@ -1,0 +1,34 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "MUNDRA",
+   "quote": "MUNDRA"
+  }
+ ],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 41000.0,
+   "unit": "USD",
+   "currency": null,
+   "quote": "41000.0 USD"
+  }
+ ],
+ "cp_references": [
+  {
+   "text": "0.5% tolerance",
+   "quote": "0.5% tolerance"
+  }
+ ],
+ "references": [
+  {
+   "kind": "claim",
+   "value": "clause 45",
+   "quote": "clause 45"
+  }
+ ],
+ "author_hint": null
+}

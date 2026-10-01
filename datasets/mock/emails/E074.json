@@ -1,0 +1,9 @@
+{
+ "email_id": "E074",
+ "text": "From: mail01@vslmistralquay.example\nSent: 2026-10-04 12:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@meghnacementindustries.example\nSubject: VSL-17 NOON REPORT 2026-10-04\n\nGood day,\n\nNoon report, VSL-17, V701.\nDd: 4 Oct 2026\nPosition: 16-50N 084-10E at 1200 LT\nCourse/avg spd/rpm/eng slip: 090 / 11.1 / 72 / 3.0\nDaily GPS speed / Log speed: 11.3 / 11.2\nAverage GPS speed / Log Speed: 11.2 / 11.1\nIFO Consumed/LSMGO consumed fm last report: VLSFO 21.8 mt LSMGO 0.0 mt\nWind direction/force/sea cond/vis: NE / 4 / 1.5 M / Good\nWeather condition: NE / 4 Cloudy\nROB: VLSFO 296.7 mt, LSMGO 60.0 mt\nETA: 2026-10-07 10:00 LT\nRemarks: Vessel proceeding normally.\n\nBest regards,\nMaster MV Mistral Quay",
+ "event_id": "M17003",
+ "vessel": "VSL-17",
+ "thread": "V701-noon",
+ "scenario": null,
+ "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
+}

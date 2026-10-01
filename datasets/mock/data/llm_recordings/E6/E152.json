@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Sanctions / Compliance / KYC",
+   "confidence": 0.9,
+   "quote": "KYC DOCUMENTS FOR PROPOSED SUB-CHARTERER"
+  },
+  {
+   "event_type": "Notice of Readiness / Laytime / Demurrage",
+   "confidence": 0.7,
+   "quote": "asks for consent by 13 Oct to keep the laycan"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

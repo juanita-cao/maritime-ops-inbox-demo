@@ -1,0 +1,11 @@
+{
+ "items": [
+  {
+   "action_type": "Verify / Reconcile Report Data",
+   "for_event": "Loading / Cargo Operations",
+   "description": "Verify the loading report data for VSL-13, ensuring the cargo quantity of 55,300 mt is accurately recorded for the completion date of 3 Oct.",
+   "due": "2026-10-03",
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

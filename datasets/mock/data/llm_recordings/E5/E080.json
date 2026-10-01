@@ -1,0 +1,18 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 12950.0,
+   "unit": "USD",
+   "currency": null,
+   "quote": "Demurrage: 12950.0 USD"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Operator (internal)"
+}

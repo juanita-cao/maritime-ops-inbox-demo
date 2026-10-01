@@ -1,0 +1,25 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "speed",
+   "value": 12.45,
+   "unit": "kn",
+   "currency": null,
+   "quote": "Avg speed good: 12.45 kn"
+  },
+  {
+   "kind": "amount",
+   "value": 6,
+   "unit": "days",
+   "currency": null,
+   "quote": "Good weather: 6 days"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Operator"
+}

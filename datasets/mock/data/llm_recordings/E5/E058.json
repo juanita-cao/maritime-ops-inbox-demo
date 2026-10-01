@@ -1,0 +1,40 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "LINCOLN",
+   "quote": "LINCOLN"
+  },
+  {
+   "text": "KAOHSIUNG",
+   "quote": "KAOHSIUNG"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "laycan",
+   "value": "2026-10-20 to 2026-10-30",
+   "ordinal": null,
+   "quote": "20-30 Oct"
+  },
+  {
+   "kind": "cp",
+   "value": "2026-10-02",
+   "ordinal": null,
+   "quote": "Cp date: 2026-10-02"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "loaded",
+   "value": 50000,
+   "unit": "mt",
+   "currency": null,
+   "quote": "50,000 mt salt"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

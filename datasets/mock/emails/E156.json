@@ -1,0 +1,9 @@
+{
+ "email_id": "E156",
+ "text": "From: mail01@harlowfertilizertrading.example\nSent: 2026-10-12 09:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nSubject: RE: VSL-14 V401 - SPEED AND CONSUMPTION PERFORMANCE CLAIM\n\nDear Colleagues,\n\nCharterer will send an independent weather routing report; keeps the claim open.\n\n- Claim amount: 21500.0 USD\n\nBest regards,\nHarlow Fertilizer Trading\n\n-----Original Message-----\nFrom: mail01@meridianfleet.example\nSent: 2026-10-10 10:30:00 UTC+08:00\nTo: mail01@harlowfertilizertrading.example\nCc: mail01@silveranemoneshippingco.example\nSubject: RE: VSL-14 V401 - SPEED AND CONSUMPTION PERFORMANCE CLAIM\n\nDear Charterers,\n\nOperator: the warranty applies in good weather only (wind up to force 4 and sea up to 2 m); on 6 good-weather days the vessel averaged 12.45 kn and 27.6 mt per day, within the warranty; asks the charterer to withdraw the claim or send the weather analysis.\n\n- Good weather: 6 days\n- Avg speed good: 12.45 kn\n- Avg cons good: 27.6 mt\n- Good weather definition: wind up to BF4 and sea up to 2 m\n\nBest regards,\nMeridian Fleet Management\n\n-----Original Message-----\nFrom: mail01@harlowfertilizertrading.example\nSent: 2026-10-08 11:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@silveranemoneshippingco.example\nSubject: VSL-14 V401 - SPEED AND CONSUMPTION PERFORMANCE CLAIM\n\nDear Colleagues,\n\nCharterer claims USD 21,500 for underperformance over the whole voyage: average 12.04 kn and 28.39 mt per day against the CP warranty of 12.5 kn on 28.0 mt per day.\n\n- Claim amount: 21500.0 USD\n- Avg speed all days: 12.04 kn\n- Avg cons all days: 28.39 mt\n- Warranty speed: 12.5 kn\n- Warranty cons: 28.0 mt\n\nBest regards,\nHarlow Fertilizer Trading",
+ "event_id": "M14017",
+ "vessel": "VSL-14",
+ "thread": "V401-perf",
+ "scenario": "S08",
+ "event_type": "Weather Routing / Speed & Consumption"
+}

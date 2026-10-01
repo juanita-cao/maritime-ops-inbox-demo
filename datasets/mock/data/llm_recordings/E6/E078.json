@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Claim",
+   "confidence": 0.8,
+   "quote": "CARGO SHORTAGE CLAIM"
+  },
+  {
+   "event_type": "Survey Arrangement / Quotation",
+   "confidence": 0.7,
+   "quote": "draft survey at load and discharge"
+  },
+  {
+   "event_type": "Loading / Cargo Operations",
+   "confidence": 0.6,
+   "quote": "cargo documents"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "items": [
+  {
+   "action_type": "Collect / Chase Documents",
+   "for_event": "Sanctions / Compliance / KYC",
+   "description": "Chase the ownership chart from the charterer, which is expected to be sent on 2026-10-14, following the incorporation certificate received.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Seek Internal Approval",
+   "for_event": "Sanctions / Compliance / KYC",
+   "description": "Seek internal approval for the consent requested by the charterer by 2026-10-13 to keep the laycan.",
+   "due": "2026-10-13",
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Track Contractual Notice / Deadline",
+   "for_event": "Notice of Readiness / Laytime / Demurrage",
+   "description": "Track the deadline for the laycan on 2026-10-13 as requested by the charterer.",
+   "due": "2026-10-13",
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

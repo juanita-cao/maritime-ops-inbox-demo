@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Off-hire",
+   "description": "Prepare a claim for the off-hire of VSL-12 due to the 11.5 hours deducted for berthing delay at Rotterdam, related to the ballast water management certificate query.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Check Hire / Invoice / Payment",
+   "for_event": "Hire / SOA / Payment",
+   "description": "Check the hire invoice for VSL-12 to ensure the deduction of USD 7,379.17 for the off-hire is correctly reflected.",
+   "due": null,
+   "owner_role": "Finance Officer"
+  }
+ ]
+}

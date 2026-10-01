@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Check Hire / Invoice / Payment",
+   "for_event": "Hire / SOA / Payment",
+   "description": "Verify the next hire payment of 15,400 USD due on 2026-10-16, including the reinstated 7.5 hours and the disputed SECA claim of USD 31,266.",
+   "due": "2026-10-16",
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
+   "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "description": "Update the vessel schedule for VSL-12 to reflect the hire period from 16 Oct to 31 Oct 2026.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

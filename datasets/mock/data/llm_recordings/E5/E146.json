@@ -1,0 +1,23 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "Mundra",
+   "quote": "Mundra"
+  }
+ ],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "speed",
+   "value": 10.4,
+   "unit": "kn",
+   "currency": null,
+   "quote": "10.4 kn"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Operator"
+}

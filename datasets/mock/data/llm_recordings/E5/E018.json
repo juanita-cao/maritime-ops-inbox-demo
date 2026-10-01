@@ -1,0 +1,28 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "KAOHSIUNG",
+   "quote": "KAOHSIUNG"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "nor_tendered",
+   "value": "2026-09-14 08:00",
+   "ordinal": null,
+   "quote": "2026-09-14 08:00"
+  },
+  {
+   "kind": "laycan",
+   "value": "2026-09-14 14:00",
+   "ordinal": null,
+   "quote": "2026-09-14 14:00"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

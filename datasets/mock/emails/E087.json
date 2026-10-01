@@ -1,0 +1,9 @@
+{
+ "email_id": "E087",
+ "text": "From: mail01@pelhambrokers.example\nSent: 2026-10-06 10:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@calderbulk.example\nSubject: VSL-13 / CALDER - FIXTURE RECAP LIMESTONE VISAKHAPATNAM / CHITTAGONG\n\nDear Colleagues,\n\nClean recap: 58,000 mt limestone, load Visakhapatnam discharge Chittagong, freight USD 14.2 per mt, laycan 28 Oct - 6 Nov.\n\n- Cargo qty: 58,000 mt\n- Freight: 14.2 USD per mt\n- Laycan: 2026-10-28 to 2026-11-06\n- Cp date: 2026-10-06\n\nBest regards,\nPelham Shipbrokers",
+ "event_id": "M13019",
+ "vessel": "VSL-13",
+ "thread": "V303-fix",
+ "scenario": null,
+ "event_type": "CP Terms / Recap / Addendum"
+}

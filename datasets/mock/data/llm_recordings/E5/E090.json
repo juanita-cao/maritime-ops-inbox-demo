@@ -1,0 +1,22 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "PORT HEDLAND",
+   "quote": "PORT HEDLAND"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "berthed",
+   "value": "2026-10-06 13:40",
+   "ordinal": null,
+   "quote": "2026-10-06 13:40"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

@@ -1,0 +1,9 @@
+{
+ "email_id": "E090",
+ "text": "From: mail01@pilbaramarine.example\nSent: 2026-10-06 17:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@corvane.example\nSubject: VSL-11 PORT HEDLAND - BERTHING AND LOADING STARTED\n\nDear Colleagues,\n\nAgent reports berthed and loading commenced, rate 3,200 mt/h.\n\n- Loading rate: 3200 mt/h\n- Berthed: 2026-10-06 13:40\n\nBest regards,\nPilbara Marine Agencies",
+ "event_id": "M11014",
+ "vessel": "VSL-11",
+ "thread": "V102-hed",
+ "scenario": null,
+ "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
+}

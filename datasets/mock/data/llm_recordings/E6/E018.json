@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Notice of Readiness / Laytime / Demurrage",
+   "confidence": 0.9,
+   "quote": "NOR tendered at the pilot station; laytime commences 6 hours after NOR per CP."
+  },
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.6,
+   "quote": "Nor tendered: 2026-09-14 08:00"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues,"
+  }
+ ]
+}

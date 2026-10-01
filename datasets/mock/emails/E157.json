@@ -1,0 +1,9 @@
+{
+ "email_id": "E157",
+ "text": "From: mail01@meridianfleet.example\nSent: 2026-10-12 09:40:00 UTC+08:00\nTo: mail01@brannock.example\nSubject: VSL-12 HIRE STATEMENT NO. 12 (16 OCT - 31 OCT 2026)\n\nDear Charterers,\n\nNext statement: due 16 Oct, includes the 7.5 hours reinstated; the 4.0 hours still deducted and the SECA claim of USD 31,266 is held by the charterer (disputed).\n\n- Hire rate: 15,400 USD per day\n- Hire next due: 2026-10-16\n- Hire period: 16 Oct - 31 Oct 2026\n- Reinstated: 7.5 hours\n\nBest regards,\nMeridian Fleet Management",
+ "event_id": "M12029",
+ "vessel": "VSL-12",
+ "thread": "V202-hire",
+ "scenario": "S04",
+ "event_type": "Hire / SOA / Payment"
+}

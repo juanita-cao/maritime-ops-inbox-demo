@@ -1,0 +1,14 @@
+{
+ "items": [
+  {
+   "event_type": "Voyage Instructions / Port Nomination",
+   "confidence": 0.9,
+   "quote": "consent to sub-let V901 to Altai Trade FZE"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.5,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

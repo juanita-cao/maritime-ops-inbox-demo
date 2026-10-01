@@ -1,0 +1,25 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 21500.0,
+   "unit": "USD",
+   "currency": null,
+   "quote": "Claim amount: 21500.0 USD"
+  },
+  {
+   "kind": "speed",
+   "value": 12.04,
+   "unit": "kn",
+   "currency": null,
+   "quote": "Avg speed all days: 12.04 kn"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Charterer"
+}

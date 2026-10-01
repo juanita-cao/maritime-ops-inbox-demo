@@ -1,0 +1,9 @@
+{
+ "email_id": "E096",
+ "text": "From: mail01@meridianfleet.example\nSent: 2026-10-07 16:10:00 UTC+08:00\nTo: mail01@pelhambrokers.example\nSubject: RE: VSL-11 - ENQUIRY: 79,500 MT THERMAL COAL\n\nDear Sirs,\n\nCounter offer: freight USD 19.2 per mt, 3 days demurrage free, hull inspection at charterer's time.\n\n- Freight: 19.2 USD per mt\n- Demurrage: 19,500 USD per day\n\nBest regards,\nMeridian Fleet Management\n\n-----Original Message-----\nFrom: mail01@pelhambrokers.example\nSent: 2026-10-06 09:40:00 UTC+08:00\nTo: mail01@meridianfleet.example\nSubject: VSL-11 - ENQUIRY: 79,500 MT THERMAL COAL NEWCASTLE / KRISHNAPATNAM\n\nDear Colleagues,\n\nBroker's enquiry for a coal voyage, laycan 20-30 Nov.\n\n- Laycan: 2026-11-20 to 2026-11-30\n- Cargo qty: 79,500 mt\n- Freight: 17.8 USD per mt\n\nBest regards,\nPelham Shipbrokers",
+ "event_id": "M11015",
+ "vessel": "VSL-11",
+ "thread": "V103-fix",
+ "scenario": "S17",
+ "event_type": "Fixture Enquiry / Offer / Counter"
+}

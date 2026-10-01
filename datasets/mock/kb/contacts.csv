@@ -1,0 +1,72 @@
+contact_code,party_code,party_type
+mail01@aureliabay.example,CPY-01,owner
+mail01@corvane.example,CPY-02,charterer (head)
+mail01@bokecoast.example,CPY-04,port agent
+mail01@yellowgulf.example,CPY-05,port agent
+mail01@lanterncorr.example,CPY-06,P&I correspondent
+mail01@seacrestsurvey.example,CPY-07,surveyor
+mail01@vsl11.example,CPY-08,vessel mailbox
+mail01@pilbaramarine.example,CPY-09,port agent
+mail01@easternshore.example,CPY-10,port agent
+mail01@pinewoodstarshipping.example,CPY-101,owner
+mail01@zhanjiangpulpandpaperco.example,CPY-102,charterer (head)
+mail01@benoashippingservices.example,CPY-103,port agent
+mail01@archipelagoclubcorrespondents.example,CPY-104,P&I correspondent
+mail01@vslpinewoodstar.example,CPY-108,vessel mailbox
+mail01@harrowspiritshipholding.example,CPY-111,owner
+mail01@cavendishcementtrading.example,CPY-112,charterer (head)
+mail01@cailanshippingagency.example,CPY-114,port agent
+mail01@vslharrowspirit.example,CPY-118,vessel mailbox
+mail01@norvikservice.example,CPY-12,service supplier
+mail01@lumenridgemarine.example,CPY-121,owner
+mail01@yuxingironoreimporters.example,CPY-122,charterer (head)
+mail01@qingdaoharbouragents.example,CPY-123,port agent
+mail01@maritimeclassificationregister.example,CPY-124,surveyor
+mail01@vsllumenridge.example,CPY-128,vessel mailbox
+mail01@ostrander.example,CPY-13,charterer (head)
+mail01@pelhambrokers.example,CPY-14,broker
+mail01@lindenmaritime.example,CPY-21,owner
+mail01@brannock.example,CPY-22,charterer (head)
+mail01@atlanticsul.example,CPY-23,port agent
+mail01@maasmond.example,CPY-24,port agent
+mail01@seinemaritime.example,CPY-25,port agent
+mail01@atlasport.example,CPY-26,port agent
+mail01@rhinebunker.example,CPY-27,service supplier
+mail01@vsl12.example,CPY-28,vessel mailbox
+mail01@vanguardsurvey.example,CPY-29,surveyor
+mail01@solanograin.example,CPY-31,charterer (head)
+mail01@kestrelharbor.example,CPY-41,owner
+mail01@ravenscar.example,CPY-42,charterer (head)
+mail01@zulucoast.example,CPY-43,port agent
+mail01@kutchgulf.example,CPY-44,port agent
+mail01@redseamaritime.example,CPY-45,port agent
+mail01@mahanadiagency.example,CPY-46,port agent
+mail01@anchorpoint.example,CPY-47,P&I correspondent
+mail01@vsl13.example,CPY-48,vessel mailbox
+mail01@kutchsurvey.example,CPY-49,surveyor
+mail01@mundrapower.example,CPY-50,receiver
+mail01@calderbulk.example,CPY-51,charterer (head)
+mail01@paradeepdivers.example,CPY-52,service supplier
+mail01@silveranemoneshippingco.example,CPY-61,owner
+mail01@harlowfertilizertrading.example,CPY-62,charterer (head)
+mail01@gulfofaqabashippingservices.example,CPY-63,port agent
+mail01@hooghlyportagency.example,CPY-64,port agent
+mail01@kathiawarfertilizerexports.example,CPY-65,charterer (head)
+mail01@vslsilveranemone.example,CPY-68,vessel mailbox
+mail01@tidewaterorchidnavigation.example,CPY-71,owner
+mail01@formosasaltandminerals.example,CPY-72,charterer (head)
+mail01@southernportsagencyesperance.example,CPY-73,port agent
+mail01@kaohsiungharbouragency.example,CPY-74,port agent
+mail01@vsltidewaterorchid.example,CPY-78,vessel mailbox
+mail01@gannetcrestmaritime.example,CPY-81,owner
+mail01@rioplatagrainexports.example,CPY-82,charterer (head)
+mail01@paranariveragency.example,CPY-83,port agent
+mail01@cargoinspectionservicesrosario.example,CPY-84,surveyor
+mail01@hanbitsteelrawmaterials.example,CPY-86,charterer (head)
+mail01@vslgannetcrest.example,CPY-88,vessel mailbox
+mail01@mistralquayshipowning.example,CPY-91,owner
+mail01@meghnacementindustries.example,CPY-92,charterer (head)
+mail01@coromandelportagency.example,CPY-93,port agent
+mail01@karnaphulishippingagency.example,CPY-94,port agent
+mail01@vslmistralquay.example,CPY-98,vessel mailbox
+mail01@meridianfleet.example,OPR-01,operator / manager

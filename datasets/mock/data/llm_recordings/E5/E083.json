@@ -1,0 +1,28 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "rosario",
+   "quote": "Arrival rosario"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "arrived",
+   "value": "2026-10-06 07:00",
+   "ordinal": null,
+   "quote": "2026-10-06 07:00"
+  },
+  {
+   "kind": "other",
+   "value": "8 Oct",
+   "ordinal": null,
+   "quote": "on 8 Oct"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Cash to Master / Supply (CTM, Fresh Water, Provisions)",
+   "confidence": 0.9,
+   "quote": "Master asks for cash to master USD 15,000"
+  },
+  {
+   "event_type": "Hire / SOA / Payment",
+   "confidence": 0.6,
+   "quote": "15,000 USD"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

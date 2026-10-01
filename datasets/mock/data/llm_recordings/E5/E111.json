@@ -1,0 +1,22 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "Zhanjiang",
+   "quote": "Replacement port: Zhanjiang"
+  }
+ ],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 6.5,
+   "unit": "hours",
+   "quote": "Deviation: 6.5 hours"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Operator"
+}

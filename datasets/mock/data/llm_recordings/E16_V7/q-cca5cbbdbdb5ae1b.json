@@ -1,0 +1,27 @@
+{
+ "model": "gpt-5.5",
+ "prompt_version": "31a3cb3222",
+ "tool_schema_version": "d79c3ce533",
+ "turns": [
+  {
+   "final": {
+    "answer": "",
+    "details": "",
+    "sources": [],
+    "evidence": [],
+    "draft": null,
+    "evidence_status": "sufficient",
+    "reasoning_trace": [
+     "按规则未自行计算航行天数；提供天津—新加坡的通用估算距离与航速给系统计算。"
+    ],
+    "passage_estimate": {
+     "distance_nm": 2400,
+     "speed_kn": 12,
+     "distance_source": "S2"
+    },
+    "proposal": null,
+    "steps": []
+   }
+  }
+ ]
+}

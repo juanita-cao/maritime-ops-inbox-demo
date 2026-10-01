@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Prepare / Issue Document (LOI, Notice, Statement)",
+   "for_event": "LOI (Letter of Indemnity)",
+   "description": "Prepare the Letter of Indemnity for 78,050 mt based on the draft received from the charterer, ensuring it is ready for signature.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Seek Internal Approval",
+   "for_event": "LOI (Letter of Indemnity)",
+   "description": "Seek internal approval for the Letter of Indemnity covering 78,050 mt as per the charterer's draft.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

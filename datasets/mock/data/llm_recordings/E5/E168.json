@@ -1,0 +1,29 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "eta",
+   "value": "14 Oct",
+   "ordinal": null,
+   "quote": "ETA NOTICE AND BERTHING"
+  },
+  {
+   "kind": "etb",
+   "value": "14 Oct 20:30",
+   "ordinal": null,
+   "quote": "berth 20:30"
+  },
+  {
+   "kind": "discharged",
+   "value": "15-16 Oct",
+   "ordinal": null,
+   "quote": "discharge 15-16 Oct"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

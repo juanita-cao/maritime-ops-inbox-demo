@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Track Contractual Notice / Deadline",
+   "for_event": "Notice of Readiness / Laytime / Demurrage",
+   "description": "Track the Notice of Readiness for vessel VSL-17 at CHITTAGONG, which was tendered on 2026-10-07 at 09:00.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
+   "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "description": "Update the vessel schedule for VSL-17 to reflect its arrival at CHITTAGONG and the NOR tendered on 2026-10-07 at 09:00.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

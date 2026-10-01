@@ -1,0 +1,17 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "completed",
+   "value": "3 Oct.",
+   "ordinal": null,
+   "quote": "3 Oct."
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Agent"
+}

@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Hire / SOA / Payment",
+   "confidence": 0.9,
+   "quote": "includes the 7.5 hours reinstated; the 4.0 hours still deducted and the SECA claim of USD 31,266 is held by the charterer (disputed)"
+  },
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.6,
+   "quote": "Hire next due: 2026-10-16"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Charterers"
+  }
+ ]
+}

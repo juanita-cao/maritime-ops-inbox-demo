@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Review Quotation / Plan / Proposal",
+   "for_event": "Fixture Enquiry / Offer / Counter",
+   "description": "Review the quotation for the coal voyage on VSL-11 with laycan from 2026-11-20 to 2026-11-30, ensuring the freight rate of 17.8 USD per mt is competitive.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Reply / Confirm to Counterparty",
+   "for_event": "Voyage Instructions / Port Nomination",
+   "description": "Confirm the details of the coal voyage for VSL-11 from NEWCASTLE to KRISHNAPATNAM with the broker, including the laycan of 2026-11-20 to 2026-11-30.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

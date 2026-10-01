@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.9,
+   "quote": "Arrived at the anchorage"
+  },
+  {
+   "event_type": "Inspection / Vetting / PSC",
+   "confidence": 0.8,
+   "quote": "hold inspection by the cargo inspector"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

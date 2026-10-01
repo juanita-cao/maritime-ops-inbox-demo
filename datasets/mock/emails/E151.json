@@ -1,0 +1,9 @@
+{
+ "email_id": "E151",
+ "text": "From: mail01@meridianfleet.example\nSent: 2026-10-11 16:40:00 UTC+08:00\nTo: mail01@mahanadiagency.example\nCc: mail01@paradeepdivers.example\nSubject: VSL-13 PARADIP - UNDERWATER INSPECTION AND CLEANING AT ANCHORAGE\n\nDear Sirs,\n\nOperator asks the Paradip agent and the diving contractor for a permit and quote for an inspection and cleaning at anchorage while the vessel waits for a berth.\n\nBest regards,\nMeridian Fleet Management\n\n-----Original Message-----\nFrom: mail01@meridianfleet.example\nSent: 2026-10-11 13:00:00 UTC+08:00\nTo: mail01@vsl13.example\nSubject: VSL-13 SPEED LOSS - POSSIBLE HULL FOULING\n\nDear Captain,\n\nOperator asks the master to confirm the speed loss: 10.4 kn at the same rpm and weather where 11.4 kn was normal; suspects fouling after the long stay at Mundra.\n\nBest regards,\nMeridian Fleet Management",
+ "event_id": "M13028",
+ "vessel": "VSL-13",
+ "thread": "V302-hull",
+ "scenario": "S01",
+ "event_type": "Survey Arrangement / Quotation"
+}

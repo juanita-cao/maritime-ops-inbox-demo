@@ -1,0 +1,25 @@
+{
+ "items": [
+  {
+   "action_type": "Check CP Terms",
+   "for_event": "CP Terms / Recap / Addendum",
+   "description": "Verify the CP terms for the cargo of 33,000 mt urea with a freight rate of USD 21.5 per mt, as per the recap provided.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Reply / Confirm to Counterparty",
+   "for_event": "Voyage Instructions / Port Nomination",
+   "description": "Confirm the laycan of 2026-10-22 to 2026-10-28 for the vessel VSL-14 at the ports of KANDLA and MOMBASA.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Verify / Reconcile Report Data",
+   "for_event": "Loading / Cargo Operations",
+   "description": "Reconcile the report data for the loading of 33,000 mt urea scheduled during the laycan period.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

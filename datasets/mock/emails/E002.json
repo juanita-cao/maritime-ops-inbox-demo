@@ -1,0 +1,9 @@
+{
+ "email_id": "E002",
+ "text": "From: mail01@bokecoast.example\nSent: 2026-08-14 18:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@corvane.example\nSubject: VSL-11 BAUXITE KAMSAR - BLS AND MATES RECEIPT\n\nDear Colleagues,\n\nAgent sends B/L and mate's receipt copies.\n\n- Bl qty: 78,420 mt\n- Mr qty: 78,420 mt\n- Bl date: 2026-08-14\n- Bl numbers: KAM-01, KAM-02\n\nBest regards,\nBoke Coast Agency",
+ "event_id": "M11002",
+ "vessel": "VSL-11",
+ "thread": "V101-docs",
+ "scenario": "S02",
+ "event_type": "Loading / Cargo Operations"
+}

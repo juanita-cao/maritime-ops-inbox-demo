@@ -1,0 +1,15 @@
+.DS_Store
+._*
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+node_modules/
+frontend/dist/
+.pytest_cache/
+.ruff_cache/
+datasets/mock/data/app.sqlite*
+datasets/mock/data/llm_recordings/*/*.request.json
+datasets/mock/data/feedback/
+datasets/mock/eval/results/

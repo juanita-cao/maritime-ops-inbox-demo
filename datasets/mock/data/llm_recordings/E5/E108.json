@@ -1,0 +1,23 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 30,
+   "unit": "hours",
+   "currency": null,
+   "quote": "30.0 hours"
+  }
+ ],
+ "cp_references": [
+  {
+   "text": "clause 28",
+   "quote": "clause 28"
+  }
+ ],
+ "references": [],
+ "author_hint": "Operator (internal)"
+}

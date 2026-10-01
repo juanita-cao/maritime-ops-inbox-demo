@@ -1,0 +1,18 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "amount",
+   "value": 21500.0,
+   "unit": "USD",
+   "currency": null,
+   "quote": "Claim amount: 21500.0 USD"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Charterer"
+}

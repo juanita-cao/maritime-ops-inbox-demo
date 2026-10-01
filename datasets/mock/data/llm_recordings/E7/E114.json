@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Collect / Chase Documents",
+   "for_event": "Sanctions / Compliance / KYC",
+   "description": "Collect the certificate of incorporation, beneficial owner chart, 12-month trading record, and cargo origin documents for vessel VSL-19 related to voyage V901.",
+   "due": null,
+   "owner_role": "Compliance Officer"
+  },
+  {
+   "action_type": "Seek Internal Approval",
+   "for_event": "Sanctions / Compliance / KYC",
+   "description": "Seek internal approval for the documents requested by the compliance team regarding vessel VSL-19 and voyage V901.",
+   "due": null,
+   "owner_role": "Compliance Officer"
+  }
+ ]
+}

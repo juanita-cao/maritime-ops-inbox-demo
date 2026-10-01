@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Arrange Cash / Supply",
+   "for_event": "Cash to Master / Supply (CTM, Fresh Water, Provisions)",
+   "description": "Arrange for the delivery of 15,000 USD cash on board VSL-13, as the agent will deliver it on 3 Oct.",
+   "due": "2026-10-03",
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Check Hire / Invoice / Payment",
+   "for_event": "Hire / SOA / Payment",
+   "description": "Check the invoice for the cash handling fee of USD 450 that is to be invoiced to the owners.",
+   "due": null,
+   "owner_role": "Finance Officer"
+  }
+ ]
+}

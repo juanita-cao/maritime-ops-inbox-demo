@@ -1,0 +1,38 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "other",
+   "value": "2026-10-16",
+   "ordinal": null,
+   "quote": "2026-10-16"
+  },
+  {
+   "kind": "other",
+   "value": "16 Oct",
+   "ordinal": null,
+   "quote": "16 Oct"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "amount",
+   "value": 258750,
+   "unit": "USD",
+   "currency": null,
+   "quote": "258,750 USD"
+  },
+  {
+   "kind": "amount",
+   "value": 17250,
+   "unit": "USD",
+   "currency": null,
+   "quote": "17,250 USD"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

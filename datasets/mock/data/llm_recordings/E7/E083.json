@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
+   "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "description": "Update the vessel schedule for VSL-16 to reflect its arrival at Rosario on 2026-10-06 at 07:00.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Collect / Chase Documents",
+   "for_event": "Inspection / Vetting / PSC",
+   "description": "Collect necessary documents for the hold inspection by the cargo inspector scheduled for 8 Oct.",
+   "due": "2026-10-08",
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "Port Hedland",
+   "quote": "Port Hedland"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "other",
+   "value": "OCT 2026",
+   "ordinal": null,
+   "quote": "OCT 2026"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "bunker_rob",
+   "value": 640,
+   "unit": "MT",
+   "currency": null,
+   "quote": "640 MT"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

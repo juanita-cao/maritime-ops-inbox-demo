@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Crew (Change / Medical)",
+   "confidence": 0.9,
+   "quote": "medevac at Benoa anchorage"
+  },
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.8,
+   "quote": "vessel resumed passage at 17:40; deviation 6.5 hours"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues,"
+  }
+ ]
+}

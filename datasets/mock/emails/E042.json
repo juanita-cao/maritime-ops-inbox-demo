@@ -1,0 +1,9 @@
+{
+ "email_id": "E042",
+ "text": "From: mail01@maasmond.example\nSent: 2026-09-27 02:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@brannock.example\nSubject: VSL-12 ROTTERDAM DISCHARGE COMPLETED\n\nDear Colleagues,\n\nDischarge completed, outturn 52,284 mt.\n\n- Outturn qty: 52,284 mt\n\nBest regards,\nMaasmond Agency",
+ "event_id": "M12011",
+ "vessel": "VSL-12",
+ "thread": "V201-rtm",
+ "scenario": null,
+ "event_type": "Discharging"
+}

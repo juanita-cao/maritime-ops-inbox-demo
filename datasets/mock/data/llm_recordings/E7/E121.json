@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
+   "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "description": "Update the vessel schedule for VSL-16 to reflect the ETB at 02:00 on 2026-10-10.",
+   "due": "2026-10-10",
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Reply / Confirm to Counterparty",
+   "for_event": "Inspection / Vetting / PSC",
+   "description": "Confirm the successful re-inspection of holds 2 and 5 for VSL-16 to the relevant parties.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

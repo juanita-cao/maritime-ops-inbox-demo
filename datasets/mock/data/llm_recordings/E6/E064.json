@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Cash to Master / Supply (CTM, Fresh Water, Provisions)",
+   "confidence": 0.9,
+   "quote": "Agent will deliver the cash on board on 3 Oct; the cash handling fee is USD 450"
+  },
+  {
+   "event_type": "Hire / SOA / Payment",
+   "confidence": 0.8,
+   "quote": "the cash handling fee is USD 450 and is invoiced to the owners"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

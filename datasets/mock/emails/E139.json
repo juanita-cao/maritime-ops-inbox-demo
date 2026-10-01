@@ -1,0 +1,9 @@
+{
+ "email_id": "E139",
+ "text": "From: mail01@meridianfleet.example\nSent: 2026-10-11 10:00:00 UTC+08:00\nTo: mail01@brannock.example\nSubject: RE: VSL-12 - REDELIVERY NOTICE (5 DAYS APPROX)\n\nDear Charterers,\n\nOperator acknowledges and asks for the 3 day and 2 day notices, the bunker survey arrangement and confirmation that the final cargo discharge ends by 16 Oct.\n\n- Bunkers on delivery vlsfo: 905.0 mt\n- Bunkers on delivery price: 585.0 USD per mt\n\nBest regards,\nMeridian Fleet Management\n\n-----Original Message-----\nFrom: mail01@brannock.example\nSent: 2026-10-10 13:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@lindenmaritime.example\nSubject: VSL-12 - REDELIVERY NOTICE (5 DAYS APPROX)\n\nDear Colleagues,\n\n5 days approximate notice: redelivery on dropping outward pilot Casablanca about 17 Oct 2026, bunkers on redelivery per CP.\n\n- Redelivery place: Casablanca\n- Redelivery date est: 2026-10-17\n- Notice: 5 days\n\nBest regards,\nBrannock Agri Trading",
+ "event_id": "M12026",
+ "vessel": "VSL-12",
+ "thread": "V202-redel",
+ "scenario": "S05",
+ "event_type": "Redelivery Notice"
+}

@@ -1,0 +1,9 @@
+{
+ "email_id": "E037",
+ "text": "From: mail01@yellowgulf.example\nSent: 2026-09-23 22:10:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@corvane.example\nSubject: VSL-11 QINGDAO - DISCHARGE COMPLETED\n\nDear Colleagues,\n\nDischarge completed; outturn per receiver's shore scale.\n\n- Outturn qty: 78,052 mt\n\nBest regards,\nYellow Gulf Shipping Agency\n\n-----Original Message-----\nFrom: mail01@vsl11.example\nSent: 2026-09-18 21:40:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@yellowgulf.example\nSubject: VSL-11 ARRIVAL REPORT QINGDAO\n\nGood day,\n\nArrival report, VSL-11, V101.\nDd: 18 Sep 2026\nArrived at 21:40 LT.\nNOR tendered: 2026-09-18 21:30\n\nBest regards,\nMaster MV Aurelia Bay",
+ "event_id": "M11009",
+ "vessel": "VSL-11",
+ "thread": "V101-qd",
+ "scenario": null,
+ "event_type": "Discharging"
+}

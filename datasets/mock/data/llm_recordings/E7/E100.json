@@ -1,0 +1,11 @@
+{
+ "items": [
+  {
+   "action_type": "Reply / Confirm to Counterparty",
+   "for_event": "Voyage Instructions / Port Nomination",
+   "description": "Confirm consent to sub-let V901 to Altai Trade FZE for the laycan from 2026-10-20 to 2026-10-25.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "email_id": "E155",
+ "text": "From: mail01@corvane.example\nSent: 2026-10-12 09:15:00 UTC+08:00\nTo: mail01@meridianfleet.example\nSubject: RE: VSL-11 HIRE STATEMENT NO. 14\n\nDear Colleagues,\n\nCharterer confirms payment will be made on 15 Oct and asks to deduct the 6.0 h off-hire in the following statement.\n\n- Hire next due: 2026-10-16\n\nBest regards,\nCorvane Bulk Trading",
+ "event_id": "M11030",
+ "vessel": "VSL-11",
+ "thread": "V102-hire",
+ "scenario": null,
+ "event_type": "Hire / SOA / Payment"
+}

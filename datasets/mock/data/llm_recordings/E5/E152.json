@@ -1,0 +1,23 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "laycan",
+   "value": "2026-10-13",
+   "ordinal": null,
+   "quote": "13 Oct"
+  },
+  {
+   "kind": "other",
+   "value": "2026-10-14",
+   "ordinal": null,
+   "quote": "14 Oct"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Charterer"
+}

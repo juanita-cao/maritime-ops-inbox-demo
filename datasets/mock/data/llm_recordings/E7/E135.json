@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Collect / Chase Documents",
+   "for_event": "Inspection / Vetting / PSC",
+   "description": "Collect the necessary documents related to the deficiencies found during the port state control inspection for vessel VSL-20, which include the oily water separator alarm, fire damper, and emergency generator issues.",
+   "due": "2026-10-10",
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Notify Party (Agent / P&I / Manager)",
+   "for_event": "Vessel Defect / Repair / Breakdown",
+   "description": "Notify the relevant parties, including the agent and P&I, about the detention of vessel VSL-20 due to the identified deficiencies that need rectification.",
+   "due": "2026-10-10",
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Hold Cleaning / Cargo Hold Condition",
+   "confidence": 0.9,
+   "quote": "Operator instructs the master to re-clean holds 2 and 5"
+  },
+  {
+   "event_type": "Inspection / Vetting / PSC",
+   "confidence": 0.8,
+   "quote": "not accepted"
+  },
+  {
+   "event_type": "CP Terms / Recap / Addendum",
+   "confidence": 0.7,
+   "quote": "asks the charterer to confirm the delay is for the account of the CP clause 28"
+  }
+ ]
+}

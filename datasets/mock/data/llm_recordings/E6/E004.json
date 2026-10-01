@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Loading / Cargo Operations",
+   "confidence": 0.9,
+   "quote": "loading finished 29 Aug 17:30"
+  },
+  {
+   "event_type": "Delivery Notice",
+   "confidence": 0.6,
+   "quote": "documents on board"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 11.2,
+   "unit": "%",
+   "currency": null,
+   "quote": "Discharge moisture: 11.2 %"
+  },
+  {
+   "kind": "other",
+   "value": 9.0,
+   "unit": "%",
+   "currency": null,
+   "quote": "Load moisture: 9.0 %"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "correspondent"
+}

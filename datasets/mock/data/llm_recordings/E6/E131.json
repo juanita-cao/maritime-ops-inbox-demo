@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Hire / SOA / Payment",
+   "confidence": 0.9,
+   "quote": "Dues invoice no: ZC-2291\n- Dues invoice: 31780.0 USD"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.5,
+   "quote": "Agent: USD 31,780 is correct, the first total had a typing error"
+  },
+  {
+   "event_type": "Survey Arrangement / Quotation",
+   "confidence": 0.4,
+   "quote": "the pre-loading survey and tally were ordered by the charterers' receiver"
+  }
+ ]
+}

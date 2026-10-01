@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
+   "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "description": "Update the vessel schedule for VSL-18 to reflect the 6.5-hour medical deviation and the planned replacement at Zhanjiang.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Notify Party (Agent / P&I / Manager)",
+   "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "description": "Notify the relevant parties, including the agent and P&I, about the medical deviation and the replacement at Zhanjiang for VSL-18.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

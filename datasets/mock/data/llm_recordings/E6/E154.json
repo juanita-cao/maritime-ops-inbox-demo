@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Inspection / Vetting / PSC",
+   "confidence": 0.9,
+   "quote": "The detention was released at 08:20 on 12 Oct after class confirmed rectification of the three deficiencies"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.5,
+   "quote": "Dear Colleagues"
+  },
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.4,
+   "quote": "Released: 2026-10-12 08:20"
+  }
+ ]
+}

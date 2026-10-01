@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Claim",
+   "confidence": 0.8,
+   "quote": "receiver alleges seawater ingress and reserves rights"
+  },
+  {
+   "event_type": "Hold Cleaning / Cargo Hold Condition",
+   "confidence": 0.7,
+   "quote": "coal from hold no.4 arrived with moisture 11.2% against 9.0% at load"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues,"
+  }
+ ]
+}

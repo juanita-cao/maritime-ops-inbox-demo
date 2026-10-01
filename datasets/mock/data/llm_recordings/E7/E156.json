@@ -1,0 +1,11 @@
+{
+ "items": [
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Claim",
+   "description": "Prepare the claim documentation for the amount of 21500.0 USD related to vessel VSL-14 and voyage V401, as the claim remains open due to the upcoming weather routing report.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

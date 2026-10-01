@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Notify Party (Agent / P&I / Manager)",
+   "for_event": "Crew (Change / Medical)",
+   "description": "Notify the relevant parties about the able seaman's condition and the request for medical advice while the vessel VSL-18 is near Benoa.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Notify Party (Agent / P&I / Manager)",
+   "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "description": "Inform the relevant parties about the vessel VSL-18's current position near Benoa and the need for potential schedule adjustments due to the medical situation.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

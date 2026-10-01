@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)",
+   "confidence": 0.9,
+   "quote": "Arrival at Haldia pilot station."
+  },
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.8,
+   "quote": "Arrival haldia: 2026-10-05 08:30"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues,"
+  }
+ ]
+}

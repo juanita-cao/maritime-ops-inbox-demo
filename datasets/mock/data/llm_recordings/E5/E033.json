@@ -1,0 +1,51 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "discharged",
+   "value": "2026-09-21 06:00",
+   "ordinal": null,
+   "quote": "Discharge completed: 2026-09-21 06:00"
+  },
+  {
+   "kind": "other",
+   "value": "14 Sep 18:00",
+   "ordinal": null,
+   "quote": "discharge started 14 Sep 18:00"
+  },
+  {
+   "kind": "other",
+   "value": "21 Sep 06:00",
+   "ordinal": null,
+   "quote": "completed 21 Sep 06:00"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 11.0,
+   "unit": "hours",
+   "currency": null,
+   "quote": "Rain stoppage: 11.0 hours"
+  },
+  {
+   "kind": "other",
+   "value": 2.0,
+   "unit": "hours",
+   "currency": null,
+   "quote": "Shifting: 2.0 hours"
+  },
+  {
+   "kind": "other",
+   "value": 124.8,
+   "unit": "hours",
+   "currency": null,
+   "quote": "Laytime allowed: 124.8 hours"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Inspection / Vetting / PSC",
+   "confidence": 0.9,
+   "quote": "the plan is an inspection at Rizhao anchorage after discharge"
+  },
+  {
+   "event_type": "Hold Cleaning / Cargo Hold Condition",
+   "confidence": 0.7,
+   "quote": "cleaning only if the report shows fouling"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Operator internal-style note to the charterer"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "QINGDAO",
+   "quote": "QINGDAO"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "eta",
+   "value": "2026-09-16",
+   "ordinal": null,
+   "quote": "Expected wait: 2 days"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 2,
+   "unit": "days",
+   "currency": null,
+   "quote": "Expected wait: 2 days"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

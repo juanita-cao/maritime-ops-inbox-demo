@@ -1,0 +1,33 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [
+  {
+   "text": "V302",
+   "quote": "V302"
+  }
+ ],
+ "ports": [
+  {
+   "text": "AQABA",
+   "quote": "AQABA"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "sailed",
+   "value": "2026-10-04T12:10:00+08:00",
+   "ordinal": null,
+   "quote": "Sailed at 12:10 LT"
+  },
+  {
+   "kind": "eta",
+   "value": "2026-10-21 14:00 LT",
+   "ordinal": null,
+   "quote": "ETA: 2026-10-21 14:00 LT"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Master / Vessel"
+}

@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Discharging",
+   "confidence": 0.9,
+   "quote": "Discharge completed; outturn per receiver's shore scale."
+  },
+  {
+   "event_type": "Delivery Notice",
+   "confidence": 0.7,
+   "quote": "Discharge completed; outturn per receiver's shore scale."
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues,"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Bunker (Stem / Quote / ROB / Quality)",
+   "confidence": 0.9,
+   "quote": "Operator: 0.54 is within the 0.05 tolerance of the 0.50 limit so the fuel is treated as compliant"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.5,
+   "quote": "suggests a fresh test of the ship's own sample and a letter of protest to the supplier"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Charterers"
+  }
+ ]
+}

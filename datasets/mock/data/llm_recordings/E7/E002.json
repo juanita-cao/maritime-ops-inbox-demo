@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Track Contractual Notice / Deadline",
+   "for_event": "Delivery Notice",
+   "description": "Track the contractual notice related to the B/L numbers KAM-01 and KAM-02 for the delivery of 78,420 mt as per the mate's receipt received from the agent.",
+   "due": "2026-08-14",
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Check CP Terms",
+   "for_event": "Delivery Notice",
+   "description": "Check the CP terms associated with the delivery of 78,420 mt as indicated in the B/L and mate's receipt received today.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

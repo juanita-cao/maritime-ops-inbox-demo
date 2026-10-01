@@ -1,0 +1,30 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "CHITTAGONG",
+   "quote": "CHITTAGONG"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "etb",
+   "value": "2026-10-19",
+   "ordinal": null,
+   "quote": "19 Oct"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "waiting",
+   "value": 19,
+   "unit": "",
+   "currency": null,
+   "quote": "19"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

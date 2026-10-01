@@ -1,0 +1,14 @@
+{
+ "items": [
+  {
+   "event_type": "Hire / SOA / Payment",
+   "confidence": 0.9,
+   "quote": "Hire statement.\n\n- Hire rate: 10,400 USD per day\n- Hire next due: 2026-10-16"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Charterers,"
+  }
+ ]
+}

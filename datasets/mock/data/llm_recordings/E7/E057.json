@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Arrange Cash / Supply",
+   "for_event": "Cash to Master / Supply (CTM, Fresh Water, Provisions)",
+   "description": "Arrange for the cash to master of USD 15,000 for VSL-13 to cover wages, victualling, and Aqaba port cash items.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Seek Internal Approval",
+   "for_event": "Cash to Master / Supply (CTM, Fresh Water, Provisions)",
+   "description": "Seek internal approval for the cash to master request of USD 15,000 for VSL-13.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

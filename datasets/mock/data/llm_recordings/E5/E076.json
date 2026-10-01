@@ -1,0 +1,22 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "Haldia",
+   "quote": "Haldia"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "arrival",
+   "value": "2026-10-05 08:30",
+   "ordinal": null,
+   "quote": "2026-10-05 08:30"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Collect / Chase Documents",
+   "for_event": "Inspection / Vetting / PSC",
+   "description": "Collect the necessary documents for the inspection and cleaning of VSL-13 at anchorage, as per the quotes provided (USD 7,400 for inspection and cleaning, USD 2,600 for inspection only).",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Review Quotation / Plan / Proposal",
+   "for_event": "Port Agency / Port Costs (DA)",
+   "description": "Review the provided quotes of USD 7,400 for inspection and cleaning and USD 2,600 for inspection only for VSL-13 at anchorage.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

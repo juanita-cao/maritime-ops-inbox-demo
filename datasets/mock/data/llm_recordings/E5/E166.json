@@ -1,0 +1,22 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "QINGDAO",
+   "quote": "QINGDAO"
+  }
+ ],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 40.8,
+   "unit": "hours",
+   "quote": "40.8 hours"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Charterer"
+}

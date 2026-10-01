@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Port Delay / Congestion / Strike",
+   "confidence": 0.8,
+   "quote": "no objection to diving while the vessel waits for a berth"
+  },
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.6,
+   "quote": "as long as it does not delay berthing"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "asks to be told the diving time"
+  }
+ ]
+}

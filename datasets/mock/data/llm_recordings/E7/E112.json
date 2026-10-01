@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Arrange Survey",
+   "for_event": "Survey Arrangement / Quotation",
+   "description": "Arrange for a survey for VSL-11 as requested by the operator after discharge.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Collect / Chase Documents",
+   "for_event": "Inspection / Vetting / PSC",
+   "description": "Collect the diver permit from the Rizhao agent as requested by the operator.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

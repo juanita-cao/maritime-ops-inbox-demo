@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Notify Party (Agent / P&I / Manager)",
+   "for_event": "Vessel Defect / Repair / Breakdown",
+   "description": "Notify the agent and P&I about the valve replacement on VSL-11 and the replenishment of the spare valve at Rizhao.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Vessel Defect / Repair / Breakdown",
+   "description": "Record evidence of the valve replacement on VSL-11 and prepare any necessary claims related to this repair.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

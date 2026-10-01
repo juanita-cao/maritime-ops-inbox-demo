@@ -1,0 +1,28 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "bl",
+   "value": "2026-08-14",
+   "ordinal": null,
+   "quote": "Bl date: 2026-08-14"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [
+  {
+   "kind": "bl",
+   "value": "KAM-01",
+   "quote": "Bl numbers: KAM-01"
+  },
+  {
+   "kind": "bl",
+   "value": "KAM-02",
+   "quote": "Bl numbers: KAM-02"
+  }
+ ],
+ "author_hint": "Agent"
+}

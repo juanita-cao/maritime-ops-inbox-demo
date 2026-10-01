@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Notify Party (Agent / P&I / Manager)",
+   "for_event": "Port Delay / Congestion / Strike",
+   "description": "Notify the agent and relevant parties about the waiting for a berth situation at the discharge port for vessel VSL-17 under voyage V701, as it is on the charterers' account.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
+   "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "description": "Update the vessel schedule for VSL-17 to reflect the current situation regarding the discharge port and the need for an alternative berth or lightening plan.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

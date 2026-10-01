@@ -1,0 +1,37 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "other",
+   "value": "2026-10-01T10:00:00+08:00",
+   "ordinal": null,
+   "quote": "2026-10-01T10:00:00+08:00"
+  },
+  {
+   "kind": "other",
+   "value": "2026-10-16",
+   "ordinal": null,
+   "quote": "2026-10-16"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 18600,
+   "unit": "USD per day",
+   "currency": "USD",
+   "quote": "18,600 USD per day"
+  }
+ ],
+ "cp_references": [],
+ "references": [
+  {
+   "kind": "other",
+   "value": "HIRE STATEMENT NO. 10",
+   "quote": "HIRE STATEMENT NO. 10"
+  }
+ ],
+ "author_hint": null
+}

@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Claim",
+   "confidence": 0.9,
+   "quote": "keeps the claim open"
+  },
+  {
+   "event_type": "Weather Routing / Speed & Consumption",
+   "confidence": 0.8,
+   "quote": "independent weather routing report"
+  },
+  {
+   "event_type": "Hire / SOA / Payment",
+   "confidence": 0.6,
+   "quote": "Claim amount: 21500.0 USD"
+  }
+ ]
+}

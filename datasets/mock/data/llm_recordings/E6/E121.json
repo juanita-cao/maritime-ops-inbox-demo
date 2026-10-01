@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.9,
+   "quote": "vessel may berth"
+  },
+  {
+   "event_type": "Inspection / Vetting / PSC",
+   "confidence": 0.8,
+   "quote": "Holds 2 and 5 pass the re-inspection"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.5,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

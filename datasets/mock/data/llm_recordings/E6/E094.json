@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.9,
+   "quote": "ETA NOTICE"
+  },
+  {
+   "event_type": "Loading / Cargo Operations",
+   "confidence": 0.8,
+   "quote": "loading 7-8 Oct, 49,800 mt wheat"
+  },
+  {
+   "event_type": "Voyage Instructions / Port Nomination",
+   "confidence": 0.6,
+   "quote": "berth confirmed"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
+   "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "description": "Update the vessel schedule for VSL-14 to reflect that it sailed in ballast on 10 Oct and has an ETA at Kandla on 21 Oct.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Notify Party (Agent / P&I / Manager)",
+   "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "description": "Notify the relevant parties about the sailing of VSL-14 in ballast on 10 Oct and its ETA at Kandla on 21 Oct.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+# Fleet plan for the mock dataset (docs/design_mock_data.md 2-3). Everything here is invented.
+# Ports are real places, none of which occurs in the desanitized data (checked by mockdata.leakcheck).
+# Parties: operator OPR-01 (our side); everything else CPY-nn. Mailboxes end in .example.
+now: "2026-10-12T18:00:00+08:00"   # the app's clock for this dataset
+seed: 20261012
+vessels:
+  - {code: VSL-11, name: Aurelia Bay,     depth: deep,   type: kamsarmax, dwt: 81900, flag: Marshall Islands, scenarios: [S01, S02, S11, S17], trade: "bauxite, Kamsar to Qingdao; iron ore fines, Port Hedland to Rizhao"}
+  - {code: VSL-12, name: Northern Linden, depth: deep,   type: supramax,   dwt: 58200, flag: Liberia,          scenarios: [S03, S04, S05, S13], trade: "soybean meal and grain, Paranagua to Rotterdam and Hamburg"}
+  - {code: VSL-13, name: Kestrel Harbor,  depth: deep,   type: ultramax,   dwt: 63800, flag: Panama,           scenarios: [S01, S06, S07, S18], trade: "thermal coal, Richards Bay to Mundra; urea, Aqaba to Paradip"}
+  - {code: VSL-14, name: Silver Anemone,  depth: medium, type: handysize,  dwt: 38400, flag: Singapore,        scenarios: [S08], trade: "phosphate rock, Aqaba to Haldia"}
+  - {code: VSL-15, name: Tidewater Orchid, depth: medium, type: supramax,  dwt: 56700, flag: Hong Kong,        scenarios: [S09], trade: "salt, Esperance to Kaohsiung"}
+  - {code: VSL-16, name: Gannet Crest,    depth: medium, type: panamax,    dwt: 75300, flag: Marshall Islands, scenarios: [S10], trade: "coking coal, Hay Point to Gwangyang; grain, Rosario to Chittagong"}
+  - {code: VSL-17, name: Mistral Quay,    depth: light,  type: handysize,  dwt: 34900, flag: Malta,            scenarios: [S14], trade: "limestone, Vizag to Chittagong"}
+  - {code: VSL-18, name: Pinewood Star,   depth: light,  type: supramax,   dwt: 55100, flag: Panama,           scenarios: [S15], trade: "wood chips, Bunbury to Zhanjiang"}
+  - {code: VSL-19, name: Harrow Spirit,   depth: light,  type: ultramax,   dwt: 61400, flag: Liberia,          scenarios: [S16], trade: "clinker, Mailiao to Mormugao"}
+  - {code: VSL-20, name: Lumen Ridge,     depth: light,  type: kamsarmax,  dwt: 82500, flag: Marshall Islands, scenarios: [S12], trade: "iron ore, Tubarao to Qingdao"}

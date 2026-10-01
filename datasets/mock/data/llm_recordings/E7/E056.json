@@ -1,0 +1,11 @@
+{
+ "items": [
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Claim",
+   "description": "Prepare the claim documentation for the shortage of 410 mt at MUNDRA related to VSL-13, ensuring to reference the 0.5% tolerance and the 12-month time bar as per clause 45.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

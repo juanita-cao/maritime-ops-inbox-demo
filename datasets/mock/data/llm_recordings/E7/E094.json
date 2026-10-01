@@ -1,0 +1,25 @@
+{
+ "items": [
+  {
+   "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
+   "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "description": "Update the vessel schedule for VSL-12 with the ETA of 2026-10-07 at ROUEN.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Verify / Reconcile Report Data",
+   "for_event": "Loading / Cargo Operations",
+   "description": "Verify the loading report for 49,800 mt of wheat scheduled for 7-8 Oct at ROUEN.",
+   "due": null,
+   "owner_role": "Cargo Operations Officer"
+  },
+  {
+   "action_type": "Reply / Confirm to Counterparty",
+   "for_event": "Voyage Instructions / Port Nomination",
+   "description": "Confirm the berth and loading schedule for VSL-12 with the agent.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

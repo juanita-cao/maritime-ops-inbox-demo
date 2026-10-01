@@ -1,0 +1,9 @@
+{
+ "email_id": "E026",
+ "text": "From: mail01@kutchgulf.example\nSent: 2026-09-17 15:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@ravenscar.example\nSubject: VSL-13 MUNDRA ARRIVAL AND BERTHING PLAN\n\nDear Colleagues,\n\nAgent: arrival 17 Sep, discharge to start on berthing, receivers Mundra Power Fuels.\n\n- Arrival mundra: 2026-09-17 12:00\n\nBest regards,\nKutch Gulf Port Services",
+ "event_id": "M13008",
+ "vessel": "VSL-13",
+ "thread": "V301-disch",
+ "scenario": null,
+ "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
+}

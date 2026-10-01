@@ -1,0 +1,9 @@
+{
+ "email_id": "E069",
+ "text": "From: mail01@brannock.example\nSent: 2026-10-03 14:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nSubject: VSL-12 - OFF-HIRE DEDUCTION 11.5 HOURS ROTTERDAM\n\nDear Colleagues,\n\nCharterer deducts 11.5 hours (USD 7,379.17) for berthing delay at Rotterdam, alleging a ballast water management certificate query.\n\n- Offhire: 11.5 hours\n- Offhire amount: 7379.17 USD\n- Alleged cause: ballast water certificate query\n\nBest regards,\nBrannock Agri Trading\n\n-----Original Message-----\nFrom: mail01@meridianfleet.example\nSent: 2026-10-01 10:00:00 UTC+08:00\nTo: mail01@brannock.example\nSubject: VSL-12 HIRE STATEMENT NO. 11 (1 OCT - 15 OCT 2026)\n\nDear Charterers,\n\nHire statement, 15 days in advance at USD 15,400 per day; payment due 1 Oct, includes an off-hire deduction for the Rotterdam delay as notified by charterer.\n\n- Hire rate: 15,400 USD per day\n- Hire period: 1 Oct - 15 Oct 2026\n\nBest regards,\nMeridian Fleet Management",
+ "event_id": "M12014",
+ "vessel": "VSL-12",
+ "thread": "V202-hire",
+ "scenario": "S04",
+ "event_type": "Hire / SOA / Payment"
+}

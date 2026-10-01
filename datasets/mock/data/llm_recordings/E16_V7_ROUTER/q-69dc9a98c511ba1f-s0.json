@@ -1,0 +1,13 @@
+{
+ "execution_mode": "proposal_reasoning",
+ "deterministic_intent": null,
+ "answer_size": "short",
+ "standalone_question": "VSL-19 能不能同意转租给 Altai Trade FZE？",
+ "search_terms": [
+  "VSL-19",
+  "Altai Trade FZE",
+  "转租"
+ ],
+ "playbook": null,
+ "reason": ""
+}

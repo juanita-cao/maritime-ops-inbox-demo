@@ -1,0 +1,9 @@
+{
+ "email_id": "E140",
+ "text": "From: mail01@lanterncorr.example\nSent: 2026-10-11 11:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@aureliabay.example\nSubject: VSL-11 NEWCASTLE - PRE-ARRIVAL HULL INSPECTION AT BERTH\n\nDear Colleagues,\n\nThe Newcastle correspondent says the authority accepts an in-water inspection report from the previous 30 days, or an inspection at Newcastle anchorage by an approved diver booked by the correspondent.\n\n- Alt window: Newcastle anchorage by approved diver\n- Alt quote: 5200 USD\n\nBest regards,\nLantern Club Correspondents\n\n-----Original Message-----\nFrom: mail01@ostrander.example\nSent: 2026-10-05 14:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@pelhambrokers.example\nSubject: VSL-11 / NEWCASTLE - BIOFOULING AND HULL CLEANLINESS REQUIREMENT\n\nDear Colleagues,\n\nThe Newcastle charterer requires a recent underwater hull inspection report before arrival for biofouling reasons; inspection within 30 days before arrival.\n\n- Inspect within: 30 days\n- Required before: Newcastle arrival\n- Laycan: 2026-11-20 to 2026-11-30\n\nBest regards,\nOstrander Coal Logistics",
+ "event_id": "M11026",
+ "vessel": "VSL-11",
+ "thread": "V103-hull",
+ "scenario": "S01",
+ "event_type": "P&I / Insurance"
+}

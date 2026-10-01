@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.9,
+   "quote": "Deviation: 6.5 hours"
+  },
+  {
+   "event_type": "Voyage Instructions / Port Nomination",
+   "confidence": 0.8,
+   "quote": "Replacement port: Zhanjiang"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.5,
+   "quote": "Operator informs the charterer of the medical deviation"
+  }
+ ]
+}

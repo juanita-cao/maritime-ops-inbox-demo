@@ -1,0 +1,9 @@
+{
+ "email_id": "E060",
+ "text": "From: mail01@meridianfleet.example\nSent: 2026-10-02 11:05:00 UTC+08:00\nTo: mail01@aureliabay.example\nSubject: VSL-11 BUNKER STEM PORT HEDLAND OCT 2026\n\nDear Owners,\n\nStem of 640 MT VLSFO at Port Hedland.\n\n- Stem vlsfo: 640 mt\n- Stem price: 612.5 USD per mt\n\nBest regards,\nMeridian Fleet Management",
+ "event_id": "M11011",
+ "vessel": "VSL-11",
+ "thread": "V102-bunker",
+ "scenario": null,
+ "event_type": "Bunker (Stem / Quote / ROB / Quality)"
+}

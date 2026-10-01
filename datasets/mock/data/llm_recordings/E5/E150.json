@@ -1,0 +1,44 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "ROTTERDAM",
+   "quote": "ROTTERDAM"
+  }
+ ],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 4.0,
+   "unit": "hours",
+   "currency": null,
+   "quote": "4.0 hours"
+  },
+  {
+   "kind": "other",
+   "value": 2566.67,
+   "unit": "USD",
+   "currency": "USD",
+   "quote": "2566.67 USD"
+  },
+  {
+   "kind": "other",
+   "value": 7.5,
+   "unit": "hours",
+   "currency": null,
+   "quote": "7.5 hours"
+  },
+  {
+   "kind": "other",
+   "value": 4812.5,
+   "unit": "USD",
+   "currency": "USD",
+   "quote": "4812.5 USD"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Charterer"
+}

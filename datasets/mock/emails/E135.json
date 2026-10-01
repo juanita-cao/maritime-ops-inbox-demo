@@ -1,0 +1,9 @@
+{
+ "email_id": "E135",
+ "text": "From: mail01@qingdaoharbouragents.example\nSent: 2026-10-10 16:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@vsllumenridge.example\nSubject: VSL-20 PORT STATE CONTROL INSPECTION - DETENTION\n\nDear Colleagues,\n\nThe port state control inspection found 3 deficiencies: the oily water separator alarm not working, one fire damper seized in the engine room, and the emergency generator start failing once; vessel detained until rectified.\n\n- Deficiencies: 3\n- Detained from: 2026-10-10 15:30\n\nBest regards,\nQingdao Harbour Agents",
+ "event_id": "M20005",
+ "vessel": "VSL-20",
+ "thread": "V1001-psc",
+ "scenario": "S12",
+ "event_type": "Inspection / Vetting / PSC"
+}

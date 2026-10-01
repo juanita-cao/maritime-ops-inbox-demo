@@ -1,0 +1,9 @@
+{
+ "email_id": "E012",
+ "text": "From: mail01@vsltidewaterorchid.example\nSent: 2026-09-06 12:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@formosasaltandminerals.example\nSubject: VSL-15 NOON REPORT 2026-09-06\n\nGood day,\n\nNoon report, VSL-15, V501.\nDd: 6 Sep 2026\nPosition: 28-10S 108-30E at 1200 LT\nCourse/avg spd/rpm/eng slip: 090 / 11.9 / 72 / 3.0\nDaily GPS speed / Log speed: 12.1 / 12.0\nAverage GPS speed / Log Speed: 12.0 / 11.9\nIFO Consumed/LSMGO consumed fm last report: VLSFO 24.8 mt LSMGO 0.0 mt\nWind direction/force/sea cond/vis: NE / 4 / 1.5 M / Good\nWeather condition: NE / 4 Cloudy\nROB: VLSFO 640.0 mt, LSMGO 60.0 mt\nETA: 2026-09-14 08:00 LT\nRemarks: Vessel proceeding normally.\n\nBest regards,\nMaster MV Tidewater Orchid",
+ "event_id": "M15002",
+ "vessel": "VSL-15",
+ "thread": "V501-noon",
+ "scenario": null,
+ "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
+}

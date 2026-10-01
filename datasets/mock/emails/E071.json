@@ -1,0 +1,9 @@
+{
+ "email_id": "E071",
+ "text": "From: mail01@anchorpoint.example\nSent: 2026-10-04 11:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@gannetcrestmaritime.example\nSubject: VSL-16 P&I - GRAIN CARGO HOLD CONDITION GUIDANCE\n\nDear Colleagues,\n\nClub circular summarising grain hold cleanliness standards before loading.\n\n- Guidance: residues, odours, rust scale and insect infestation are the usual rejection causes\n\nBest regards,\nAnchor Point Club Correspondents",
+ "event_id": "M16006",
+ "vessel": "VSL-16",
+ "thread": "V602-pni",
+ "scenario": null,
+ "event_type": "P&I / Insurance"
+}

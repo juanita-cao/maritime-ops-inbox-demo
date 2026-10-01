@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Off-hire",
+   "confidence": 0.9,
+   "quote": "the delay was the terminal berth being occupied; asks to reinstate the 11.5 hours."
+  },
+  {
+   "event_type": "Port Delay / Congestion / Strike",
+   "confidence": 0.7,
+   "quote": "the delay was the terminal berth being occupied"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Charterers"
+  }
+ ]
+}

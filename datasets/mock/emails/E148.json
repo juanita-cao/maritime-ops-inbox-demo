@@ -1,0 +1,9 @@
+{
+ "email_id": "E148",
+ "text": "From: mail01@hooghlyportagency.example\nSent: 2026-10-11 15:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nSubject: VSL-14 HALDIA - SAILING AFTER DISCHARGE, BALLAST TO KANDLA\n\nDear Colleagues,\n\nAgent: sailed in ballast 10 Oct, ETA Kandla 21 Oct.\n\nBest regards,\nHooghly Port Agency",
+ "event_id": "M14016",
+ "vessel": "VSL-14",
+ "thread": "V402-ballast",
+ "scenario": null,
+ "event_type": "Voyage Instructions / Port Nomination"
+}

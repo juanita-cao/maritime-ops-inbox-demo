@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Weather Routing / Speed & Consumption",
+   "confidence": 0.9,
+   "quote": "the vessel averaged 12.45 kn and 27.6 mt per day, within the warranty"
+  },
+  {
+   "event_type": "Claim",
+   "confidence": 0.8,
+   "quote": "asks the charterer to withdraw the claim"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Charterers"
+  }
+ ]
+}

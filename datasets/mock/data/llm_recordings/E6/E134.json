@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Inspection / Vetting / PSC",
+   "confidence": 0.9,
+   "quote": "inspection only, at anchorage"
+  },
+  {
+   "event_type": "Hold Cleaning / Cargo Hold Condition",
+   "confidence": 0.8,
+   "quote": "in-water cleaning is not permitted"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

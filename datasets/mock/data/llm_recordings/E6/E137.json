@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Inspection / Vetting / PSC",
+   "confidence": 0.9,
+   "quote": "PORT STATE CONTROL - DETENTION"
+  },
+  {
+   "event_type": "Crew (Change / Medical)",
+   "confidence": 0.7,
+   "quote": "requests class attendance tomorrow"
+  },
+  {
+   "event_type": "P&I / Insurance",
+   "confidence": 0.6,
+   "quote": "informs the P&I correspondent"
+  }
+ ]
+}

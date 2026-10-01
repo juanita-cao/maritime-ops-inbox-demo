@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Inspection / Vetting / PSC",
+   "confidence": 0.9,
+   "quote": "requires a recent underwater hull inspection report before arrival for biofouling reasons"
+  },
+  {
+   "event_type": "Voyage Instructions / Port Nomination",
+   "confidence": 0.7,
+   "quote": "Required before: Newcastle arrival"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "email_id": "E149",
+ "text": "From: mail01@karnaphulishippingagency.example\nSent: 2026-10-11 16:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@meghnacementindustries.example\nSubject: VSL-17 CHITTAGONG - UPDATE BERTHING 19 OCT\n\nDear Colleagues,\n\nAgent updates: the terminal crane is still out, berth now expected 19 Oct.\n\n- Expected berth: 2026-10-19\n- Waiting vessels: 19\n\nBest regards,\nKarnaphuli Shipping Agency",
+ "event_id": "M17008",
+ "vessel": "VSL-17",
+ "thread": "V701-ctg",
+ "scenario": "S14",
+ "event_type": "Port Delay / Congestion / Strike"
+}

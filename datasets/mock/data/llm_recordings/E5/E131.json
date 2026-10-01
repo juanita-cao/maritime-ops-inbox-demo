@@ -1,0 +1,34 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "RICHARDS BAY",
+   "quote": "RICHARDS BAY"
+  }
+ ],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 31780.0,
+   "unit": "USD",
+   "currency": null,
+   "quote": "31780.0 USD"
+  }
+ ],
+ "cp_references": [
+  {
+   "text": "ZC-2291",
+   "quote": "ZC-2291"
+  }
+ ],
+ "references": [
+  {
+   "kind": "invoice",
+   "value": "ZC-2291",
+   "quote": "Dues invoice no: ZC-2291"
+  }
+ ],
+ "author_hint": "Port Agent"
+}

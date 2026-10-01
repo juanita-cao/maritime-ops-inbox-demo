@@ -1,0 +1,9 @@
+{
+ "email_id": "E164",
+ "text": "From: mail01@vslpinewoodstar.example\nSent: 2026-10-12 12:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@zhanjiangpulpandpaperco.example\nSubject: VSL-18 NOON REPORT 2026-10-12\n\nGood day,\n\nNoon report, VSL-18, V801.\nDd: 12 Oct 2026\nPosition: 08-30N 112-20E at 1200 LT\nCourse/avg spd/rpm/eng slip: 090 / 12.0 / 72 / 3.0\nDaily GPS speed / Log speed: 12.2 / 12.1\nAverage GPS speed / Log Speed: 12.1 / 12.0\nIFO Consumed/LSMGO consumed fm last report: VLSFO 30.3 mt LSMGO 0.0 mt\nWind direction/force/sea cond/vis: NE / 3 / 1.0 M / Good\nWeather condition: NE / 3 Fine\nROB: VLSFO 600.4 mt, LSMGO 60.0 mt\nETA: 2026-10-19 08:00 LT\nRemarks: Vessel proceeding normally.\n\nBest regards,\nMaster MV Pinewood Star",
+ "event_id": "M18009",
+ "vessel": "VSL-18",
+ "thread": "V801-noon",
+ "scenario": null,
+ "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
+}

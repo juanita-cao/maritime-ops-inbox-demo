@@ -1,0 +1,13 @@
+{
+ "execution_mode": "domain_knowledge",
+ "deterministic_intent": null,
+ "answer_size": "short",
+ "standalone_question": "从天津到新加坡，航速 12 节要几天？",
+ "search_terms": [
+  "Tianjin",
+  "Singapore",
+  "distance"
+ ],
+ "playbook": null,
+ "reason": ""
+}

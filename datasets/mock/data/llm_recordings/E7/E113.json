@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Confirm Bunker ROB / Stem",
+   "for_event": "Bunker (Stem / Quote / ROB / Quality",
+   "description": "Confirm that the bunker ROB for VSL-12 is compliant with the lab sulphur test result of 0.54% and the tolerance of 0.05%.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Review Quotation / Plan / Proposal",
+   "for_event": "Bunker (Stem / Quote / ROB / Quality",
+   "description": "Review the proposal for a fresh test of the ship's own sample and the letter of protest to the supplier regarding the bunker supply under clause 12.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

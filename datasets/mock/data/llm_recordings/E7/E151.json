@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Collect / Chase Documents",
+   "for_event": "Inspection / Vetting / PSC",
+   "description": "Chase the Paradip agent and the diving contractor for the permit and quote needed for the inspection and cleaning of VSL-13 at Paradip.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Arrange Survey",
+   "for_event": "Survey Arrangement / Quotation",
+   "description": "Arrange for the inspection and cleaning survey for VSL-13 at Paradip while the vessel waits for a berth.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Fixture Enquiry / Offer / Counter",
+   "confidence": 0.9,
+   "quote": "Broker enquiry for a voyage after redelivery"
+  },
+  {
+   "event_type": "Redelivery Notice",
+   "confidence": 0.7,
+   "quote": "voyage after redelivery"
+  },
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.5,
+   "quote": "Laycan: 2026-11-05 to 2026-11-15"
+  }
+ ]
+}

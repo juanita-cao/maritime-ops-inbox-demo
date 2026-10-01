@@ -1,0 +1,37 @@
+{
+ "vessel_mentions": [
+  {
+   "text": "CALDER",
+   "quote": "CALDER"
+  }
+ ],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "Visakhapatnam",
+   "quote": "Visakhapatnam"
+  },
+  {
+   "text": "Chittagong",
+   "quote": "Chittagong"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "laycan",
+   "value": "2026-10-28 to 2026-11-06",
+   "ordinal": null,
+   "quote": "28 Oct - 6 Nov"
+  },
+  {
+   "kind": "cp",
+   "value": "2026-10-06",
+   "ordinal": null,
+   "quote": "Cp date: 2026-10-06"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Hold Cleaning / Cargo Hold Condition",
+   "confidence": 0.9,
+   "quote": "cleaning on charterers' orders is for charterers' time"
+  },
+  {
+   "event_type": "Off-hire",
+   "confidence": 0.8,
+   "quote": "the time stays on hire"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Charterers"
+  }
+ ]
+}

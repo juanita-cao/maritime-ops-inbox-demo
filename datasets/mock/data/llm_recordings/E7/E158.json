@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Reply / Confirm to Counterparty",
+   "for_event": "Hold Cleaning / Cargo Hold Condition",
+   "description": "Confirm to the charterers that the cleaning is to be conducted on their orders and clarify that the time remains on-hire while the owners will cover the cost of the chemicals as per CP clause 28.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Off-hire",
+   "description": "Document the details regarding the cleaning costs and the agreement on the time being on-hire for potential future claims related to the off-hire situation.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

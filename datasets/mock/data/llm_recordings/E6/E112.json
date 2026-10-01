@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Survey Arrangement / Quotation",
+   "confidence": 0.9,
+   "quote": "quote for UWI and UWC"
+  },
+  {
+   "event_type": "Inspection / Vetting / PSC",
+   "confidence": 0.8,
+   "quote": "UNDERWATER INSPECTION AND CLEANING"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Sirs"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "execution_mode": "out_of_scope",
+ "deterministic_intent": null,
+ "answer_size": "short",
+ "standalone_question": "",
+ "search_terms": [],
+ "playbook": null,
+ "reason": "这个问题与航运操作无关。"
+}

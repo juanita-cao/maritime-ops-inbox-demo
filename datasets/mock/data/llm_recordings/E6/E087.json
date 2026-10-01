@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "CP Terms / Recap / Addendum",
+   "confidence": 0.9,
+   "quote": "Clean recap: 58,000 mt limestone, load Visakhapatnam discharge Chittagong"
+  },
+  {
+   "event_type": "Voyage Instructions / Port Nomination",
+   "confidence": 0.7,
+   "quote": "load Visakhapatnam discharge Chittagong"
+  },
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.5,
+   "quote": "laycan 28 Oct - 6 Nov"
+  }
+ ]
+}

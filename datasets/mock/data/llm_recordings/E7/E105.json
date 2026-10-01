@@ -1,0 +1,25 @@
+{
+ "items": [
+  {
+   "action_type": "Notify Party (Agent / P&I / Manager)",
+   "for_event": "Crew (Change / Medical)",
+   "description": "Notify the relevant parties about the medevac that took place at Benoa anchorage on 2026-10-08, with the launch at 15:30 and the vessel resuming passage at 17:40.",
+   "due": null,
+   "owner_role": ""
+  },
+  {
+   "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
+   "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "description": "Update the vessel schedule for VSL-18 to reflect the new ETA after the 6.5 hours deviation due to the medevac on 2026-10-08.",
+   "due": null,
+   "owner_role": ""
+  },
+  {
+   "action_type": "Notify Party (Agent / P&I / Manager)",
+   "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "description": "Notify the relevant parties about the updated vessel schedule for VSL-18 following the medevac and the resumed passage at 17:40 on 2026-10-08.",
+   "due": null,
+   "owner_role": ""
+  }
+ ]
+}

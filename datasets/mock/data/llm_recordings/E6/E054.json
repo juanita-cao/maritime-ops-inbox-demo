@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Hire / SOA / Payment",
+   "confidence": 0.9,
+   "quote": "Hire statement."
+  },
+  {
+   "event_type": "Hire / SOA / Payment",
+   "confidence": 0.8,
+   "quote": "- Hire rate: 18,600 USD per day"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.5,
+   "quote": "Dear Charterers,"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "email_id": "E001",
+ "text": "From: mail01@vsl11.example\nSent: 2026-08-14 17:05:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@bokecoast.example\nSubject: VSL-11 / V101 SAILING REPORT KAMSAR\n\nGood day,\n\nSailing report, VSL-11, V101.\nDd: 14 Aug 2026\nSailed at 17:05 LT.\nCargo on board: 78420 mt\nSailing Draft: F 13.82 m / A 14.05 m\nROB: VLSFO 1241.6 mt, LSMGO 60.0 mt\n\nBest regards,\nMaster MV Aurelia Bay",
+ "event_id": "M11001",
+ "vessel": "VSL-11",
+ "thread": "V101-sail",
+ "scenario": null,
+ "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
+}

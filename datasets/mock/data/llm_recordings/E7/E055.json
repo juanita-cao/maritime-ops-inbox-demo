@@ -1,0 +1,11 @@
+{
+ "items": [
+  {
+   "action_type": "Check Hire / Invoice / Payment",
+   "for_event": "Hire / SOA / Payment",
+   "description": "Verify the payment status for invoice ZC-2291 related to vessel VSL-13 at RICHARDS BAY, totaling USD 31,780.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

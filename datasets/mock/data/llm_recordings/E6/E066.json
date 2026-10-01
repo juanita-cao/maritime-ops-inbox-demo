@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Loading / Cargo Operations",
+   "confidence": 0.9,
+   "quote": "urea loading finished 3 Oct."
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.5,
+   "quote": "Dear Colleagues,"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Cargo qty: 55,300 mt"
+  }
+ ]
+}

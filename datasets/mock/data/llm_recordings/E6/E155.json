@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Hire / SOA / Payment",
+   "confidence": 0.9,
+   "quote": "Charterer confirms payment will be made on 15 Oct"
+  },
+  {
+   "event_type": "Off-hire",
+   "confidence": 0.8,
+   "quote": "asks to deduct the 6.0 h off-hire"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

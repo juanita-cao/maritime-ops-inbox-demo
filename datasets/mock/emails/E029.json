@@ -1,0 +1,9 @@
+{
+ "email_id": "E029",
+ "text": "From: mail01@vslsilveranemone.example\nSent: 2026-09-18 11:10:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@gulfofaqabashippingservices.example\nSubject: VSL-14 / V401 SAILING REPORT AQABA\n\nGood day,\n\nSailing report, VSL-14, V401.\nDd: 18 Sep 2026\nSailed at 11:10 LT.\nCargo on board: 36800 mt\nROB: VLSFO 548.0 mt, LSMGO 60.0 mt\n\nBest regards,\nMaster MV Silver Anemone",
+ "event_id": "M14001",
+ "vessel": "VSL-14",
+ "thread": "V401-sail",
+ "scenario": null,
+ "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
+}

@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Inspection / Vetting / PSC",
+   "confidence": 0.9,
+   "quote": "port state control inspection"
+  },
+  {
+   "event_type": "Vessel Defect / Repair / Breakdown",
+   "confidence": 0.8,
+   "quote": "3 deficiencies: the oily water separator alarm not working, one fire damper seized in the engine room, and the emergency generator start failing"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

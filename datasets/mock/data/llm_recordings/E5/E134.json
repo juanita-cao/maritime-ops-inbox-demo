@@ -1,0 +1,18 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 3800,
+   "unit": "USD",
+   "currency": null,
+   "quote": "quote USD 3,800"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

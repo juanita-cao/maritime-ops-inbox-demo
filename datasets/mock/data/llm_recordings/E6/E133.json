@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Sanctions / Compliance / KYC",
+   "confidence": 0.9,
+   "quote": "the entity name has a partial match (84%) to a person on a screening list"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.5,
+   "quote": "recommends not consenting until cleared"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Screening status: pending, not cleared"
+  }
+ ]
+}

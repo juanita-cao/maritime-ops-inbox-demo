@@ -1,0 +1,15 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "PARADIP",
+   "quote": "PARADIP"
+  }
+ ],
+ "dates": [],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Charterer"
+}

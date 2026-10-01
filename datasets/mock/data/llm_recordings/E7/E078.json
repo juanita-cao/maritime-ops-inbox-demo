@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Claim",
+   "description": "Prepare the claim by gathering the draft surveys, weighbridge certificates, and cargo documents related to vessel VSL-13 as requested by the correspondent.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Verify / Reconcile Report Data",
+   "for_event": "Loading / Cargo Operations",
+   "description": "Verify and reconcile the report data for the draft surveys and weighbridge certificates for vessel VSL-13.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "execution_mode": "proposal_reasoning",
+ "deterministic_intent": null,
+ "answer_size": "standard",
+ "standalone_question": "VSL-15 的滞期费双方各自怎么算？",
+ "search_terms": [
+  "VSL-15",
+  "滞期费",
+  "费用计算"
+ ],
+ "playbook": "cost-allocation",
+ "reason": ""
+}

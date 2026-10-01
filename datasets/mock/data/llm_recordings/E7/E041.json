@@ -1,0 +1,11 @@
+{
+ "items": [
+  {
+   "action_type": "Confirm Bunker ROB / Stem",
+   "for_event": "Bunker (Stem / Quote / ROB / Quality)",
+   "description": "Confirm the Bunker ROB for 600 mt VLSFO with sulphur content of 0.49% for vessel VSL-12 at the port of ROTTERDAM.",
+   "due": "2026-09-26",
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

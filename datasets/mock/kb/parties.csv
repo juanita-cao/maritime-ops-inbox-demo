@@ -1,0 +1,72 @@
+party_code,party_type,role,description,vessel_codes,confidence,evidence
+CPY-01,owner,Owner / Manager,Aurelia Bay Shipping Ltd,VSL-11,stated,mock ledger
+CPY-02,charterer (head),Charterer,Corvane Bulk Trading,VSL-11,stated,mock ledger
+CPY-04,port agent,Port Agent,Boke Coast Agency,VSL-11,stated,mock ledger
+CPY-05,port agent,Port Agent,Yellow Gulf Shipping Agency,VSL-11,stated,mock ledger
+CPY-06,P&I correspondent,P&I Club / Correspondent,Lantern Club Correspondents,VSL-11,stated,mock ledger
+CPY-07,surveyor,Surveyor / Survey Company,Seacrest Marine Surveyors,VSL-11,stated,mock ledger
+CPY-08,vessel mailbox,Master / Vessel,"Master, MV Aurelia Bay",VSL-11,stated,mock ledger
+CPY-09,port agent,Port Agent,Pilbara Marine Agencies,VSL-11,stated,mock ledger
+CPY-10,port agent,Port Agent,Eastern Shore Agency Rizhao,VSL-11,stated,mock ledger
+CPY-101,owner,Owner / Manager,Pinewood Star Shipping,VSL-18,stated,mock ledger
+CPY-102,charterer (head),Charterer,Zhanjiang Pulp and Paper Co,VSL-18,stated,mock ledger
+CPY-103,port agent,Port Agent,Benoa Shipping Services,VSL-18,stated,mock ledger
+CPY-104,P&I correspondent,P&I Club / Correspondent,Archipelago Club Correspondents,VSL-18,stated,mock ledger
+CPY-108,vessel mailbox,Master / Vessel,"Master, MV Pinewood Star",VSL-18,stated,mock ledger
+CPY-111,owner,Owner / Manager,Harrow Spirit Shipholding,VSL-19,stated,mock ledger
+CPY-112,charterer (head),Charterer,Cavendish Cement Trading,VSL-19,stated,mock ledger
+CPY-114,port agent,Port Agent,Cai Lan Shipping Agency,VSL-19,stated,mock ledger
+CPY-118,vessel mailbox,Master / Vessel,"Master, MV Harrow Spirit",VSL-19,stated,mock ledger
+CPY-12,service supplier,Other,Norvik Engine Service,VSL-11,stated,mock ledger
+CPY-121,owner,Owner / Manager,Lumen Ridge Marine,VSL-20,stated,mock ledger
+CPY-122,charterer (head),Charterer,Yuxing Iron Ore Importers,VSL-20,stated,mock ledger
+CPY-123,port agent,Port Agent,Qingdao Harbour Agents,VSL-20,stated,mock ledger
+CPY-124,surveyor,Surveyor / Survey Company,Maritime Classification Register,VSL-20,stated,mock ledger
+CPY-128,vessel mailbox,Master / Vessel,"Master, MV Lumen Ridge",VSL-20,stated,mock ledger
+CPY-13,charterer (head),Charterer,Ostrander Coal Logistics,VSL-11,stated,mock ledger
+CPY-14,broker,Broker,Pelham Shipbrokers,VSL-11;VSL-12;VSL-13;VSL-14;VSL-15;VSL-16;VSL-17;VSL-18;VSL-19;VSL-20,stated,mock ledger
+CPY-21,owner,Owner / Manager,Linden Maritime Holdings,VSL-12,stated,mock ledger
+CPY-22,charterer (head),Charterer,Brannock Agri Trading,VSL-12,stated,mock ledger
+CPY-23,port agent,Port Agent,Atlantic Sul Agency,VSL-12,stated,mock ledger
+CPY-24,port agent,Port Agent,Maasmond Agency,VSL-12,stated,mock ledger
+CPY-25,port agent,Port Agent,Seine Maritime Agency,VSL-12,stated,mock ledger
+CPY-26,port agent,Port Agent,Atlas Port Agency,VSL-12,stated,mock ledger
+CPY-27,service supplier,Other,Rhine Bunker Supply,VSL-12,stated,mock ledger
+CPY-28,vessel mailbox,Master / Vessel,"Master, MV Northern Linden",VSL-12,stated,mock ledger
+CPY-29,surveyor,Surveyor / Survey Company,Vanguard Marine Surveyors,VSL-12,stated,mock ledger
+CPY-31,charterer (head),Charterer,Solano Grain Company,VSL-12,stated,mock ledger
+CPY-41,owner,Owner / Manager,Kestrel Harbor Maritime Inc,VSL-13,stated,mock ledger
+CPY-42,charterer (head),Charterer,Ravenscar Commodities,VSL-13,stated,mock ledger
+CPY-43,port agent,Port Agent,Zulu Coast Agencies,VSL-13,stated,mock ledger
+CPY-44,port agent,Port Agent,Kutch Gulf Port Services,VSL-13,stated,mock ledger
+CPY-45,port agent,Port Agent,Red Sea Maritime Agency,VSL-13,stated,mock ledger
+CPY-46,port agent,Port Agent,Mahanadi Shipping Agency,VSL-13,stated,mock ledger
+CPY-47,P&I correspondent,P&I Club / Correspondent,Anchor Point Club Correspondents,VSL-13;VSL-16;VSL-20,stated,mock ledger
+CPY-48,vessel mailbox,Master / Vessel,"Master, MV Kestrel Harbor",VSL-13,stated,mock ledger
+CPY-49,surveyor,Surveyor / Survey Company,Gulf of Kutch Marine Surveyors,VSL-13,stated,mock ledger
+CPY-50,receiver,Shipper / Receiver,Mundra Power Fuels Ltd,VSL-13,stated,mock ledger
+CPY-51,charterer (head),Charterer,Calder Bulk Carriers Pool,VSL-13,stated,mock ledger
+CPY-52,service supplier,Other,Paradeep Divers and Hull Services,VSL-13,stated,mock ledger
+CPY-61,owner,Owner / Manager,Silver Anemone Shipping Co,VSL-14,stated,mock ledger
+CPY-62,charterer (head),Charterer,Harlow Fertilizer Trading,VSL-14,stated,mock ledger
+CPY-63,port agent,Port Agent,Gulf of Aqaba Shipping Services,VSL-14,stated,mock ledger
+CPY-64,port agent,Port Agent,Hooghly Port Agency,VSL-14,stated,mock ledger
+CPY-65,charterer (head),Charterer,Kathiawar Fertilizer Exports,VSL-14,stated,mock ledger
+CPY-68,vessel mailbox,Master / Vessel,"Master, MV Silver Anemone",VSL-14,stated,mock ledger
+CPY-71,owner,Owner / Manager,Tidewater Orchid Navigation,VSL-15,stated,mock ledger
+CPY-72,charterer (head),Charterer,Formosa Salt and Minerals,VSL-15,stated,mock ledger
+CPY-73,port agent,Port Agent,Southern Ports Agency Esperance,VSL-15,stated,mock ledger
+CPY-74,port agent,Port Agent,Kaohsiung Harbour Agency,VSL-15,stated,mock ledger
+CPY-78,vessel mailbox,Master / Vessel,"Master, MV Tidewater Orchid",VSL-15,stated,mock ledger
+CPY-81,owner,Owner / Manager,Gannet Crest Maritime,VSL-16,stated,mock ledger
+CPY-82,charterer (head),Charterer,Rioplata Grain Exports,VSL-16,stated,mock ledger
+CPY-83,port agent,Port Agent,Parana River Agency,VSL-16,stated,mock ledger
+CPY-84,surveyor,Surveyor / Survey Company,Cargo Inspection Services Rosario,VSL-16,stated,mock ledger
+CPY-86,charterer (head),Charterer,Hanbit Steel Raw Materials,VSL-16,stated,mock ledger
+CPY-88,vessel mailbox,Master / Vessel,"Master, MV Gannet Crest",VSL-16,stated,mock ledger
+CPY-91,owner,Owner / Manager,Mistral Quay Ship Owning,VSL-17,stated,mock ledger
+CPY-92,charterer (head),Charterer,Meghna Cement Industries,VSL-17,stated,mock ledger
+CPY-93,port agent,Port Agent,Coromandel Port Agency,VSL-17,stated,mock ledger
+CPY-94,port agent,Port Agent,Karnaphuli Shipping Agency,VSL-17,stated,mock ledger
+CPY-98,vessel mailbox,Master / Vessel,"Master, MV Mistral Quay",VSL-17,stated,mock ledger
+OPR-01,operator / manager,Operator (internal),Meridian Fleet Management,VSL-11;VSL-12;VSL-13;VSL-14;VSL-15;VSL-16;VSL-17;VSL-18;VSL-19;VSL-20,stated,mock ledger

@@ -1,0 +1,38 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "other",
+   "value": "8 Oct 14:00",
+   "ordinal": null,
+   "quote": "8 Oct 14:00"
+  },
+  {
+   "kind": "other",
+   "value": "10 Oct 02:00",
+   "ordinal": null,
+   "quote": "10 Oct 02:00"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 33.5,
+   "unit": "hours",
+   "currency": null,
+   "quote": "33.5 hours"
+  },
+  {
+   "kind": "other",
+   "value": 2300.0,
+   "unit": "USD",
+   "currency": null,
+   "quote": "2300.0 USD"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Charterer"
+}

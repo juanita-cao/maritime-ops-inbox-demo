@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Hire / SOA / Payment",
+   "confidence": 0.9,
+   "quote": "Payment reminder repeating invoice ZC-2291 with a total of USD 31,780."
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.5,
+   "quote": "Dear Colleagues,"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.5,
+   "quote": "- Dues invoice no: ZC-2291"
+  }
+ ]
+}

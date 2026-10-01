@@ -1,0 +1,22 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "BUNBURY",
+   "quote": "BUNBURY"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "sailed",
+   "value": "2026-10-02T13:40:00+08:00",
+   "ordinal": null,
+   "quote": "Sailed at 13:40 LT."
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Master / Vessel"
+}

@@ -1,0 +1,9 @@
+{
+ "email_id": "E095",
+ "text": "From: mail01@karnaphulishippingagency.example\nSent: 2026-10-07 14:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@meghnacementindustries.example\nSubject: VSL-17 CHITTAGONG - CONGESTION, EXPECTED WAITING TIME\n\nDear Colleagues,\n\nAgent: 17 vessels waiting, berth expected in about 9 days (16 Oct) because of a terminal crane breakdown and high water discharge limits.\n\n- Expected berth: 2026-10-16\n- Waiting vessels: 17\n\nBest regards,\nKarnaphuli Shipping Agency\n\n-----Original Message-----\nFrom: mail01@vslmistralquay.example\nSent: 2026-10-07 09:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@karnaphulishippingagency.example\nSubject: VSL-17 ARRIVAL CHITTAGONG OUTER ANCHORAGE - NOR TENDERED\n\nDear Colleagues,\n\nArrived at the outer anchorage, NOR tendered.\n\n- Nor tendered: 2026-10-07 09:00\n\nBest regards,\nMaster MV Mistral Quay",
+ "event_id": "M17006",
+ "vessel": "VSL-17",
+ "thread": "V701-ctg",
+ "scenario": "S14",
+ "event_type": "Port Delay / Congestion / Strike"
+}

@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Verify / Reconcile Report Data",
+   "for_event": "Discharging",
+   "description": "Verify the discharge report data for VSL-15, ensuring the discharge started on 14 Sep at 18:00 and completed on 21 Sep at 06:00, including the recorded rain stoppages of 11.0 hours and shifting of 2.0 hours.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Track Contractual Notice / Deadline",
+   "for_event": "Notice of Readiness / Laytime / Demurrage",
+   "description": "Track the laytime allowed of 124.8 hours for VSL-15, ensuring compliance with the contractual notice and deadlines related to the discharge operations.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

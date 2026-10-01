@@ -1,0 +1,9 @@
+{
+ "email_id": "E114",
+ "text": "From: mail01@meridianfleet.example\nSent: 2026-10-09 10:40:00 UTC+08:00\nTo: mail01@cavendishcementtrading.example\nSubject: RE: VSL-19 V901 - KYC DOCUMENTS FOR PROPOSED SUB-CHARTERER\n\nDear Charterers,\n\nOperator's compliance team asks for the certificate of incorporation, the beneficial owner chart, a 12-month trading record and the cargo origin documents.\n\n- Asks: incorporation, ownership chart, trading record, origin\n\nBest regards,\nMeridian Fleet Management",
+ "event_id": "M19003",
+ "vessel": "VSL-19",
+ "thread": "V901-sub",
+ "scenario": "S16",
+ "event_type": "Sanctions / Compliance / KYC"
+}

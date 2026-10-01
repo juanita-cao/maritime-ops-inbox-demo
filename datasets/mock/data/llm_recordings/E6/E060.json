@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Bunker (Stem / Quote / ROB / Quality)",
+   "confidence": 0.9,
+   "quote": "Stem of 640 MT VLSFO at Port Hedland."
+  },
+  {
+   "event_type": "Voyage Instructions / Port Nomination",
+   "confidence": 0.6,
+   "quote": "Stem price: 612.5 USD per mt"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Owners,"
+  }
+ ]
+}

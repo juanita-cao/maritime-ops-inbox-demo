@@ -1,0 +1,9 @@
+{
+ "email_id": "E110",
+ "text": "From: mail01@vsllumenridge.example\nSent: 2026-10-09 07:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@qingdaoharbouragents.example\nSubject: VSL-20 ARRIVAL REPORT QINGDAO\n\nGood day,\n\nArrival report, VSL-20, V1001.\nDd: 9 Oct 2026\nArrived at 07:20 LT.\nNOR tendered: on arrival\n\nBest regards,\nMaster MV Lumen Ridge",
+ "event_id": "M20004",
+ "vessel": "VSL-20",
+ "thread": "V1001-arr",
+ "scenario": null,
+ "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
+}

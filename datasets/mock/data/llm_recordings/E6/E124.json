@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Off-hire",
+   "confidence": 0.8,
+   "quote": "keeps the right to claim time under the off-hire clause"
+  },
+  {
+   "event_type": "Claim",
+   "confidence": 0.7,
+   "quote": "keeps the right to claim time under the off-hire clause"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Charterer notes the information"
+  }
+ ]
+}

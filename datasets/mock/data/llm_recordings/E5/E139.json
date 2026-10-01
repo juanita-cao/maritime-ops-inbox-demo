@@ -1,0 +1,25 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "delivery",
+   "value": "16 Oct",
+   "ordinal": null,
+   "quote": "by 16 Oct"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "bunker_rob",
+   "value": 585.0,
+   "unit": "USD",
+   "currency": null,
+   "quote": "585.0 USD per mt"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

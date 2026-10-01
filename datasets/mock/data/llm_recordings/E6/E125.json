@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Vessel Defect / Repair / Breakdown",
+   "confidence": 0.9,
+   "quote": "valve was replaced from spares on board"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.5,
+   "quote": "sea trial normal"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.5,
+   "quote": "spare to be replenished at Rizhao"
+  }
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "email_id": "E128",
+ "text": "From: mail01@vsl12.example\nSent: 2026-10-10 12:20:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@brannock.example\nSubject: VSL-12 NOON REPORT 2026-10-10\n\nGood day,\n\nNoon report, VSL-12, V202.\nDd: 10 Oct 2026\nPosition: 47-10N 005-50W at 1200 LT\nCourse/avg spd/rpm/eng slip: 090 / 12.2 / 72 / 3.0\nDaily GPS speed / Log speed: 12.4 / 12.3\nAverage GPS speed / Log Speed: 12.3 / 12.2\nIFO Consumed/LSMGO consumed fm last report: VLSFO 27.0 mt LSMGO 0.0 mt\nWind direction/force/sea cond/vis: NW / 4 / 1.5 M / Good\nWeather condition: NW / 4 Cloudy\nROB: VLSFO 600.2 mt, LSMGO 120.6 mt\nETA: 2026-10-14 18:00 LT\nRemarks: Vessel proceeding normally.\n\nBest regards,\nMaster MV Northern Linden",
+ "event_id": "M12024",
+ "vessel": "VSL-12",
+ "thread": "V202-noon",
+ "scenario": null,
+ "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
+}

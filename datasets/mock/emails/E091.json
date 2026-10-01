@@ -1,0 +1,9 @@
+{
+ "email_id": "E091",
+ "text": "From: mail01@meridianfleet.example\nSent: 2026-10-07 09:00:00 UTC+08:00\nTo: mail01@zulucoast.example\nCc: mail01@ravenscar.example\nSubject: RE: REMINDER: VSL-13 RICHARDS BAY - FINAL DA INV. ZC-2291 OUTSTANDING\n\nDear Sirs,\n\nOperator asks which total is right (31,870 or 31,780) and asks who the pre-loading survey and tally lines belong to under the CP, since charterers appointed the survey.\n\n- Dues invoice no: ZC-2291\n\nBest regards,\nMeridian Fleet Management\n\n-----Original Message-----\nFrom: mail01@zulucoast.example\nSent: 2026-10-01 10:05:00 UTC+08:00\nTo: mail01@meridianfleet.example\nSubject: REMINDER: VSL-13 RICHARDS BAY - FINAL DA INV. ZC-2291 OUTSTANDING\n\nDear Colleagues,\n\nPayment reminder repeating invoice ZC-2291 with a total of USD 31,780.\n\n- Dues invoice no: ZC-2291\n- Dues invoice: 31780.0 USD\n\nBest regards,\nZulu Coast Agencies\n\n-----Original Message-----\nFrom: mail01@zulucoast.example\nSent: 2026-09-08 11:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@ravenscar.example\nSubject: VSL-13 RICHARDS BAY - FINAL DISBURSEMENT ACCOUNT INV. ZC-2291\n\nDear Colleagues,\n\nFinal DA for Richards Bay, invoice ZC-2291, total USD 31,870; includes the pre-loading survey and tallying lines.\n\n- Dues invoice no: ZC-2291\n- Dues invoice: 31870.0 USD\n- Includes: pre-loading survey USD 1,800; tally USD 2,150; port dues; pilotage; tugs\n\nBest regards,\nZulu Coast Agencies",
+ "event_id": "M13020",
+ "vessel": "VSL-13",
+ "thread": "V301-da",
+ "scenario": "S06",
+ "event_type": "Port Agency / Port Costs (DA)"
+}

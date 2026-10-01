@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Review Quotation / Plan / Proposal",
+   "for_event": "Fixture Enquiry / Offer / Counter",
+   "description": "Review the counter offer for freight at USD 19.2 per mt and 3 days demurrage free for vessel VSL-11.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Track Contractual Notice / Deadline",
+   "for_event": "Notice of Readiness / Laytime / Demurrage",
+   "description": "Track the demurrage terms of 19,500 USD per day as part of the contractual obligations for vessel VSL-11.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

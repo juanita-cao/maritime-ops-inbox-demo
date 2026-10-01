@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Off-hire",
+   "description": "Prepare the claim for the off-hire period of 40.8 hours for vessel VSL-20 at QINGDAO.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Collect / Chase Documents",
+   "for_event": "Inspection / Vetting / PSC",
+   "description": "Collect the inspection report and the class certificate requested by the charterer for vessel VSL-20.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

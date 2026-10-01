@@ -1,0 +1,11 @@
+{
+ "items": [
+  {
+   "action_type": "Check Hire / Invoice / Payment",
+   "for_event": "Hire / SOA / Payment",
+   "description": "Verify the hire payment for VSL-16, which is due on 2026-10-16, and ensure the rate of 14,300 USD per day is correctly processed.",
+   "due": "2026-10-16",
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

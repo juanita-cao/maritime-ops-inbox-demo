@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Port Delay / Congestion / Strike",
+   "confidence": 0.9,
+   "quote": "17 vessels waiting, berth expected in about 9 days"
+  },
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.7,
+   "quote": "Expected berth: 2026-10-16"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Verify / Reconcile Report Data",
+   "for_event": "Weather Routing / Speed & Consumption",
+   "description": "Verify the weather routing data for VSL-14 during the 6 good-weather days, ensuring the average speed of 12.45 knots and consumption of 27.6 mt per day are accurately reported.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Claim",
+   "description": "Prepare to record evidence regarding the claim related to the warranty, including the weather analysis for the 6 good-weather days as requested by the charterer.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

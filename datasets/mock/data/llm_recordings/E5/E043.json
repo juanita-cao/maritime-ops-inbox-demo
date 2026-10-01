@@ -1,0 +1,53 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 8866.67,
+   "unit": "USD",
+   "currency": null,
+   "quote": "Demurrage: 8866.67 USD"
+  },
+  {
+   "kind": "other",
+   "value": 18.0,
+   "unit": "hours",
+   "currency": null,
+   "quote": "Rain stoppage: 18.0 hours"
+  },
+  {
+   "kind": "other",
+   "value": 2.0,
+   "unit": "hours",
+   "currency": null,
+   "quote": "2.0 hours of shifting"
+  },
+  {
+   "kind": "other",
+   "value": 160.0,
+   "unit": "hours",
+   "currency": null,
+   "quote": "Laytime used: 160.0 hours"
+  },
+  {
+   "kind": "other",
+   "value": 124.8,
+   "unit": "hours",
+   "currency": null,
+   "quote": "Laytime allowed: 124.8 hours"
+  },
+  {
+   "kind": "other",
+   "value": 14000,
+   "unit": "USD",
+   "currency": null,
+   "quote": "Demurrage rate: 14,000 USD per day"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Charterer"
+}

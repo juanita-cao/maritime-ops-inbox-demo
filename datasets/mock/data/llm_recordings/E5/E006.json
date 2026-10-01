@@ -1,0 +1,22 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "RICHARDS BAY",
+   "quote": "RICHARDS BAY"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "sailed",
+   "value": "30 Aug 2026",
+   "ordinal": null,
+   "quote": "Dd: 30 Aug 2026"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Master / Vessel"
+}

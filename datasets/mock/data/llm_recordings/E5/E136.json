@@ -1,0 +1,37 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "other",
+   "value": "10 OCT 2026",
+   "ordinal": null,
+   "quote": "10 OCT 2026"
+  },
+  {
+   "kind": "other",
+   "value": "2026-10-10T16:30:00+08:00",
+   "ordinal": null,
+   "quote": "2026-10-10T16:30:00+08:00"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 6.0,
+   "unit": "hours",
+   "currency": null,
+   "quote": "6.0 hours"
+  }
+ ],
+ "cp_references": [],
+ "references": [
+  {
+   "kind": "other",
+   "value": "clause 17",
+   "quote": "clause 17"
+  }
+ ],
+ "author_hint": "Charterer"
+}

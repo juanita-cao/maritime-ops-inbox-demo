@@ -1,0 +1,9 @@
+{
+ "email_id": "E094",
+ "text": "From: mail01@seinemaritime.example\nSent: 2026-10-07 11:30:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@brannock.example\nSubject: VSL-12 ROUEN - ETA NOTICE AND LOADING PLAN\n\nDear Colleagues,\n\nAgent: berth confirmed, loading 7-8 Oct, 49,800 mt wheat.\n\n- Cargo qty: 49,800 mt\n\nBest regards,\nSeine Maritime Agency",
+ "event_id": "M12019",
+ "vessel": "VSL-12",
+ "thread": "V202-rou",
+ "scenario": null,
+ "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
+}

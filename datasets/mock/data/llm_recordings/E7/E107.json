@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Collect / Chase Documents",
+   "for_event": "Inspection / Vetting / PSC",
+   "description": "Collect the necessary documents related to the inspection of VSL-16, focusing on the rejected holds 2 and 5 due to coal dust and rust scale.",
+   "due": "2026-10-08",
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Reply / Confirm to Counterparty",
+   "for_event": "Hold Cleaning / Cargo Hold Condition",
+   "description": "Confirm with the counterparty regarding the cleaning requirements for the rejected holds 2 and 5 of VSL-16.",
+   "due": "2026-10-08",
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)",
+   "confidence": 0.9,
+   "quote": "Arrival report, VSL-11, V101."
+  },
+  {
+   "event_type": "Notice of Readiness / Laytime / Demurrage",
+   "confidence": 0.8,
+   "quote": "NOR tendered: 2026-09-18 21:30"
+  },
+  {
+   "event_type": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "confidence": 0.7,
+   "quote": "Arrived at 21:40 LT."
+  }
+ ]
+}

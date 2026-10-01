@@ -1,0 +1,43 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "Richards Bay",
+   "quote": "Richards Bay"
+  }
+ ],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 31870.0,
+   "unit": "USD",
+   "currency": "USD",
+   "quote": "31870.0 USD"
+  },
+  {
+   "kind": "other",
+   "value": 1800,
+   "unit": "USD",
+   "currency": "USD",
+   "quote": "USD 1,800"
+  },
+  {
+   "kind": "other",
+   "value": 2150,
+   "unit": "USD",
+   "currency": "USD",
+   "quote": "USD 2,150"
+  }
+ ],
+ "cp_references": [],
+ "references": [
+  {
+   "kind": "invoice",
+   "value": "ZC-2291",
+   "quote": "invoice ZC-2291"
+  }
+ ],
+ "author_hint": null
+}

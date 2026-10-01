@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Off-hire",
+   "confidence": 0.9,
+   "quote": "Charterer notifies off-hire for the detention period (40.8 hours)"
+  },
+  {
+   "event_type": "Inspection / Vetting / PSC",
+   "confidence": 0.7,
+   "quote": "asks for the inspection report and the class certificate"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

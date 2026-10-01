@@ -1,0 +1,9 @@
+family,event_type,note
+cash_and_costs,"Cash to Master / Supply (CTM, Fresh Water, Provisions)",a quotation request and the invoice for its fee can be one matter
+cash_and_costs,Port Agency / Port Costs (DA),
+survey,Survey Arrangement / Quotation,"a P&I case, a survey and its quotation are usually one thread"
+survey,P&I / Insurance,
+survey,Inspection / Vetting / PSC,
+schedule_and_orders,Vessel Schedule Update (ETA/ETB/ETD),"schedule changes, orders and delays are often discussed in one thread"
+schedule_and_orders,Voyage Instructions / Port Nomination,
+schedule_and_orders,Port Delay / Congestion / Strike,

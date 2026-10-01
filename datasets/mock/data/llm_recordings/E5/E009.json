@@ -1,0 +1,23 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "sailed",
+   "value": "2 Sep 2026",
+   "ordinal": null,
+   "quote": "Dd: 2 Sep 2026"
+  },
+  {
+   "kind": "sailed",
+   "value": "14:40 LT",
+   "ordinal": null,
+   "quote": "Sailed at 14:40 LT."
+  }
+ ],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Master / Vessel"
+}

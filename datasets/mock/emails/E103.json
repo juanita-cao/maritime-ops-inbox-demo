@@ -1,0 +1,9 @@
+{
+ "email_id": "E103",
+ "text": "From: mail01@pelhambrokers.example\nSent: 2026-10-08 11:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nSubject: VSL-12 - ENQUIRY: SOYBEAN MEAL SANTOS / ANTWERP 51,000 MT\n\nDear Colleagues,\n\nBroker enquiry for a voyage after redelivery, open Casablanca late October.\n\n- Laycan: 2026-11-05 to 2026-11-15\n- Cargo qty: 51,000 mt\n- Freight: 29.5 USD per mt\n\nBest regards,\nPelham Shipbrokers",
+ "event_id": "M12020",
+ "vessel": "VSL-12",
+ "thread": "V203-fix",
+ "scenario": null,
+ "event_type": "Fixture Enquiry / Offer / Counter"
+}

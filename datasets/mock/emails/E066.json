@@ -1,0 +1,9 @@
+{
+ "email_id": "E066",
+ "text": "From: mail01@redseamaritime.example\nSent: 2026-10-03 10:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@ravenscar.example\nSubject: VSL-13 AQABA - LOADING COMPLETED\n\nDear Colleagues,\n\nAgent: urea loading finished 3 Oct.\n\n- Cargo qty: 55,300 mt\n\nBest regards,\nRed Sea Maritime Agency",
+ "event_id": "M13015",
+ "vessel": "VSL-13",
+ "thread": "V302-load",
+ "scenario": null,
+ "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
+}

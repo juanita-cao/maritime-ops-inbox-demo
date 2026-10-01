@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "LOI (Letter of Indemnity)",
+   "confidence": 0.9,
+   "quote": "LOI covers 370 mt, signed by charterer only."
+  },
+  {
+   "event_type": "Survey Arrangement / Quotation",
+   "confidence": 0.7,
+   "quote": "Charterer sends the receiver's survey report"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Update Vessel Schedule (ETA/ETB/ETD)",
+   "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "description": "Update the vessel schedule for VSL-12 to reflect the arrival at Rotterdam on 2026-09-22 at 10:00.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Notify Party (Agent / P&I / Manager)",
+   "for_event": "Vessel Schedule Update (ETA/ETB/ETD)",
+   "description": "Notify the relevant parties about the arrival of VSL-12 at Rotterdam on 2026-09-22 at 10:00.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

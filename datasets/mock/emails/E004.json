@@ -1,0 +1,9 @@
+{
+ "email_id": "E004",
+ "text": "From: mail01@zulucoast.example\nSent: 2026-08-29 18:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@ravenscar.example\nSubject: VSL-13 RICHARDS BAY - LOADING COMPLETED\n\nDear Colleagues,\n\nAgent: loading finished 29 Aug 17:30, documents on board.\n\n- Cargo qty: 61,200 mt\n- Bl qty: 61,200 mt\n\nBest regards,\nZulu Coast Agencies",
+ "event_id": "M13001",
+ "vessel": "VSL-13",
+ "thread": "V301-load",
+ "scenario": null,
+ "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
+}

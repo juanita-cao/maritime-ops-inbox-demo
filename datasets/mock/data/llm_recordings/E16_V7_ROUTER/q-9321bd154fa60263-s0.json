@@ -1,0 +1,9 @@
+{
+ "execution_mode": "deterministic",
+ "deterministic_intent": "review_queue",
+ "answer_size": "short",
+ "standalone_question": "",
+ "search_terms": [],
+ "playbook": null,
+ "reason": ""
+}

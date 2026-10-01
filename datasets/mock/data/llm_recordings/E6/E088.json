@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Bunker (Stem / Quote / ROB / Quality)",
+   "confidence": 0.9,
+   "quote": "Independent lab result for the retained sample: sulphur 0.54%;"
+  },
+  {
+   "event_type": "Survey Arrangement / Quotation",
+   "confidence": 0.7,
+   "quote": "the report states a test tolerance of 0.05 on the 0.50% limit;"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues,"
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [],
+ "quantities": [
+  {
+   "kind": "other",
+   "value": 38.6,
+   "unit": "mt",
+   "currency": null,
+   "quote": "38.6 mt"
+  }
+ ],
+ "cp_references": [
+  {
+   "text": "clause 32",
+   "quote": "Cp clause cited: clause 32"
+  }
+ ],
+ "references": [
+  {
+   "kind": "claim",
+   "value": "31266.0 USD",
+   "quote": "Claim amount: 31266.0 USD"
+  }
+ ],
+ "author_hint": "Charterer"
+}

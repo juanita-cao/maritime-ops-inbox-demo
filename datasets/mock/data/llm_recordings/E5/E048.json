@@ -1,0 +1,31 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "payment",
+   "value": "1 Oct",
+   "ordinal": null,
+   "quote": "payment due 1 Oct"
+  },
+  {
+   "kind": "laycan",
+   "value": "1 Oct - 15 Oct 2026",
+   "ordinal": null,
+   "quote": "Hire period: 1 Oct - 15 Oct 2026"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "amount",
+   "value": 15400,
+   "unit": "USD",
+   "currency": null,
+   "quote": "USD 15,400 per day"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": null
+}

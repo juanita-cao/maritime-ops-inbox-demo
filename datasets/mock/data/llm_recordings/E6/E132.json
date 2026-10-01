@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Notice of Readiness / Laytime / Demurrage",
+   "confidence": 0.9,
+   "quote": "demurrage documents; documents were sent on 28 Sep"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.5,
+   "quote": "Charterer will check the weather records with the receivers and revert"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "notes the CP time bar of 90 days from discharge"
+  }
+ ]
+}

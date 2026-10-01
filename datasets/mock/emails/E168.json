@@ -1,0 +1,9 @@
+{
+ "email_id": "E168",
+ "text": "From: mail01@atlasport.example\nSent: 2026-10-12 15:00:00 UTC+08:00\nTo: mail01@meridianfleet.example\nCc: mail01@brannock.example\nSubject: VSL-12 CASABLANCA - ETA NOTICE AND BERTHING\n\nDear Colleagues,\n\nAgent: pilot 18:00 on 14 Oct, berth 20:30, discharge 15-16 Oct.\n\nBest regards,\nAtlas Port Agency",
+ "event_id": "M12032",
+ "vessel": "VSL-12",
+ "thread": "V202-cas",
+ "scenario": null,
+ "event_type": "Vessel Report (Noon / Arrival / Berthing / Sailing / Daily)"
+}

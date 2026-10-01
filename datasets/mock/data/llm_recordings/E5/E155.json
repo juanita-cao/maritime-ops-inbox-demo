@@ -1,0 +1,31 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "payment",
+   "value": "15 Oct",
+   "ordinal": null,
+   "quote": "15 Oct"
+  },
+  {
+   "kind": "hire_due",
+   "value": "2026-10-16",
+   "ordinal": null,
+   "quote": "2026-10-16"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "off-hire",
+   "value": 6.0,
+   "unit": "h",
+   "currency": null,
+   "quote": "6.0 h off-hire"
+  }
+ ],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Charterer"
+}

@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Off-hire",
+   "description": "Prepare the necessary documentation and evidence related to the off-hire of vessel VSL-18 for voyage V801, as the charterer intends to claim time under the off-hire clause.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Claim",
+   "description": "Request the hospital certificate from the relevant parties to support the claim related to the off-hire of vessel VSL-18 for voyage V801.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

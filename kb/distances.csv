@@ -1,0 +1,2 @@
+port_a,port_b,distance_nm,aliases_a,aliases_b,source,as_of,note
+Tianjin,Singapore,2768,天津;天津港;Xingang,新加坡;新加坡港,NetPAS 距离查询,2026-10-01,"distance as looked up by the owner in NetPAS; the route option was not recorded"

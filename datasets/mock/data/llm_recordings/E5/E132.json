@@ -1,0 +1,28 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [],
+ "dates": [
+  {
+   "kind": "other",
+   "value": "28 Sep",
+   "ordinal": null,
+   "quote": "28 Sep"
+  },
+  {
+   "kind": "other",
+   "value": "2026-10-10T14:30:00+08:00",
+   "ordinal": null,
+   "quote": "2026-10-10T14:30:00+08:00"
+  }
+ ],
+ "quantities": [],
+ "cp_references": [
+  {
+   "text": "CP time bar of 90 days from discharge for demurrage documents",
+   "quote": "CP time bar of 90 days from discharge for demurrage documents"
+  }
+ ],
+ "references": [],
+ "author_hint": "Charterer"
+}

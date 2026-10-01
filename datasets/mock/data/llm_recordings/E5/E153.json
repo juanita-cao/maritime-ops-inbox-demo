@@ -1,0 +1,19 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "Rizhao anchorage",
+   "quote": "Rizhao anchorage"
+  },
+  {
+   "text": "Newcastle anchorage",
+   "quote": "Newcastle anchorage"
+  }
+ ],
+ "dates": [],
+ "quantities": [],
+ "cp_references": [],
+ "references": [],
+ "author_hint": "Operator (internal)"
+}

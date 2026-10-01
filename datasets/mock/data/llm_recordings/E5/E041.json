@@ -1,0 +1,36 @@
+{
+ "vessel_mentions": [],
+ "voyage_numbers": [],
+ "ports": [
+  {
+   "text": "ROTTERDAM",
+   "quote": "ROTTERDAM"
+  }
+ ],
+ "dates": [
+  {
+   "kind": "delivery",
+   "value": "2026-09-26",
+   "ordinal": null,
+   "quote": "26 SEP"
+  }
+ ],
+ "quantities": [
+  {
+   "kind": "bunker_rob",
+   "value": 600,
+   "unit": "mt",
+   "currency": null,
+   "quote": "600 mt"
+  }
+ ],
+ "cp_references": [],
+ "references": [
+  {
+   "kind": "other",
+   "value": "RBS-26-0917",
+   "quote": "RBS-26-0917"
+  }
+ ],
+ "author_hint": null
+}

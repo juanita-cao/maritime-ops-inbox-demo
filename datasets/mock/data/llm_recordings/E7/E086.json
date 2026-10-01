@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Off-hire",
+   "description": "Prepare a claim for the off-hire period of 11.5 hours for vessel VSL-12 due to the terminal berth being occupied at ROTTERDAM.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Notify Party (Agent / P&I / Manager)",
+   "for_event": "Port Delay / Congestion / Strike",
+   "description": "Notify the relevant parties about the port delay caused by the terminal berth being occupied at ROTTERDAM.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Check Hire / Invoice / Payment",
+   "for_event": "Hire / SOA / Payment",
+   "description": "Verify the hire statement for VSL-12, ensuring the payment of USD 15,400 per day is processed by the due date of 2026-10-01.",
+   "due": "2026-10-01",
+   "owner_role": "Finance Officer"
+  },
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Off-hire",
+   "description": "Document the off-hire deduction related to the Rotterdam delay as notified by the charterer for VSL-12.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

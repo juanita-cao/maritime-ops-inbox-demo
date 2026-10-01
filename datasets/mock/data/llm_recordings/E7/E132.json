@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Track Contractual Notice / Deadline",
+   "for_event": "Notice of Readiness / Laytime / Demurrage",
+   "description": "Track the 90-day time bar for demurrage documents starting from the discharge date, which is 28 Sep.",
+   "due": "2026-12-28",
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Notice of Readiness / Laytime / Demurrage",
+   "description": "Prepare to record evidence related to the demurrage documents sent by the owners' side on 28 Sep.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

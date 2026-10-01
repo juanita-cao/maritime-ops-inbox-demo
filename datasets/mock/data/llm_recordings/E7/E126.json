@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Reply / Confirm to Counterparty",
+   "for_event": "Hold Cleaning / Cargo Hold Condition",
+   "description": "Confirm to the charterer that the 33.5 hours from the failed inspection on 8 Oct at 14:00 to the pass on 10 Oct at 02:00 will be treated as off-hire and that the cost of the hold washing chemicals of USD 2,300 will be borne.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Claim",
+   "description": "Prepare a claim for the off-hire period of 33.5 hours due to the failed inspection and document the associated costs, including the USD 2,300 for the hold washing chemicals.",
+   "due": null,
+   "owner_role": "Claims Officer"
+  }
+ ]
+}

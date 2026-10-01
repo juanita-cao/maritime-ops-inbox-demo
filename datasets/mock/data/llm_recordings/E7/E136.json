@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Prepare Claim / Record Evidence",
+   "for_event": "Off-hire",
+   "description": "Prepare a claim for the off-hire of VSL-11 for 6.0 hours as per clause 17, documenting the details of the stoppage and speed shortfall.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Reserve Rights / Reply Without Prejudice",
+   "for_event": "Off-hire",
+   "description": "Draft a response to the charterer regarding the off-hire notification, reserving rights under the contract and replying without prejudice.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

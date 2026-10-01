@@ -1,0 +1,18 @@
+{
+ "items": [
+  {
+   "action_type": "Confirm Bunker ROB / Stem",
+   "for_event": "Bunker (Stem / Quote / ROB / Quality)",
+   "description": "Confirm the Bunker ROB for vessel VSL-12 in light of the charterer's claim regarding non-compliant fuel at 0.54%.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Collect / Chase Documents",
+   "for_event": "Inspection / Vetting / PSC",
+   "description": "Collect necessary documents related to the fuel compliance issue for vessel VSL-12 to prepare for any potential port state control actions.",
+   "due": null,
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

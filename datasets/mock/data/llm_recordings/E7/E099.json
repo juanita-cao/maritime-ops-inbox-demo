@@ -1,0 +1,25 @@
+{
+ "items": [
+  {
+   "action_type": "Notify Party (Agent / P&I / Manager)",
+   "for_event": "Crew (Change / Medical)",
+   "description": "Notify the P&I club about the need for hospital examination and repatriation for the crew member on VSL-18, as advised by the doctor, within 12 hours.",
+   "due": "2026-10-09",
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Reply / Confirm to Counterparty",
+   "for_event": "Voyage Instructions / Port Nomination",
+   "description": "Confirm the proposed landing at Benoa for VSL-18 as per the correspondent's suggestion.",
+   "due": "2026-10-09",
+   "owner_role": "Operations Officer"
+  },
+  {
+   "action_type": "Notify Party (Agent / P&I / Manager)",
+   "for_event": "P&I / Insurance",
+   "description": "Inform the P&I club about the costs associated with the hospital and repatriation for the crew member on VSL-18.",
+   "due": "2026-10-09",
+   "owner_role": "Operations Officer"
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "items": [
+  {
+   "event_type": "Discharging",
+   "confidence": 0.9,
+   "quote": "Discharge completed"
+  },
+  {
+   "event_type": "Hold Cleaning / Cargo Hold Condition",
+   "confidence": 0.8,
+   "quote": "holds swept and washed for the next cargo"
+  },
+  {
+   "event_type": "General / FYI",
+   "confidence": 0.3,
+   "quote": "Dear Colleagues"
+  }
+ ]
+}
