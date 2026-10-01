@@ -789,14 +789,37 @@ _MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct",
 
 
 def _short(text: str, limit: int = 110) -> str:
+    """The first sentence, cut at a clause boundary, never with an ellipsis; a sentence that is too long is dropped to its label."""
     first = re.split(r"(?<=[.;])\s", text.strip())[0].rstrip(".;")
-    return first if len(first) <= limit else first[: limit - 1].rstrip() + "…"
+    if len(first) <= limit:
+        return first
+    clause = re.split(r"[,;]", first)[0].strip()
+    return clause if len(clause) <= limit else ""
 
 
-def _due_line(d, zh: bool) -> str:
-    kind = d.due_other if d.due_type == "Others" and d.due_other else str(d.due_type)
-    when = f"{d.due_date.month}/{d.due_date.day}" if zh else f"{d.due_date.day} {_MONTHS[d.due_date.month - 1]}"
-    return f"{when} · {d.vessel} · {kind}: {_short(d.action)}"
+def _when(d, zh: bool) -> str:
+    return f"{d.due_date.month}/{d.due_date.day}" if zh else f"{d.due_date.day} {_MONTHS[d.due_date.month - 1]}"
+
+
+def _kind(d) -> str:
+    return d.due_other if d.due_type == "Others" and d.due_other else str(d.due_type)
+
+
+def _due_lines(rows, zh: bool) -> list[str]:
+    """One line per (date, kind): several vessels due on the same day for the same thing are one line (a summary, not a list of sentences)."""
+    groups: dict[tuple, list] = {}
+    for d in rows:
+        groups.setdefault((d.due_date, _kind(d)), []).append(d)
+    lines = []
+    for (_, kind), items in groups.items():
+        if len(items) > 1:
+            who = ", ".join(sorted({d.vessel for d in items}))
+            lines.append(f"{_when(items[0], zh)} · {kind}：{who}" if zh else f"{_when(items[0], zh)} · {kind}: {who}")
+        else:
+            d = items[0]
+            note = _short(d.action, 90)
+            lines.append(f"{_when(d, zh)} · {d.vessel} · {kind}" + (f"：{note}" if zh and note else f": {note}" if note else ""))
+    return lines
 
 
 def dues_rendered(question: str, context: ChatContext, zh: bool, today: str) -> ChatAnswer | None:
@@ -813,17 +836,18 @@ def dues_rendered(question: str, context: ChatContext, zh: bool, today: str) -> 
     day = date.fromisoformat(today[:10])
     upcoming = [d for d in rows if day <= d.due_date <= day + timedelta(days=horizon)]
     overdue = [d for d in rows if d.due_date < day]
-    shown = upcoming[:8]
+    lines = _due_lines(upcoming, zh)
+    late_who = [f"{d.vessel} {_when(d, zh)}" for d in overdue[:8]]
+    late_more = len(overdue) - len(late_who)
     if zh:
         head = f"未来 {horizon} 天内到期共 {len(upcoming)} 项" + (f"，另有 {len(overdue)} 项已逾期" if overdue else "") + ("：" if upcoming else "。")
-        more = f"\n另有 {len(upcoming) - len(shown)} 项，可在 Action 页面查看全部。" if len(upcoming) > len(shown) else ""
-        late = "\n已逾期：" + "；".join(f"{d.vessel} {d.due_date.month}/{d.due_date.day}" for d in overdue[:4]) + ("…" if len(overdue) > 4 else "") if overdue else ""
+        late = ("\n已逾期：" + "；".join(late_who) + (f" 等 {late_more} 项" if late_more > 0 else "")) if overdue else ""
     else:
         head = f"Dues in the next {horizon} days: {len(upcoming)}" + (f", plus {len(overdue)} overdue" if overdue else "") + (":" if upcoming else ".")
-        more = f"\n{len(upcoming) - len(shown)} more on the Action page." if len(upcoming) > len(shown) else ""
-        late = "\nOverdue: " + "; ".join(f"{d.vessel} {d.due_date.day} {_MONTHS[d.due_date.month - 1]}" for d in overdue[:4]) + ("…" if len(overdue) > 4 else "") if overdue else ""
-    text = head + ("\n" + "\n".join(f"- {_due_line(d, zh)}" for d in shown) if shown else "") + more + late
-    sources = [SourceRef(kind="task", id=d.task_id, label=_short(d.action, 60)) for d in (shown or overdue)[:6]]
+        late = ("\nOverdue: " + "; ".join(late_who) + (f" and {late_more} more" if late_more > 0 else "")) if overdue else ""
+    shown = upcoming
+    text = head + ("\n" + "\n".join(f"- {x}" for x in lines) if lines else "") + late
+    sources = [SourceRef(kind="task", id=d.task_id, label=f"{_kind(d)} · {d.vessel}") for d in (shown or overdue)[:6]]
     return ChatAnswer(text=text, sources=sources, llm_status="ok", execution_mode="deterministic", capability_authority="supported_l1",
                       evidence_status="sufficient", reasoning_trace=[f"Deterministic filter: dues, {len(upcoming)} upcoming and {len(overdue)} overdue rows written in code, no model call"])  # fmt: skip
 

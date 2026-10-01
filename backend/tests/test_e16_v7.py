@@ -645,10 +645,10 @@ def test_dues_are_written_in_code_in_the_questions_language_with_upcoming_first_
     ctx = context_with_dues([row("T1", "VSL-01", "2026-10-16"), row("T2", "VSL-02", "2026-10-16"), row("T3", "VSL-03", "2026-10-01", overdue=True),
                              row("T4", "VSL-04", "2026-11-19", kind="Others")])
     en = v7.dues_rendered("Which dues are in the next 7 days?", ctx, False, "2026-10-12")
-    assert en.text.startswith("Dues in the next 7 days: 2, plus 1 overdue") and "- 16 Oct · VSL-01 · Hire: Verify the payment for VSL-01" in en.text
-    assert "Overdue: VSL-03 1 Oct" in en.text and "VSL-04" not in en.text and [s.id for s in en.sources] == ["T1", "T2"]
+    assert en.text.startswith("Dues in the next 7 days: 2, plus 1 overdue") and "- 16 Oct · Hire: VSL-01, VSL-02" in en.text  # two vessels, one line
+    assert "Overdue: VSL-03 1 Oct" in en.text and "VSL-04" not in en.text and [s.id for s in en.sources] == ["T1", "T2"] and "…" not in en.text
     zh = v7.dues_rendered("未来 30 天有哪些到期？", ctx, True, "2026-10-12")
-    assert zh.text.startswith("未来 30 天内到期共 2 项，另有 1 项已逾期") and "- 10/16 · VSL-01" in zh.text
+    assert zh.text.startswith("未来 30 天内到期共 2 项，另有 1 项已逾期") and "- 10/16 · Hire：VSL-01, VSL-02" in zh.text
     assert v7.dues_rendered("dues?", context_with_dues([]), False, "2026-10-12") is None
 
 

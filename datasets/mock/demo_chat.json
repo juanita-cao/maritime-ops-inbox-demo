@@ -2,37 +2,37 @@
  {
   "question": "Which dues are in the next 7 days?",
   "answer": {
-   "text": "Dues in the next 7 days: 8, plus 6 overdue:\n- 16 Oct · VSL-01 · Hire: Verify the payment of 258,750 USD for VSL-01, which is due on 2026-10-16\n- 16 Oct · VSL-04 · Hire: Verify the hire statement for VSL-04 with a hire rate of 11,800 USD per day, ensuring the next payment is due…\n- 16 Oct · VSL-05 · Hire: Verify the hire statement for VSL-05 with a hire rate of 12,900 USD per day, ensuring the next payment is due…\n- 16 Oct · VSL-06 · Hire: Verify the hire payment for VSL-06, which is due on 2026-10-16, and ensure the rate of 14,300 USD per day is…\n- 16 Oct · VSL-07 · Hire: Verify the hire payment for VSL-07, which is due on 2026-10-16, and ensure the rate of 10,400 USD per day is…\n- 16 Oct · VSL-08 · Hire: Verify the hire payment for VSL-08, which is due on 2026-10-16, and ensure the rate of 13,200 USD per day is…\n- 16 Oct · VSL-09 · Hire: Verify the hire payment for vessel VSL-09 at the rate of 14,900 USD per day, with the next payment due on 202…\n- 16 Oct · VSL-10 · Hire: Verify the hire payment for vessel VSL-10, with the next payment due on 2026-10-16, at the rate of 18,600 USD…\nOverdue: VSL-02 20 Sep; VSL-02 1 Oct; VSL-01 2 Oct; VSL-03 3 Oct…",
+   "text": "Dues in the next 7 days: 8, plus 6 overdue:\n- 16 Oct · Hire: VSL-01, VSL-04, VSL-05, VSL-06, VSL-07, VSL-08, VSL-09, VSL-10\nOverdue: VSL-02 20 Sep; VSL-02 1 Oct; VSL-01 2 Oct; VSL-03 3 Oct; VSL-06 8 Oct; VSL-08 9 Oct",
    "sources": [
     {
      "kind": "task",
      "id": "T-c9feabeb73",
-     "label": "Verify the payment of 258,750 USD for VSL-01, which is due…"
+     "label": "Hire · VSL-01"
     },
     {
      "kind": "task",
      "id": "T-d2f6c2edb2",
-     "label": "Verify the hire statement for VSL-04 with a hire rate of 11…"
+     "label": "Hire · VSL-04"
     },
     {
      "kind": "task",
      "id": "T-89b1b28db1",
-     "label": "Verify the hire statement for VSL-05 with a hire rate of 12…"
+     "label": "Hire · VSL-05"
     },
     {
      "kind": "task",
      "id": "T-df58bb6b67",
-     "label": "Verify the hire payment for VSL-06, which is due on 2026-10…"
+     "label": "Hire · VSL-06"
     },
     {
      "kind": "task",
      "id": "T-078c93cac3",
-     "label": "Verify the hire payment for VSL-07, which is due on 2026-10…"
+     "label": "Hire · VSL-07"
     },
     {
      "kind": "task",
      "id": "T-8fce579ad2",
-     "label": "Verify the hire payment for VSL-08, which is due on 2026-10…"
+     "label": "Hire · VSL-08"
     }
    ],
    "draft": null,
@@ -59,7 +59,7 @@
    },
    "model_note": "Hybrid — gpt-4o-mini only (no reasoning model needed for this answer)"
   },
-  "recorded_at": "2026-10-01T20:22:20+08:00",
+  "recorded_at": "2026-10-01T20:30:10+08:00",
   "model": "hybrid"
  },
  {

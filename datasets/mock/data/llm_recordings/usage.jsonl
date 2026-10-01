@@ -529,3 +529,6 @@
 {"node": "E16_V7_ROUTER", "key": "q-a819f1e24b4ca0d6-s0", "model": "gpt-4o-mini", "prompt_version": "1508a3a6f7", "input_tokens": 1374, "output_tokens": 55}
 {"node": "E16_V7", "key": "q-a819f1e24b4ca0d6", "model": "gpt-5.5", "prompt_version": "31a3cb3222", "input_tokens": 17329, "output_tokens": 19}
 {"node": "E16_V7", "key": "q-a819f1e24b4ca0d6", "model": "gpt-5.5", "prompt_version": "31a3cb3222", "input_tokens": 17532, "output_tokens": 558}
+{"node": "E16_V7_ROUTER", "key": "q-2c12c1b54992d11e-s0", "model": "gpt-4o-mini", "prompt_version": "1508a3a6f7", "input_tokens": 1353, "output_tokens": 39}
+{"node": "E16_V7_ROUTER", "key": "q-2c12c1b54992d11e-s1", "model": "gpt-4o-mini", "prompt_version": "1508a3a6f7", "input_tokens": 1353, "output_tokens": 50}
+{"node": "E16_V7_ROUTER", "key": "q-2c12c1b54992d11e-s2", "model": "gpt-4o-mini", "prompt_version": "1508a3a6f7", "input_tokens": 1353, "output_tokens": 39}
