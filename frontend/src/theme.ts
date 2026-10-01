@@ -7,8 +7,9 @@ import type { NeedsAction } from './api/types'
 
 export type ModeId = 'light' | 'maritime' | 'sakura' | 'neon' | 'bluewater'
 
-// [AMENDMENT 2026-09-28 UI round U18, owner] Blue Water is the default mode
-export const DEFAULT_MODE: ModeId = 'bluewater'
+// [AMENDMENT 2026-09-28 UI round U18, owner] Blue Water was the default mode
+// [AMENDMENT 2026-10-01, owner] the default is Maritime Pro (a visitor who has chosen a mode keeps it: localStorage 'mm-mode')
+export const DEFAULT_MODE: ModeId = 'maritime'
 
 interface Palette {
   accent: string; accentBg: string; bg: string; surface: string; surface2: string; border: string
