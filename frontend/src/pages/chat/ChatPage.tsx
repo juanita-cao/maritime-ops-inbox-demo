@@ -109,7 +109,7 @@ export function ChatPage({ dispatch, turns, setTurns, now, actionTypes, onDataCh
 }) {
   const [input, setInput] = useState('')
   const [sending, setSending] = useState(false)
-  const [model, setModel] = useState<string | null>(savedChatModel)
+  const [model, setModel] = useState<string | null>(DEBUG ? savedChatModel : null) // visitors always get the default (hybrid); the picker is for testing
   const end = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -155,7 +155,7 @@ export function ChatPage({ dispatch, turns, setTurns, now, actionTypes, onDataCh
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
           <Button icon={<PlusOutlined />} onClick={() => setTurns(() => [])} disabled={sending || turns.length === 0}>New chat</Button>
-          <ChatModelPicker value={model} onChange={setModel} />
+          {DEBUG && <ChatModelPicker value={model} onChange={setModel} />}
           <ModePicker />
         </div>
       </div>
