@@ -134,9 +134,11 @@ def taxonomy() -> dict[str, list[str]]:
     return kb.taxonomy
 
 
+_LATEST_STATUSES = ("open", "applied", "rejected", "held_blocked", "held_store_unavailable")
+
+
 def _latest(store: Store, email_id: str) -> dict | None:
-    rows = [r for r in store.proposal_rows(("open", "applied", "rejected", "held_blocked", "held_store_unavailable"))
-            if r["email_id"] == email_id]  # fmt: skip
+    rows = [r for r in store.proposal_rows(_LATEST_STATUSES) if r["email_id"] == email_id]
     return rows[-1] if rows else None
 
 
@@ -166,10 +168,13 @@ def _inbox_row(email: s.ParsedEmail, latest: dict | None) -> InboxRow:
 
 @app.get("/api/emails")
 def list_emails(store: Store = Depends(get_store)) -> list[InboxRow]:
+    # the proposals are read once, not once per email: 168 emails took 9 s on the small Render instance because
+    # each email re-read and re-parsed every proposal
+    latest = {r["email_id"]: r for r in store.proposal_rows(_LATEST_STATUSES)}  # the last row of an email wins
     rows = []
     for email_id in store.email_ids():
         email = store.get_email(email_id)
-        rows.append(_inbox_row(email, _latest(store, email_id)))
+        rows.append(_inbox_row(email, latest.get(email_id)))
     return sorted(
         rows, key=lambda r: (r.sent_time or datetime.min.replace(tzinfo=timezone.utc)), reverse=True
     )
