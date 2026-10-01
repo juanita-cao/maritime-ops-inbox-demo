@@ -125,8 +125,9 @@ export function ChatPage({ dispatch, turns, setTurns, now, actionTypes, onDataCh
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   useEffect(() => {
+    if (turns[turns.length - 1]?.demo) return // the recorded demo opens at its first question, not at its end
     end.current?.scrollIntoView?.({ behavior: 'smooth', block: 'end' })
-  }, [turns.length, sending])
+  }, [turns.length, sending]) // eslint-disable-line react-hooks/exhaustive-deps
 
   const send = async (question: string) => {
     const q = question.trim()

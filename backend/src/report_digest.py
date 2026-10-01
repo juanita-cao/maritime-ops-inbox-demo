@@ -127,7 +127,7 @@ _WANT = {
     "weather": re.compile(r"天气|风|浪|涌|海况|逆流|顺流|海流|流速|weather|wind|\bsea\b|swell|current", re.I),
     "speed": re.compile(r"速度|航速|\bspeed\b", re.I),
     "consumption": re.compile(r"油耗|耗油|消耗|consumption", re.I),
-    "draft": re.compile(r"吃水|draft", re.I),
+    "draft": re.compile(r"吃水|\bdraft\b(?!\s+(?:a|an|the|me|up|my|our|your|reply|replies|email|emails|message|letter)\b)", re.I),  # "draft a reply" is the verb
 }
 _BASE = re.compile(r"到港|到达|ETA|ETB|ETD|靠泊|开航|离港|燃油|淡水|存油|存量|ROB|货|装了|卸了|位置|在哪|cargo|fresh water|bunker|arrive", re.I)
 

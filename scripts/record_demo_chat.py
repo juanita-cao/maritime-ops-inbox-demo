@@ -24,6 +24,10 @@ from src.settings import DATASET, DATASET_ROOT  # noqa: E402
 
 QUESTIONS = {
     "mock": [
+        # English first: a query, a piece of reasoning, a drafted email
+        "Which dues are in the next 7 days?",
+        "Is the charterer's speed and consumption claim on VSL-04 valid?",
+        "Draft a reply to the Chittagong congestion notice for VSL-07, reminding the charterer that waiting for a berth is for their account.",
         "我还有哪些邮件没有看？",
         "VSL-01 能不能在这个航次内安排水下检查或清洗？",
         "VSL-02 在北海 ECA 烧的低硫油费用应该谁承担？",

@@ -13,6 +13,7 @@ their helpers.
 import json
 import re
 import threading
+from datetime import date, timedelta
 from collections import Counter
 from collections.abc import Callable
 from concurrent.futures import ThreadPoolExecutor
@@ -779,6 +780,54 @@ def _render_reports(question: str, vessels: set[str], digests: list[rd.ReportDig
 # --- orchestration -------------------------------------------------------------------------------
 
 
+# --- dues, rendered in code ---------------------------------------------------------------------------
+# [AMENDMENT 2026-10-01, design 7.1 section 12] The model that worded the due list answered an English question in Chinese and
+# left the rows out of the text. Rows are chosen and written in code, in the language of the question.
+
+_HORIZON = re.compile(r"(\d{1,3})\s*(?:days?|天|日)", re.I)
+_MONTHS = ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
+
+
+def _short(text: str, limit: int = 110) -> str:
+    first = re.split(r"(?<=[.;])\s", text.strip())[0].rstrip(".;")
+    return first if len(first) <= limit else first[: limit - 1].rstrip() + "…"
+
+
+def _due_line(d, zh: bool) -> str:
+    kind = d.due_other if d.due_type == "Others" and d.due_other else str(d.due_type)
+    when = f"{d.due_date.month}/{d.due_date.day}" if zh else f"{d.due_date.day} {_MONTHS[d.due_date.month - 1]}"
+    return f"{when} · {d.vessel} · {kind}: {_short(d.action)}"
+
+
+def dues_rendered(question: str, context: ChatContext, zh: bool, today: str) -> ChatAnswer | None:
+    """Upcoming dues within the asked horizon (default 7 days), then a note on the overdue ones; None when there is nothing to
+    render in code (an empty list is handled by v5)."""
+    if context.dues.store_status != "ok":
+        return None
+    vessels = v5._question_vessels(question)  # noqa: SLF001
+    rows = sorted((d for d in context.dues.items if not vessels or d.vessel.upper() in vessels), key=lambda d: (d.due_date, d.vessel))
+    if not rows:
+        return None
+    m = _HORIZON.search(question)
+    horizon = int(m.group(1)) if m else 7
+    day = date.fromisoformat(today[:10])
+    upcoming = [d for d in rows if day <= d.due_date <= day + timedelta(days=horizon)]
+    overdue = [d for d in rows if d.due_date < day]
+    shown = upcoming[:8]
+    if zh:
+        head = f"未来 {horizon} 天内到期共 {len(upcoming)} 项" + (f"，另有 {len(overdue)} 项已逾期" if overdue else "") + ("：" if upcoming else "。")
+        more = f"\n另有 {len(upcoming) - len(shown)} 项，可在 Action 页面查看全部。" if len(upcoming) > len(shown) else ""
+        late = "\n已逾期：" + "；".join(f"{d.vessel} {d.due_date.month}/{d.due_date.day}" for d in overdue[:4]) + ("…" if len(overdue) > 4 else "") if overdue else ""
+    else:
+        head = f"Dues in the next {horizon} days: {len(upcoming)}" + (f", plus {len(overdue)} overdue" if overdue else "") + (":" if upcoming else ".")
+        more = f"\n{len(upcoming) - len(shown)} more on the Action page." if len(upcoming) > len(shown) else ""
+        late = "\nOverdue: " + "; ".join(f"{d.vessel} {d.due_date.day} {_MONTHS[d.due_date.month - 1]}" for d in overdue[:4]) + ("…" if len(overdue) > 4 else "") if overdue else ""
+    text = head + ("\n" + "\n".join(f"- {_due_line(d, zh)}" for d in shown) if shown else "") + more + late
+    sources = [SourceRef(kind="task", id=d.task_id, label=_short(d.action, 60)) for d in (shown or overdue)[:6]]
+    return ChatAnswer(text=text, sources=sources, llm_status="ok", execution_mode="deterministic", capability_authority="supported_l1",
+                      evidence_status="sufficient", reasoning_trace=[f"Deterministic filter: dues, {len(upcoming)} upcoming and {len(overdue)} overdue rows written in code, no model call"])  # fmt: skip
+
+
 def e16v7_answer_chat(
     request: ChatRequest, context: ChatContext, llm: LlmClient, now,
     run_tool: Callable[[str, dict], Any] | None = None, event_types: list[str] | None = None,
@@ -856,6 +905,8 @@ def e16v7_answer_chat(
         if mode == "deterministic":
             if intent == "vessel_facts":
                 answer = _vessel_facts(asked, context, fast, key, today, zh, run_tool)
+            elif intent == "dues" and (answer := dues_rendered(asked.question, context, zh, today)) is not None:
+                pass
             else:
                 answer = v5._deterministic(intent, asked, context, fast, key, today, zh, run_tool)  # noqa: SLF001
             if answer is None:

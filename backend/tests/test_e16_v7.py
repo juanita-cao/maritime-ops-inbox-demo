@@ -623,3 +623,38 @@ def test_the_pair_in_english_or_with_either_order_matches_but_a_missing_speed_or
     assert distances.find("从天津到青岛，12 节要几天？") is None  # not in the table
     text, _ = distances.render(distances.DEFAULT[0], 12.0, zh=False)
     assert "9.6 days" in text and "Source: distance reference table" in text
+
+
+# --- dues in code, and "draft" the verb (docs/design_agent_e16_v7_1.md 12) ------------------------------------------------
+
+
+def context_with_dues(rows):
+    ctx = context()
+    return ctx.model_copy(update={"dues": DueList(items=rows, store_status="ok")})
+
+
+def test_dues_are_written_in_code_in_the_questions_language_with_upcoming_first_and_overdue_noted():
+    from datetime import date
+
+    from src.schemas import DueRow
+
+    def row(tid, vessel, due, kind="Hire", overdue=False):
+        return DueRow(task_id=tid, action_id=tid + "-a", vessel=vessel, action=f"Verify the payment for {vessel}, due on {due}.", due_type=kind,
+                      due_date=date.fromisoformat(due), priority=3, overdue=overdue)
+
+    ctx = context_with_dues([row("T1", "VSL-01", "2026-10-16"), row("T2", "VSL-02", "2026-10-16"), row("T3", "VSL-03", "2026-10-01", overdue=True),
+                             row("T4", "VSL-04", "2026-11-19", kind="Others")])
+    en = v7.dues_rendered("Which dues are in the next 7 days?", ctx, False, "2026-10-12")
+    assert en.text.startswith("Dues in the next 7 days: 2, plus 1 overdue") and "- 16 Oct · VSL-01 · Hire: Verify the payment for VSL-01" in en.text
+    assert "Overdue: VSL-03 1 Oct" in en.text and "VSL-04" not in en.text and [s.id for s in en.sources] == ["T1", "T2"]
+    zh = v7.dues_rendered("未来 30 天有哪些到期？", ctx, True, "2026-10-12")
+    assert zh.text.startswith("未来 30 天内到期共 2 项，另有 1 项已逾期") and "- 10/16 · VSL-01" in zh.text
+    assert v7.dues_rendered("dues?", context_with_dues([]), False, "2026-10-12") is None
+
+
+def test_draft_the_verb_is_not_a_report_field_but_the_vessel_draft_still_is():
+    from src import report_digest as rd
+
+    assert rd.wanted_fields("Draft a reply to the Chittagong notice for VSL-07") == set()
+    assert rd.wanted_fields("Draft an email to the agent") == set()
+    assert rd.wanted_fields("What is the draft of VSL-13 now?") == {"draft"} and rd.wanted_fields("VSL-13 现在吃水多少") == {"draft"}
