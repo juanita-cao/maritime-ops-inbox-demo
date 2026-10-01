@@ -53,6 +53,7 @@ function toHash(s: UiState): string {
 export default function App() {
   const [state, dispatch] = useReducer(reduce, window.location.hash, fromHash)
   const [now, setNow] = useState('')
+  const [dataset, setDataset] = useState('') // which data the backend serves: the footer says so
   const [options, setOptions] = useState<CorrectOptions & { actionTypes: string[] }>({ vessels: [], eventTypes: [], actionTypes: [] })
   const [counts, setCounts] = useState<Partial<Record<Screen, number>>>({})
   const [vesselMeta, setVesselMeta] = useState<{ code: string; voyages: string[]; current: string | null }[]>([])
@@ -142,7 +143,11 @@ export default function App() {
   }, [state])
 
   useEffect(() => {
-    api.health().then((r) => r.kind === 'ok' && setNow(r.data.now))
+    api.health().then((r) => {
+      if (r.kind !== 'ok') return
+      setNow(r.data.now)
+      setDataset(r.data.dataset ?? '')
+    })
     Promise.all([api.taxonomy(), api.vessels()]).then(([tax, ves]) => {
       setOptions({
         eventTypes: tax.kind === 'ok' ? tax.data.event_types ?? [] : [],
@@ -191,7 +196,7 @@ export default function App() {
           <Mascot todo={(counts.email ?? 0) + (counts.action ?? 0)} />
           Demo workspace
           <br />
-          Sanitized sample data
+          {dataset === 'mock' ? 'Mock data used' : dataset ? 'Sanitized sample data' : ' '}
         </div>
       )}
       token={{
@@ -277,7 +282,7 @@ export default function App() {
           <Mascot todo={(counts.email ?? 0) + (counts.action ?? 0)} />
           Demo workspace
           <br />
-          Sanitized sample data
+          {dataset === 'mock' ? 'Mock data used' : dataset ? 'Sanitized sample data' : ' '}
         </div>
       </Drawer>
     </ProLayout>

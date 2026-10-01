@@ -243,6 +243,7 @@ export interface Health {
   status: string
   llm_mode: string
   now: string
+  dataset?: string // 'mock' or 'desanitized'
 }
 
 export type Taxonomy = Record<string, string[]>

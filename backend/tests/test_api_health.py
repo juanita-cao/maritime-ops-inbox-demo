@@ -9,6 +9,7 @@ def test_api_health_returns_ok_and_llm_mode():
     body = response.json()
     assert body["status"] == "ok"
     assert body["llm_mode"] in ("recorded", "live")
+    assert body["dataset"] in ("mock", "desanitized")  # the footer says which data is shown
 
 
 def test_settings_default_utc_offset_is_read_from_the_environment(monkeypatch):

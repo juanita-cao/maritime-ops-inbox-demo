@@ -23,7 +23,7 @@ from src import playbooks as pbk
 from src import schemas as s
 from src.kb_loader import load_kb
 from src.llm_client import LiveLlm, make_client
-from src.settings import DATASET_ROOT, REPO_ROOT, load_settings
+from src.settings import DATASET, DATASET_ROOT, REPO_ROOT, load_settings
 from src.store import NotFound, Store
 
 settings = load_settings()
@@ -126,7 +126,7 @@ class VesselRow(BaseModel):
 def health() -> dict:
     """Liveness check; also shows the LLM mode so a live run is never started by surprise."""
     return {"status": "ok", "llm_mode": settings.llm_mode, "chat_llm_mode": settings.chat_llm_mode,
-            "now": now().isoformat()}
+            "now": now().isoformat(), "dataset": DATASET}
 
 
 @app.get("/api/taxonomy")
